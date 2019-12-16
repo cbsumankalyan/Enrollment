@@ -94,7 +94,7 @@ public class SuperTestNG {
 	protected String getTranslation(String key, String language) throws IOException {
 		Properties prop = new Properties();
 		FileInputStream input = new FileInputStream(
-				"E:/Staging/Enrollment/src/main/java/Languages/" + language + ".txt");
+				"C:/Users/sumancb/git/Enrollment/Enrollment/src/main/java/Languages/" + language + ".txt");
 		prop.load(new InputStreamReader(input, Charset.forName("Unicode")));
 		input.close();
 		return prop.getProperty(key);

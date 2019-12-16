@@ -684,11 +684,19 @@ public class PaymentPage extends SuperTestNG {
 									Assert.assertEquals(entry.getRequest().getUrl(),
 											userdata.get("proto") + userdata.get("version") + "orderterms.js",
 											"Major OrderTerms.js URL");
+									if (userdata.get("testcase") == "getfit"){
+										Assert.assertEquals(
+												"https://hydra.unicity.net/" + userdata.get("version") + "customers?type="
+														+ "Associate",
+												new JsonPath(OrderTerms.toString()).get("order.customer.href"),
+												"Major Customer Typeqqq");
+										} else {
 									Assert.assertEquals(
 											"https://hydra.unicity.net/" + userdata.get("version") + "customers?type="
 													+ userdata.get("type"),
 											new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-											"Major Customer Type");
+											"Major Customer Typewww");
+										}
 									
 									Assert.assertEquals(packs,
 											new JsonPath(OrderTerms.toString()).get("order.lines.items.item.href"),
@@ -785,13 +793,13 @@ public class PaymentPage extends SuperTestNG {
 												"https://hydra.unicity.net/" + userdata.get("version")
 														+ "customers?type=" + "Associate",
 												new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-												"Major Customer Type");
+												"Major Customer Typeeeee");
 										} else {
 											Assert.assertEquals(
 													"https://hydra.unicity.net/" + userdata.get("version")
 															+ "customers?type=" + userdata.get("type"),
 													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-													"Major Customer Type");
+													"Major Customer Typerrrr");
 										}
 										
 										Assert.assertEquals(packs,

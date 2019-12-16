@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 492.144 s <<< FAILURE! - in TestSuite
+GetFit(Tests.Fit)  Time elapsed: 108.1 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at Tests.Fit.GetFit(Fit.java:70)
+
+GetFit(Tests.Fit)  Time elapsed: 80.071 s  <<< FAILURE!
+java.lang.AssertionError: Critical Back end error
+	at Tests.Fit.GetFit(Fit.java:69)
+
+GetFit(Tests.Fit)  Time elapsed: 88.339 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Step 4: Enter Payment Information, Billing Address, Shipping/Primary Address, Shipping Method, GetFit21 Coach]]
+	at Tests.Fit.GetFit(Fit.java:70)
+
+GetFit(Tests.Fit)  Time elapsed: 88.594 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[Étape 4 : Entrez vos informations de paiement, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, GetFit21 Coach]]
+	at Tests.Fit.GetFit(Fit.java:70)
+
+GetFit(Tests.Fit)  Time elapsed: 90.329 s  <<< FAILURE!
+java.lang.AssertionError: Critical Back end error
+	at Tests.Fit.GetFit(Fit.java:69)
+
