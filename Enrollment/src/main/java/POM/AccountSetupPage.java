@@ -549,9 +549,13 @@ public class AccountSetupPage extends SuperTestNG {
 			Assert.assertEquals(Labels.toString(), getTranslation("eu_ch", language), "Minor Lables");
 		}
 
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia" || Market == "Dominican Republic"
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
 				|| Market == "Jamaica" || Market == "Puerto Rico" || Market == "United States" || Market == "Mexico") {
 			Assert.assertEquals(Labels.toString(), getTranslation("us", language), "Minor Lables");
+		}
+		
+		if (Market == "Colombia"){
+			Assert.assertEquals(Labels.toString(), getTranslation("co", language), "Minor Lables");
 		}
 
 		if (Market == "Norway") {
@@ -568,7 +572,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 		if (userdata.get("testcase") == "normal" || userdata.get("testcase") == "hcp") {
 
-			if (Market == "Bahamas" || Market == "Colombia" || Market == "Dominican Republic" || Market == "Jamaica"
+			if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
 					|| Market == "United States") {
 
 				try {
@@ -593,7 +597,7 @@ public class AccountSetupPage extends SuperTestNG {
 				}
 			}
 
-			if (Market == "Bahamas" || Market == "Colombia" || Market == "Dominican Republic" || Market == "Jamaica"
+			if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
 					|| Market == "United States") {
 				String[] xpath = { "(//input[@ng-change='noIDs()'])[2]", "//span[contains(@class, 'stepper-title')]" };
 
@@ -642,7 +646,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("api", "3");
 		}
 
-		if (Market == "India" || Market == "Mexico") {
+		if (Market == "India" || Market == "Mexico" || Market == "Colombia") {
 			EnrollerID.sendKeys(referral + Keys.TAB);
 			SponsorID.sendKeys(referral + Keys.TAB);
 			Thread.sleep(5000);
@@ -696,7 +700,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("lname", ilname);
 		}
 
-		if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Denmark"
+		if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Colombia" || Market == "Denmark"
 				|| Market == "France" || Market == "Germany" || Market == "Hungary" || Market == "India"
 				|| Market == "Italy" || Market == "Ireland" || Market == "Luxembourg" || Market == "Mexico"
 				|| Market == "Netherlands" || Market == "New Zealand" || Market == "Norway" || Market == "Poland"
@@ -706,7 +710,7 @@ public class AccountSetupPage extends SuperTestNG {
 			childtest.log(LogStatus.INFO, "", ddmmyyyy);
 			userdata.put("dob", ddmmyyyy);
 		}
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia" || Market == "Dominican Republic"
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
 				|| Market == "Jamaica" || Market == "Puerto Rico" || Market == "United States") {
 			DOB.sendKeys(mmddyyyy);
 			childtest.log(LogStatus.INFO, "", mmddyyyy);
@@ -1128,7 +1132,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 		Assert.assertEquals(Labels.toString(), getTranslation("en_pc", language), "Minor Lables");
 
-		if (Market == "Bahamas" || Market == "Colombia" || Market == "Dominican Republic"
+		if (Market == "Bahamas" || Market == "Dominican Republic"
 				|| Market == "United States") {
 
 			try {
@@ -1150,7 +1154,7 @@ public class AccountSetupPage extends SuperTestNG {
 			}
 		}
 
-		if (Market == "Bahamas" || Market == "Colombia" || Market == "Dominican Republic"
+		if (Market == "Bahamas" || Market == "Dominican Republic"
 				|| Market == "United States") {
 			String[] xpath = { "(//input[@ng-change='noIDs()'])[2]", "//span[contains(@class, 'stepper-title')]" };
 
@@ -1181,7 +1185,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("sponsor", "2");
 			userdata.put("enroller", referral);
 			userdata.put("sponsor", referral);
-			if (Market == "Mexico") {
+			if (Market == "Mexico" || Market == "Colombia") {
 				userdata.put("api", "5");
 			} else {
 				userdata.put("api", "4");

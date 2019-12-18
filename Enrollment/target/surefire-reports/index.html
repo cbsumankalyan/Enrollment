@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 5 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,27 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.Fit" hash-for-method="GetFit(United States, Español, Pack)">GetFit(United States, Español, Pack)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.Fit" hash-for-method="GetFit(United States, English, Pack)">GetFit(United States, English, Pack)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.Fit" hash-for-method="GetFit(United Kingdom, English, Pack)">GetFit(United Kingdom, English, Pack)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.Fit" hash-for-method="GetFit(Canada, Français, Pack)">GetFit(Canada, Français, Pack)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.Fit" hash-for-method="GetFit(Canada, English, Pack)">GetFit(Canada, English, Pack)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.PrefferedCustomer" hash-for-method="Enroll(Colombia, Español, Pack)">Enroll(Colombia, Español, Pack)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -140,77 +120,20 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Tests.Fit</span>
+              <span class="class-name">Tests.PrefferedCustomer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GetFit(United States, Español, Pack)">
-                  </a> <!-- GetFit(United States, Español, Pack) -->
-                  <span class="method-name">GetFit</span>
-                  <span class="parameters">(United States, Español, Pack)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:904)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetFit(United States, English, Pack)">
-                  </a> <!-- GetFit(United States, English, Pack) -->
-                  <span class="method-name">GetFit</span>
-                  <span class="parameters">(United States, English, Pack)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:904)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetFit(United Kingdom, English, Pack)">
-                  </a> <!-- GetFit(United Kingdom, English, Pack) -->
-                  <span class="method-name">GetFit</span>
-                  <span class="parameters">(United Kingdom, English, Pack)</span>
-                  <div class="stack-trace">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2405)
-	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
-	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetFit(Canada, Français, Pack)">
-                  </a> <!-- GetFit(Canada, Français, Pack) -->
-                  <span class="method-name">GetFit</span>
-                  <span class="parameters">(Canada, Français, Pack)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[Étape 4 : Entrez vos informations de paiement, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, GetFit21 Coach]]
-	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2136)
-	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
-	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetFit(Canada, English, Pack)">
-                  </a> <!-- GetFit(Canada, English, Pack) -->
-                  <span class="method-name">GetFit</span>
-                  <span class="parameters">(Canada, English, Pack)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Step 4: Enter Payment Information, Billing Address, Shipping/Primary Address, Shipping Method, GetFit21 Coach]]
-	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2136)
-	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
-	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 34 stack frames
+                  <a name="Enroll(Colombia, Español, Pack)">
+                  </a> <!-- Enroll(Colombia, Español, Pack) -->
+                  <span class="method-name">Enroll</span>
+                  <span class="parameters">(Colombia, Español, Pack)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Major zip code expected [null] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1791)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:102)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -228,7 +151,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Fit&quot;/&gt;
+      &lt;class name=&quot;Tests.PrefferedCustomer&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -268,32 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GetFit')
-data.setCell(0, 2, 'Tests.Fit')
-data.setCell(0, 3, 108103);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GetFit')
-data.setCell(1, 2, 'Tests.Fit')
-data.setCell(1, 3, 90329);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'GetFit')
-data.setCell(2, 2, 'Tests.Fit')
-data.setCell(2, 3, 88594);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'GetFit')
-data.setCell(3, 2, 'Tests.Fit')
-data.setCell(3, 3, 88339);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'GetFit')
-data.setCell(4, 2, 'Tests.Fit')
-data.setCell(4, 3, 80071);
+data.setCell(0, 1, 'Enroll')
+data.setCell(0, 2, 'Tests.PrefferedCustomer')
+data.setCell(0, 3, 148088);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -319,84 +226,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.Fit</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.PrefferedCustomer</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">StartReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">PreConditon</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-start">125 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">GetFit(United Kingdom, English, Pack)</span>
-                <span class="method-start">7352 ms</span>
+                <span class="method-name">Enroll(Colombia, Español, Pack)</span>
+                <span class="method-start">7740 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">PostCondition([TestResult name=GetFit status=FAILURE method=Fit.GetFit(java.lang.String, java.lang.String, java.la...)</span>
-                <span class="method-start">115455 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">PreConditon</span>
-                <span class="method-start">116364 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">GetFit(United States, Español, Pack)</span>
-                <span class="method-start">121913 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">PostCondition([TestResult name=GetFit status=FAILURE method=Fit.GetFit(java.lang.String, java.lang.String, java.la...)</span>
-                <span class="method-start">201985 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">PreConditon</span>
-                <span class="method-start">202920 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">GetFit(Canada, English, Pack)</span>
-                <span class="method-start">208592 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">PostCondition([TestResult name=GetFit status=FAILURE method=Fit.GetFit(java.lang.String, java.lang.String, java.la...)</span>
-                <span class="method-start">296931 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">PreConditon</span>
-                <span class="method-start">297838 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">GetFit(Canada, Français, Pack)</span>
-                <span class="method-start">303320 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">PostCondition([TestResult name=GetFit status=FAILURE method=Fit.GetFit(java.lang.String, java.lang.String, java.la...)</span>
-                <span class="method-start">391914 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">PreConditon</span>
-                <span class="method-start">392816 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">GetFit(United States, English, Pack)</span>
-                <span class="method-start">398636 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">PostCondition([TestResult name=GetFit status=FAILURE method=Fit.GetFit(java.lang.String, java.lang.String, java.la...)</span>
-                <span class="method-start">488965 ms</span>
+                <span class="method-name">PostCondition([TestResult name=Enroll status=FAILURE method=PrefferedCustomer.Enroll(java.lang.String, java.lang.S...)</span>
+                <span class="method-start">155828 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">489925 ms</span>
+                <span class="method-start">156784 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

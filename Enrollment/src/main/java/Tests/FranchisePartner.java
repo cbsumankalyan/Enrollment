@@ -232,13 +232,11 @@ public class FranchisePartner extends SuperTestNG {
         
 		
 		
-		/*data[0][0] = "Mexico";
-		data[0][1] = "Español";
-		data[0][2] = "Pack";
-		
-		data[0][0] = "United States";
+		/*data[0][0] = "Colombia";
 		data[0][1] = "Español";
 		data[0][2] = "Pack";*/
+		
+		
 
 		return data;
 

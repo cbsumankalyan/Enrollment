@@ -9,35 +9,27 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">489,894</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">156,768</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">Tests.Fit</td><td><a href="#m0">GetFit</a></td><td rowspan="5">1576498437575</td><td rowspan="5">80071</td></tr><tr class="failedeven"><td><a href="#m1">GetFit</a></td></tr><tr class="failedeven"><td><a href="#m2">GetFit</a></td></tr><tr class="failedeven"><td><a href="#m3">GetFit</a></td></tr><tr class="failedeven"><td><a href="#m4">GetFit</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Tests.PrefferedCustomer</td><td><a href="#m0">afterSuite</a></td><td rowspan="1">1576651573929</td><td rowspan="1">1891</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.PrefferedCustomer</td><td><a href="#m1">Enroll</a></td><td rowspan="1">1576651424885</td><td rowspan="1">148088</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Tests.Fit#GetFit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>United States</td><td>Español</td><td>Pack</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:904)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.Fit#GetFit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>United States</td><td>English</td><td>Pack</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:904)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.Fit#GetFit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>United Kingdom</td><td>English</td><td>Pack</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2405)
-	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
-	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Tests.Fit#GetFit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Canada</td><td>Français</td><td>Pack</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[Étape 4 : Entrez vos informations de paiement, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, GetFit21 Coach]]
-	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2136)
-	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
-	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Tests.Fit#GetFit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Canada</td><td>English</td><td>Pack</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Step 4: Enter Payment Information, Billing Address, Shipping/Primary Address, Shipping Method, GetFit21 Coach]]
-	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2136)
-	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
-	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">Tests.PrefferedCustomer#afterSuite</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">javax.mail.AuthenticationFailedException: 535 Authentication Credentials Invalid
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at javax.mail.Service.connect(Service.java:246)
+	at javax.mail.Service.connect(Service.java:195)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at Pages.NoAttach.Sendmail(NoAttach.java:85)
+	at Pages.SuperTestNG.afterSuite(SuperTestNG.java:299)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.PrefferedCustomer#Enroll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Colombia</td><td>Español</td><td>Pack</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Major zip code expected [null] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1791)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:102)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

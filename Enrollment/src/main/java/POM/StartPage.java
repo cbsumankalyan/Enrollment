@@ -86,8 +86,8 @@ public class StartPage extends SuperTestNG {
 	public void Start(String Market, String language) throws InterruptedException, IOException, ParseException {
 
 		userdata.put("market", Market);
-		akhil = (countrycode.get(userdata.get("market")))+"-"+locale.get(language);
-		
+		akhil = (countrycode.get(userdata.get("market"))) + "-" + locale.get(language);
+
 		Thread.sleep(10000);
 		String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ", "Colombia",
 				"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
@@ -134,15 +134,23 @@ public class StartPage extends SuperTestNG {
 		Assert.assertEquals(SelectYourLanguage.getText(), getTranslation("select_your_language", language),
 				"Low footer");
 		if (Market == "Canada") {
-			Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_fp_desc_ca", language), "Low footer");
+			if ((userdata.get("testcase") == "hcp")) {
+				Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_hcp_desc_ca", language),
+						"Low Description");
+			} else {
+				Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_fp_desc_ca", language),
+						"Low Description");
+			}
 		}
 		if (Market == "Colombia" || Market == "Mexico") {
-			Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_fp_desc_co", language), "Low footer");
+			Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_fp_desc_co", language),
+					"Low Description");
 		}
 
 		if (!(userdata.get("testcase") == "hcp")) {
 			if (!(Market == "Canada" || Market == "Colombia" || Market == "Mexico")) {
-				Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_fp_desc", language), "Low footer");
+				Assert.assertEquals(FPDefinition.getText(), getTranslation("join_as_fp_desc", language),
+						"Low Description");
 			}
 		}
 
@@ -442,9 +450,9 @@ public class StartPage extends SuperTestNG {
 	}
 
 	public void PC(String Market, String language) throws InterruptedException, IOException, ParseException {
-		
+
 		userdata.put("market", Market);
-		akhil = (countrycode.get(userdata.get("market")))+"-"+locale.get(language);
+		akhil = (countrycode.get(userdata.get("market"))) + "-" + locale.get(language);
 
 		Select selectCountry = new Select(SelectCountry);
 		selectCountry.selectByVisibleText(Market);
@@ -482,9 +490,9 @@ public class StartPage extends SuperTestNG {
 	}
 
 	public void PP(String Market, String language) throws InterruptedException, IOException, ParseException {
-		
+
 		userdata.put("market", Market);
-		akhil = (countrycode.get(userdata.get("market")))+"-"+locale.get(language);
+		akhil = (countrycode.get(userdata.get("market"))) + "-" + locale.get(language);
 
 		Select selectCountry = new Select(SelectCountry);
 		selectCountry.selectByVisibleText(Market);
@@ -508,12 +516,12 @@ public class StartPage extends SuperTestNG {
 	}
 
 	public void GetFitStart(String Market, String language) throws InterruptedException, IOException {
-		
+
 		userdata.put("market", Market);
-		akhil = (countrycode.get(userdata.get("market")))+"-"+locale.get(language);
-		
-		System.out.println("Start----" + (countrycode.get(userdata.get("market")))+"-"+locale.get(language));
-		
+		akhil = (countrycode.get(userdata.get("market"))) + "-" + locale.get(language);
+
+		System.out.println("Start----" + (countrycode.get(userdata.get("market"))) + "-" + locale.get(language));
+
 		Thread.sleep(10000);
 		String[] expected = { "United States", "Canada ", "United Kingdom", };
 

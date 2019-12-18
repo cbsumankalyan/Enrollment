@@ -310,44 +310,43 @@ public class SummaryPage extends SuperTestNG {
 
 	@FindBys(@FindBy(xpath = "//select[@ng-model='selectedCountry']//option"))
 	List<WebElement> Country;
-	
-	
+
 	@FindBy(xpath = "//h4[@class='ng-scope']")
 	private WebElement StartCertification;
-	
+
 	@FindBy(xpath = "//h3[@class='ng-scope']")
 	private WebElement Congratulations;
-	
+
 	@FindBy(xpath = "//label[@class='bold ng-scope']")
 	private WebElement RegisteredAsCoach;
-	
+
 	@FindBy(xpath = "//label[@class='confimation-resgister_getfit ng-scope']")
 	private WebElement GetFitSucessMSG1;
-	
+
 	@FindBy(xpath = "//label[contains(@class,'confirm_color ng-scope')]")
 	private WebElement GetFitSucesMSG2;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.profile.firstname']")
 	private WebElement GetFitFName;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.profile.lastname']")
 	private WebElement GetFitLName;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.profile.email']")
 	private WebElement GetFitEmail;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.payment.address.line_1']")
 	private WebElement GetFitAddress1;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.payment.address.line_2']")
 	private WebElement GetFitAddress2;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.payment.city']")
 	private WebElement GetFitCity;
-	
+
 	@FindBy(xpath = "//span[@ng-model='order.payment.postal_code']")
 	private WebElement GetFitPostal;
-	
+
 	@FindBy(xpath = "//button[contains(@ng-click,'goredirect()')]")
 	private WebElement SignInToCourseNow;
 
@@ -370,9 +369,14 @@ public class SummaryPage extends SuperTestNG {
 			Labels.add(Headings.get(i).getText());
 		}
 
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia" || Market == "Dominican Republic"
-				|| Market == "Jamaica" || Market == "United States" || Market == "Mexico") {
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
+				|| Market == "United States" || Market == "Mexico") {
 			Assert.assertEquals(Labels.toString(), getTranslation("summary_us", language),
+					"Minor Summary Labels is Displaying");
+		}
+
+		if (Market == "Colombia") {
+			Assert.assertEquals(Labels.toString(), getTranslation("summary_co", language),
 					"Minor Summary Labels is Displaying");
 		}
 
@@ -520,11 +524,11 @@ public class SummaryPage extends SuperTestNG {
 		}
 
 		if (pack == "Pack") {
-			if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Colombia"
-					|| Market == "Denmark" || Market == "France" || Market == "Germany" || Market == "Hungary"
-					|| Market == "Italy" || Market == "Ireland" || Market == "Luxembourg" || Market == "Netherlands"
-					|| Market == "Norway" || Market == "Poland" || Market == "Sweden" || Market == "Switzerland"
-					|| Market == "Spain" || Market == "Ukraine" || Market == "United Kingdom") {
+			if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Denmark"
+					|| Market == "France" || Market == "Germany" || Market == "Hungary" || Market == "Italy"
+					|| Market == "Ireland" || Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway"
+					|| Market == "Poland" || Market == "Sweden" || Market == "Switzerland" || Market == "Spain"
+					|| Market == "Ukraine" || Market == "United Kingdom") {
 				Assert.assertEquals(ShippingAddress1.getText(), userdata.get("address1"), "Major Shipping Address1");
 				Assert.assertEquals(ShippingAddress2.getText(), userdata.get("address2"), "Major Shipping Address 2");
 				Assert.assertEquals(ShippingCity.getText(), userdata.get("city"), "Major Shipping City");
@@ -537,6 +541,14 @@ public class SummaryPage extends SuperTestNG {
 				Assert.assertEquals(BillingCity.getText(), userdata.get("city"), "Major Billing City");
 				Assert.assertEquals(BillingZip.getText(), userdata.get("zip"), "Major Billing Postal");
 				Assert.assertEquals(BillingCountry.getText(), getTranslation(userdata.get("marketcode"), language),
+						"Major Shipping Billing");
+			}
+
+			if (Market == "Colombia") {
+				Assert.assertEquals(BillingAddress1.getText(), userdata.get("address1"), "Major Billing Address1");
+				Assert.assertEquals(BillingAddress2.getText(), userdata.get("address2"), "Major Billing Address 2");
+				Assert.assertEquals(BillingCity.getText(), userdata.get("city"), "Major Billing City");
+				Assert.assertEquals(USBillingCountry.getText(), getTranslation(userdata.get("marketcode"), language),
 						"Major Shipping Billing");
 			}
 		}
@@ -1502,7 +1514,7 @@ public class SummaryPage extends SuperTestNG {
 				"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 				"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
 				"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore", "Sweden",
-				"Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Ukraine", "United Kingdom"};
+				"Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Ukraine", "United Kingdom" };
 
 		for (int i = 0; i < expected.length; i++) {
 			Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
@@ -1525,7 +1537,14 @@ public class SummaryPage extends SuperTestNG {
 		if (Market == "Puerto Rico") {
 			Assert.assertEquals(Labels.toString(), getTranslation("summary_pr_pc", language),
 					"Minor Summary Labels is Displaying");
-		} else {
+		}
+
+		if (Market == "Colombia") {
+			Assert.assertEquals(Labels.toString(), getTranslation("summary_co_pc", language),
+					"Minor Summary Labels is Displaying");
+		}
+
+		if (!(Market == "Puerto Rico" || Market == "Colombia")) {
 			Assert.assertEquals(Labels.toString(), getTranslation("summary_us_pc", language),
 					"Minor Summary Labels is Displaying");
 		}
@@ -1634,6 +1653,14 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(USBillingCountry.getText(), "Mexico", "Major Billing Country");
 		}
 
+		if (Market == "Colombia") {
+			Assert.assertEquals(BillingAddress1.getText(), userdata.get("address1"), "Major Billing Address1");
+			Assert.assertEquals(BillingAddress2.getText(), userdata.get("address2"), "Major Billing Address 2");
+			Assert.assertEquals(BillingCity.getText(), userdata.get("city"), "Major Billing City");
+			Assert.assertEquals(USBillingCountry.getText(), getTranslation(userdata.get("marketcode"), language),
+					"Major Shipping Billing");
+		}
+
 		Click.click();
 		float total = (Float.parseFloat(PCTotalPrice.getText().replaceAll("[^\\d.]+", "").trim()));
 		float shipprice = (Float.parseFloat(ShippingPrice.getText().replaceAll("[^\\d.]+", "").trim()));
@@ -1643,7 +1670,12 @@ public class SummaryPage extends SuperTestNG {
 		float result = total + shipprice + tax - discount;
 		DecimalFormat df2 = new DecimalFormat("#.##");
 		Float result1 = Float.valueOf(df2.format(result));
-		Assert.assertEquals(grandtotal, result1, "Major Total Price is Wrong");
+
+		if (Market == "Colombia") {
+			Assert.assertEquals(total, grandtotal, "Major Total Price is Wrong");
+		} else {
+			Assert.assertEquals(grandtotal, result1, "Major Total Price is Wrong");
+		}
 
 		if (!(Market == "Colombia" || Market == "Dominican Republic" || Market == "Mexico")) {
 			Click.click();
@@ -2107,7 +2139,7 @@ public class SummaryPage extends SuperTestNG {
 							"India", "Indonesia", "Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg",
 							"Malaysia", "Mexico", "Netherlands", "New Zealand", "Norway", "Philippines", "Poland",
 							"Puerto Rico ", "Singapore", "Sweden", "Switzerland", "Spain", "Taiwan", "Thailand",
-							"United States", "Ukraine", "United Kingdom", "Vietnam" };
+							"United States", "Ukraine", "United Kingdom", };
 
 					for (int i = 0; i < expected.length; i++) {
 						Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
@@ -2828,14 +2860,16 @@ public class SummaryPage extends SuperTestNG {
 		}
 
 		Thread.sleep(5000);
-		
+
 		Assert.assertEquals(StartCertification.getText(), getTranslation("getfit_nextstep", language), "Low NextStep");
-		Assert.assertEquals(Congratulations.getText(), getTranslation("getfit_congratulations", language), "Low Congratulations");
-		Assert.assertEquals(RegisteredAsCoach.getText(), getTranslation("getfit_registered", language), "Low RegisteredAs coach");
-		
+		Assert.assertEquals(Congratulations.getText(), getTranslation("getfit_congratulations", language),
+				"Low Congratulations");
+		Assert.assertEquals(RegisteredAsCoach.getText(), getTranslation("getfit_registered", language),
+				"Low RegisteredAs coach");
+
 		Assert.assertEquals(GetFitSucessMSG1.getText(), getTranslation("getfit_msg1", language), "Low MSG1");
 		Assert.assertEquals(GetFitSucesMSG2.getText(), getTranslation("getfit_msg2", language), "Low MSG2");
-		
+
 		Assert.assertEquals(GetFitFName.getText(), userdata.get("fname"), "Low NextStep");
 		Assert.assertEquals(GetFitLName.getText(), userdata.get("lname"), "Low Congratulations");
 		Assert.assertEquals(GetFitEmail.getText(), userdata.get("email"), "Low RegisteredAs coach");
@@ -2843,7 +2877,7 @@ public class SummaryPage extends SuperTestNG {
 		Assert.assertEquals(GetFitAddress2.getText(), userdata.get("address2"), "Low address2");
 		Assert.assertEquals(GetFitCity.getText(), userdata.get("city"), "Low city");
 		Assert.assertEquals(GetFitPostal.getText(), userdata.get("zip"), "Low zip");
-		
+
 		try {
 			Boolean signin = SignInToCourseNow.isDisplayed();
 			Assert.assertTrue(signin);

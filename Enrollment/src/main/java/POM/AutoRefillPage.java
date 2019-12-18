@@ -86,7 +86,7 @@ public class AutoRefillPage extends SuperTestNG {
 
 	public void AutoRefill(String Market, String pack) {
 		if (pack == "Pack") {
-			if (!(Market == "India" || Market == "Mexico" || Market == "Ukraine")) {
+			if (!(Market == "Colombia" || Market == "India" || Market == "Mexico" || Market == "Ukraine")) {
 
 				childtest.log(LogStatus.INFO, "Auto Refill", "");
 

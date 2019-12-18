@@ -437,10 +437,11 @@ public class InitialOrderPage extends SuperTestNG {
 
 					for (WebElement CustomPack : CustomPacks) {
 						CustomPack.click();
-						if (!(Market == "Canada" || Market == "Bahamas" || Market == "Dominican Republic"
+						if (!(Market == "Canada" || Market == "Colombia" || Market == "Bahamas" || Market == "Dominican Republic"
 								|| Market == "Jamaica" || Market == "Mexico" || Market == "Puerto Rico"
 								|| Market == "United States")) {
 							if (StarterKit.size() == 1) {
+								
 								Assert.assertEquals(PriceOnPack.getText(), PriceInOrderSummary.getText(),
 										"Major pirce on pack");
 								Assert.assertEquals(PVOnPack.getText().replaceAll(": ", ""), PVInOrderSummary.getText(),
@@ -453,7 +454,7 @@ public class InitialOrderPage extends SuperTestNG {
 							}
 						}
 
-						if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
+						if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia" ||Market == "Dominican Republic"
 								|| Market == "Jamaica" || Market == "Mexico" || Market == "Puerto Rico"
 								|| Market == "United States") {
 							Assert.assertEquals(PriceOnPack.getText(), PriceInOrderSummary.getText(),
@@ -486,7 +487,7 @@ public class InitialOrderPage extends SuperTestNG {
 								}
 							}
 						} else {
-							if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
+							if (Market == "Bahamas" || Market == "Canada"  ||  Market == "Colombia" || Market == "Dominican Republic"
 									|| Market == "Jamaica" || Market == "Mexico" || Market == "Puerto Rico"
 									|| Market == "United States") {
 								String km = PopOverInfo.getText().replaceAll("\\G(.*\r?\n).*(?:\r?\n|$)", "$1");
@@ -720,8 +721,12 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 				DecimalFormat df2 = new DecimalFormat("#.##");
 				Float result1 = Float.valueOf(df2.format(sum));
-
-				Assert.assertEquals(result1, totalprice, "Critical total price Mismatch");
+				
+				if (Market == "Colombia"){
+					Assert.assertEquals(sum, totalprice, "Critical total price Mismatch");
+				} else {
+					Assert.assertEquals(result1, totalprice, "Critical total price Mismatch");
+				}
 				userdata.put("cartprice", String.valueOf(totalprice));
 				Assert.assertEquals(pvs, totalpv, "Critical total PV mismatch");
 				childtest.log(LogStatus.INFO, "", "Calculated Total Price, PV");
