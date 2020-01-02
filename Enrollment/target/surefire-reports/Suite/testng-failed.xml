@@ -7,11 +7,56 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="Enroll" invocation-numbers="0"/>
+          <include name="Enroll" invocation-numbers="0 1 2 3 4 6 7 8 9"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- Tests.PrefferedCustomer -->
+      <class name="Tests.Fit">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="StartReport"/>
+          <include name="GetFit" invocation-numbers="1 2 3 4"/>
+          <include name="PreConditon"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- Tests.Fit -->
+      <class name="Tests.ReferralIDPassing">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="StartReport"/>
+          <include name="PreConditon"/>
+          <include name="afterSuite"/>
+          <include name="PassReferralID" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- Tests.ReferralIDPassing -->
+      <class name="Tests.HealthCareProducts">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="StartReport"/>
+          <include name="PassReferralID" invocation-numbers="0 1 2 3"/>
+          <include name="PreConditon"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- Tests.HealthCareProducts -->
+      <class name="Tests.PatientPortal">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="StartReport"/>
+          <include name="PreConditon"/>
+          <include name="afterSuite"/>
+          <include name="Patient" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- Tests.PatientPortal -->
+      <class name="Tests.FranchisePartner">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="StartReport"/>
+          <include name="PreConditon"/>
+          <include name="afterSuite"/>
+          <include name="Enroll" invocation-numbers="0 1 2 3 7 8 9 12 13 18 21 23 30 33 35 36 37 46 47 48 49 50"/>
+        </methods>
+      </class> <!-- Tests.FranchisePartner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

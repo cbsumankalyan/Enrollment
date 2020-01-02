@@ -27,8 +27,8 @@ public class NoAttach extends SuperTestNG {
 		Session session = Session.getDefaultInstance(prop, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("AKIAIVEXWRAZAAJGKSBA",
-						"ArLUuObBIFHGBbGVOKEwHTZ4+xhk/Vj9ppq0ldJFSI/q");
+				return new PasswordAuthentication("AKIAYHBBEQ57PJWIGYVW",
+						"BGbq34mcvkOchnoSpLEEujAhnhBL4VDEKs1tjsi5ZFP/");
 			}
 		});
 
