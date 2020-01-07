@@ -772,14 +772,14 @@ public class SummaryPage extends SuperTestNG {
 									new JsonPath(Orders.toString())
 											.get("customer.autoorders.items.lines.items.item.href").toString()
 											.replace("[", "").replace("]", ""),
-									"https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 											+ userdata.get("aritemcode"),
 									"Major AR Pack href");
 
 							Assert.assertEquals(
 									new JsonPath(Orders.toString()).get("customer.autoorders.items.shippingMethod.href")
 											.toString().replace("[", "").replace("]", ""),
-									"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 											+ userdata.get("shippingmethod"),
 									"Major AR Ship Method href");
 
@@ -874,11 +874,11 @@ public class SummaryPage extends SuperTestNG {
 								"Major Customer Type");
 
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
-								"https://hydra.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
 										+ userdata.get("sponsor"),
 								"Major Sponsor href");
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
-								"https://hydra.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
 										+ userdata.get("enroller"),
 								"Major Enroller href");
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.homePhone"),
@@ -956,12 +956,12 @@ public class SummaryPage extends SuperTestNG {
 								userdata.get("address1"), "Major Ship Address");
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "shippingmethods?" + userdata.get("shippingmethod"),
 								"Major Ship Method href");
 						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
-						if (userdata.get("version").equals("v5-test/")) {
+						if (userdata.get("version").equals("v5a-test/")) {
 							JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText()
 									.toString()
 									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
@@ -1009,7 +1009,7 @@ public class SummaryPage extends SuperTestNG {
 									userdata.get("phone"), "Major Ship Phone");
 
 							Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.shippingMethod.href"),
-									"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 											+ userdata.get("shippingmethod"),
 									"Major Ship Method href");
 							if (Market == "Puerto Rico") {
@@ -1159,7 +1159,7 @@ public class SummaryPage extends SuperTestNG {
 										new JsonPath(OrdersResponse.toString())
 												.get("data.customer.autoorders.items.lines.items.item.href").toString()
 												.replace("[", "").replace("]", ""),
-										"https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+										"https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 												+ userdata.get("aritemcode"),
 										"Major AR Pack href");
 
@@ -1217,7 +1217,7 @@ public class SummaryPage extends SuperTestNG {
 										new JsonPath(OrdersResponse.toString())
 												.get("data.customer.autoorders.items.shippingMethod.href").toString()
 												.replace("[", "").replace("]", ""),
-										"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+										"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 												+ userdata.get("shippingmethod"),
 										"Major AR Ship Method href");
 
@@ -1360,7 +1360,7 @@ public class SummaryPage extends SuperTestNG {
 								"Major Request email");
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("enroller.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("enroller.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "customers?id.unicity=" + userdata.get("enroller"),
 								"Major Enroller href");
 
@@ -1407,7 +1407,7 @@ public class SummaryPage extends SuperTestNG {
 						}
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("sponsor.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("sponsor.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "customers?id.unicity=" + userdata.get("sponsor"),
 								"Major sponsor href");
 
@@ -1727,14 +1727,14 @@ public class SummaryPage extends SuperTestNG {
 									new JsonPath(Orders.toString())
 											.get("customer.autoorders.items.lines.items.item.href").toString()
 											.replace("[", "").replace("]", ""),
-									"https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 											+ userdata.get("aritemcode"),
 									"Major AR Pack href");
 
 							Assert.assertEquals(
 									new JsonPath(Orders.toString()).get("customer.autoorders.items.shippingMethod.href")
 											.toString().replace("[", "").replace("]", ""),
-									"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 											+ userdata.get("shippingmethod"),
 									"Major AR Ship Method href");
 
@@ -1820,11 +1820,11 @@ public class SummaryPage extends SuperTestNG {
 								"Major Customer Type");
 
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
-								"https://hydra.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
 										+ userdata.get("sponsor"),
 								"Major Sponsor href");
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
-								"https://hydra.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
 										+ userdata.get("enroller"),
 								"Major Enroller href");
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.homePhone"),
@@ -1856,13 +1856,13 @@ public class SummaryPage extends SuperTestNG {
 								userdata.get("address1"), "Major Ship Address");
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "shippingmethods?" + userdata.get("shippingmethod"),
 								"Major Ship Method href");
 						childtest.log(LogStatus.INFO, "Orders",
 								"<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
-						if (userdata.get("version").equals("v5-test/")) {
+						if (userdata.get("version").equals("v5a-test/")) {
 							JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText()
 									.toString()
 									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
@@ -1907,7 +1907,7 @@ public class SummaryPage extends SuperTestNG {
 									userdata.get("phone"), "Major Ship Phone");
 
 							Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.shippingMethod.href"),
-									"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 											+ userdata.get("shippingmethod"),
 									"Major Ship Method href");
 							if (Market == "Puerto Rico") {
@@ -2002,7 +2002,7 @@ public class SummaryPage extends SuperTestNG {
 										new JsonPath(OrdersResponse.toString())
 												.get("data.customer.autoorders.items.lines.items.item.href").toString()
 												.replace("[", "").replace("]", ""),
-										"https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+										"https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 												+ userdata.get("aritemcode"),
 										"Major AR Pack href");
 
@@ -2060,7 +2060,7 @@ public class SummaryPage extends SuperTestNG {
 										new JsonPath(OrdersResponse.toString())
 												.get("data.customer.autoorders.items.shippingMethod.href").toString()
 												.replace("[", "").replace("]", ""),
-										"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+										"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 												+ userdata.get("shippingmethod"),
 										"Major AR Ship Method href");
 
@@ -2165,7 +2165,7 @@ public class SummaryPage extends SuperTestNG {
 		}
 
 		if (Market == "Canada" || Market == "United States") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_us", language),
+			Assert.assertEquals(Labels.toString(), getTranslation("summary_getfit", language),
 					"Minor Summary Labels is Displaying");
 		}
 
@@ -2277,14 +2277,14 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(
 								new JsonPath(Orders.toString()).get("customer.autoorders.items.lines.items.item.href")
 										.toString().replace("[", "").replace("]", ""),
-								"https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 										+ userdata.get("aritemcode"),
 								"Major AR Pack href");
 
 						Assert.assertEquals(
 								new JsonPath(Orders.toString()).get("customer.autoorders.items.shippingMethod.href")
 										.toString().replace("[", "").replace("]", ""),
-								"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 										+ userdata.get("shippingmethod"),
 								"Major AR Ship Method href");
 
@@ -2354,11 +2354,11 @@ public class SummaryPage extends SuperTestNG {
 								"Major Customer Type");
 
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
-								"https://hydra.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
 										+ userdata.get("sponsor"),
 								"Major Sponsor href");
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
-								"https://hydra.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
 										+ userdata.get("enroller"),
 								"Major Enroller href");
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.homePhone"),
@@ -2426,12 +2426,12 @@ public class SummaryPage extends SuperTestNG {
 								userdata.get("address1"), "Major Ship Address");
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "shippingmethods?" + userdata.get("shippingmethod"),
 								"Major Ship Method href");
 						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
-						if (userdata.get("version").equals("v5-test/")) {
+						if (userdata.get("version").equals("v5a-test/")) {
 							JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText()
 									.toString()
 									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
@@ -2468,7 +2468,7 @@ public class SummaryPage extends SuperTestNG {
 									userdata.get("phone"), "Major Ship Phone");
 
 							Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.shippingMethod.href"),
-									"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 											+ userdata.get("shippingmethod"),
 									"Major Ship Method href");
 
@@ -2588,7 +2588,7 @@ public class SummaryPage extends SuperTestNG {
 									new JsonPath(OrdersResponse.toString())
 											.get("data.customer.autoorders.items.lines.items.item.href").toString()
 											.replace("[", "").replace("]", ""),
-									"https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 											+ userdata.get("aritemcode"),
 									"Major AR Pack href");
 
@@ -2638,7 +2638,7 @@ public class SummaryPage extends SuperTestNG {
 									new JsonPath(OrdersResponse.toString())
 											.get("data.customer.autoorders.items.shippingMethod.href").toString()
 											.replace("[", "").replace("]", ""),
-									"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 											+ userdata.get("shippingmethod"),
 									"Major AR Ship Method href");
 
@@ -2713,7 +2713,7 @@ public class SummaryPage extends SuperTestNG {
 								"Major Request email");
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("enroller.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("enroller.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "customers?id.unicity=" + userdata.get("enroller"),
 								"Major Enroller href");
 
@@ -2760,7 +2760,7 @@ public class SummaryPage extends SuperTestNG {
 						}
 
 						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("sponsor.href"), "https://hydra.unicity.net/"
+								new JsonPath(Orders.toString()).get("sponsor.href"), "https://hydraqa.unicity.net/"
 										+ userdata.get("version") + "customers?id.unicity=" + userdata.get("sponsor"),
 								"Major sponsor href");
 

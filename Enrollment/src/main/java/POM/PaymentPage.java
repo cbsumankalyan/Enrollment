@@ -708,13 +708,13 @@ public class PaymentPage extends SuperTestNG {
 											"Major OrderTerms.js URL");
 									if (userdata.get("testcase") == "getfit") {
 										Assert.assertEquals(
-												"https://hydra.unicity.net/" + userdata.get("version")
+												"https://hydraqa.unicity.net/" + userdata.get("version")
 														+ "customers?type=" + "Associate",
 												new JsonPath(OrderTerms.toString()).get("order.customer.href"),
 												"Major Customer Typeqqq");
 									} else {
 										Assert.assertEquals(
-												"https://hydra.unicity.net/" + userdata.get("version")
+												"https://hydraqa.unicity.net/" + userdata.get("version")
 														+ "customers?type=" + userdata.get("type"),
 												new JsonPath(OrderTerms.toString()).get("order.customer.href"),
 												"Major Customer Typewww");
@@ -744,7 +744,7 @@ public class PaymentPage extends SuperTestNG {
 									}
 
 									Assert.assertEquals(
-											"https://hydra.unicity.net/" + userdata.get("version") + "shippingmethods?"
+											"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 													+ userdata.get("shippingmethod"),
 											new JsonPath(OrderTerms.toString()).get("order.shippingMethod.href"),
 											"Major ShipMethod URL");
@@ -769,13 +769,13 @@ public class PaymentPage extends SuperTestNG {
 													"Major OrderTerms.js URL");
 											if (userdata.get("testcase") == "getfit") {
 												Assert.assertEquals(
-														"https://hydra.unicity.net/" + userdata.get("version")
+														"https://hydraqa.unicity.net/" + userdata.get("version")
 																+ "customers?type=" + "GetFit",
 														new JsonPath(OrderTerms.toString()).get("order.customer.href"),
 														"Major Customer Type");
 											} else {
 												Assert.assertEquals(
-														"https://hydra.unicity.net/" + userdata.get("version")
+														"https://hydraqa.unicity.net/" + userdata.get("version")
 																+ "customers?type=" + userdata.get("type"),
 														new JsonPath(OrderTerms.toString()).get("order.customer.href"),
 														"Major Customer Type");
@@ -794,7 +794,7 @@ public class PaymentPage extends SuperTestNG {
 													.get("order.shipToAddress.country"), "Major Ship Country");
 
 											Assert.assertEquals(
-													"https://hydra.unicity.net/" + userdata.get("version")
+													"https://hydraqa.unicity.net/" + userdata.get("version")
 															+ "shippingmethods?" + userdata.get("shippingmethod"),
 													new JsonPath(OrderTerms.toString())
 															.get("order.shippingMethod.href"),
@@ -816,13 +816,13 @@ public class PaymentPage extends SuperTestNG {
 												"Major OrderTerms.js URL");
 										if (userdata.get("testcase") == "getfit") {
 											Assert.assertEquals(
-													"https://hydra.unicity.net/" + userdata.get("version")
+													"https://hydraqa.unicity.net/" + userdata.get("version")
 															+ "customers?type=" + "Associate",
 													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
 													"Major Customer Typeeeee");
 										} else {
 											Assert.assertEquals(
-													"https://hydra.unicity.net/" + userdata.get("version")
+													"https://hydraqa.unicity.net/" + userdata.get("version")
 															+ "customers?type=" + userdata.get("type"),
 													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
 													"Major Customer Typerrrr");
@@ -848,7 +848,7 @@ public class PaymentPage extends SuperTestNG {
 
 										} else {
 											Assert.assertEquals(
-													"https://hydra.unicity.net/" + userdata.get("version")
+													"https://hydraqa.unicity.net/" + userdata.get("version")
 															+ "shippingmethods?" + userdata.get("shippingmethod"),
 													new JsonPath(OrderTerms.toString())
 															.get("order.shippingMethod.href"),
@@ -926,7 +926,7 @@ public class PaymentPage extends SuperTestNG {
 				} catch (Exception e) {
 					Assert.fail("Critical Suggested Address Pop up");
 				}
-
+				Thread.sleep(10000);
 				try {
 					Boolean error = Error.isDisplayed();
 					if (error == true) {

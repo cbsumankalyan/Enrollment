@@ -679,7 +679,7 @@ public class InitialOrderPage extends SuperTestNG {
 						 */
 
 						for (int i = 0; i < ItemCode.size(); i++) {
-							packs.add("https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+							packs.add("https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 									+ ItemCode.get(i).getText().replace("#", ""));
 							Itemcode.add(ItemCode.get(i).getText().replace("#", ""));
 						}
@@ -906,7 +906,7 @@ public class InitialOrderPage extends SuperTestNG {
 				 */
 
 				for (int i = 0; i < ItemCode.size(); i++) {
-					packs.add("https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+					packs.add("https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 							+ ItemCode.get(i).getText().replace("#", ""));
 					Itemcode.add(ItemCode.get(i).getText().replace("#", ""));
 				}
@@ -1006,10 +1006,10 @@ public class InitialOrderPage extends SuperTestNG {
 
 			if (ItemCode.get(i).getText().isEmpty()) {
 				Itemcode.add(ItemCode.get(i).getText().replace("", "30738"));
-				packs.add("https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity=" + "30738");
+				packs.add("https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity=" + "30738");
 			} else {
 				Itemcode.add(ItemCode.get(i).getText().replace("#", ""));
-				packs.add("https://hydra.unicity.net/" + userdata.get("version") + "items?id.unicity="
+				packs.add("https://hydraqa.unicity.net/" + userdata.get("version") + "items?id.unicity="
 						+ ItemCode.get(i).getText().replace("#", ""));
 			}
 		}

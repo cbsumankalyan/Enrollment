@@ -1,184 +1,177 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 76, Failures: 45, Errors: 0, Skipped: 0, Time elapsed: 16,961.309 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 46.968 s  <<< FAILURE!
+Tests run: 77, Failures: 39, Errors: 0, Skipped: 0, Time elapsed: 17,852.469 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 46.701 s  <<< FAILURE!
 java.lang.AssertionError: Critical Packs not returning from Quotes Call
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 320.557 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Number expected [true] but found [false]
+Enroll(Tests.FranchisePartner)  Time elapsed: 291.791 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 314.207 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Number expected [true] but found [false]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 212.377 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
+Enroll(Tests.FranchisePartner)  Time elapsed: 157.704 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: caeadfec76dc85bf747c9027c05f846f
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 205.205 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 204.085 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 207.659 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 213.727 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 211.602 s  <<< FAILURE!
 java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 214.071 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 199.683 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 191.216 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [68] but found [67]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 212.151 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 230.523 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: d71d44682bc89c1106408f8cd68b0ff0
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 211.082 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [64] but found [63]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 244.091 s  <<< FAILURE!
-java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [60] but found [59]
+Enroll(Tests.FranchisePartner)  Time elapsed: 245.066 s  <<< FAILURE!
+java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [59] but found [58]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 217.937 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 45.709 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 45.646 s  <<< FAILURE!
 java.lang.AssertionError: Critical Packs not returning from Quotes Call
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 181.416 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.635 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [NO] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 141.345 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informacje o karcie kredytowej, Adres do rachunku/g?ówny, Adres korespondencyjny, Metoda wysy?ki]] but found [[Ustawienia Zg?oszenia, O Tobie, Wspó?zg?aszaj?cy/Wspó?ma??onek (opcjonalnie), Typ p?atno?ci prowizji, Twoje Unicity Office, ]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 241.198 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+Enroll(Tests.FranchisePartner)  Time elapsed: 191.825 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [PL] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 245.515 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+Enroll(Tests.FranchisePartner)  Time elapsed: 237.161 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 218.072 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
+Enroll(Tests.FranchisePartner)  Time elapsed: 156.243 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:263)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 237.444 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 214.983 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [UA] but found [null]
+Enroll(Tests.FranchisePartner)  Time elapsed: 312.858 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 187.523 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [UA] but found [null]
+Enroll(Tests.FranchisePartner)  Time elapsed: 273.232 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 310.436 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [GB] but found [null]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 282.901 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 218.611 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 276.689 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 205.936 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 239.729 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 148.139 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 171.95 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 168.396 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 168.455 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 166.923 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 144.408 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 156.935 s  <<< FAILURE!
 java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 146.304 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 198.369 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.827 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 179.781 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 175.855 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 150.986 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 223.627 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.237 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 203.042 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 81.36 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.Fit.GetFit(Fit.java:69)
+GetFit(Tests.Fit)  Time elapsed: 115.152 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-solicitante, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, Resumen]] but found [[GetFit Resumen, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, GF21 Entrenador]]
+	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 89.983 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 88.452 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 89.902 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 89.162 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[GetFit Summary, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, GetFit21 Coach]]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 87.29 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.Fit.GetFit(Fit.java:69)
+GetFit(Tests.Fit)  Time elapsed: 122.825 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
+	at Tests.Fit.GetFit(Fit.java:70)
 
-Patient(Tests.PatientPortal)  Time elapsed: 140.58 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
-
-Patient(Tests.PatientPortal)  Time elapsed: 131.646 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
-
-Patient(Tests.PatientPortal)  Time elapsed: 168.584 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
+Patient(Tests.PatientPortal)  Time elapsed: 217.303 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 143.541 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 224.915 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+Patient(Tests.PatientPortal)  Time elapsed: 141.763 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+Patient(Tests.PatientPortal)  Time elapsed: 141.66 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 128.424 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:67)
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 200.084 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 127.514 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:67)
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 195.019 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 154.971 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 154.227 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.723 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.493 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
+
+afterSuite(Tests.FranchisePartner)  Time elapsed: 140.02 s  <<< FAILURE!
+javax.mail.AuthenticationFailedException: 
+535 Authentication Credentials Invalid
+
 

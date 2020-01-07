@@ -677,7 +677,7 @@ public class AccountSetupPage extends SuperTestNG {
 							+ "customers.js?callback=angular.callbacks._1&expand=customer,profilePicture&id.unicity="
 							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
 					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
-							.contains("hydra.unicity.net"), "Major Customer Hydra");
+							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
 					childtest.log(LogStatus.INFO, "Enroller",
 							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
 				}
@@ -1212,7 +1212,7 @@ public class AccountSetupPage extends SuperTestNG {
 							+ "customers.js?callback=angular.callbacks._1&expand=customer,profilePicture&id.unicity="
 							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
 					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
-							.contains("hydra.unicity.net"), "Major Customer Hydra");
+							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
 					childtest.log(LogStatus.INFO, "Enroller",
 							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
 				}
@@ -1358,7 +1358,7 @@ public class AccountSetupPage extends SuperTestNG {
 							+ "customers.js?callback=angular.callbacks._1&expand=customer,profilePicture&id.unicity="
 							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
 					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
-							.contains("hydra.unicity.net"), "Major Customer Hydra");
+							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
 					childtest.log(LogStatus.INFO, "Enroller",
 							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
 				}

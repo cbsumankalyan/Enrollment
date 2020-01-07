@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/45/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>38/38/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 01 13:40:11 MST 2020</td>
+<td>Started on:</td><td>Mon Jan 06 13:40:12 MST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>16953 seconds (16953888 ms)</td>
+<tr><td>Total time:</td><td>17848 seconds (17848860 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 	at POM.InitialOrderPage.Packs(InitialOrderPage.java:298)
 	at Pages.InitialOrder.PacksChecking(InitialOrder.java:10)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898167916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1898167916'><pre>java.lang.AssertionError: Critical Packs not returning from Quotes Call
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2007149130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2007149130'><pre>java.lang.AssertionError: Critical Packs not returning from Quotes Call
 	at org.testng.Assert.fail(Assert.java:96)
 	at POM.InitialOrderPage.Packs(InitialOrderPage.java:298)
 	at Pages.InitialOrder.PacksChecking(InitialOrder.java:10)
@@ -119,109 +119,21 @@ function toggleAllBoxes() {
 <td>46</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Austria, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major AR Number expected [true] but found [false]
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1303)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886386381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace886386381'><pre>java.lang.AssertionError: Major AR Number expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1303)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>320</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Austria, Deutsch, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major AR Number expected [true] but found [false]
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1303)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173783788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace173783788'><pre>java.lang.AssertionError: Major AR Number expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1303)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>314</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Bahamas, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1870234754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1870234754'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1070619454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1070619454'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -252,23 +164,61 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>212</td>
+<td>291</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Canada, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2032479363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2032479363'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: caeadfec76dc85bf747c9027c05f846f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:128)
+	at POM.PaymentPage.ShippingDetails(PaymentPage.java:685)
+	at Pages.Payment.PaymentDetails(Payment.java:15)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1897292616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1897292616'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: caeadfec76dc85bf747c9027c05f846f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:128)
+	at POM.PaymentPage.ShippingDetails(PaymentPage.java:685)
+	at Pages.Payment.PaymentDetails(Payment.java:15)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -299,7 +249,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>205</td>
+<td>157</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Canada, Français, Pack</td>
@@ -307,8 +257,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace953150707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace953150707'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace803152631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace803152631'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -346,7 +296,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>207</td>
+<td>204</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Colombia, Español, Pack</td>
@@ -354,8 +304,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:840)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345099628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345099628'><pre>java.lang.AssertionError: Major zip code expected [null] but found []
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1979980170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1979980170'><pre>java.lang.AssertionError: Major zip code expected [null] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -393,51 +343,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>213</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Dominican Republic, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1635892298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1635892298'><pre>java.lang.AssertionError: Critical Back end error
-	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>214</td>
+<td>211</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: France, Français, Pack</td>
@@ -445,8 +351,8 @@ function toggleAllBoxes() {
 	at POM.AutoRefillPage.AutoRefill(AutoRefillPage.java:156)
 	at Pages.AutoRefill.ARPacks(AutoRefill.java:8)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890181798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace890181798'><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [68] but found [67]
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace414205222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace414205222'><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [68] but found [67]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -486,7 +392,64 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>199</td>
+<td>191</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: France, English, Pack</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src=&apos;assets/img/ajax-loader.gif&apos;])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: d71d44682bc89c1106408f8cd68b0ff0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at POM.InitialOrderPage.Packs(InitialOrderPage.java:257)
+	at Pages.InitialOrder.PacksChecking(InitialOrder.java:10)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace594531345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594531345'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src=&apos;assets/img/ajax-loader.gif&apos;])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: d71d44682bc89c1106408f8cd68b0ff0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at POM.InitialOrderPage.Packs(InitialOrderPage.java:257)
+	at Pages.InitialOrder.PacksChecking(InitialOrder.java:10)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>230</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Hungary, Hungarian, Pack</td>
@@ -494,8 +457,8 @@ function toggleAllBoxes() {
 	at POM.AutoRefillPage.AutoRefill(AutoRefillPage.java:156)
 	at Pages.AutoRefill.ARPacks(AutoRefill.java:8)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1782473530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1782473530'><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [64] but found [63]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace170899621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace170899621'><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [64] but found [63]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -534,16 +497,16 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>212</td>
+<td>211</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Italy, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [60] but found [59]
+<td><div><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [59] but found [58]
 	at POM.AutoRefillPage.AutoRefill(AutoRefillPage.java:156)
 	at Pages.AutoRefill.ARPacks(AutoRefill.java:8)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104492563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1104492563'><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [60] but found [59]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace571435580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace571435580'><pre>java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don&apos;t have the same size expected [59] but found [58]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -582,50 +545,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>244</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Jamaica, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1090329208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1090329208'><pre>java.lang.AssertionError: Critical Back end error
-	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>217</td>
+<td>245</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: New Zealand, English, Pack</td>
@@ -633,8 +553,8 @@ function toggleAllBoxes() {
 	at POM.InitialOrderPage.Packs(InitialOrderPage.java:298)
 	at Pages.InitialOrder.PacksChecking(InitialOrder.java:10)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598529374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace598529374'><pre>java.lang.AssertionError: Critical Packs not returning from Quotes Call
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730468823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace730468823'><pre>java.lang.AssertionError: Critical Packs not returning from Quotes Call
 	at org.testng.Assert.fail(Assert.java:96)
 	at POM.InitialOrderPage.Packs(InitialOrderPage.java:298)
 	at Pages.InitialOrder.PacksChecking(InitialOrder.java:10)
@@ -671,13 +591,13 @@ function toggleAllBoxes() {
 <td>45</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Norway, Norwegian, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Norway, English, Pack</td>
 <td><div><pre>java.lang.AssertionError: Major Market expected [NO] but found [null]
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082991407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2082991407'><pre>java.lang.AssertionError: Major Market expected [NO] but found [null]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1021710315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1021710315'><pre>java.lang.AssertionError: Major Market expected [NO] but found [null]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -714,24 +634,23 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>181</td>
+<td>177</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Poland, Polish, Pack</td>
-<td><div><pre>java.lang.AssertionError: Minor Labels expected [[Informacje o karcie kredytowej, Adres do rachunku/g?ówny, Adres korespondencyjny, Metoda wysy?ki]] but found [[Ustawienia Zg?oszenia, O Tobie, Wspó?zg?aszaj?cy/Wspó?ma??onek (opcjonalnie), Typ p?atno?ci prowizji, Twoje Unicity Office, ]]
-	at POM.PaymentPage.PaymentDetails(PaymentPage.java:176)
-	at Pages.Payment.PaymentDetails(Payment.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874981433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace874981433'><pre>java.lang.AssertionError: Minor Labels expected [[Informacje o karcie kredytowej, Adres do rachunku/g?ówny, Adres korespondencyjny, Metoda wysy?ki]] but found [[Ustawienia Zg?oszenia, O Tobie, Wspó?zg?aszaj?cy/Wspó?ma??onek (opcjonalnie), Typ p?atno?ci prowizji, Twoje Unicity Office, ]]
+<td><div><pre>java.lang.AssertionError: Major Market expected [PL] but found [null]
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658944460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658944460'><pre>java.lang.AssertionError: Major Market expected [PL] but found [null]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at POM.PaymentPage.PaymentDetails(PaymentPage.java:176)
-	at Pages.Payment.PaymentDetails(Payment.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
@@ -761,16 +680,16 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>141</td>
+<td>191</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Puerto Rico, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace100188953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace100188953'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1754599205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1754599205'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -779,139 +698,6 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>241</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Puerto Rico, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1910056071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1910056071'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>245</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: United States, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace673111915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace673111915'><pre>java.lang.AssertionError: Critical Back end error
-	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>218</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: United States, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1115116160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1115116160'><pre>java.lang.AssertionError: Critical Back end error
-	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
 	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
@@ -944,20 +730,18 @@ function toggleAllBoxes() {
 <td>237</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Ukraine, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Market expected [UA] but found [null]
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1965870816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1965870816'><pre>java.lang.AssertionError: Major Market expected [UA] but found [null]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
-	at Pages.Summary.SummaryDetails(Summary.java:14)
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Puerto Rico, English, Pack</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at POM.AccountSetupPage.AccountDetails(AccountSetupPage.java:675)
+	at Pages.Account.PersonalDetails(Account.java:13)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:263)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122352816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122352816'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at POM.AccountSetupPage.AccountDetails(AccountSetupPage.java:675)
+	at Pages.Account.PersonalDetails(Account.java:13)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:263)
 	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
@@ -987,21 +771,22 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>214</td>
+<td>156</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Ukraine, ???????, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Market expected [UA] but found [null]
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: United States, English, Pack</td>
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace453047898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace453047898'><pre>java.lang.AssertionError: Major Market expected [UA] but found [null]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319863178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319863178'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
@@ -1033,21 +818,22 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>187</td>
+<td>312</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: United Kingdom, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Market expected [GB] but found [null]
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: United States, Español, Pack</td>
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace623102330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace623102330'><pre>java.lang.AssertionError: Major Market expected [GB] but found [null]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1383664466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1383664466'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
@@ -1079,20 +865,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>310</td>
+<td>273</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Bahamas, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927554902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace927554902'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace870241380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace870241380'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1123,7 +913,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>148</td>
+<td>239</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Canada, English, Pack</td>
@@ -1131,55 +921,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
 	at Pages.Summary.PCSummaryDetails(Summary.java:19)
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1706512519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1706512519'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
-	at Pages.Summary.PCSummaryDetails(Summary.java:19)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>171</td>
-<td>Tests.PrefferedCustomer@d8355a8</td></tr>
-<tr>
-<td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Canada, Français, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
-	at Pages.Summary.PCSummaryDetails(Summary.java:19)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767769133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace767769133'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1151352293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1151352293'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -1220,13 +963,60 @@ function toggleAllBoxes() {
 <td>168</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
+<td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Canada, Français, Pack</td>
+<td><div><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2005400801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2005400801'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>166</td>
+<td>Tests.PrefferedCustomer@d8355a8</td></tr>
+<tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Colombia, Español, Pack</td>
 <td><div><pre>java.lang.AssertionError: Major zip code expected [null] but found []
 	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1791)
 	at Pages.Summary.PCSummaryDetails(Summary.java:19)
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1251604965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1251604965'><pre>java.lang.AssertionError: Major zip code expected [null] but found []
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2053162033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2053162033'><pre>java.lang.AssertionError: Major zip code expected [null] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -1264,60 +1054,16 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>144</td>
-<td>Tests.PrefferedCustomer@d8355a8</td></tr>
-<tr>
-<td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Dominican Republic, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace46300726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace46300726'><pre>java.lang.AssertionError: Critical Back end error
-	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>146</td>
+<td>156</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Puerto Rico, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
 	at Pages.Summary.PCSummaryDetails(Summary.java:19)
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2113719282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2113719282'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace145332617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace145332617'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -1356,16 +1102,16 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>198</td>
+<td>176</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Puerto Rico, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
 	at Pages.Summary.PCSummaryDetails(Summary.java:19)
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1256298790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1256298790'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydra.unicity.net/v5-test/items?id.unicity=26580] but found []
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96714981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace96714981'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -1404,20 +1150,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>179</td>
+<td>175</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: United States, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace934118448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace934118448'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace623446933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace623446933'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1448,20 +1198,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>150</td>
+<td>223</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: United States, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1940080616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1940080616'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1361655888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1361655888'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1492,20 +1246,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>140</td>
+<td>203</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.Fit.GetFit()'><b>GetFit</b><br>Test class: Tests.Fit<br>Parameters: United States, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace764692091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace764692091'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-solicitante, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, Resumen]] but found [[GetFit Resumen, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, GF21 Entrenador]]
+	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2168)
+	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
+	at Tests.Fit.GetFit(Fit.java:70)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1254951998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1254951998'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-solicitante, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, Resumen]] but found [[GetFit Resumen, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, GF21 Entrenador]]
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2168)
+	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
+	at Tests.Fit.GetFit(Fit.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1536,7 +1294,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>81</td>
+<td>115</td>
 <td>Tests.Fit@59fa1d9b</td></tr>
 <tr>
 <td title='Tests.Fit.GetFit()'><b>GetFit</b><br>Test class: Tests.Fit<br>Parameters: Canada, English, Pack</td>
@@ -1544,8 +1302,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2168)
 	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
 	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015305272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2015305272'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace669418422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace669418422'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -1584,7 +1342,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>89</td>
+<td>88</td>
 <td>Tests.Fit@59fa1d9b</td></tr>
 <tr>
 <td title='Tests.Fit.GetFit()'><b>GetFit</b><br>Test class: Tests.Fit<br>Parameters: Canada, Français, Pack</td>
@@ -1592,8 +1350,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2168)
 	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
 	at Tests.Fit.GetFit(Fit.java:70)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace942449949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace942449949'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[GetFit Summary, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, GetFit21 Coach]]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179189260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace179189260'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[GetFit Summary, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, GetFit21 Coach]]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -1636,16 +1394,20 @@ function toggleAllBoxes() {
 <td>Tests.Fit@59fa1d9b</td></tr>
 <tr>
 <td title='Tests.Fit.GetFit()'><b>GetFit</b><br>Test class: Tests.Fit<br>Parameters: United States, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1973434159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1973434159'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
+	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2168)
+	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
+	at Tests.Fit.GetFit(Fit.java:70)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace474455174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace474455174'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.Fit.GetFit(Fit.java:69)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.GetFitOrderSubmit(SummaryPage.java:2168)
+	at Pages.Summary.GetFitSummaryDetails(Summary.java:24)
+	at Tests.Fit.GetFit(Fit.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1676,20 +1438,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>87</td>
+<td>122</td>
 <td>Tests.Fit@59fa1d9b</td></tr>
 <tr>
 <td title='Tests.ReferralIDPassing.PassReferralID()'><b>PassReferralID</b><br>Test class: Tests.ReferralIDPassing<br>Parameters: United States, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace178406933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace178406933'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889137816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1889137816'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1720,20 +1486,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>218</td>
+<td>282</td>
 <td>Tests.ReferralIDPassing@46d56d67</td></tr>
 <tr>
 <td title='Tests.ReferralIDPassing.PassReferralID()'><b>PassReferralID</b><br>Test class: Tests.ReferralIDPassing<br>Parameters: United States, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace360654923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace360654923'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace147345336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace147345336'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1764,20 +1534,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>205</td>
+<td>276</td>
 <td>Tests.ReferralIDPassing@46d56d67</td></tr>
 <tr>
 <td title='Tests.HealthCareProducts.PassReferralID()'><b>PassReferralID</b><br>Test class: Tests.HealthCareProducts<br>Parameters: United States, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:67)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace206227227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace206227227'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1158280207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1158280207'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:67)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1808,20 +1582,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>128</td>
+<td>200</td>
 <td>Tests.HealthCareProducts@4501b7af</td></tr>
 <tr>
 <td title='Tests.HealthCareProducts.PassReferralID()'><b>PassReferralID</b><br>Test class: Tests.HealthCareProducts<br>Parameters: United States, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:67)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137295541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1137295541'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997266310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997266310'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:67)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.OrderSubmit(SummaryPage.java:1158)
+	at Pages.Summary.SummaryDetails(Summary.java:14)
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1852,7 +1630,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>127</td>
+<td>195</td>
 <td>Tests.HealthCareProducts@4501b7af</td></tr>
 <tr>
 <td title='Tests.HealthCareProducts.PassReferralID()'><b>PassReferralID</b><br>Test class: Tests.HealthCareProducts<br>Parameters: Canada, English, Pack</td>
@@ -1860,8 +1638,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:977)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace952975668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace952975668'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace930985204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace930985204'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -1907,8 +1685,8 @@ function toggleAllBoxes() {
 	at POM.SummaryPage.OrderSubmit(SummaryPage.java:374)
 	at Pages.Summary.SummaryDetails(Summary.java:14)
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace565766536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace565766536'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, Résumé]]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace310164875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace310164875'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, Résumé]]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -1951,16 +1729,20 @@ function toggleAllBoxes() {
 <td>Tests.HealthCareProducts@4501b7af</td></tr>
 <tr>
 <td title='Tests.PatientPortal.Patient()'><b>Patient</b><br>Test class: Tests.PatientPortal<br>Parameters: United States, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798511191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace798511191'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977492232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977492232'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1991,20 +1773,24 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>140</td>
+<td>217</td>
 <td>Tests.PatientPortal@28d25987</td></tr>
 <tr>
 <td title='Tests.PatientPortal.Patient()'><b>Patient</b><br>Test class: Tests.PatientPortal<br>Parameters: United States, Español, Pack</td>
-<td><div><pre>java.lang.AssertionError: Critical Back end error
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213361931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1213361931'><pre>java.lang.AssertionError: Critical Back end error
+<td><div><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace370713433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370713433'><pre>java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
 	at org.testng.Assert.fail(Assert.java:96)
-	at POM.PaymentPage.ShippingDetails(PaymentPage.java:933)
-	at Pages.Payment.PaymentDetails(Payment.java:15)
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:2001)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2035,63 +1821,16 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>131</td>
+<td>224</td>
 <td>Tests.PatientPortal@28d25987</td></tr>
 <tr>
 <td title='Tests.PatientPortal.Patient()'><b>Patient</b><br>Test class: Tests.PatientPortal<br>Parameters: Canada, English, Pack</td>
-<td><div><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
-	at Pages.Summary.PCSummaryDetails(Summary.java:19)
-	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124947437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace124947437'><pre>java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1878)
-	at Pages.Summary.PCSummaryDetails(Summary.java:19)
-	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>168</td>
-<td>Tests.PatientPortal@28d25987</td></tr>
-<tr>
-<td title='Tests.PatientPortal.Patient()'><b>Patient</b><br>Test class: Tests.PatientPortal<br>Parameters: Canada, Français, Pack</td>
-<td><div><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, Résumé]]
+<td><div><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
 	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1548)
 	at Pages.Summary.PCSummaryDetails(Summary.java:19)
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1967798432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1967798432'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, Résumé]]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace240100370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace240100370'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -2130,7 +1869,55 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>143</td>
+<td>141</td>
+<td>Tests.PatientPortal@28d25987</td></tr>
+<tr>
+<td title='Tests.PatientPortal.Patient()'><b>Patient</b><br>Test class: Tests.PatientPortal<br>Parameters: Canada, Français, Pack</td>
+<td><div><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, Résumé]]
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1548)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638977766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638977766'><pre>java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d&apos;inscription, Paramètres d&apos;inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d&apos;expédition, Résumé]]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at POM.SummaryPage.PCOrderSubmit(SummaryPage.java:1548)
+	at Pages.Summary.PCSummaryDetails(Summary.java:19)
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>141</td>
 <td>Tests.PatientPortal@28d25987</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -2141,159 +1928,194 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Belgium, Français, Pack</td>
-<td></td>
-<td>325</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Belgium, Dutch, Pack</td>
-<td></td>
-<td>329</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Belgium, English, Pack</td>
-<td></td>
-<td>330</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Denmark, English, Pack</td>
-<td></td>
-<td>319</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Denmark, Danish, Pack</td>
-<td></td>
-<td>324</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: France, English, Pack</td>
-<td></td>
-<td>294</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Germany, Deutsch, Pack</td>
-<td></td>
-<td>329</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Germany, English, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Austria, English, Pack</td>
 <td></td>
 <td>322</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Hungary, English, Pack</td>
-<td></td>
-<td>316</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: India, English, NoPack</td>
-<td></td>
-<td>92</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Italy, Italiano, Pack</td>
-<td></td>
-<td>314</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Ireland, English, Pack</td>
-<td></td>
-<td>197</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Luxembourg, Français, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Austria, Deutsch, Pack</td>
 <td></td>
 <td>318</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Luxembourg, English, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Belgium, Français, Pack</td>
+<td></td>
+<td>320</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Belgium, Dutch, Pack</td>
+<td></td>
+<td>325</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Belgium, English, Pack</td>
+<td></td>
+<td>321</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Denmark, English, Pack</td>
+<td></td>
+<td>313</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Denmark, Danish, Pack</td>
+<td></td>
+<td>316</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Dominican Republic, Español, Pack</td>
+<td></td>
+<td>299</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Germany, Deutsch, Pack</td>
 <td></td>
 <td>317</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Luxembourg, Deutsch, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Germany, English, Pack</td>
 <td></td>
-<td>321</td>
+<td>320</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Mexico, Español, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Hungary, English, Pack</td>
 <td></td>
-<td>223</td>
+<td>309</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Netherlands, English, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: India, English, NoPack</td>
 <td></td>
-<td>321</td>
+<td>106</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Netherlands, Dutch, Pack</td>
-<td></td>
-<td>353</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Norway, English, Pack</td>
-<td></td>
-<td>192</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Norway, English, NoPack</td>
-<td></td>
-<td>108</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Poland, English, Pack</td>
-<td></td>
-<td>201</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Sweden, Svenska, Pack</td>
-<td></td>
-<td>278</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Sweden, English, Pack</td>
-<td></td>
-<td>254</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, Deutsch, Pack</td>
-<td></td>
-<td>283</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, English, Pack</td>
-<td></td>
-<td>281</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, Français, Pack</td>
-<td></td>
-<td>275</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, Italiano, Pack</td>
-<td></td>
-<td>277</td>
-<td>Tests.FranchisePartner@14acaea5</td></tr>
-<tr>
-<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Spain, English, Pack</td>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Italy, Italiano, Pack</td>
 <td></td>
 <td>308</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
 <tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Ireland, English, Pack</td>
+<td></td>
+<td>199</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Jamaica, English, Pack</td>
+<td></td>
+<td>333</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Luxembourg, Français, Pack</td>
+<td></td>
+<td>319</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Luxembourg, English, Pack</td>
+<td></td>
+<td>311</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Luxembourg, Deutsch, Pack</td>
+<td></td>
+<td>314</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Mexico, Español, Pack</td>
+<td></td>
+<td>220</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Netherlands, English, Pack</td>
+<td></td>
+<td>316</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Netherlands, Dutch, Pack</td>
+<td></td>
+<td>343</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Norway, English, NoPack</td>
+<td></td>
+<td>106</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Norway, Norwegian, Pack</td>
+<td></td>
+<td>197</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Poland, English, Pack</td>
+<td></td>
+<td>195</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Sweden, Svenska, Pack</td>
+<td></td>
+<td>271</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Sweden, English, Pack</td>
+<td></td>
+<td>270</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, Deutsch, Pack</td>
+<td></td>
+<td>274</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, English, Pack</td>
+<td></td>
+<td>271</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, Français, Pack</td>
+<td></td>
+<td>269</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Switzerland, Italiano, Pack</td>
+<td></td>
+<td>271</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Spain, English, Pack</td>
+<td></td>
+<td>299</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
 <td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Spain, Español, Pack</td>
 <td></td>
-<td>322</td>
+<td>316</td>
 <td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Ukraine, English, Pack</td>
+<td></td>
+<td>193</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: Ukraine, ???????, Pack</td>
+<td></td>
+<td>194</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.FranchisePartner.Enroll()'><b>Enroll</b><br>Test class: Tests.FranchisePartner<br>Parameters: United Kingdom, English, Pack</td>
+<td></td>
+<td>314</td>
+<td>Tests.FranchisePartner@14acaea5</td></tr>
+<tr>
+<td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Dominican Republic, Español, Pack</td>
+<td></td>
+<td>244</td>
+<td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.PrefferedCustomer.Enroll()'><b>Enroll</b><br>Test class: Tests.PrefferedCustomer<br>Parameters: Mexico, Español, Pack</td>
 <td></td>
-<td>174</td>
+<td>173</td>
 <td>Tests.PrefferedCustomer@d8355a8</td></tr>
 <tr>
 <td title='Tests.Fit.GetFit()'><b>GetFit</b><br>Test class: Tests.Fit<br>Parameters: United Kingdom, English, Pack</td>
 <td></td>
-<td>123</td>
+<td>119</td>
 <td>Tests.Fit@59fa1d9b</td></tr>
 </table><p>
 </body>
