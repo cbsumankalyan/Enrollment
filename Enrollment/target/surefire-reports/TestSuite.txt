@@ -1,176 +1,237 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 77, Failures: 39, Errors: 0, Skipped: 0, Time elapsed: 17,852.469 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 46.701 s  <<< FAILURE!
+Tests run: 77, Failures: 47, Errors: 0, Skipped: 0, Time elapsed: 17,902.706 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 46.547 s  <<< FAILURE!
 java.lang.AssertionError: Critical Packs not returning from Quotes Call
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 291.791 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 315.25 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 157.704 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.88)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: caeadfec76dc85bf747c9027c05f846f
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 204.085 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 205.108 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 211.602 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 206.669 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 212.129 s  <<< FAILURE!
 java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 191.216 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 309.373 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [DK] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 191.939 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [68] but found [67]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 230.523 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 210.971 s  <<< FAILURE!
+java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [64] but found [63]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 274.652 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Sommario Dell'Iscrizione, Impostazioni di Iscrizione, A proposito di te, Opzioni per il Pagamento della Commissione, Il tuo indirizzo di consegna, Il tuo indirizzo di fatturazione/indirizzo primario, Le tue informazioni di pagamento, Termini e Condizioni, Sommario]] but found [[Informazioni Della Carta di Credito, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione, Sommario]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 242.761 s  <<< FAILURE!
+java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [59] but found [58]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 306.037 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 185.234 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-solicitante, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, Resumen]] but found [[Opción de pago, Información de la tarjeta de Crédito / Débito, Dirección de facturación/correo, Dirección de envío, Método de envío, Resumen]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 317.24 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [NL] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 46.47 s  <<< FAILURE!
+java.lang.AssertionError: Critical Packs not returning from Quotes Call
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 200.791 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 236.239 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 214.241 s  <<< FAILURE!
+java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Enrollment Settings, About You, Co-Applicant - Spouse/Company (optional), Commission Payment Options, Your Unicity Office, ]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:264)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 240.43 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé de l'inscription, Enrollment Settings, A propos de vous, Co-demandeur conjoint / Société, Mode de paiement des commissions, Votre adresse de livraison, Votre adresse de facturation/Adresse principale, Vos informations de paiement, Conditions générales, Résumé]] but found [[Informations carte de crédit, Adresse de facturation, Adresse de livraison, Méthode de livraison, Résumé]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 230.762 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: d71d44682bc89c1106408f8cd68b0ff0
+Session ID: 19ce5660132ed459a8b09d756a3c593f
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 211.082 s  <<< FAILURE!
-java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [64] but found [63]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 245.066 s  <<< FAILURE!
-java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [59] but found [58]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:262)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 45.646 s  <<< FAILURE!
-java.lang.AssertionError: Critical Packs not returning from Quotes Call
+Enroll(Tests.FranchisePartner)  Time elapsed: 230.443 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: eb0127390e3f3ba3e225fbe8c4fc7a46
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 177.635 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [NO] but found [null]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 191.825 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [PL] but found [null]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 237.161 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 310.975 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 156.243 s  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:263)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 312.858 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 296.053 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 273.232 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
+Enroll(Tests.FranchisePartner)  Time elapsed: 183.931 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [UA] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
 
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 282.901 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 182.745 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [UA] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:265)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 292.627 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 276.689 s  <<< FAILURE!
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 272.875 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 239.729 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 238.118 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 168.396 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 143.173 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 171.244 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 166.923 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 156.935 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.446 s  <<< FAILURE!
 java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.827 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 178.924 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 175.855 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 180.523 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 223.627 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 220.336 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 203.042 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 235.86 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26580] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 115.152 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-solicitante, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, Resumen]] but found [[GetFit Resumen, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, GF21 Entrenador]]
+GetFit(Tests.Fit)  Time elapsed: 116.007 s  <<< FAILURE!
+java.lang.AssertionError: Account Type is Displaying expected [GetFit21 Coach] but found [GF21 Entrenador]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 88.452 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
+GetFit(Tests.Fit)  Time elapsed: 103.936 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@ng-model, 'fax')]"}
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: b4304f415086b698987d21987de06fbb
+*** Element info: {Using=xpath, value=//span[contains(@ng-model, 'fax')]}
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 89.162 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[GetFit Summary, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, GetFit21 Coach]]
+GetFit(Tests.Fit)  Time elapsed: 104.438 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@ng-model, 'fax')]"}
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: a14d682c833f559a105c58e6af1224a6
+*** Element info: {Using=xpath, value=//span[contains(@ng-model, 'fax')]}
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 122.825 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[GetFit Summary, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, GetFit21 Coach]]
+GetFit(Tests.Fit)  Time elapsed: 138.743 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@ng-model, 'fax')]"}
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: 398af6a683fc40633b34a1ffaa54f622
+*** Element info: {Using=xpath, value=//span[contains(@ng-model, 'fax')]}
 	at Tests.Fit.GetFit(Fit.java:70)
 
-Patient(Tests.PatientPortal)  Time elapsed: 217.303 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 234.622 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 224.915 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 188.64 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=26561] but found []
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 141.763 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 143.573 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 141.66 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 143.382 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 200.084 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 226.202 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 195.019 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 193.993 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Pack href expected [https://hydraqa.unicity.net/v5a-test/items?id.unicity=22888] but found []
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 154.227 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 153.163 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.493 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.225 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-afterSuite(Tests.FranchisePartner)  Time elapsed: 140.02 s  <<< FAILURE!
+afterSuite(Tests.FranchisePartner)  Time elapsed: 139.863 s  <<< FAILURE!
 javax.mail.AuthenticationFailedException: 
 535 Authentication Credentials Invalid
 

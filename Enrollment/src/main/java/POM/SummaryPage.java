@@ -955,9 +955,9 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("shipToAddress.address1"),
 								userdata.get("address1"), "Major Ship Address");
 
-						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydraqa.unicity.net/"
-										+ userdata.get("version") + "shippingmethods?" + userdata.get("shippingmethod"),
+						Assert.assertEquals(new JsonPath(Orders.toString()).get("shippingMethod.href"),
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
+										+ userdata.get("shippingmethod"),
 								"Major Ship Method href");
 						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
@@ -1855,9 +1855,9 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("shipToAddress.address1"),
 								userdata.get("address1"), "Major Ship Address");
 
-						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydraqa.unicity.net/"
-										+ userdata.get("version") + "shippingmethods?" + userdata.get("shippingmethod"),
+						Assert.assertEquals(new JsonPath(Orders.toString()).get("shippingMethod.href"),
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
+										+ userdata.get("shippingmethod"),
 								"Major Ship Method href");
 						childtest.log(LogStatus.INFO, "Orders",
 								"<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
@@ -2171,7 +2171,7 @@ public class SummaryPage extends SuperTestNG {
 
 		Assert.assertEquals(market.getText(), getTranslation(userdata.get("marketcode"), language),
 				"Major Market is Displaying");
-		Assert.assertEquals(Lan.getText(), "GetFit21 Coach", "Account Type is Displaying");
+		Assert.assertEquals(Lan.getText(), getTranslation("getfit_coach_21", language), "Account Type is Displaying");
 
 		Assert.assertEquals(Enroller.getText(), userdata.get("enroller"), "Major Enroller is Displaying");
 
@@ -2180,7 +2180,9 @@ public class SummaryPage extends SuperTestNG {
 		Assert.assertEquals(DOB.getText(), userdata.get("dob"), "Major Summary DOB");
 		Assert.assertEquals(Gender.getText(), userdata.get("genderoption"), "Major Summary Gender");
 
-		Assert.assertEquals(Fax.getText(), userdata.get("fax"), "Major Summary Fax");
+		if (!(Market == "United States" || Market == "Canada")) {
+			Assert.assertEquals(Fax.getText(), userdata.get("fax"), "Major Summary Fax");
+		}
 
 		Assert.assertEquals(Phone.getText(), userdata.get("phone"), "Major Summary Phone");
 
@@ -2201,11 +2203,13 @@ public class SummaryPage extends SuperTestNG {
 			}
 		}
 
-		if (userdata.get("commission") == "DD") {
-			Assert.assertEquals(IBAN.getText(), userdata.get("iban"), "Major IBAN");
-			Assert.assertEquals(AccountTitle.getText(), userdata.get("holder"), "Major Account Holder");
-			Assert.assertEquals(BankName.getText(), userdata.get("bankname"), "Major Bank Name");
-			Assert.assertEquals(BIC.getText(), userdata.get("bic"), "Major BIC");
+		if (!(Market == "United States" || Market == "Canada")) {
+			if (userdata.get("commission") == "DD") {
+				Assert.assertEquals(IBAN.getText(), userdata.get("iban"), "Major IBAN");
+				Assert.assertEquals(AccountTitle.getText(), userdata.get("holder"), "Major Account Holder");
+				Assert.assertEquals(BankName.getText(), userdata.get("bankname"), "Major Bank Name");
+				Assert.assertEquals(BIC.getText(), userdata.get("bic"), "Major BIC");
+			}
 		}
 
 		if (Market == "United Kingdom") {
@@ -2425,9 +2429,9 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("shipToAddress.address1"),
 								userdata.get("address1"), "Major Ship Address");
 
-						Assert.assertEquals(
-								new JsonPath(Orders.toString()).get("shippingMethod.href"), "https://hydraqa.unicity.net/"
-										+ userdata.get("version") + "shippingmethods?" + userdata.get("shippingmethod"),
+						Assert.assertEquals(new JsonPath(Orders.toString()).get("shippingMethod.href"),
+								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
+										+ userdata.get("shippingmethod"),
 								"Major Ship Method href");
 						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
