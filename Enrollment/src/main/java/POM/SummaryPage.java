@@ -2189,7 +2189,7 @@ public class SummaryPage extends SuperTestNG {
 		Assert.assertEquals(Email.getText(), userdata.get("email"), "Major Summary Email");
 
 		if (Market == "United States" || Market == "Canada") {
-			Assert.assertEquals(TermsandConditonsPDF.size(), 4, "Major Terms & Condition PDF's");
+			Assert.assertEquals(TermsandConditonsPDF.size(), 3, "Major Terms & Condition PDF's");
 			childtest.log(LogStatus.INFO, "Terms and Condtions PDF", Integer.toString(TermsandConditonsPDF.size()));
 		}
 
