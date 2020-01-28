@@ -2229,26 +2229,23 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(USShippingAddress1.getText(), userdata.get("address1"), "Major Shipping Address1");
 			Assert.assertEquals(USShippingZip.getText(), userdata.get("zip"), "Major Shipping Postal");
 			Assert.assertEquals(USShippingCity.getText(), userdata.get("city"), "Major Shipping City");
-			Assert.assertEquals(USShippingCountry.getText(), getTranslation(userdata.get("marketcode"), language),
-					"Major Shipping Country");
+			
 
 			Assert.assertEquals(USBillingAddress1.getText(), userdata.get("address1"), "Major Billing Address1");
 			Assert.assertEquals(USBillingZip.getText(), userdata.get("zip"), "Major Billing Postal");
 			Assert.assertEquals(USBillingCity.getText(), userdata.get("city"), "Major Billing City");
-			Assert.assertEquals(USBillingCountry.getText(), "United States", "Major Billing Country");
+			
 		}
 
 		if (Market == "Canada") {
 			Assert.assertEquals(USShippingAddress1.getText(), userdata.get("address1"), "Major Shipping Address1");
 			Assert.assertEquals(USShippingZip.getText(), userdata.get("zip"), "Major Shipping Postal");
 			Assert.assertEquals(USShippingCity.getText(), userdata.get("city"), "Major Shipping City");
-			Assert.assertEquals(USShippingCountry.getText(), getTranslation(userdata.get("marketcode"), language),
-					"Major Shipping Country");
 
 			Assert.assertEquals(USBillingAddress1.getText(), userdata.get("address1"), "Major Billing Address1");
 			Assert.assertEquals(USBillingZip.getText(), userdata.get("zip"), "Major Billing Postal");
 			Assert.assertEquals(USBillingCity.getText(), userdata.get("city"), "Major Billing City");
-			Assert.assertEquals(USBillingCountry.getText(), "Canada", "Major Billing Country");
+
 		}
 
 		Signature.sendKeys(sign);

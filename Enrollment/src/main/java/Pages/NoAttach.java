@@ -17,7 +17,7 @@ public class NoAttach extends SuperTestNG {
 	public static void Sendmail() throws Exception {
 
 		Properties prop = new Properties();
-		prop.put("mail.smtp.host", "email-smtp.us-east-1.amazonaws.com");
+		prop.put("mail.smtp.host", "smtp.gmail.com");
 		prop.put("mail.smtp.socketFactory.port", "465");
 		prop.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		prop.put("mail.smtp.auth", "true");
@@ -27,13 +27,13 @@ public class NoAttach extends SuperTestNG {
 		Session session = Session.getDefaultInstance(prop, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("AKIAYHBBEQ57PJWIGYVW",
-						"BGbq34mcvkOchnoSpLEEujAhnhBL4VDEKs1tjsi5ZFP/");
+				return new PasswordAuthentication("unicitytechindia@gmail.com",
+						"wrureljwqawaeysu");
 			}
 		});
 
 		Message message = new MimeMessage(session);
-		message.setFrom(new InternetAddress("unicitytechindia@unicity.com"));
+		message.setFrom(new InternetAddress("unicitytechindia@gmail.com"));
 //		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Manjunath.Shekhar@unicity.com"));
 		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Suman.CB@unicity.com"));
 		message.addRecipients(Message.RecipientType.CC, InternetAddress.parse("in-web-bangalore@unicity.com"));
