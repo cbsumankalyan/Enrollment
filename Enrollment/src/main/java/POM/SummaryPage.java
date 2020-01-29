@@ -2229,12 +2229,11 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(USShippingAddress1.getText(), userdata.get("address1"), "Major Shipping Address1");
 			Assert.assertEquals(USShippingZip.getText(), userdata.get("zip"), "Major Shipping Postal");
 			Assert.assertEquals(USShippingCity.getText(), userdata.get("city"), "Major Shipping City");
-			
 
 			Assert.assertEquals(USBillingAddress1.getText(), userdata.get("address1"), "Major Billing Address1");
 			Assert.assertEquals(USBillingZip.getText(), userdata.get("zip"), "Major Billing Postal");
 			Assert.assertEquals(USBillingCity.getText(), userdata.get("city"), "Major Billing City");
-			
+
 		}
 
 		if (Market == "Canada") {
@@ -2379,9 +2378,11 @@ public class SummaryPage extends SuperTestNG {
 							Assert.assertEquals(
 									new JsonPath(Orders.toString()).get("customer.businessEntity.companyName"),
 									userdata.get("coapplicant"), "Major Company Name");
-							Assert.assertEquals(
-									new JsonPath(Orders.toString()).get("customer.businessEntity.legalType"),
-									"Corporation", "Major Legal Type");
+							if (Market == "United Kingdom") {
+								Assert.assertEquals(
+										new JsonPath(Orders.toString()).get("customer.businessEntity.legalType"),
+										"Corporation", "Major Legal Type");
+							}
 						}
 
 						if (userdata.get("commission") == "DD") {
