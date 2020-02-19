@@ -873,14 +873,16 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.type"), userdata.get("type"),
 								"Major Customer Type");
 
-						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
-								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
-										+ userdata.get("sponsor"),
-								"Major Sponsor href");
-						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
-								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
-										+ userdata.get("enroller"),
-								"Major Enroller href");
+						if (userdata.get("referral") == "yes") {
+							Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+											+ userdata.get("sponsor"),
+									"Major Sponsor href");
+							Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+											+ userdata.get("enroller"),
+									"Major Enroller href");
+						}
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.homePhone"),
 								userdata.get("phone"), "Major Customer Phone");
 						if (Market == "Switzerland") {
@@ -1144,11 +1146,19 @@ public class SummaryPage extends SuperTestNG {
 										userdata.get("coapplicant"), "Major Customer Co-Applicant Type");
 							}
 							if (Market == "Mexico") {
-								Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.customer.status"),
-										"Pending", "Major Customer Status");
+								/*
+								 * Assert.assertEquals(new
+								 * JsonPath(OrdersResponse.toString()).get(
+								 * "data.customer.status"), "Pending",
+								 * "Major Customer Status");
+								 */
 							} else {
-								Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.customer.status"),
-										"Active", "Major Customer Status");
+								/*
+								 * Assert.assertEquals(new
+								 * JsonPath(OrdersResponse.toString()).get(
+								 * "data.customer.status"), "Active",
+								 * "Major Customer Status");
+								 */
 							}
 
 							if (!(Market == "Australia" || Market == "New Zealand" || Market == "Colombia"
@@ -1819,14 +1829,16 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.type"), userdata.get("type"),
 								"Major Customer Type");
 
-						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
-								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
-										+ userdata.get("sponsor"),
-								"Major Sponsor href");
-						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
-								"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
-										+ userdata.get("enroller"),
-								"Major Enroller href");
+						if (userdata.get("referral") == "yes") {
+							Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.sponsor.href"),
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+											+ userdata.get("sponsor"),
+									"Major Sponsor href");
+							Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.enroller.href"),
+									"https://hydraqa.unicity.net/" + userdata.get("version") + "customers?id.unicity="
+											+ userdata.get("enroller"),
+									"Major Enroller href");
+						}
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.homePhone"),
 								userdata.get("phone"), "Major Customer Phone");
 
@@ -1989,11 +2001,19 @@ public class SummaryPage extends SuperTestNG {
 									userdata.get("martial"), "Major Customer Martial");
 
 							if (Market == "Mexico") {
-								Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.customer.status"),
-										"Active", "Major Customer Status");
+								/*
+								 * Assert.assertEquals(new
+								 * JsonPath(OrdersResponse.toString()).get(
+								 * "data.customer.status"), "Active",
+								 * "Major Customer Status");
+								 */
 							} else {
-								Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.customer.status"),
-										"Active", "Major Customer Status");
+								/*
+								 * Assert.assertEquals(new
+								 * JsonPath(OrdersResponse.toString()).get(
+								 * "data.customer.status"), "Active",
+								 * "Major Customer Status");
+								 */
 							}
 
 							if (!(Market == "Colombia" || Market == "Dominican Republic" || Market == "Mexico")) {
@@ -2583,8 +2603,12 @@ public class SummaryPage extends SuperTestNG {
 										userdata.get("coapplicant"), "Major Customer Co-Applicant Type");
 							}
 
-							Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.customer.status"),
-									"Active", "Major Customer Status");
+							/*
+							 * Assert.assertEquals(new
+							 * JsonPath(OrdersResponse.toString()).get(
+							 * "data.customer.status"), "Active",
+							 * "Major Customer Status");
+							 */
 
 							Assert.assertEquals(
 									new JsonPath(OrdersResponse.toString())

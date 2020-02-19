@@ -1,4 +1,4 @@
-package Pages;
+﻿package Pages;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -49,11 +49,11 @@ public class SuperTestNG {
 
 	public static String hydra = "https://hydra.unicity.net/v5/";
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";
-	public static String url = "http://enroll.ng.unicityqa.com/api_version_updates/#/enroll/start";
-	public static String referralurl = "http://enroll.ng.unicityqa.com/api_version_updates/#/enroll/start/united-states/36554001";
-	public static String getfit = "http://enroll.ng.unicityqa.com/api_version_updates/#/enroll/getfit";
-	public static String patientportal = "http://enroll.ng.unicityqa.com/api_version_updates/#/enroll/unicity";
-	public static String hcpflow = "http://enroll.ng.unicityqa.com/api_version_updates/#/enroll/hcp";
+	public static String url = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/start";
+	public static String referralurl = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/start/united-states/36554001";
+	public static String getfit = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/getfit";
+	public static String patientportal = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/unicity";
+	public static String hcpflow = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/hcp";
 	// public static String url = "https://enroll.unicity.com/#/enroll/start";
 	// public static JavascriptExecutor jse = (JavascriptExecutor)driver;
 
@@ -225,11 +225,11 @@ public class SuperTestNG {
 			userdata.put("testcase", "hcp");
 		}
 		
-		if (url.contains("https://")) {
+		/*if (url.contains("https://")) {
 			userdata.put("proto", "https://hydra.unicity.net/");
 			userdata.put("version", "v5/");
 			userdata.put("platform", "Live");
-		}
+		}*/
 		if (url.contains("http://")) {
 			userdata.put("proto", "https://hydraqa.unicity.net/");
 			userdata.put("version", "v5a-test/");

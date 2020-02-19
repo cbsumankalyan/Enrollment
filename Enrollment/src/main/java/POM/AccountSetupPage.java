@@ -211,7 +211,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 		String us = responsedob.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
-		String referral = "36554001";
+		String referral = "2";
 		String fname = "TestFirstName";
 		String lname = "TestLastName";
 		String ifname = RandomStringUtils.randomAlphabetic(6).toUpperCase();
@@ -614,6 +614,7 @@ public class AccountSetupPage extends SuperTestNG {
 					userdata.put("enrollerName", "EnrollerTest");
 					userdata.put("sponsorName", "SponsorTest");
 					userdata.put("api", "1");
+					userdata.put("referral", "no");
 				} else {
 					EnrollerID.sendKeys(referral + Keys.TAB);
 					SponsorID.sendKeys(referral + Keys.TAB);
@@ -623,6 +624,7 @@ public class AccountSetupPage extends SuperTestNG {
 					userdata.put("enroller", referral);
 					userdata.put("sponsor", referral);
 					userdata.put("api", "7");
+					userdata.put("referral", "yes");
 				}
 			}
 
@@ -636,6 +638,7 @@ public class AccountSetupPage extends SuperTestNG {
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "7");
+				userdata.put("referral", "yes");
 			}
 		} else {
 			Thread.sleep(5000);
@@ -644,6 +647,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("enroller", referral);
 			userdata.put("sponsor", referral);
 			userdata.put("api", "3");
+			userdata.put("referral", "yes");
 		}
 
 		if (Market == "India" || Market == "Mexico" || Market == "Colombia") {
@@ -1075,7 +1079,7 @@ public class AccountSetupPage extends SuperTestNG {
 	public void PCAccountDetails(String Market, String language, String pack)
 			throws InterruptedException, JSONException, UnknownHostException, IOException {
 
-		String referral = "36554001";
+		String referral = "2";
 		String fname = "TestFirstName";
 		String lname = "TestLastName";
 
@@ -1177,6 +1181,7 @@ public class AccountSetupPage extends SuperTestNG {
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "4");
+				userdata.put("referral", "no");
 			}
 		} else {
 			EnrollerID.sendKeys(referral + Keys.TAB);
@@ -1190,6 +1195,7 @@ public class AccountSetupPage extends SuperTestNG {
 			} else {
 				userdata.put("api", "4");
 			}
+			userdata.put("referral", "yes");
 		}
 
 		userdata.put("language", language);
@@ -1279,7 +1285,7 @@ public class AccountSetupPage extends SuperTestNG {
 	public void GetFitAccountDetails(String Market, String language, String pack)
 			throws InterruptedException, JSONException, UnknownHostException, IOException {
 
-		String referral = "36554001";
+		String referral = "2";
 		String fname = "TestFirstName";
 		String lname = "TestLastName";
 

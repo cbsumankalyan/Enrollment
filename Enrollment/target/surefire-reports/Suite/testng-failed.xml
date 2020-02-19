@@ -7,7 +7,7 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="Enroll" invocation-numbers="0 1 2 3 6 7 8 9"/>
+          <include name="Enroll" invocation-numbers="0"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -16,7 +16,7 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="GetFit" invocation-numbers="1 2 3 4"/>
+          <include name="GetFit" invocation-numbers="0"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -34,7 +34,7 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="PassReferralID" invocation-numbers="0 1 2 3"/>
+          <include name="PassReferralID" invocation-numbers="0"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -45,7 +45,7 @@
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
-          <include name="Patient" invocation-numbers="0 1 2 3"/>
+          <include name="Patient" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- Tests.PatientPortal -->
       <class name="Tests.FranchisePartner">
@@ -54,7 +54,7 @@
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
-          <include name="Enroll" invocation-numbers="0 1 2 3 7 8 9 13 14 15 16 17 18 21 23 27 30 36 37 38 39 41 46 47 49 50"/>
+          <include name="Enroll" invocation-numbers="0 1 2 6 7 8 11 12 14 17 18 20 21 23"/>
         </methods>
       </class> <!-- Tests.FranchisePartner -->
     </classes>
