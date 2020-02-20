@@ -50,7 +50,7 @@ public class SuperTestNG {
 	public static String hydra = "https://hydra.unicity.net/v5/";
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";
 	public static String url = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/start";
-	public static String referralurl = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/start/united-states/36554001";
+	public static String referralurl = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/start/united-states/2";
 	public static String getfit = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/getfit";
 	public static String patientportal = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/unicity";
 	public static String hcpflow = "http://enroll.ng.unicityqa.com/njb_merge_develop_13feb/#/enroll/hcp";

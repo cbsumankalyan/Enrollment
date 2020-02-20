@@ -65,6 +65,9 @@ public class AccountSetupPage extends SuperTestNG {
 
 	@FindBy(id = "lastname")
 	private WebElement LastName;
+	
+	@FindBy(xpath = "//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']")
+	private WebElement Referral;
 
 	@FindBy(id = "dob")
 	private WebElement DOB;
@@ -665,6 +668,8 @@ public class AccountSetupPage extends SuperTestNG {
 		userdata.put("type", "Associate");
 
 		Thread.sleep(10000);
+		
+		Assert.assertEquals(Referral.getText(), referral);
 
 		List<HarEntry> entries = server.getHar().getLog().getEntries();
 		for (HarEntry entry : entries) {
@@ -1173,6 +1178,7 @@ public class AccountSetupPage extends SuperTestNG {
 				userdata.put("sponsor", "2");
 				userdata.put("enrollerName", "EnrollerTest");
 				userdata.put("api", "1");
+				userdata.put("referral", "no");
 			} else {
 				EnrollerID.sendKeys(referral + Keys.TAB);
 				Thread.sleep(5000);
@@ -1181,7 +1187,7 @@ public class AccountSetupPage extends SuperTestNG {
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "4");
-				userdata.put("referral", "no");
+				userdata.put("referral", "yes");
 			}
 		} else {
 			EnrollerID.sendKeys(referral + Keys.TAB);
@@ -1346,6 +1352,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 		userdata.put("language", language);
 		userdata.put("type", "GetFit");
+		userdata.put("referral", "yes");
 
 		Thread.sleep(10000);
 
