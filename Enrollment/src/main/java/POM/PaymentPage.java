@@ -306,9 +306,12 @@ public class PaymentPage extends SuperTestNG {
 						String[] bank = { "OXXO", "BANCOMER", "SCOTIABANK", "SANTANDER", "SEVEN_ELEVEN" };
 
 						Select selectbank = new Select(SelectBank);
-						selectbank.selectByValue(bank[new Random().nextInt(bank.length)]);
+						String b = bank[new Random().nextInt(bank.length)];
+						selectbank.selectByValue(b);
 						userdata.put("paymenttype", "bank");
+						userdata.put("mxbank", b);
 						Thread.sleep(5000);
+						childtest.log(LogStatus.INFO, "Bank", b);
 					} else {
 						CCName.sendKeys(ccname);
 						CCNumber.sendKeys(cc);

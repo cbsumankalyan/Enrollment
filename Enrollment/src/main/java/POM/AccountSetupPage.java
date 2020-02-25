@@ -188,6 +188,21 @@ public class AccountSetupPage extends SuperTestNG {
 
 	@FindBys(@FindBy(xpath = "//select[@id='address_state']//option"))
 	List<WebElement> IndiaState;
+	
+	@FindBy(id = "bank_account_number")
+	private WebElement BankAccountNumber;
+	
+	@FindBy(id = "account_accountHolder")
+	private WebElement AccountHolderName;
+	
+	@FindBy(id = "account_bank_name")
+	private WebElement IndiaBankName;
+	
+	@FindBy(id = "account_bank_branch_name")
+	private WebElement Branch;
+	
+	@FindBy(id = "account_bank_ifsc")
+	private WebElement IFSC;
 
 	@FindBy(xpath = "//button[contains(@class, 'continue-btn')]")
 	private WebElement Continue;
@@ -628,6 +643,7 @@ public class AccountSetupPage extends SuperTestNG {
 					userdata.put("sponsor", referral);
 					userdata.put("api", "7");
 					userdata.put("referral", "yes");
+					Assert.assertEquals(Referral.getText(), referral);
 				}
 			}
 
@@ -642,6 +658,7 @@ public class AccountSetupPage extends SuperTestNG {
 				userdata.put("sponsor", referral);
 				userdata.put("api", "7");
 				userdata.put("referral", "yes");
+				Assert.assertEquals(Referral.getText(), referral);
 			}
 		} else {
 			Thread.sleep(5000);
@@ -651,6 +668,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("sponsor", referral);
 			userdata.put("api", "3");
 			userdata.put("referral", "yes");
+			Assert.assertEquals(Referral.getText(), referral);
 		}
 
 		if (Market == "India" || Market == "Mexico" || Market == "Colombia") {
@@ -662,6 +680,8 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("enroller", referral);
 			userdata.put("sponsor", referral);
 			userdata.put("api", "8");
+			userdata.put("referral", "yes");
+			Assert.assertEquals(Referral.getText(), referral);
 		}
 
 		userdata.put("language", language);
@@ -669,7 +689,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 		Thread.sleep(10000);
 		
-		Assert.assertEquals(Referral.getText(), referral);
+		
 
 		List<HarEntry> entries = server.getHar().getLog().getEntries();
 		for (HarEntry entry : entries) {
@@ -1031,6 +1051,12 @@ public class AccountSetupPage extends SuperTestNG {
 			Select selectStates = new Select(State);
 			selectStates.selectByIndex(17);
 			PostalCode.sendKeys("560050");
+			
+			BankAccountNumber.sendKeys("28151610000148");
+			AccountHolderName.sendKeys(ifname);
+			IndiaBankName.sendKeys("HDFC");
+			Branch.sendKeys("Hennur");
+			IFSC.sendKeys("HDFC0002815");
 
 			String[] State = { "Select a state", "Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh",
 					"Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi",
@@ -1046,6 +1072,12 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("address2", "Haudin Road");
 			userdata.put("city", "Bangalore");
 			userdata.put("zip", "560050");
+			
+			userdata.put("accountnumber", "28151610000148");
+			userdata.put("holdername", ifname);
+			userdata.put("bankname", "HDFC");
+			userdata.put("branch", "Hennur");
+			userdata.put("ifsc", "HDFC0002815");
 		}
 
 		for (HarEntry entry : entries) {
