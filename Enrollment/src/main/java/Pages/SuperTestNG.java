@@ -49,11 +49,11 @@ public class SuperTestNG {
 
 	public static String hydra = "https://hydra.unicity.net/v5/";
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";
-	public static String url = "http://enroll.ng.unicityqa.com/master/#/enroll/start";
-	public static String referralurl = "http://enroll.ng.unicityqa.com/master/#/enroll/start/united-states/2";
-	public static String getfit = "http://enroll.ng.unicityqa.com/master/#/enroll/getfit";
-	public static String patientportal = "http://enroll.ng.unicityqa.com/master/#/enroll/unicity";
-	public static String hcpflow = "http://enroll.ng.unicityqa.com/master/#/enroll/hcp";
+	public static String url = "http://enroll.ng.unicityqa.com/njb_html_warnings/#/enroll/start";
+	public static String referralurl = "http://enroll.ng.unicityqa.com/njb_html_warnings/#/enroll/start/united-states/2";
+	public static String getfit = "http://enroll.ng.unicityqa.com/njb_html_warnings/#/enroll/getfit";
+	public static String patientportal = "http://enroll.ng.unicityqa.com/njb_html_warnings/#/enroll/unicity";
+	public static String hcpflow = "http://enroll.ng.unicityqa.com/njb_html_warnings/#/enroll/hcp";
 	// public static String url = "https://enroll.unicity.com/#/enroll/start";
 	// public static JavascriptExecutor jse = (JavascriptExecutor)driver;
 

@@ -241,10 +241,10 @@ public class SummaryPage extends SuperTestNG {
 
 	@FindBy(xpath = "//span[contains(text(), 'IFSC')]//following-sibling::span")
 	private WebElement IFSC;
-	
+
 	@FindBy(xpath = "//span[contains(text(), 'Opción de pago')]//following-sibling::span")
 	private WebElement MXPayment;
-	
+
 	@FindBy(xpath = "//span[contains(text(), 'Nombre del banco')]//following-sibling::span")
 	private WebElement MXBank;
 
@@ -1549,17 +1549,29 @@ public class SummaryPage extends SuperTestNG {
 		}
 
 		driver.findElement(By.cssSelector(".btn.btn-danger.uppercase")).click();
+		if (userdata.get("testcase") == "normal") {
+			Thread.sleep(5000);
+			Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
+			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ", "Colombia",
+					"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
+					"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
+					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore",
+					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Ukraine",
+					"United Kingdom" };
 
-		Thread.sleep(5000);
-		Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
-		String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ", "Colombia",
-				"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
-				"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
-				"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore", "Sweden",
-				"Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Ukraine", "United Kingdom" };
+			for (int i = 0; i < expected.length; i++) {
+				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
+			}
+		}
+		
+		if (userdata.get("testcase") == "hcp") {
+			Thread.sleep(5000);
+			Assert.assertEquals(driver.getCurrentUrl(), hcpflow, "Low return url");
+			String[] expected = { "United States", "Canada",};
 
-		for (int i = 0; i < expected.length; i++) {
-			Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
+			for (int i = 0; i < expected.length; i++) {
+				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
+			}
 		}
 
 	}
@@ -2194,16 +2206,27 @@ public class SummaryPage extends SuperTestNG {
 					driver.findElement(By.cssSelector(".btn.btn-danger.uppercase")).click();
 
 					Thread.sleep(5000);
-					Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
-					String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ",
-							"Colombia", "Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary",
-							"India", "Indonesia", "Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg",
-							"Malaysia", "Mexico", "Netherlands", "New Zealand", "Norway", "Philippines", "Poland",
-							"Puerto Rico ", "Singapore", "Sweden", "Switzerland", "Spain", "Taiwan", "Thailand",
-							"United States", "Ukraine", "United Kingdom", };
+					if (userdata.get("testcase") == "normal") {
+						Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
+						String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ",
+								"Colombia", "Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong",
+								"Hungary", "India", "Indonesia", "Italy", "Ireland", "Jamaica", "Japan", "Korea",
+								"Laos", "Luxembourg", "Malaysia", "Mexico", "Netherlands", "New Zealand", "Norway",
+								"Philippines", "Poland", "Puerto Rico ", "Singapore", "Sweden", "Switzerland", "Spain",
+								"Taiwan", "Thailand", "United States", "Ukraine", "United Kingdom", };
 
-					for (int i = 0; i < expected.length; i++) {
-						Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
+						for (int i = 0; i < expected.length; i++) {
+							Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
+						}
+					}
+
+					if (userdata.get("testcase") == "PatientPortal") {
+						Assert.assertEquals(driver.getCurrentUrl(), patientportal, "Low return url");
+						String[] expected = { "United States", "Canada" };
+
+						for (int i = 0; i < expected.length; i++) {
+							Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
+						}
 					}
 				}
 			}

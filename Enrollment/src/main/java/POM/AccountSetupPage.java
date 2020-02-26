@@ -123,13 +123,13 @@ public class AccountSetupPage extends SuperTestNG {
 	@FindBys(@FindBy(xpath = "//input[@ng-model='account.coapplicantType']"))
 	List<WebElement> CoApplicant;
 
-	@FindBy(id = "payment")
+	@FindBy(name = "Spouse")
 	private WebElement Spouse;
 
 	@FindBy(xpath = "//input[contains(@ng-model, 'account.spouse')]")
 	private WebElement SpouseName;
 
-	@FindBy(id = "coapplicant")
+	@FindBy(name = "Company")
 	private WebElement Company;
 
 	@FindBys(@FindBy(xpath = "//select[@id='companytype']//option"))
@@ -837,9 +837,9 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("martial", getTranslation(Martial.get(mvalue).getAttribute("value"), language));
 		}
 
-		if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Denmark"
+		if (Market == "Austria" || Market == "Belgium" || Market == "Denmark"
 				|| Market == "France" || Market == "Germany" || Market == "Hungary" || Market == "Ireland"
-				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "New Zealand" || Market == "Poland"
+				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Poland"
 				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
 				|| Market == "United Kingdom") {
 			Thread.sleep(5000);
