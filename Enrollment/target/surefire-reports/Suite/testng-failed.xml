@@ -7,7 +7,7 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="Enroll" invocation-numbers="0 1 2 3 6 7 8 9"/>
+          <include name="Enroll" invocation-numbers="1 2 3"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -27,14 +27,14 @@
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
-          <include name="PassReferralID" invocation-numbers="0 1"/>
+          <include name="PassReferralID" invocation-numbers="0"/>
         </methods>
       </class> <!-- Tests.ReferralIDPassing -->
       <class name="Tests.HealthCareProducts">
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="PassReferralID" invocation-numbers="0 1 2"/>
+          <include name="PassReferralID" invocation-numbers="0 1 2 3"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -54,7 +54,7 @@
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
-          <include name="Enroll" invocation-numbers="0 1 2 6 7 8 12 17 19 20 26 29 30 34 35 37 44 45 47"/>
+          <include name="Enroll" invocation-numbers="0 1 3 6 7 8 12 13 17 20 37 38 39 40 41 45 46 47"/>
         </methods>
       </class> <!-- Tests.FranchisePartner -->
     </classes>

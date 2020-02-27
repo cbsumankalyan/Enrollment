@@ -1567,7 +1567,7 @@ public class SummaryPage extends SuperTestNG {
 		if (userdata.get("testcase") == "hcp") {
 			Thread.sleep(5000);
 			Assert.assertEquals(driver.getCurrentUrl(), hcpflow, "Low return url");
-			String[] expected = { "United States", "Canada",};
+			String[] expected = { "United States", "Canada ",};
 
 			for (int i = 0; i < expected.length; i++) {
 				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
@@ -2222,7 +2222,7 @@ public class SummaryPage extends SuperTestNG {
 
 					if (userdata.get("testcase") == "PatientPortal") {
 						Assert.assertEquals(driver.getCurrentUrl(), patientportal, "Low return url");
-						String[] expected = { "United States", "Canada" };
+						String[] expected = { "United States", "Canada " };
 
 						for (int i = 0; i < expected.length; i++) {
 							Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
