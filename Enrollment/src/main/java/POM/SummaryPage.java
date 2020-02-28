@@ -786,9 +786,10 @@ public class SummaryPage extends SuperTestNG {
 						System.out.println("Headers-->" + entry.getRequest().getHeaders().get(3).getValue());
 						System.out.println("Headers-->" + entry.getRequest().getHeaders().get(4).getValue());
 						System.out.println("Headers-->" + entry.getRequest().getHeaders().get(5).getValue());
+						System.out.println("Headers-->" + entry.getRequest().getHeaders().get(6).getValue());
 
 						Assert.assertEquals(userdata.get("locale") + "-" + userdata.get("marketcode"),
-								entry.getRequest().getHeaders().get(5).getValue());
+								entry.getRequest().getHeaders().get(6).getValue());
 
 						JSONObject Orders = new JSONObject(entry.getRequest().getPostData().getText().toString()
 								.substring(entry.getRequest().getPostData().getText().toString().indexOf("{")).trim());

@@ -1,185 +1,288 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 77, Failures: 35, Errors: 0, Skipped: 3, Time elapsed: 16,940.811 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 307.968 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Number expected [true] but found [false]
+Tests run: 74, Failures: 71, Errors: 0, Skipped: 0, Time elapsed: 17,503.452 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 322.804 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-AT]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 300.394 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Number expected [true] but found [false]
+Enroll(Tests.FranchisePartner)  Time elapsed: 311.134 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [de-AT]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 315.702 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [BE] but found [null]
+Enroll(Tests.FranchisePartner)  Time elapsed: 287.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-BS]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 175.825 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 314.415 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [fr-BE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 310.06 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [nl-BE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 317.367 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-BE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.924 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 179.128 s  <<< FAILURE!
-java.lang.AssertionError: Major Total Price is Wrong expected [451.7] but found [457.7]
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.396 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Total Price is Wrong expected [288.4] but found [294.4]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 212.157 s  <<< FAILURE!
-java.lang.AssertionError: Major zip code expected [null] but found []
+Enroll(Tests.FranchisePartner)  Time elapsed: 211.756 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-CO]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 197.81 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 304.703 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-DK]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 302.792 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [dn-DK]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 312.054 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-DO]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 193.329 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [74] but found [73]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 215.413 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
-  (Session info: chrome=79.0.3945.130)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.130, webStorageEnabled: true}
-Session ID: 444580e569d1a16e71c23dbe42bd5916
-*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+Enroll(Tests.FranchisePartner)  Time elapsed: 288.113 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-FR]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 212.816 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 310.525 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [de-DE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 312.583 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-DE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 304.615 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-HU]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 214.581 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [70] but found [69]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 243.081 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 312.192 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [it-IT]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 245.474 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [63] but found [62]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 186.108 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
-  (Session info: chrome=79.0.3945.130)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.130, webStorageEnabled: true}
-Session ID: a6494d648b366d1f4621c92e2b3aa91a
-*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+Enroll(Tests.FranchisePartner)  Time elapsed: 188.149 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-IE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 25.053 s  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 283.952 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-JM]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 25.053 s  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 314.945 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [fr-LU]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 223.009 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 305.603 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-LU]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 304.908 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [de-LU]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 211.277 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-MX]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 305.588 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-NL]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 341.021 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [de-NL]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 176.364 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-NO]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.808 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [no-NO]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 185.927 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-PL]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 189.07 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [pl-PL]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 233.773 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-PR]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 232.626 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-PR]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 259.352 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [sv-SE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 247.125 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-SE]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 214.178 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 216.276 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 216.833 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 211.773 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.130)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.130, webStorageEnabled: true}
-Session ID: d9f56d4f1095c3837dbddd7c6c24ec1f
+Enroll(Tests.FranchisePartner)  Time elapsed: 199.468 s  <<< FAILURE!
+java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 184.846 s  <<< FAILURE!
-java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127]]
+Enroll(Tests.FranchisePartner)  Time elapsed: 200.646 s  <<< FAILURE!
+java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 119.42 s  <<< FAILURE!
-java.lang.NullPointerException
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+Enroll(Tests.FranchisePartner)  Time elapsed: 314.08 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-ES]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-PostCondition(Tests.FranchisePartner)  Time elapsed: 119.746 s  <<< FAILURE!
-java.lang.NullPointerException
+Enroll(Tests.FranchisePartner)  Time elapsed: 291.566 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-ES]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 208.072 s  <<< FAILURE!
-java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=31440, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31518, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31651, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31655, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31731, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31751, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31859]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29392, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31440, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31518, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31651, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31655, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31731, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31751, https://hydraqa.unicity.net/v5a-test/items?id.unicity=31859, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127]]
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
+Enroll(Tests.FranchisePartner)  Time elapsed: 297.528 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-US]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 166.862 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
+Enroll(Tests.FranchisePartner)  Time elapsed: 287.952 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-US]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 217.053 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-UA]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 183.751 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [ru-UA]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 306.244 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-GB]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 278.053 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-US]
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 267.441 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-US]
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 235.437 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-BS]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 151.726 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 165.396 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-CA]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.936 s  <<< FAILURE!
-java.lang.AssertionError: Major zip code expected [null] but found []
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 167.347 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [fr-CA]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 69.567 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.130)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.130, webStorageEnabled: true}
-Session ID: 89a5b3677c3a9d671813b72a36586ea5
-	at Tests.Fit.GetFit(Fit.java:69)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 144.392 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-CO]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 113.834 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.Fit.GetFit(Fit.java:70)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 215.514 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-DO]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 113.315 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.Fit.GetFit(Fit.java:70)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 161.985 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-MX]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 160.399 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 178.175 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-PR]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.996 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-PR]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 209.785 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-US]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 202.894 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-US]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+GetFit(Tests.Fit)  Time elapsed: 150.996 s  <<< FAILURE!
 java.lang.AssertionError: Low address2 expected [null] but found []
 	at Tests.Fit.GetFit(Fit.java:70)
 
-Patient(Tests.PatientPortal)  Time elapsed: 246.969 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Canada] but found [Canada ]
-	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-
-Patient(Tests.PatientPortal)  Time elapsed: 231.031 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Canada] but found [Canada ]
-	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-
-Patient(Tests.PatientPortal)  Time elapsed: 167.669 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 114.349 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.Fit.GetFit(Fit.java:70)
+
+GetFit(Tests.Fit)  Time elapsed: 114.971 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.Fit.GetFit(Fit.java:70)
+
+GetFit(Tests.Fit)  Time elapsed: 158.973 s  <<< FAILURE!
+java.lang.AssertionError: Low address2 expected [null] but found []
+	at Tests.Fit.GetFit(Fit.java:70)
+
+Patient(Tests.PatientPortal)  Time elapsed: 235.495 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-US]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 140.867 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 194.944 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-US]
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+Patient(Tests.PatientPortal)  Time elapsed: 166.746 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-CA]
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+Patient(Tests.PatientPortal)  Time elapsed: 142.036 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 210.713 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Canada] but found [Canada ]
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 196.806 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-US]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 210.071 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Canada] but found [Canada ]
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 213.908 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [es-US]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 153.544 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 153.558 s  <<< FAILURE!
+java.lang.AssertionError: expected [empty] but found [en-CA]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 135.698 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.115 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
