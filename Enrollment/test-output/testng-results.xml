@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="322508" started-at="2020-02-26T04:32:10Z" finished-at="2020-02-26T04:37:33Z">
+  <suite name="Default suite" duration-ms="311236" started-at="2020-02-28T05:07:36Z" finished-at="2020-02-28T05:12:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="322508" started-at="2020-02-26T04:32:10Z" finished-at="2020-02-26T04:37:33Z">
+    <test name="Default test" duration-ms="311236" started-at="2020-02-28T05:07:36Z" finished-at="2020-02-28T05:12:47Z">
       <class name="Tests.FranchisePartner">
-        <test-method status="PASS" signature="StartReport()[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="StartReport" is-config="true" duration-ms="125" started-at="2020-02-26T04:32:10Z" finished-at="2020-02-26T04:32:10Z">
+        <test-method status="PASS" signature="StartReport()[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="StartReport" is-config="true" duration-ms="140" started-at="2020-02-28T05:07:36Z" finished-at="2020-02-28T05:07:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartReport -->
-        <test-method status="PASS" signature="PreConditon()[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="PreConditon" is-config="true" duration-ms="7673" started-at="2020-02-26T04:32:10Z" finished-at="2020-02-26T04:32:18Z">
+        <test-method status="PASS" signature="PreConditon()[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="PreConditon" is-config="true" duration-ms="7148" started-at="2020-02-28T05:07:36Z" finished-at="2020-02-28T05:07:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PreConditon -->
-        <test-method status="FAIL" signature="Enroll(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="Enroll" duration-ms="313412" started-at="2020-02-26T04:32:18Z" data-provider="MarketConfig" finished-at="2020-02-26T04:37:31Z">
+        <test-method status="FAIL" signature="Enroll(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="Enroll" duration-ms="302629" started-at="2020-02-28T05:07:43Z" data-provider="MarketConfig" finished-at="2020-02-28T05:12:46Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
-at POM.SummaryPage.OrderSubmit(SummaryPage.java:1345)
+at POM.SummaryPage.OrderSubmit(SummaryPage.java:1346)
 at Pages.Summary.SummaryDetails(Summary.java:14)
 at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -76,7 +76,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Enroll -->
-        <test-method status="PASS" signature="PostCondition(org.testng.ITestResult)[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="PostCondition" is-config="true" duration-ms="1251" started-at="2020-02-26T04:37:31Z" finished-at="2020-02-26T04:37:33Z">
+        <test-method status="PASS" signature="PostCondition(org.testng.ITestResult)[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="PostCondition" is-config="true" duration-ms="1303" started-at="2020-02-28T05:12:46Z" finished-at="2020-02-28T05:12:47Z">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostCondition -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="afterSuite" is-config="true" duration-ms="2093" started-at="2020-02-26T04:37:33Z" finished-at="2020-02-26T04:37:35Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Tests.FranchisePartner@544fe44c]" name="afterSuite" is-config="true" duration-ms="2626" started-at="2020-02-28T05:12:47Z" finished-at="2020-02-28T05:12:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -1,288 +1,156 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 74, Failures: 71, Errors: 0, Skipped: 0, Time elapsed: 17,503.452 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 322.804 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-AT]
+Tests run: 74, Failures: 38, Errors: 0, Skipped: 0, Time elapsed: 17,729.123 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 311.666 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [AT] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 311.134 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [de-AT]
+Enroll(Tests.FranchisePartner)  Time elapsed: 315.731 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [BE] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 287.006 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-BS]
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.494 s  <<< FAILURE!
+java.lang.AssertionError: Major Total Price is Wrong expected [451.7] but found [457.7]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 314.415 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [fr-BE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 310.06 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [nl-BE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 317.367 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-BE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 177.924 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Spouse, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 177.396 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 178.8 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Total Price is Wrong expected [288.4] but found [294.4]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 211.756 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-CO]
+Enroll(Tests.FranchisePartner)  Time elapsed: 209.13 s  <<< FAILURE!
+java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 304.703 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-DK]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 302.792 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [dn-DK]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 312.054 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-DO]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 193.329 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 192.274 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [74] but found [73]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 288.113 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-FR]
+Enroll(Tests.FranchisePartner)  Time elapsed: 285.546 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [FR] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 310.525 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [de-DE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 312.583 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-DE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 304.615 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-HU]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 214.581 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 214.751 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [70] but found [69]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 312.192 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [it-IT]
+Enroll(Tests.FranchisePartner)  Time elapsed: 272.086 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Sommario Dell'Iscrizione, Impostazioni di Iscrizione, A proposito di te, Opzioni per il Pagamento della Commissione, Il tuo indirizzo di consegna, Il tuo indirizzo di fatturazione/indirizzo primario, Le tue informazioni di pagamento, Termini e Condizioni, Sommario]] but found [[Informazioni Della Carta di Credito, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione, Sommario]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 245.474 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 245.41 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [63] but found [62]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 188.149 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-IE]
+Enroll(Tests.FranchisePartner)  Time elapsed: 196.736 s  <<< FAILURE!
+java.lang.AssertionError: Major MXBank expected [SEVEN_ELEVEN] but found [7-ELEVEN]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 283.952 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-JM]
+Enroll(Tests.FranchisePartner)  Time elapsed: 240.405 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Total Price is Wrong expected [811.59] but found [803.57]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 314.945 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [fr-LU]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 305.603 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-LU]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 304.908 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [de-LU]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 211.277 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-MX]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 305.588 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-NL]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 341.021 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [de-NL]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 176.364 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-NO]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 177.808 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [no-NO]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 185.927 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-PL]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 189.07 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [pl-PL]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 233.773 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-PR]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 232.626 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-PR]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 259.352 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [sv-SE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 247.125 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-SE]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 214.178 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 214.395 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 216.833 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 221.083 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 199.468 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 215.771 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 200.646 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 218.07 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 314.08 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-ES]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 291.566 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-ES]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 297.528 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-US]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 287.952 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-US]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 217.053 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-UA]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 183.751 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [ru-UA]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 306.244 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-GB]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 278.053 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-US]
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
-
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 267.441 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-US]
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 235.437 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 238.526 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [en-BS]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 165.396 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.516 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [en-CA]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 167.347 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 164.562 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [fr-CA]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 144.392 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.273 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [es-CO]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 215.514 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 215.834 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [es-DO]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 161.985 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 172.035 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [es-MX]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 178.175 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 174.043 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [en-PR]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.996 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.171 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [es-PR]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 209.785 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 207.867 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [en-US]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 202.894 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 226.329 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [es-US]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-GetFit(Tests.Fit)  Time elapsed: 150.996 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 151.549 s  <<< FAILURE!
 java.lang.AssertionError: Low address2 expected [null] but found []
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 114.349 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 113.665 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 114.971 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 96.698 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 158.973 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 158.705 s  <<< FAILURE!
 java.lang.AssertionError: Low address2 expected [null] but found []
 	at Tests.Fit.GetFit(Fit.java:70)
 
-Patient(Tests.PatientPortal)  Time elapsed: 235.495 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 227.041 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [en-US]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 194.944 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 194.186 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [es-US]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 166.746 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 165.822 s  <<< FAILURE!
 java.lang.AssertionError: expected [empty] but found [en-CA]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 142.036 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 141.141 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 196.806 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-US]
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 218.783 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [US] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 213.908 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-US]
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 187.318 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [US] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 153.558 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-CA]
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 152.867 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.115 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.366 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
