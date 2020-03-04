@@ -7,7 +7,7 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="Enroll" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
+          <include name="Enroll" invocation-numbers="0 1 2 3 5 6"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -16,7 +16,7 @@
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="GetFit" invocation-numbers="1 2 3 4"/>
+          <include name="GetFit" invocation-numbers="0 2 3"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
@@ -45,7 +45,7 @@
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
-          <include name="Enroll" invocation-numbers="1 3 6 7 8 12 13 17 19 20 26 36 38 39 40 41"/>
+          <include name="Enroll" invocation-numbers="1 3 5 6 7 8 10 12 13 14 17 19 20 27 34 37 38 39 40 41 43"/>
         </methods>
       </class> <!-- Tests.FranchisePartner -->
     </classes>

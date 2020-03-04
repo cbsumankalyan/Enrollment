@@ -1,156 +1,156 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 74, Failures: 38, Errors: 0, Skipped: 0, Time elapsed: 17,729.123 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 311.666 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [AT] but found [null]
+Tests run: 74, Failures: 38, Errors: 0, Skipped: 0, Time elapsed: 17,824.847 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 317.949 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Number expected [true] but found [false]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 315.731 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 311.885 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [BE] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 177.494 s  <<< FAILURE!
-java.lang.AssertionError: Major Total Price is Wrong expected [451.7] but found [457.7]
+Enroll(Tests.FranchisePartner)  Time elapsed: 321.565 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [BE] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 178.8 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.236 s  <<< FAILURE!
 java.lang.AssertionError: Major AR Total Price is Wrong expected [288.4] but found [294.4]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 209.13 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 177.745 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Total Price is Wrong expected [288.4] but found [294.4]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 210.551 s  <<< FAILURE!
 java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 192.274 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 306.882 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [DK] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 197.365 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [74] but found [73]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 285.546 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 286.888 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [FR] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 214.751 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 310.915 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [DE] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 212.051 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [70] but found [69]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 272.086 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 279.186 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Sommario Dell'Iscrizione, Impostazioni di Iscrizione, A proposito di te, Opzioni per il Pagamento della Commissione, Il tuo indirizzo di consegna, Il tuo indirizzo di fatturazione/indirizzo primario, Le tue informazioni di pagamento, Termini e Condizioni, Sommario]] but found [[Informazioni Della Carta di Credito, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione, Sommario]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 245.41 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 242.003 s  <<< FAILURE!
 java.lang.AssertionError: Major Quotes Call Packs is not Displaying: lists don't have the same size expected [63] but found [62]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:250)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 196.736 s  <<< FAILURE!
-java.lang.AssertionError: Major MXBank expected [SEVEN_ELEVEN] but found [7-ELEVEN]
+Enroll(Tests.FranchisePartner)  Time elapsed: 309.259 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [NL] but found [null]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 240.405 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Total Price is Wrong expected [811.59] but found [803.57]
+Enroll(Tests.FranchisePartner)  Time elapsed: 206.613 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-solicitante, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Términos y Condiciones, Resumen]] but found [[información de la tarjeta de crédito, dirección de facturación/correo, Tu dirección de envío/Dirección principal, método de envío, Resumen]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 214.395 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 264.335 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [SE] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 214.417 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 221.083 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 215.859 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 215.771 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 224.301 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 218.07 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 215.246 s  <<< FAILURE!
 java.lang.AssertionError: Major Ship Method Type expected [[Economy, WillCall]] but found [[Economy]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 238.526 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-BS]
+Enroll(Tests.FranchisePartner)  Time elapsed: 313.457 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [ES] but found [null]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 240.838 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Ship Method href expected [https://hydraqa.unicity.net/v5a-test/shippingmethods?type=3Days] but found [https://hydraqa.unicity.net/v5a-test/shippingmethods?type=Economy]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.516 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-CA]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 168.425 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 164.562 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [fr-CA]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 175.663 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.273 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-CO]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.841 s  <<< FAILURE!
+java.lang.AssertionError: Major zip code expected [null] but found []
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 215.834 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-DO]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 160.113 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [MX] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 172.035 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-MX]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 175.45 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Ship Method href expected [https://hydraqa.unicity.net/v5a-test/shippingmethods?type=WillCall&location=Oficina de Puerto Rico] but found [https://hydraqa.unicity.net/v5a-test/shippingmethods?type=Economy]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 174.043 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-PR]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.171 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-PR]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 207.867 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-US]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 226.329 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-US]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-GetFit(Tests.Fit)  Time elapsed: 151.549 s  <<< FAILURE!
-java.lang.AssertionError: Low address2 expected [null] but found []
+GetFit(Tests.Fit)  Time elapsed: 116.058 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [GB] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 113.665 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 117.977 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 96.698 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 115.047 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 158.705 s  <<< FAILURE!
-java.lang.AssertionError: Low address2 expected [null] but found []
-	at Tests.Fit.GetFit(Fit.java:70)
-
-Patient(Tests.PatientPortal)  Time elapsed: 227.041 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-US]
+Patient(Tests.PatientPortal)  Time elapsed: 198.627 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [US] but found [null]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 194.186 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [es-US]
+Patient(Tests.PatientPortal)  Time elapsed: 194.016 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [US] but found [null]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 165.822 s  <<< FAILURE!
-java.lang.AssertionError: expected [empty] but found [en-CA]
+Patient(Tests.PatientPortal)  Time elapsed: 168.991 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 141.141 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 141.384 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 218.783 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 221.501 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [US] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 187.318 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 191.363 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [US] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 152.867 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 153.28 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 136.366 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 135.725 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, conjoint, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Termes et Conditions, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:68)
 

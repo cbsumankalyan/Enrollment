@@ -407,7 +407,7 @@ public class PaymentPage extends SuperTestNG {
 								}
 							}
 
-							if (Market == "" || Market == "") {
+							if (Market == "Switzerland" || Market == "") {
 								methods.add("WillCall");
 							}
 
@@ -684,7 +684,7 @@ public class PaymentPage extends SuperTestNG {
 			jse.executeScript("window.scrollBy(0,500)", "");
 			int value = new Random().nextInt(ShipMethod.size());
 			ShipMethod.get(value).click();
-
+			Thread.sleep(5000);
 			userdata.put("shippingmethod", ShipMethod.get(value).getAttribute("value"));
 			childtest.log(LogStatus.INFO, "Ship method", userdata.get("shippingmethod").split("=")[1]);
 
