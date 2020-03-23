@@ -65,7 +65,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 	@FindBy(id = "lastname")
 	private WebElement LastName;
-	
+
 	@FindBy(xpath = "//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']")
 	private WebElement Referral;
 
@@ -188,19 +188,19 @@ public class AccountSetupPage extends SuperTestNG {
 
 	@FindBys(@FindBy(xpath = "//select[@id='address_state']//option"))
 	List<WebElement> IndiaState;
-	
+
 	@FindBy(id = "bank_account_number")
 	private WebElement BankAccountNumber;
-	
+
 	@FindBy(id = "account_accountHolder")
 	private WebElement AccountHolderName;
-	
+
 	@FindBy(id = "account_bank_name")
 	private WebElement IndiaBankName;
-	
+
 	@FindBy(id = "account_bank_branch_name")
 	private WebElement Branch;
-	
+
 	@FindBy(id = "account_bank_ifsc")
 	private WebElement IFSC;
 
@@ -567,12 +567,12 @@ public class AccountSetupPage extends SuperTestNG {
 			Assert.assertEquals(Labels.toString(), getTranslation("eu_ch", language), "Minor Lables");
 		}
 
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
-				|| Market == "Jamaica" || Market == "Puerto Rico" || Market == "United States" || Market == "Mexico") {
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
+				|| Market == "Puerto Rico" || Market == "United States" || Market == "Mexico") {
 			Assert.assertEquals(Labels.toString(), getTranslation("us", language), "Minor Lables");
 		}
-		
-		if (Market == "Colombia"){
+
+		if (Market == "Colombia") {
 			Assert.assertEquals(Labels.toString(), getTranslation("co", language), "Minor Lables");
 		}
 
@@ -688,8 +688,6 @@ public class AccountSetupPage extends SuperTestNG {
 		userdata.put("type", "Associate");
 
 		Thread.sleep(10000);
-		
-		
 
 		List<HarEntry> entries = server.getHar().getLog().getEntries();
 		for (HarEntry entry : entries) {
@@ -729,18 +727,18 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("lname", ilname);
 		}
 
-		if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Colombia" || Market == "Denmark"
-				|| Market == "France" || Market == "Germany" || Market == "Hungary" || Market == "India"
-				|| Market == "Italy" || Market == "Ireland" || Market == "Luxembourg" || Market == "Mexico"
-				|| Market == "Netherlands" || Market == "New Zealand" || Market == "Norway" || Market == "Poland"
-				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
-				|| Market == "United Kingdom") {
+		if (Market == "Australia" || Market == "Austria" || Market == "Belgium" || Market == "Colombia"
+				|| Market == "Denmark" || Market == "France" || Market == "Germany" || Market == "Hungary"
+				|| Market == "India" || Market == "Italy" || Market == "Ireland" || Market == "Luxembourg"
+				|| Market == "Mexico" || Market == "Netherlands" || Market == "New Zealand" || Market == "Norway"
+				|| Market == "Poland" || Market == "Sweden" || Market == "Switzerland" || Market == "Spain"
+				|| Market == "Ukraine" || Market == "United Kingdom") {
 			DOB.sendKeys(ddmmyyyy);
 			childtest.log(LogStatus.INFO, "", ddmmyyyy);
 			userdata.put("dob", ddmmyyyy);
 		}
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
-				|| Market == "Jamaica" || Market == "Puerto Rico" || Market == "United States") {
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
+				|| Market == "Puerto Rico" || Market == "United States") {
 			DOB.sendKeys(mmddyyyy);
 			childtest.log(LogStatus.INFO, "", mmddyyyy);
 			userdata.put("dob", mmddyyyy);
@@ -837,11 +835,10 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("martial", getTranslation(Martial.get(mvalue).getAttribute("value"), language));
 		}
 
-		if (Market == "Austria" || Market == "Belgium" || Market == "Denmark"
-				|| Market == "France" || Market == "Germany" || Market == "Hungary" || Market == "Ireland"
-				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Poland"
-				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
-				|| Market == "United Kingdom") {
+		if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+				|| Market == "Germany" || Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg"
+				|| Market == "Netherlands" || Market == "Poland" || Market == "Sweden" || Market == "Switzerland"
+				|| Market == "Spain" || Market == "Ukraine" || Market == "United Kingdom") {
 			Thread.sleep(5000);
 			jse.executeScript("window.scrollBy(0,250)", "");
 			String[] coapplicant = { "Spouse", "Company" };
@@ -1027,13 +1024,11 @@ public class AccountSetupPage extends SuperTestNG {
 			}
 		}
 
-		if (!(Market == "India")) {
-			for (int i = 0; i < Password.size(); i++) {
-				Password.get(i).sendKeys(password);
-			}
-			childtest.log(LogStatus.INFO, "", password);
-			userdata.put("password", password);
+		for (int i = 0; i < Password.size(); i++) {
+			Password.get(i).sendKeys(password);
 		}
+		childtest.log(LogStatus.INFO, "", password);
+		userdata.put("password", password);
 
 		if (Market == "India") {
 			String[] relation = { "", "Spouse", "Child", "Parent", "Sibling", };
@@ -1051,7 +1046,7 @@ public class AccountSetupPage extends SuperTestNG {
 			Select selectStates = new Select(State);
 			selectStates.selectByIndex(17);
 			PostalCode.sendKeys("560050");
-			
+
 			BankAccountNumber.sendKeys("28151610000148");
 			AccountHolderName.sendKeys(ifname);
 			IndiaBankName.sendKeys("HDFC");
@@ -1072,7 +1067,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("address2", "Haudin Road");
 			userdata.put("city", "Bangalore");
 			userdata.put("zip", "560050");
-			
+
 			userdata.put("accountnumber", "28151610000148");
 			userdata.put("holdername", ifname);
 			userdata.put("bankname", "HDFC");
@@ -1173,8 +1168,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 		Assert.assertEquals(Labels.toString(), getTranslation("en_pc", language), "Minor Lables");
 
-		if (Market == "Bahamas" || Market == "Dominican Republic"
-				|| Market == "United States") {
+		if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "United States") {
 
 			try {
 				Boolean NoReferralID = NoID.isDisplayed();
@@ -1195,8 +1189,7 @@ public class AccountSetupPage extends SuperTestNG {
 			}
 		}
 
-		if (Market == "Bahamas" || Market == "Dominican Republic"
-				|| Market == "United States") {
+		if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "United States") {
 			String[] xpath = { "(//input[@ng-change='noIDs()'])[2]", "//span[contains(@class, 'stepper-title')]" };
 
 			Random random = new Random();
@@ -1334,7 +1327,7 @@ public class AccountSetupPage extends SuperTestNG {
 		String spouse = "TestSpouseName";
 		String company = "TestCompanyName";
 		String password = "Unicity";
-		
+
 		String GBIBAN = "GB29NWBK60161331926819";
 
 		String bankname = "TestBankName";
