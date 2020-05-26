@@ -563,6 +563,20 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 
 				childtest.log(LogStatus.INFO, "", "Checked Packs Price & PV");
+				
+				
+				/*if (Market == "Germany") {
+					
+					AtoZProducts.click();
+					AddAdditionalPack.click();
+					int totalpv = (Integer.parseInt(PersonalVolume.getText()));
+					
+					
+					
+					childtest.log(LogStatus.INFO, "", "Checked PV Offer");
+					
+				}*/
+				
 			}
 		}
 

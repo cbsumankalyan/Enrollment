@@ -37,3 +37,73 @@
 [0322/143612.169:ERROR:process_info.cc(556)] ReadMemoryInfo failed
 [0322/143612.169:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
 [0322/143612.169:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0401/133729.240:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0401/133729.240:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0401/133729.240:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0401/133729.271:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0401/133729.271:ERROR:exception_snapshot_win.cc(98)] thread ID 14548 not found in process
+[0401/133731.646:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0401/133731.646:ERROR:exception_snapshot_win.cc(98)] thread ID 17500 not found in process
+[0401/133731.677:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0401/133731.677:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0401/133731.677:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0402/140334.019:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0402/140334.019:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0402/140334.019:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0402/140334.083:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0402/140334.083:ERROR:exception_snapshot_win.cc(98)] thread ID 29680 not found in process
+[0404/142822.066:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0404/142822.069:ERROR:exception_snapshot_win.cc(98)] thread ID 19504 not found in process
+[0404/142822.078:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0404/142822.079:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0404/142822.079:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0405/141503.349:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0405/141503.349:ERROR:exception_snapshot_win.cc(98)] thread ID 22808 not found in process
+[0405/141503.365:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0405/141503.365:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0405/141503.365:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0405/141503.833:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0405/141503.834:ERROR:exception_snapshot_win.cc(98)] thread ID 29420 not found in process
+[0409/143003.388:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0409/143003.388:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0409/143003.388:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0409/143003.404:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0409/143003.404:ERROR:exception_snapshot_win.cc(98)] thread ID 6660 not found in process
+[0423/141107.585:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0423/141107.585:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0423/141107.585:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0423/141107.585:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0423/141107.632:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0423/141107.632:ERROR:exception_snapshot_win.cc(98)] thread ID 11936 not found in process
+[0517/140115.090:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0517/140115.090:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0517/140115.090:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0517/140115.106:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0517/140115.106:ERROR:exception_snapshot_win.cc(98)] thread ID 8436 not found in process
+[0520/125628.354:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0520/125628.355:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0520/125628.355:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0520/125628.389:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0520/125628.389:ERROR:exception_snapshot_win.cc(98)] thread ID 14588 not found in process
+[0520/125628.428:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0520/125628.428:ERROR:exception_snapshot_win.cc(98)] thread ID 15048 not found in process
+[0520/125628.434:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0520/125628.434:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0520/125628.434:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0520/125628.434:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0520/125628.530:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0520/125628.530:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0520/125628.530:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0520/125628.546:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0520/125628.546:ERROR:exception_snapshot_win.cc(98)] thread ID 3748 not found in process
+[0521/122258.642:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0521/122258.646:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0521/122258.646:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0521/122258.647:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0521/122258.653:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0521/122258.653:ERROR:exception_snapshot_win.cc(98)] thread ID 10468 not found in process
+[0524/130916.433:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0524/130916.433:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0524/130916.433:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0524/130916.477:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0524/130916.477:ERROR:exception_snapshot_win.cc(98)] thread ID 15184 not found in process
