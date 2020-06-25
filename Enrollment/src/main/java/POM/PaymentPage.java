@@ -696,61 +696,69 @@ public class PaymentPage extends SuperTestNG {
 						if (Market == "Colombia" || Market == "Bahamas" || Market == "Canada"
 								|| Market == "Dominican Republic" || Market == "Jamaica" || Market == "United States") {
 
-							if (entry.getRequest().getPostData().getText().contains(userdata.get("shippingmethod"))) {
+							if (entry.getRequest().getPostData().getText().contains(userdata.get("zip"))) {
+								if (entry.getRequest().getPostData().getText()
+										.contains(userdata.get("shippingmethod"))) {
+									System.out.println("Unicity " + entry.getResponse().getHeaders().toString());
+									if (entry.getResponse().getHeaders().toString().contains("x-status-code=200")) {
 
-								if (entry.getResponse().getHeaders().toString().contains("x-status-code=200")) {
+										JSONObject OrderTerms = new JSONObject(entry
+												.getRequest().getPostData().getText().toString().substring(entry
+														.getRequest().getPostData().getText().toString().indexOf("{"))
+												.trim());
 
-									JSONObject OrderTerms = new JSONObject(entry.getRequest().getPostData().getText()
-											.toString()
-											.substring(
-													entry.getRequest().getPostData().getText().toString().indexOf("{"))
-											.trim());
+										Assert.assertEquals(entry.getRequest().getUrl(),
+												userdata.get("proto") + userdata.get("version") + "orderterms.js",
+												"Major OrderTerms.js URL");
+										if (userdata.get("testcase") == "getfit") {
+											Assert.assertEquals(
+													"https://hydraqa.unicity.net/" + userdata.get("version")
+															+ "customers?type=" + "Associate",
+													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
+													"Major Customer Typeqqq");
+										} else {
+											Assert.assertEquals(
+													"https://hydraqa.unicity.net/" + userdata.get("version")
+															+ "customers?type=" + userdata.get("type"),
+													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
+													"Major Customer Typewww");
+										}
 
-									Assert.assertEquals(entry.getRequest().getUrl(),
-											userdata.get("proto") + userdata.get("version") + "orderterms.js",
-											"Major OrderTerms.js URL");
-									if (userdata.get("testcase") == "getfit") {
+										Assert.assertEquals(packs,
+												new JsonPath(OrderTerms.toString()).get("order.lines.items.item.href"),
+												"Major Packs");
+										if (Market == "Colombia") {
+
+										} else {
+											System.out.println("suman" + userdata.get("zip"));
+											System.out.println(new JsonPath(OrderTerms.toString()).get("order"));
+											System.out.println("kalyan" + new JsonPath(OrderTerms.toString())
+													.get("order.shipToAddress.zip"));
+
+											Assert.assertEquals(userdata.get("zip"),
+													new JsonPath(OrderTerms.toString()).get("order.shipToAddress.zip"),
+													"Major Ship Zip2");
+										}
+										Assert.assertEquals(Quantity.toString(), new JsonPath(OrderTerms.toString())
+												.get("order.lines.items.quantity").toString(), "Quantiy");
+
+										if (Market == "Bahamas" || Market == "Dominican Republic"
+												|| Market == "Jamaica") {
+											Assert.assertEquals("US", new JsonPath(OrderTerms.toString())
+													.get("order.shipToAddress.country"), "Major Ship Country");
+										} else {
+											Assert.assertEquals(userdata.get("marketcode"),
+													new JsonPath(OrderTerms.toString())
+															.get("order.shipToAddress.country"),
+													"Major Ship Country");
+										}
+
 										Assert.assertEquals(
 												"https://hydraqa.unicity.net/" + userdata.get("version")
-														+ "customers?type=" + "Associate",
-												new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-												"Major Customer Typeqqq");
-									} else {
-										Assert.assertEquals(
-												"https://hydraqa.unicity.net/" + userdata.get("version")
-														+ "customers?type=" + userdata.get("type"),
-												new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-												"Major Customer Typewww");
+														+ "shippingmethods?" + userdata.get("shippingmethod"),
+												new JsonPath(OrderTerms.toString()).get("order.shippingMethod.href"),
+												"Major ShipMethod URL");
 									}
-
-									Assert.assertEquals(packs,
-											new JsonPath(OrderTerms.toString()).get("order.lines.items.item.href"),
-											"Major Packs");
-									if (Market == "Colombia") {
-										
-									} else {
-										Assert.assertEquals(userdata.get("zip"),
-												new JsonPath(OrderTerms.toString()).get("order.shipToAddress.zip"),
-												"Major Ship Zip");
-									}
-									Assert.assertEquals(Quantity.toString(), new JsonPath(OrderTerms.toString())
-											.get("order.lines.items.quantity").toString(), "Quantiy");
-
-									if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica") {
-										Assert.assertEquals("US",
-												new JsonPath(OrderTerms.toString()).get("order.shipToAddress.country"),
-												"Major Ship Country");
-									} else {
-										Assert.assertEquals(userdata.get("marketcode"),
-												new JsonPath(OrderTerms.toString()).get("order.shipToAddress.country"),
-												"Major Ship Country");
-									}
-
-									Assert.assertEquals(
-											"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
-													+ userdata.get("shippingmethod"),
-											new JsonPath(OrderTerms.toString()).get("order.shippingMethod.href"),
-											"Major ShipMethod URL");
 								}
 							}
 						} else {
@@ -788,7 +796,7 @@ public class PaymentPage extends SuperTestNG {
 													.get("order.lines.items.item.href"), "Major Packs");
 											Assert.assertEquals(userdata.get("zip"),
 													new JsonPath(OrderTerms.toString()).get("order.shipToAddress.zip"),
-													"Major Ship Zip");
+													"Major Ship Zip3");
 											Assert.assertEquals(Quantity.toString(),
 													new JsonPath(OrderTerms.toString())
 															.get("order.lines.items.quantity").toString(),
@@ -834,12 +842,12 @@ public class PaymentPage extends SuperTestNG {
 										Assert.assertEquals(packs,
 												new JsonPath(OrderTerms.toString()).get("order.lines.items.item.href"),
 												"Major Packs");
-										if (Market == "Colombia"){
-											
+										if (Market == "Colombia") {
+
 										} else {
-										Assert.assertEquals(userdata.get("zip"),
-												new JsonPath(OrderTerms.toString()).get("order.shipToAddress.zip"),
-												"Major Ship Zip");
+											Assert.assertEquals(userdata.get("zip"),
+													new JsonPath(OrderTerms.toString()).get("order.shipToAddress.zip"),
+													"Major Ship Zip Bahamas1");
 										}
 										Assert.assertEquals(Quantity.toString(), new JsonPath(OrderTerms.toString())
 												.get("order.lines.items.quantity").toString(), "Major Quantiy");

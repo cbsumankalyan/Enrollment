@@ -230,8 +230,8 @@ public class AccountSetupPage extends SuperTestNG {
 		String us = responsedob.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
 		String referral = "2";
-		String fname = "TestFirstName";
-		String lname = "TestLastName";
+		String fname = "IndAutomationFirstName";
+		String lname = "IndAutomationLastName";
 		String ifname = RandomStringUtils.randomAlphabetic(6).toUpperCase();
 		String ilname = RandomStringUtils.randomAlphabetic(6).toUpperCase();
 		String phone = "9823746323";
@@ -249,7 +249,7 @@ public class AccountSetupPage extends SuperTestNG {
 		String company = "TestCompanyName";
 		String ddmmyyyy = eu;
 		String mmddyyyy = us;
-		String birthplace = "TestBirthPlace";
+		String birthplace = "IndAutomationTest";
 		String tax = RandomStringUtils.randomNumeric(11);
 
 		String ATIBAN = "AT611904300234573201";
@@ -270,7 +270,7 @@ public class AccountSetupPage extends SuperTestNG {
 		String UAIBAN = "UA213996220000026007233566001";
 		String GBIBAN = "GB29NWBK60161331926819";
 
-		String bankname = "TestBankName";
+		String bankname = "IndAutomationBank";
 		String holder = "TestName";
 		String bic = "DEUTDEFF";
 		String password = "Unicity";

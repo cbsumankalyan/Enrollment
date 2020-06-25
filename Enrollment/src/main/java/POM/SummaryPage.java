@@ -799,7 +799,7 @@ public class SummaryPage extends SuperTestNG {
 						if (!(Market == "Australia" || Market == "New Zealand" || Market == "Colombia"
 								|| Market == "Dominican Republic" || Market == "India" || Market == "Jamaica"
 								|| Market == "Mexico" || Market == "Ukraine")) {
-
+							System.out.println("Naresh "+Orders.toString());
 							Assert.assertEquals(
 									new JsonPath(Orders.toString())
 											.get("customer.autoorders.items.lines.items.item.href").toString()
