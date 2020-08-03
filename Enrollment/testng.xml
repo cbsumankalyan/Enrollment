@@ -6,6 +6,7 @@
 		
 			<class name="Tests.FranchisePartner" />
 			<class name="Tests.ReferralIDPassing" />
+			<class name="Tests.INDReferralIDPassing" />
 			<class name="Tests.PrefferedCustomer" />
 			<class name="Tests.Fit" />
 			<class name="Tests.PatientPortal" />

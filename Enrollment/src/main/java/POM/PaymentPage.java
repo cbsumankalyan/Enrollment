@@ -296,14 +296,15 @@ public class PaymentPage extends SuperTestNG {
 
 					Thread.sleep(5000);
 					if (value == 1) {
-						String[] Bank = { "Seleccione Banco", "OXXO", "BANCOMER", "SCOTIABANK", "SANTANDER",
+						String[] Bank = { "Seleccione Banco", "SCOTIABANK", "SANTANDER", "BANCOMER", "OXXO",  
 								"7-ELEVEN" };
 
 						for (int i = 0; i < Bank.length; i++) {
 							Assert.assertEquals(CashBanks.get(i).getText(), Bank[i]);
 						}
 
-						String[] bank = { "OXXO", "BANCOMER", "SCOTIABANK", "SANTANDER", "SEVEN_ELEVEN" };
+						String[] bank = { "SCOTIABANK", "SANTANDER", "BANCOMER", "OXXO",  
+								"7-ELEVEN" };
 
 						Select selectbank = new Select(SelectBank);
 						String b = bank[new Random().nextInt(bank.length)];
@@ -545,6 +546,7 @@ public class PaymentPage extends SuperTestNG {
 				Thread.sleep(10000);
 				childtest.log(LogStatus.INFO, "", prpostal);
 				userdata.put("zip", prpostal);
+				Thread.sleep(10000);
 			}
 			if (!(Market == "Canada" || Market == "Puerto Rico" || Market == "United States")) {
 				City.sendKeys(city);
@@ -687,7 +689,6 @@ public class PaymentPage extends SuperTestNG {
 			Thread.sleep(5000);
 			userdata.put("shippingmethod", ShipMethod.get(value).getAttribute("value"));
 			childtest.log(LogStatus.INFO, "Ship method", userdata.get("shippingmethod").split("=")[1]);
-
 			Thread.sleep(10000);
 			List<HarEntry> entries = server.getHar().getLog().getEntries();
 			for (HarEntry entry : entries) {

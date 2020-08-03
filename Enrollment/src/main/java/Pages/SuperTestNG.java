@@ -6,7 +6,9 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
+import java.sql.Timestamp;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -51,6 +53,7 @@ public class SuperTestNG {
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";
 	public static String url = "http://enroll.ng.unicityqa.com/master/#/enroll/start";
 	public static String referralurl = "http://enroll.ng.unicityqa.com/master/#/enroll/start/united-states/2";
+	public static String indreferralurl = "http://enroll.ng.unicityqa.com/master/#/enroll/start/in/2/en_IN";
 	public static String getfit = "http://enroll.ng.unicityqa.com/master/#/enroll/getfit";
 	public static String patientportal = "http://enroll.ng.unicityqa.com/master/#/enroll/unicity";
 	public static String hcpflow = "http://enroll.ng.unicityqa.com/master/#/enroll/hcp";
@@ -90,6 +93,9 @@ public class SuperTestNG {
 	public static List<String> Major = new ArrayList<String>();
 	public static List<String> Minor = new ArrayList<String>();
 	public static List<String> Low = new ArrayList<String>();
+	
+	public static SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
+	public static Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
 	protected String getTranslation(String key, String language) throws IOException {
 		Properties prop = new Properties();
@@ -104,6 +110,7 @@ public class SuperTestNG {
 	public static ExtentTest fp;
 	public static ExtentTest pc;
 	public static ExtentTest referral;
+	public static ExtentTest indreferral;
 	public static ExtentTest fit;
 	public static ExtentTest pp;
 	public static ExtentTest hcp;
@@ -111,10 +118,15 @@ public class SuperTestNG {
 
 	@BeforeTest
 	public void StartReport() {
-		extent = new ExtentReports("C://xampp//htdocs//EnrollReport//EnrollQA.html");
+	
+		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
+		
+		extent = new ExtentReports("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
 		fp = extent.startTest("Franchise Partner");
 		pc = extent.startTest("Prefered Customer");
 		referral = extent.startTest("PassingReferralID");
+		indreferral = extent.startTest("INDPassingReferralID");
 		fit = extent.startTest("GetFit");
 		pp = extent.startTest("PatientPortal");
 		hcp = extent.startTest("HealthCareProduct");
@@ -199,10 +211,15 @@ public class SuperTestNG {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-
+		if (this.getClass().getSimpleName().toString().equals("INDReferralIDPassing")) {
+			driver.get(indreferralurl);
+			userdata.put("testcase", "indreferalid");
+			System.out.println("************************ ddd"+ userdata.get("testcase"));
+		} 
 		if (this.getClass().getSimpleName().toString().equals("ReferralIDPassing")) {
 			driver.get(referralurl);
 			userdata.put("testcase", "referalid");
+			System.out.println("************************ sss"+ userdata.get("testcase"));
 		} 
 		if (this.getClass().getSimpleName().toString().equals("FranchisePartner")) {
 			driver.get(url);
@@ -291,6 +308,7 @@ public class SuperTestNG {
 		extent.endTest(fp);
 		extent.endTest(pc);
 		extent.endTest(referral);
+		extent.endTest(indreferral);
 		extent.endTest(childtest);
 		extent.endTest(fit);
 		extent.endTest(pp);

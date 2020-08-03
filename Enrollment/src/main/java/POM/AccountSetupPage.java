@@ -672,16 +672,19 @@ public class AccountSetupPage extends SuperTestNG {
 		}
 
 		if (Market == "India" || Market == "Mexico" || Market == "Colombia") {
-			EnrollerID.sendKeys(referral + Keys.TAB);
-			SponsorID.sendKeys(referral + Keys.TAB);
-			Thread.sleep(5000);
-			childtest.log(LogStatus.INFO, "", referral);
-			childtest.log(LogStatus.INFO, "", referral);
-			userdata.put("enroller", referral);
-			userdata.put("sponsor", referral);
-			userdata.put("api", "8");
-			userdata.put("referral", "yes");
-			Assert.assertEquals(Referral.getText(), referral);
+			if (!(userdata.get("testcase") == "indreferalid")) {
+
+				EnrollerID.sendKeys(referral + Keys.TAB);
+				SponsorID.sendKeys(referral + Keys.TAB);
+				Thread.sleep(5000);
+				childtest.log(LogStatus.INFO, "", referral);
+				childtest.log(LogStatus.INFO, "", referral);
+				userdata.put("enroller", referral);
+				userdata.put("sponsor", referral);
+				userdata.put("api", "8");
+				userdata.put("referral", "yes");
+				Assert.assertEquals(Referral.getText(), referral);
+			}
 		}
 
 		userdata.put("language", language);
@@ -1082,11 +1085,20 @@ public class AccountSetupPage extends SuperTestNG {
 						System.out.println("Request URL: " + entry.getRequest().getUrl());
 						// System.out.println("Entry response : " +
 						// entry.getResponse().getContent().getText());
+						if (userdata.get("testcase") == "indreferalid") {
+							Assert.assertEquals(
+									userdata.get("proto") + userdata.get("version")
+											+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
+											+ "6" + "&email=" + userdata.get("email"),
+									entry.getRequest().getUrl(), "Major Email.js URL");
+							
+						} else { 
 						Assert.assertEquals(
 								userdata.get("proto") + userdata.get("version")
 										+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
 										+ userdata.get("api") + "&email=" + userdata.get("email"),
 								entry.getRequest().getUrl(), "Major Email.js URL");
+						}
 						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
 					}
 				}

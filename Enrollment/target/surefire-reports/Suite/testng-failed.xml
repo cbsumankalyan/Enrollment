@@ -3,60 +3,15 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="Tests.PrefferedCustomer">
+      <class name="Tests.INDReferralIDPassing">
         <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="Enroll" invocation-numbers="1 2 3 5 6 7"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- Tests.PrefferedCustomer -->
-      <class name="Tests.Fit">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="GetFit" invocation-numbers="0 1 2 3 4"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- Tests.Fit -->
-      <class name="Tests.ReferralIDPassing">
-        <methods>
+          <include name="INDPassReferralID" invocation-numbers="0"/>
           <include name="PostCondition"/>
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
-          <include name="PassReferralID" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Tests.ReferralIDPassing -->
-      <class name="Tests.HealthCareProducts">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="PassReferralID" invocation-numbers="0 1 2 3"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- Tests.HealthCareProducts -->
-      <class name="Tests.PatientPortal">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-          <include name="Patient" invocation-numbers="2 3"/>
-        </methods>
-      </class> <!-- Tests.PatientPortal -->
-      <class name="Tests.FranchisePartner">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-          <include name="Enroll" invocation-numbers="0 1 2 4 6 7 8 9 10 11 12 14 15 16 17 19 20 21 22 23 24 25 26 27 28 32 33 34 35 36 37 38 39 40 41 42 43 44 45 47 48"/>
-        </methods>
-      </class> <!-- Tests.FranchisePartner -->
+      </class> <!-- Tests.INDReferralIDPassing -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

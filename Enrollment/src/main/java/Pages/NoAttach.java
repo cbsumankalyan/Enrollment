@@ -1,5 +1,6 @@
 package Pages;
 
+
 import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -15,6 +16,9 @@ import javax.mail.internet.MimeMultipart;
 public class NoAttach extends SuperTestNG {
 
 	public static void Sendmail() throws Exception {
+		
+		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
 
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -64,7 +68,7 @@ public class NoAttach extends SuperTestNG {
 		 * "<td><b>Low<b></td>" + "</tr>" + "</table>";
 		 */
 
-		String msg3 = "<p>Hello Team,<br> <br>please click on the below link to check the <strong>Enroll.ng</strong> Automation Suite <strong>Report.</strong></p>http://10.2.0.23/EnrollReport/EnrollQA.html"
+		String msg3 = "<p>Hello Team,<br> <br>please click on the below link to check the <strong>Enroll.ng</strong> Automation Suite <strong>Report.</strong></p>http://10.2.0.23/EnrollReport/EnrollQA-"+date.format(timestamp)+".html"
 				+ "<br /><br />" + "<table width='600'border='1' cellpadding='5px'>" + "<tr><td><b>Critical:</b> </td>"
 				+ "<td>" + Critical.size() + "<br></td>" + "<td>"
 				+ Critical.toString().replace("[", "").replace("]", "") + "<br></td></tr>"
