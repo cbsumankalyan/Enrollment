@@ -1,4 +1,244 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 113.652 s - in TestSuite
+Tests run: 75, Failures: 60, Errors: 0, Skipped: 0, Time elapsed: 9,438.227 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 288.285 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Number expected [true] but found [false]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 284.142 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32126, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32126, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 93.411 s  <<< FAILURE!
+java.lang.AssertionError: Major Customization error
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:249)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 91.431 s  <<< FAILURE!
+java.lang.AssertionError: Major Customization error
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:249)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 246.539 s  <<< FAILURE!
+java.lang.AssertionError: Major zip code expected [null] but found []
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 248.453 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33096]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33096]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.201 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.295 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.398 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.397 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.358 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.423 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.249 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.232 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.239 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.471 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.278 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.294 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.319 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.24 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.455 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.299 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.299 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.305 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.29 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.791 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.837 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.511 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.303 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.697 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.477 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.487 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.446 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.241 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.44 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.961 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.68 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.333 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 11.508 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 11.371 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:55)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 11.465 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:55)
+
+INDPassReferralID(Tests.INDReferralIDPassing)  Time elapsed: 11.485 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.INDReferralIDPassing.INDPassReferralID(INDReferralIDPassing.java:47)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 249.881 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 191.319 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 190.051 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 93.831 s  <<< FAILURE!
+java.lang.AssertionError: Minor Labels expected [[Payment Options, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío]] but found [[Opciones de pago, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío]]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 281.087 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 177.145 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 213.361 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 213.928 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 253.244 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 255.024 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+
+GetFit(Tests.Fit)  Time elapsed: 122.83 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.Fit.GetFit(Fit.java:70)
+
+GetFit(Tests.Fit)  Time elapsed: 123.362 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.Fit.GetFit(Fit.java:70)
+
+Patient(Tests.PatientPortal)  Time elapsed: 178.271 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+Patient(Tests.PatientPortal)  Time elapsed: 177.246 s  <<< FAILURE!
+java.lang.AssertionError: Major Market expected [CA] but found [null]
+	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.792 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.921 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.841 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.14 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
+

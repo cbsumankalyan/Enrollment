@@ -437,11 +437,11 @@ public class InitialOrderPage extends SuperTestNG {
 
 					for (WebElement CustomPack : CustomPacks) {
 						CustomPack.click();
-						if (!(Market == "Canada" || Market == "Colombia" || Market == "Bahamas" || Market == "Dominican Republic"
-								|| Market == "Jamaica" || Market == "Mexico" || Market == "Puerto Rico"
-								|| Market == "United States")) {
+						if (!(Market == "Canada" || Market == "Colombia" || Market == "Bahamas"
+								|| Market == "Dominican Republic" || Market == "Jamaica" || Market == "Mexico"
+								|| Market == "Puerto Rico" || Market == "United States")) {
 							if (StarterKit.size() == 1) {
-								
+
 								Assert.assertEquals(PriceOnPack.getText(), PriceInOrderSummary.getText(),
 										"Major pirce on pack");
 								Assert.assertEquals(PVOnPack.getText().replaceAll(": ", ""), PVInOrderSummary.getText(),
@@ -454,9 +454,9 @@ public class InitialOrderPage extends SuperTestNG {
 							}
 						}
 
-						if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia" ||Market == "Dominican Republic"
-								|| Market == "Jamaica" || Market == "Mexico" || Market == "Puerto Rico"
-								|| Market == "United States") {
+						if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia"
+								|| Market == "Dominican Republic" || Market == "Jamaica" || Market == "Mexico"
+								|| Market == "Puerto Rico" || Market == "United States") {
 							Assert.assertEquals(PriceOnPack.getText(), PriceInOrderSummary.getText(),
 									"Major price on pack");
 							Assert.assertEquals(PVOnPack.getText().replaceAll(": ", ""), PVInOrderSummary.getText(),
@@ -487,9 +487,9 @@ public class InitialOrderPage extends SuperTestNG {
 								}
 							}
 						} else {
-							if (Market == "Bahamas" || Market == "Canada"  ||  Market == "Colombia" || Market == "Dominican Republic"
-									|| Market == "Jamaica" || Market == "Mexico" || Market == "Puerto Rico"
-									|| Market == "United States") {
+							if (Market == "Bahamas" || Market == "Canada" || Market == "Colombia"
+									|| Market == "Dominican Republic" || Market == "Jamaica" || Market == "Mexico"
+									|| Market == "Puerto Rico" || Market == "United States") {
 								String km = PopOverInfo.getText().replaceAll("\\G(.*\r?\n).*(?:\r?\n|$)", "$1");
 								String[] dfd = km.replaceAll("[A-Za-z : _]", "").trim().split("-");
 								for (@SuppressWarnings("unused")
@@ -563,20 +563,20 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 
 				childtest.log(LogStatus.INFO, "", "Checked Packs Price & PV");
-				
-				
-				/*if (Market == "Germany") {
-					
-					AtoZProducts.click();
-					AddAdditionalPack.click();
-					int totalpv = (Integer.parseInt(PersonalVolume.getText()));
-					
-					
-					
-					childtest.log(LogStatus.INFO, "", "Checked PV Offer");
-					
-				}*/
-				
+
+				/*
+				 * if (Market == "Germany") {
+				 * 
+				 * AtoZProducts.click(); AddAdditionalPack.click(); int totalpv
+				 * = (Integer.parseInt(PersonalVolume.getText()));
+				 * 
+				 * 
+				 * 
+				 * childtest.log(LogStatus.INFO, "", "Checked PV Offer");
+				 * 
+				 * }
+				 */
+
 			}
 		}
 
@@ -735,8 +735,32 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 				DecimalFormat df2 = new DecimalFormat("#.##");
 				Float result1 = Float.valueOf(df2.format(sum));
-				
-				if (Market == "Colombia"){
+
+				if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+						|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
+						|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
+						|| Market == "Sweden" || Market == "Switzerland" || Market == "Ukraine"
+						|| Market == "United Kingdom") {
+					if (pvs >= 500 && pvs <= 999) {
+						packs.remove("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32689");
+						packs.remove("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32942");
+						Quantity.remove("1");
+						Quantity.remove("1");
+						System.out.println("Total Pv Greater then 500 - " + pvs);
+						System.out.println(packs.toString());
+					}
+
+					if (pvs >= 1000) {
+						packs.remove("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32690");
+						packs.remove("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32942");
+						Quantity.remove("1");
+						Quantity.remove("1");
+						System.out.println("Total Pv Greater then 1000 - " + pvs);
+						System.out.println(packs.toString());
+					}
+				}
+
+				if (Market == "Colombia") {
 					Assert.assertEquals(sum, totalprice, "Critical total price Mismatch");
 				} else {
 					Assert.assertEquals(result1, totalprice, "Critical total price Mismatch");

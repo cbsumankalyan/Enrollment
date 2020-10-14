@@ -93,7 +93,7 @@ public class StartPage extends SuperTestNG {
 				"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 				"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
 				"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore", "Sweden",
-				"Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Ukraine", "United Kingdom" };
+				"Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine", "United Kingdom" };
 
 		if (!(userdata.get("testcase") == "hcp")) {
 			for (int i = 0; i < expected.length; i++) {

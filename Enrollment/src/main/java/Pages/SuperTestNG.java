@@ -48,15 +48,17 @@ public class SuperTestNG {
 	// public static ExtentTest test;
 	// public static HashMap<String, String> userdata = new HashMap<>();
 	public static Map<String, String> userdata = new HashMap<String, String>();
+	
+	public static String branch = "master";
 
 	public static String hydra = "https://hydra.unicity.net/v5/";
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";
-	public static String url = "http://enroll.ng.unicityqa.com/master/#/enroll/start";
-	public static String referralurl = "http://enroll.ng.unicityqa.com/master/#/enroll/start/united-states/2";
-	public static String indreferralurl = "http://enroll.ng.unicityqa.com/master/#/enroll/start/in/2/en_IN";
-	public static String getfit = "http://enroll.ng.unicityqa.com/master/#/enroll/getfit";
-	public static String patientportal = "http://enroll.ng.unicityqa.com/master/#/enroll/unicity";
-	public static String hcpflow = "http://enroll.ng.unicityqa.com/master/#/enroll/hcp";
+	public static String url = "http://enroll.ng.unicityqa.com/"+branch+"/#/enroll/start";
+	public static String referralurl = "http://enroll.ng.unicityqa.com/"+branch+"/#/enroll/start/united-states/2";
+	public static String indreferralurl = "http://enroll.ng.unicityqa.com/"+branch+"/#/enroll/start/in/2/en_IN";
+	public static String getfit = "http://enroll.ng.unicityqa.com/"+branch+"/#/enroll/getfit";
+	public static String patientportal = "http://enroll.ng.unicityqa.com/"+branch+"/#/enroll/unicity";
+	public static String hcpflow = "http://enroll.ng.unicityqa.com/"+branch+"/#/enroll/hcp";
 	// public static String url = "https://enroll.unicity.com/#/enroll/start";
 	// public static JavascriptExecutor jse = (JavascriptExecutor)driver;
 
@@ -300,6 +302,7 @@ public class SuperTestNG {
 		userdata.clear();
 		vvv.clear();
 		rrr.clear();
+		
 		
 	}
 

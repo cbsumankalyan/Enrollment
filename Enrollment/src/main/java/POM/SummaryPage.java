@@ -23,6 +23,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import Pages.SuperTestNG;
 import io.restassured.path.json.JsonPath;
 import net.lightbody.bmp.core.har.HarEntry;
+import java.util.Collections;
 
 public class SummaryPage extends SuperTestNG {
 
@@ -268,6 +269,9 @@ public class SummaryPage extends SuperTestNG {
 
 	@FindBy(xpath = "(//div[contains(@class,'col-xs-5 text-right')])[4]")
 	private WebElement GrandTotal;
+	
+	@FindBy(xpath = "(//div[contains(@class,'col-xs-5 text-right')])[5]")
+	private WebElement GrandPV;
 
 	@FindBy(xpath = "(//ul[@class='summary-total row']//li[3])[1]")
 	private WebElement PCARTotalPrice;
@@ -377,7 +381,12 @@ public class SummaryPage extends SuperTestNG {
 
 	public void OrderSubmit(String Market, String language, String pack)
 			throws JsonGenerationException, JsonMappingException, IOException, InterruptedException, JSONException {
-
+		
+		int pvs = 0;
+		if(!(Market == "India")){
+			pvs = Integer.parseInt(GrandPV.getText()); 
+		}
+		
 		String sign = "TestSignature";
 
 		Thread.sleep(10000);
@@ -693,6 +702,8 @@ public class SummaryPage extends SuperTestNG {
 			Signature.sendKeys(userdata.get("fname"));
 			userdata.put("signature", userdata.get("fname"));
 		}
+		
+		
 
 		if (pack == "Pack") {
 			if (Market == "Dominican Republic") {
@@ -799,7 +810,7 @@ public class SummaryPage extends SuperTestNG {
 						if (!(Market == "Australia" || Market == "New Zealand" || Market == "Colombia"
 								|| Market == "Dominican Republic" || Market == "India" || Market == "Jamaica"
 								|| Market == "Mexico" || Market == "Ukraine")) {
-							System.out.println("Naresh "+Orders.toString());
+							System.out.println("Naresh " + Orders.toString());
 							Assert.assertEquals(
 									new JsonPath(Orders.toString())
 											.get("customer.autoorders.items.lines.items.item.href").toString()
@@ -961,10 +972,52 @@ public class SummaryPage extends SuperTestNG {
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("customer.taxTerms.taxId"),
 								userdata.get("govid"), "Major GovID");
 
-						Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.item.href"), packs,
-								"Major Packs");
-						Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.quantity").toString(),
-								Quantity.toString(), "Major Quantity");
+						if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+								|| Market == "Germany" || Market == "Hungary" || Market == "Italy"
+								|| Market == "Ireland" || Market == "Luxembourg" || Market == "Netherlands"
+								|| Market == "Norway" || Market == "Poland" || Market == "Sweden"
+								|| Market == "Switzerland" || Market == "Ukraine" || Market == "United Kingdom") {
+							if (pvs >= 500 && pvs <= 999) {
+								packs.add("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32689");
+								packs.add("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32942");
+								Quantity.add("1");
+								Quantity.add("1");
+								Collections.sort(packs);
+								System.out.println("Total Pv Greater then 500 - " + pvs);
+								System.out.println(packs.toString());
+								Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.item.href"), packs,
+										"Major Packs");
+								Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.quantity").toString(),
+										Quantity.toString(), "Major Quantity");
+							}
+
+							if (pvs >= 1000) {
+								packs.add("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32690");
+								packs.add("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32942");
+								Quantity.add("1");
+								Quantity.add("1");
+								Collections.sort(packs);
+								System.out.println("Total Pv Greater then 1000 - " + pvs);
+								System.out.println(packs.toString());
+								Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.item.href"), packs,
+										"Major Packs");
+								Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.quantity").toString(),
+										Quantity.toString(), "Major Quantity");
+							} else {
+								Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.item.href"), packs,
+										"Major Packs");
+								Assert.assertEquals(
+										new JsonPath(Orders.toString()).get("lines.items.quantity").toString(),
+										Quantity.toString(), "Major Quantity");
+							}
+
+						} else {
+
+							Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.item.href"), packs,
+									"Major Packs");
+							Assert.assertEquals(new JsonPath(Orders.toString()).get("lines.items.quantity").toString(),
+									Quantity.toString(), "Major Quantity");
+						}
 
 						Assert.assertEquals(new JsonPath(Orders.toString()).get("shipToName.firstName"),
 								userdata.get("fname"), "Major Ship FirstName");
@@ -1564,11 +1617,11 @@ public class SummaryPage extends SuperTestNG {
 				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
 			}
 		}
-		
+
 		if (userdata.get("testcase") == "hcp") {
 			Thread.sleep(5000);
 			Assert.assertEquals(driver.getCurrentUrl(), hcpflow, "Low return url");
-			String[] expected = { "United States", "Canada ",};
+			String[] expected = { "United States", "Canada ", };
 
 			for (int i = 0; i < expected.length; i++) {
 				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
@@ -2978,7 +3031,8 @@ public class SummaryPage extends SuperTestNG {
 		Assert.assertEquals(GetFitLName.getText(), userdata.get("lname"), "Low Congratulations");
 		Assert.assertEquals(GetFitEmail.getText(), userdata.get("email"), "Low RegisteredAs coach");
 		Assert.assertEquals(GetFitAddress1.getText(), userdata.get("address1"), "Low address1");
-//		Assert.assertEquals(GetFitAddress2.getText(), userdata.get("address2"), "Low address2");
+		// Assert.assertEquals(GetFitAddress2.getText(),
+		// userdata.get("address2"), "Low address2");
 		Assert.assertEquals(GetFitCity.getText(), userdata.get("city"), "Low city");
 		Assert.assertEquals(GetFitPostal.getText(), userdata.get("zip"), "Low zip");
 
