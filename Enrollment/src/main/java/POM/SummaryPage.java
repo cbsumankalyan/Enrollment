@@ -1610,7 +1610,7 @@ public class SummaryPage extends SuperTestNG {
 					"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 					"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
 					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore",
-					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Ukraine",
+					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine",
 					"United Kingdom" };
 
 			for (int i = 0; i < expected.length; i++) {
