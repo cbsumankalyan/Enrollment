@@ -1,244 +1,270 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 75, Failures: 60, Errors: 0, Skipped: 0, Time elapsed: 9,438.227 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 288.285 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Number expected [true] but found [false]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 284.142 s  <<< FAILURE!
-java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32126, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32126, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+Tests run: 121, Failures: 40, Errors: 0, Skipped: 63, Time elapsed: 11,473.874 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 221.078 s  <<< FAILURE!
+java.lang.AssertionError: Minor Labels expected [[Payment Options, Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]] but found [[Zahlungsmöglichkeiten, Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 93.411 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 93.42 s  <<< FAILURE!
 java.lang.AssertionError: Major Customization error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:249)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 91.431 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 91.558 s  <<< FAILURE!
 java.lang.AssertionError: Major Customization error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:249)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 246.539 s  <<< FAILURE!
-java.lang.AssertionError: Major zip code expected [null] but found []
+Enroll(Tests.FranchisePartner)  Time elapsed: 217.83 s  <<< FAILURE!
+java.lang.AssertionError: Minor Labels expected [[Payment Options, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío]] but found [[Opciones de pago, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 231.485 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 215.608 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=22605, https://hydraqa.unicity.net/v5a-test/items?id.unicity=29838, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29838, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32943, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 242.486 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=29838, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33096]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29838, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33096]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 256.788 s  <<< FAILURE!
+java.lang.AssertionError: Major Quantiy expected [[1, 1]] but found [[1]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 246.731 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 239.722 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 60.896 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//li[contains(@class, 'businesspack')]//p//span)[1]"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 0afed8f8251b9de1d8a7fda3c3a68dc2
+*** Element info: {Using=xpath, value=(//li[contains(@class, 'businesspack')]//p//span)[1]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:249)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 265.417 s  <<< FAILURE!
+java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33095]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 258.517 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 0d50408365ea301797d5b3bf24750970
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 248.453 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 264.298 s  <<< FAILURE!
 java.lang.AssertionError: Major Packs expected [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=29317, https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33096]] but found [[https://hydraqa.unicity.net/v5a-test/items?id.unicity=32127, https://hydraqa.unicity.net/v5a-test/items?id.unicity=33096]]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.201 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
+Enroll(Tests.FranchisePartner)  Time elapsed: 282.996 s  <<< FAILURE!
+java.lang.AssertionError: Major Quantiy expected [[1, 1]] but found [[1]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 98.255 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 5ea0bc255d98e8997b00b66c15d93530
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 106.169 s  <<< FAILURE!
+java.lang.AssertionError: Minor Lables expected [[Registrerings oppsett, Om deg, Personal Identification Number, Provisjons- og betalingsmuligheter, Ditt Unicity kontor]] but found [[Registrerings oppsett, Om deg, Fødselsnummer, Provisjons- og betalingsmuligheter, Ditt Unicity kontor]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 149.904 s  <<< FAILURE!
+java.lang.AssertionError: Minor Lables expected [[Configuración de inscripción, Su Información, Co-solicitante (opcional), Unicity Office]] but found [[Configuración de inscripción, Su Información, Co-solicitante (opcional), Unicity Oficina]]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 19.956 s  <<< FAILURE!
+java.lang.AssertionError: Low footer expected [Copyright Unicity International, Inc. All Rights Reserved.] but found [upphovsrätt Unicity International, Inc. Med ensamrätt.]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.295 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 223.06 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 2157537861309720818e34d56f1b0429
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.398 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 182.699 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: a1e83d806e86ecd5439d21689e4b9baf
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.397 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 223.907 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 7ca38c361a88f1e500d09a4bb2cfbfaf
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.358 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 168.639 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 570854eaeb33f468a39e88c9e733475c
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.423 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 213.648 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 1749215eb701d8059e6c101082fc4d30
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.249 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+Enroll(Tests.FranchisePartner)  Time elapsed: 171.894 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.232 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+PostCondition(Tests.FranchisePartner)  Time elapsed: 172.205 s  <<< FAILURE!
+java.lang.NullPointerException
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.239 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 214.187 s  <<< FAILURE!
+java.lang.AssertionError: Critical Back end error
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.471 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 60.337 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//h3[@class='summary-subhead head-summary ng-scope'])[1]"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 6b09203351b0248967f2134a0552e8e2
+*** Element info: {Using=xpath, value=(//h3[@class='summary-subhead head-summary ng-scope'])[1]}
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:56)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.278 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
+INDPassReferralID(Tests.INDReferralIDPassing)  Time elapsed: 65.611 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=86.0.4240.75)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 86.0.4240.75, webStorageEnabled: true}
+Session ID: 1a82fe4eec8fdc4896db08ca0f61b0f7
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.INDReferralIDPassing.INDPassReferralID(INDReferralIDPassing.java:50)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.294 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.319 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.24 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.455 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.299 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.299 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.305 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.29 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.791 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.837 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.511 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.303 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.697 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.477 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.487 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.446 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.241 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.44 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.961 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.68 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.333 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 11.508 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:248)
-
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 11.371 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:55)
-
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 11.465 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:55)
-
-INDPassReferralID(Tests.INDReferralIDPassing)  Time elapsed: 11.485 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.INDReferralIDPassing.INDPassReferralID(INDReferralIDPassing.java:47)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 249.881 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 191.319 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 190.051 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 93.831 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío]] but found [[Opciones de pago, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío]]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 167.077 s  <<< FAILURE!
+java.lang.AssertionError: Critical Back end error
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 281.087 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 111.49 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:102)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 177.145 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+PostCondition(Tests.PrefferedCustomer)  Time elapsed: 111.805 s  <<< FAILURE!
+java.lang.NullPointerException
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 213.361 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+GetFit(Tests.Fit)  Time elapsed: 43.43 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Tests.Fit.GetFit(Fit.java:67)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 213.928 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+PostCondition(Tests.Fit)  Time elapsed: 43.744 s  <<< FAILURE!
+java.lang.NullPointerException
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 253.244 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+Patient(Tests.PatientPortal)  Time elapsed: 110.491 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Tests.PatientPortal.Patient(PatientPortal.java:64)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 255.024 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Ukraine] but found [Turkey]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
+PostCondition(Tests.PatientPortal)  Time elapsed: 110.803 s  <<< FAILURE!
+java.lang.NullPointerException
 
-GetFit(Tests.Fit)  Time elapsed: 122.83 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.Fit.GetFit(Fit.java:70)
-
-GetFit(Tests.Fit)  Time elapsed: 123.362 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.Fit.GetFit(Fit.java:70)
-
-Patient(Tests.PatientPortal)  Time elapsed: 178.271 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-
-Patient(Tests.PatientPortal)  Time elapsed: 177.246 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [CA] but found [null]
-	at Tests.PatientPortal.Patient(PatientPortal.java:66)
-
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.792 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.857 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.921 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.832 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.841 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.92 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.14 s  <<< FAILURE!
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 119.972 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
 

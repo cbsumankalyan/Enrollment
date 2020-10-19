@@ -2267,7 +2267,7 @@ public class SummaryPage extends SuperTestNG {
 								"Hungary", "India", "Indonesia", "Italy", "Ireland", "Jamaica", "Japan", "Korea",
 								"Laos", "Luxembourg", "Malaysia", "Mexico", "Netherlands", "New Zealand", "Norway",
 								"Philippines", "Poland", "Puerto Rico ", "Singapore", "Sweden", "Switzerland", "Spain",
-								"Taiwan", "Thailand", "United States", "Ukraine", "United Kingdom", };
+								"Taiwan", "Thailand", "United States", "Turkey", "Ukraine", "United Kingdom", };
 
 						for (int i = 0; i < expected.length; i++) {
 							Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
