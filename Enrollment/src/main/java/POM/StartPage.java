@@ -441,6 +441,16 @@ public class StartPage extends SuperTestNG {
 			Assert.assertEquals(CSEmail.getText(), getTranslation("footer_email", language), "Low footer");
 			Assert.assertEquals(Copyright.getText(), getTranslation("footer_branding_de", language), "Low footer");
 		}
+		
+		if (Market == "Turkey") {
+			Thread.sleep(1000);
+			Assert.assertEquals(NeedHelp.getText(), getTranslation("footer_need_help_sp", language), "Low footer");
+			Assert.assertEquals(Support.getText(), getTranslation("footer_executive_support_tr", language),
+					"Low footer");
+			Assert.assertEquals(WorkingHours.getText(), getTranslation("footer_hours_tr", language), "Low footer");
+			Assert.assertEquals(CSEmail.getText(), getTranslation("footer_email", language), "Low footer");
+			Assert.assertEquals(Copyright.getText(), getTranslation("footer_branding_tr", language), "Low footer");
+		}
 
 		childtest.log(LogStatus.INFO, "", "Checked Footer");
 

@@ -22,7 +22,7 @@ public class FranchisePartner extends SuperTestNG {
 	@DataProvider
 	public Object[][] MarketConfig() {
 
-		Object[][] data = new Object[49][3];
+		Object[][] data = new Object[51][3];
 
 		data[0][0] = "Austria";
 		data[0][1] = "English";
@@ -207,18 +207,26 @@ public class FranchisePartner extends SuperTestNG {
         data[45][0] = "United States";
         data[45][1] = "Español";
         data[45][2] = "Pack";
-
-        data[46][0] = "Ukraine";
-        data[46][1] = "English";
-        data[46][2] = "Pack";
         
-        data[47][0] = "Ukraine";
-        data[47][1] = "русский";
-        data[47][2] = "Pack";
+        data[46][0] = "Turkey";
+        data[46][1] = "English";
+        data[46][2] = "NoPack";
+        
+        data[47][0] = "Turkey";
+        data[47][1] = "Türkçe";
+        data[47][2] = "NoPack";
 
-        data[48][0] = "United Kingdom";
+        data[48][0] = "Ukraine";
         data[48][1] = "English";
-		data[48][2] = "Pack";
+        data[48][2] = "Pack";
+        
+        data[49][0] = "Ukraine";
+        data[49][1] = "русский";
+        data[49][2] = "Pack";
+
+        data[50][0] = "United Kingdom";
+        data[50][1] = "English";
+		data[50][2] = "Pack";
        
 		/*data[0][0] = "Colombia";
 		data[0][1] = "Español";

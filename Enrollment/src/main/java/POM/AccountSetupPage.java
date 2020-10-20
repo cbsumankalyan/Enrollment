@@ -567,9 +567,13 @@ public class AccountSetupPage extends SuperTestNG {
 			Assert.assertEquals(Labels.toString(), getTranslation("eu_ch", language), "Minor Lables");
 		}
 
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
-				|| Market == "Puerto Rico" || Market == "United States" || Market == "Mexico") {
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Jamaica"
+				|| Market == "Puerto Rico" || Market == "United States" ) {
 			Assert.assertEquals(Labels.toString(), getTranslation("us", language), "Minor Lables");
+		}
+		
+		if (Market == "Dominican Republic" || Market == "Mexico") {
+			Assert.assertEquals(Labels.toString(), getTranslation("dr", language), "Minor Lables");
 		}
 
 		if (Market == "Colombia") {
