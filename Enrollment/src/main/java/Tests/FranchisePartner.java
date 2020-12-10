@@ -228,9 +228,9 @@ public class FranchisePartner extends SuperTestNG {
         data[50][1] = "English";
 		data[50][2] = "Pack";
        
-		/*data[0][0] = "Colombia";
-		data[0][1] = "Español";
-		data[0][2] = "Pack";*/
+		/*data[0][0] = "Turkey";
+		data[0][1] = "Türkçe";
+		data[0][2] = "NoPack";*/
 		
 		
 

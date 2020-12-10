@@ -2,29 +2,29 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="114058" started-at="2020-10-20T04:21:51Z" finished-at="2020-10-20T04:23:45Z">
+  <suite name="Suite" duration-ms="122803" started-at="2020-12-10T14:40:53Z" finished-at="2020-12-10T14:42:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="114058" started-at="2020-10-20T04:21:51Z" finished-at="2020-10-20T04:23:45Z">
-      <class name="Tests.INDReferralIDPassing">
-        <test-method status="PASS" signature="StartReport()[pri:0, instance:Tests.INDReferralIDPassing@475530b9]" name="StartReport" is-config="true" duration-ms="110" started-at="2020-10-20T04:21:51Z" finished-at="2020-10-20T04:21:51Z">
+    <test name="Test" duration-ms="122803" started-at="2020-12-10T14:40:53Z" finished-at="2020-12-10T14:42:56Z">
+      <class name="Tests.FranchisePartner">
+        <test-method status="PASS" signature="StartReport()[pri:0, instance:Tests.FranchisePartner@475530b9]" name="StartReport" is-config="true" duration-ms="110" started-at="2020-12-10T14:40:53Z" finished-at="2020-12-10T14:40:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartReport -->
-        <test-method status="PASS" signature="PreConditon()[pri:0, instance:Tests.INDReferralIDPassing@475530b9]" name="PreConditon" is-config="true" duration-ms="7738" started-at="2020-10-20T04:21:51Z" finished-at="2020-10-20T04:21:59Z">
+        <test-method status="PASS" signature="PreConditon()[pri:0, instance:Tests.FranchisePartner@475530b9]" name="PreConditon" is-config="true" duration-ms="8068" started-at="2020-12-10T14:40:54Z" finished-at="2020-12-10T14:41:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PreConditon -->
-        <test-method status="PASS" signature="INDPassReferralID(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.INDReferralIDPassing@475530b9]" name="INDPassReferralID" duration-ms="105572" started-at="2020-10-20T04:21:59Z" data-provider="MarketConfig" finished-at="2020-10-20T04:23:44Z">
+        <test-method status="PASS" signature="Enroll(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.FranchisePartner@475530b9]" name="Enroll" duration-ms="114579" started-at="2020-12-10T14:41:02Z" data-provider="MarketConfig" finished-at="2020-12-10T14:42:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[India]]>
+                <![CDATA[Turkey]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[English]]>
+                <![CDATA[Türkçe]]>
               </value>
             </param>
             <param index="2">
@@ -35,23 +35,23 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- INDPassReferralID -->
-        <test-method status="PASS" signature="PostCondition(org.testng.ITestResult)[pri:0, instance:Tests.INDReferralIDPassing@475530b9]" name="PostCondition" is-config="true" duration-ms="622" started-at="2020-10-20T04:23:44Z" finished-at="2020-10-20T04:23:45Z">
+        </test-method> <!-- Enroll -->
+        <test-method status="PASS" signature="PostCondition(org.testng.ITestResult)[pri:0, instance:Tests.FranchisePartner@475530b9]" name="PostCondition" is-config="true" duration-ms="0" started-at="2020-12-10T14:42:56Z" finished-at="2020-12-10T14:42:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=INDPassReferralID status=SUCCESS method=INDReferralIDPassing.INDPassReferralID(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.INDReferralIDPassing@475530b9] output={null}]]]>
+                <![CDATA[[TestResult name=Enroll status=SUCCESS method=FranchisePartner.Enroll(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.FranchisePartner@475530b9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostCondition -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Tests.INDReferralIDPassing@475530b9]" name="afterSuite" is-config="true" duration-ms="2358" started-at="2020-10-20T04:23:45Z" finished-at="2020-10-20T04:23:47Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Tests.FranchisePartner@475530b9]" name="afterSuite" is-config="true" duration-ms="235" started-at="2020-12-10T14:42:56Z" finished-at="2020-12-10T14:42:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- Tests.INDReferralIDPassing -->
+      </class> <!-- Tests.FranchisePartner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

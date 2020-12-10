@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="Tests.INDReferralIDPassing">
+      <class name="Tests.FranchisePartner">
         <methods>
-          <include name="INDPassReferralID" invocation-numbers="0"/>
           <include name="PostCondition"/>
           <include name="StartReport"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
+          <include name="Enroll" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Tests.INDReferralIDPassing -->
+      </class> <!-- Tests.FranchisePartner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

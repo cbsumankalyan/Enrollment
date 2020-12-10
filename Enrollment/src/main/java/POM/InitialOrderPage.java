@@ -771,7 +771,7 @@ public class InitialOrderPage extends SuperTestNG {
 
 			}
 		}
-		if (!(Market == "India")) {
+		if (!(Market == "India" || Market == "Turkey")) {
 			if (pack == "NoPack") {
 				try {
 					Boolean NoPack = NOPack.isDisplayed();

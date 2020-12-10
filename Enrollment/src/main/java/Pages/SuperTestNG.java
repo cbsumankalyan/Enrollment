@@ -163,6 +163,7 @@ public class SuperTestNG {
 		countrycode.put("Sweden", "SE");
 		countrycode.put("Switzerland", "CH");
 		countrycode.put("Spain", "ES");
+		countrycode.put("Turkey", "TR");
 		countrycode.put("United States", "US");
 		countrycode.put("Ukraine", "UA");
 		countrycode.put("United Kingdom", "GB");
@@ -179,6 +180,7 @@ public class SuperTestNG {
 		locale.put("Norwegian", "no");
 		locale.put("Polish", "pl");
 		locale.put("Svenska", "sv");
+		locale.put("Türkçe", "tr");
 
 		/*
 		 * System.setProperty("webdriver.chrome.driver",
@@ -288,13 +290,13 @@ public class SuperTestNG {
 
 			failed.add(countrycode.get(userdata.get("market")));	
 			
-			driver.quit();
+//			driver.quit();
 
 		} else if (testResult.getStatus() == ITestResult.SKIP) {
 			childtest.log(LogStatus.SKIP, "", "Test Skipped");
 		}
 
-		driver.quit();
+//		driver.quit();
 		packs.clear();
 		Itemcode.clear();
 		Quantity.clear();
@@ -308,7 +310,7 @@ public class SuperTestNG {
 
 	@AfterSuite
 	public void afterSuite() throws Exception {
-		extent.endTest(fp);
+//		extent.endTest(fp);
 		extent.endTest(pc);
 		extent.endTest(referral);
 		extent.endTest(indreferral);
@@ -317,7 +319,7 @@ public class SuperTestNG {
 		extent.endTest(pp);
 		extent.endTest(hcp);
 		extent.flush();
-		NoAttach.Sendmail();
+//		NoAttach.Sendmail();
 	}
 
 }

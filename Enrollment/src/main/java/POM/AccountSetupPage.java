@@ -546,7 +546,7 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Luxembourg" || Market == "Sweden" || Market == "Spain" || Market == "Bahamas"
 				|| Market == "Canada" || Market == "Colombia" || Market == "Dominican Republic" || Market == "Jamaica"
 				|| Market == "Puerto Rico" || Market == "United States" || Market == "Norway" || Market == "Italy"
-				|| Market == "India" || Market == "Mexico" || Market == "Switzerland")) {
+				|| Market == "India" || Market == "Mexico" || Market == "Switzerland" || Market == "Turkey")) {
 			Assert.assertEquals(Labels.toString(), getTranslation("eu", language), "Minor Lables");
 		}
 
@@ -567,11 +567,14 @@ public class AccountSetupPage extends SuperTestNG {
 			Assert.assertEquals(Labels.toString(), getTranslation("eu_ch", language), "Minor Lables");
 		}
 
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Jamaica"
-				|| Market == "Puerto Rico" || Market == "United States" ) {
+		if (Market == "Bahamas" || Market == "Canada" || Market == "Jamaica" || Market == "United States") {
 			Assert.assertEquals(Labels.toString(), getTranslation("us", language), "Minor Lables");
 		}
-		
+
+		if (Market == "Puerto Rico") {
+			Assert.assertEquals(Labels.toString(), getTranslation("pr", language), "Minor Lables");
+		}
+
 		if (Market == "Dominican Republic" || Market == "Mexico") {
 			Assert.assertEquals(Labels.toString(), getTranslation("dr", language), "Minor Lables");
 		}
@@ -590,6 +593,10 @@ public class AccountSetupPage extends SuperTestNG {
 
 		if (Market == "India") {
 			Assert.assertEquals(Labels.toString(), getTranslation("in", language), "Minor Lables");
+		}
+
+		if (Market == "Turkey") {
+			Assert.assertEquals(Labels.toString(), getTranslation("tr", language), "Minor Lables");
 		}
 
 		if (userdata.get("testcase") == "normal" || userdata.get("testcase") == "hcp") {
@@ -690,6 +697,10 @@ public class AccountSetupPage extends SuperTestNG {
 				Assert.assertEquals(Referral.getText(), referral);
 			}
 		}
+		
+		if (Market == "Turkey") {
+		userdata.put("api", "6");
+		}
 
 		userdata.put("language", language);
 		userdata.put("type", "Associate");
@@ -739,7 +750,7 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "India" || Market == "Italy" || Market == "Ireland" || Market == "Luxembourg"
 				|| Market == "Mexico" || Market == "Netherlands" || Market == "New Zealand" || Market == "Norway"
 				|| Market == "Poland" || Market == "Sweden" || Market == "Switzerland" || Market == "Spain"
-				|| Market == "Ukraine" || Market == "United Kingdom") {
+				|| Market == "Ukraine" || Market == "United Kingdom" || Market == "Turkey") {
 			DOB.sendKeys(ddmmyyyy);
 			childtest.log(LogStatus.INFO, "", ddmmyyyy);
 			userdata.put("dob", ddmmyyyy);
@@ -775,7 +786,7 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
 				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
 				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
-				|| Market == "United Kingdom") {
+				|| Market == "United Kingdom" || Market == "Turkey") {
 			Fax.sendKeys(fax);
 			childtest.log(LogStatus.INFO, "", fax);
 			userdata.put("fax", fax);
@@ -790,10 +801,17 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "France" || Market == "Germany" || Market == "Hungary" || Market == "India"
 				|| Market == "Ireland" || Market == "Luxembourg" || Market == "Mexico" || Market == "Netherlands"
 				|| Market == "Norway" || Market == "Poland" || Market == "Sweden" || Market == "Switzerland"
-				|| Market == "Spain" || Market == "Ukraine" || Market == "United Kingdom" || Market == "Italy")) {
+				|| Market == "Spain" || Market == "Turkey" || Market == "Ukraine" || Market == "United Kingdom"
+				|| Market == "Italy")) {
 			GovernmentID.sendKeys(govid);
 			childtest.log(LogStatus.INFO, "", govid);
 			userdata.put("govid", govid);
+		}
+
+		if (Market == "Turkey") {
+			GovernmentID.sendKeys("11437927778");
+			childtest.log(LogStatus.INFO, "", "11437927778");
+			userdata.put("govid", "11437927778");
 		}
 
 		if (Market == "Italy") {
@@ -822,20 +840,23 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
 				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
 				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
-				|| Market == "United Kingdom") {
+				|| Market == "United Kingdom" || Market == "Turkey") {
 			jse.executeScript("window.scrollBy(0,250)", "");
 			EmailUpline.get(new Random().nextInt(EmailUpline.size())).click();
 		}
-		int value = new Random().nextInt(Gender.size());
-		Gender.get(value).click();
-		userdata.put("genderoption", Gender.get(value).getAttribute("value"));
-		userdata.put("gender", getTranslation(Gender.get(value).getAttribute("value"), language));
+
+		if (!(Market == "Turkey")) {
+			int value = new Random().nextInt(Gender.size());
+			Gender.get(value).click();
+			userdata.put("genderoption", Gender.get(value).getAttribute("value"));
+			userdata.put("gender", getTranslation(Gender.get(value).getAttribute("value"), language));
+		}
 
 		if (!(Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
 				|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
 				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
 				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
-				|| Market == "United Kingdom")) {
+				|| Market == "United Kingdom" || Market == "Turkey")) {
 			int mvalue = new Random().nextInt(Martial.size());
 			Martial.get(mvalue).click();
 			userdata.put("maritaloption", Martial.get(mvalue).getAttribute("value"));
@@ -845,7 +866,7 @@ public class AccountSetupPage extends SuperTestNG {
 		if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
 				|| Market == "Germany" || Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg"
 				|| Market == "Netherlands" || Market == "Poland" || Market == "Sweden" || Market == "Switzerland"
-				|| Market == "Spain" || Market == "Ukraine" || Market == "United Kingdom") {
+				|| Market == "Spain" || Market == "Turkey" || Market == "Ukraine" || Market == "United Kingdom") {
 			Thread.sleep(5000);
 			jse.executeScript("window.scrollBy(0,250)", "");
 			String[] coapplicant = { "Spouse", "Company" };
@@ -870,7 +891,7 @@ public class AccountSetupPage extends SuperTestNG {
 						|| Market == "Germany" || Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg"
 						|| Market == "Netherlands" || Market == "Poland" || Market == "Sweden"
 						|| Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
-						|| Market == "United Kingdom") {
+						|| Market == "United Kingdom" || Market == "Turkey") {
 
 					String[] b = { "1", "2", "3", "4", };
 					Select selectshipstate = new Select(Selectcompanytype);
@@ -896,6 +917,12 @@ public class AccountSetupPage extends SuperTestNG {
 			Tax.sendKeys(tax);
 			childtest.log(LogStatus.INFO, "", tax);
 			userdata.put("govid", tax);
+		}
+
+		if (Market == "Turkey") {
+			Tax.sendKeys("6111306880");
+			childtest.log(LogStatus.INFO, "", "6111306880");
+			userdata.put("Tax", "6111306880");
 		}
 
 		if (Market == "Italy") {
@@ -1092,16 +1119,16 @@ public class AccountSetupPage extends SuperTestNG {
 						if (userdata.get("testcase") == "indreferalid") {
 							Assert.assertEquals(
 									userdata.get("proto") + userdata.get("version")
-											+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
-											+ "6" + "&email=" + userdata.get("email"),
+											+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._" + "6"
+											+ "&email=" + userdata.get("email"),
 									entry.getRequest().getUrl(), "Major Email.js URL");
-							
-						} else { 
-						Assert.assertEquals(
-								userdata.get("proto") + userdata.get("version")
-										+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
-										+ userdata.get("api") + "&email=" + userdata.get("email"),
-								entry.getRequest().getUrl(), "Major Email.js URL");
+
+						} else {
+							Assert.assertEquals(
+									userdata.get("proto") + userdata.get("version")
+											+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
+											+ userdata.get("api") + "&email=" + userdata.get("email"),
+									entry.getRequest().getUrl(), "Major Email.js URL");
 						}
 						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
 					}
@@ -1110,15 +1137,20 @@ public class AccountSetupPage extends SuperTestNG {
 		}
 
 		if (pack == "NoPack") {
-			if (Market == "Norway") {
+			if (Market == "Norway" || Market == "Turkey") {
 				Address1.sendKeys("Address 1");
 				Address2.sendKeys("Address 2");
 				City.sendKeys("TestCity");
-				PostalCode.sendKeys("1234");
+				if (Market == "Turkey") {
+					PostalCode.sendKeys("12345");
+					userdata.put("zip", "12345");
+				} else { 
+					PostalCode.sendKeys("1234");
+					userdata.put("zip", "1234");
+				}
 				userdata.put("address1", "Address 1");
 				userdata.put("address2", "Address 2");
 				userdata.put("city", "TestCity");
-				userdata.put("zip", "1234");
 			}
 		}
 		Continue.click();
