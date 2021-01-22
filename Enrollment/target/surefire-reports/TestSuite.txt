@@ -1,341 +1,158 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 77, Failures: 69, Errors: 0, Skipped: 0, Time elapsed: 15,341.83 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 263.977 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 252.897 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 243.012 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:260)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 263.589 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 252.356 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 252.359 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 82.375 s  <<< FAILURE!
-java.lang.AssertionError: Major Customization error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 91.791 s  <<< FAILURE!
-java.lang.AssertionError: Major Customization error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 271.331 s  <<< FAILURE!
-java.lang.AssertionError: Major Response Ship Method expected [WillCall&location] but found [WillCall]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 260.439 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 248.844 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 227.77 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:260)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 230.66 s  <<< FAILURE!
+Tests run: 77, Failures: 22, Errors: 0, Skipped: 0, Time elapsed: 18,612.098 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 230.909 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
-Session ID: b4c4c427ee1a135be55aa4a19251e1c6
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: ef194d20a8d533ce8abec77f38d0077b
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 263.576 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
+Enroll(Tests.FranchisePartner)  Time elapsed: 91.653 s  <<< FAILURE!
+java.lang.AssertionError: Major Customization error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 258.709 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
+Enroll(Tests.FranchisePartner)  Time elapsed: 91.631 s  <<< FAILURE!
+java.lang.AssertionError: Major Customization error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 248.005 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 260.374 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 250.255 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 80.567 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Nominee, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Mailing Address, Direct Deposit for Commissions, The Distributor Agreement - Terms & Conditions, Summary]] but found [[Enrollment Settings, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Co-Applicant/Nominee, Mailing Address, Direct Deposit for Commissions, Password, Summary]]
+Enroll(Tests.FranchisePartner)  Time elapsed: 251.046 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=87.0.4280.141)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: 18e8adf804321b0cff4786aeff9291de
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 261.599 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 249.192 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 77.716 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 80.219 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//li[contains(@class, 'businesspack')]//p//span)[1]"}
-  (Session info: chrome=87.0.4280.88)
+  (Session info: chrome=87.0.4280.141)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
-Session ID: d7430637972fab1e16b24f7e3e8cf8ea
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: e888df1a4857af735adb3995060f1468
 *** Element info: {Using=xpath, value=(//li[contains(@class, 'businesspack')]//p//span)[1]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 225.641 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:260)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 260.739 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 258.585 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 250.348 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 182.849 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 261.757 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 250.432 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 75.84 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 88.099 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//li[contains(@class, 'businesspack')]//p//span)[1]"}
-  (Session info: chrome=87.0.4280.88)
+  (Session info: chrome=87.0.4280.141)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
-Session ID: a783c774206b9656a0c9710eeca8a1fc
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: e1cd692d227271c99b7b7e395d0ea08d
 *** Element info: {Using=xpath, value=(//li[contains(@class, 'businesspack')]//p//span)[1]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 67.076 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 79.373 s  <<< FAILURE!
 java.lang.AssertionError: Major NOPack Click Here
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 66.135 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 77.865 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//li[contains(@class, 'businesspack')]//p//span)[1]"}
-  (Session info: chrome=87.0.4280.88)
+  (Session info: chrome=87.0.4280.141)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
-Session ID: 2ea51c7103ba73a47b71b85a98e4e210
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: 5caca37aa2b40f4e98a09d6fec18c434
 *** Element info: {Using=xpath, value=(//li[contains(@class, 'businesspack')]//p//span)[1]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 109.217 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 98.897 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 226.188 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=87.0.4280.88)
+Enroll(Tests.FranchisePartner)  Time elapsed: 228.362 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.141)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
-Session ID: b7577139c1efeacc1973505ed6cdc5ff
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 224.917 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=87.0.4280.88)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.88, webStorageEnabled: true}
-Session ID: 5dba6e28d8416644ba2751f1bdfdc328
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:261)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 263.219 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 251.381 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 263.082 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 251.358 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 251.911 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 253.301 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 260.382 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 250.239 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 222.569 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: 4364d5f80918f273a305dc9a4e7675d7
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:260)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 215.197 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:260)
+INDPassReferralID(Tests.INDReferralIDPassing)  Time elapsed: 80.867 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Nominee, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Mailing Address, Direct Deposit for Commissions, The Distributor Agreement - Terms & Conditions, Summary]] but found [[Enrollment Settings, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Co-Applicant/Nominee, Mailing Address, Direct Deposit for Commissions, Password, Summary]]
+	at Tests.INDReferralIDPassing.INDPassReferralID(INDReferralIDPassing.java:52)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 78.859 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 79.013 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 259.973 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:257)
-
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 225.647 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:59)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 177.592 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 196.56 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 198.085 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.367 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.259 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 46.391 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 46.575 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 178.757 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 216.571 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 200 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\sumancb\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.141, webStorageEnabled: true}
+Session ID: 0019869adb46388e2522d373667e0f7c
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 166.732 s  <<< FAILURE!
-java.lang.AssertionError: Major Market expected [MX] but found [null]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 161.81 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing/Mailing Address, Shipping Address, Shipping Method, Summary]]
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:104)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 180.942 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:103)
-
-GetFit(Tests.Fit)  Time elapsed: 71.398 s  <<< FAILURE!
-java.lang.AssertionError: Major Coach Promo fee is Displaying
-	at Tests.Fit.GetFit(Fit.java:68)
-
-GetFit(Tests.Fit)  Time elapsed: 124.772 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 122.618 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-GetFit(Tests.Fit)  Time elapsed: 124.331 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 123.993 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.Fit.GetFit(Fit.java:70)
 
-Patient(Tests.PatientPortal)  Time elapsed: 166.655 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
-
-Patient(Tests.PatientPortal)  Time elapsed: 156.495 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.PatientPortal.Patient(PatientPortal.java:65)
-
-Patient(Tests.PatientPortal)  Time elapsed: 174.305 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 173.756 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
 
-Patient(Tests.PatientPortal)  Time elapsed: 174.454 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 175.24 s  <<< FAILURE!
 java.lang.AssertionError: Major Market expected [CA] but found [null]
 	at Tests.PatientPortal.Patient(PatientPortal.java:66)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.232 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.308 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.385 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
 
 PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.259 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
-
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.404 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
-
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.364 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
-
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.354 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:64)
 

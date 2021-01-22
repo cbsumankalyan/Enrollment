@@ -395,7 +395,7 @@ public class SummaryPage extends SuperTestNG {
 			throws JsonGenerationException, JsonMappingException, IOException, InterruptedException, JSONException {
 
 		int pvs = 0;
-		if (!(Market == "India" || Market == "Turkey")) {
+		if (!(Market == "India" || Market == "Turkey" || Market == "Colombia")) {
 			pvs = Integer.parseInt(GrandPV.getText());
 		}
 

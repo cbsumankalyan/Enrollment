@@ -315,7 +315,7 @@ public class InitialOrderPage extends SuperTestNG {
 				 * Ireland, Norway, Poland, Ukraine are Non Category packs flow
 				 */
 
-				if (Market == "Ireland" || Market == "Norway" || Market == "Poland" || Market == "Ukraine") {
+				if (Market == "Poland" || Market == "Ukraine") {
 					for (WebElement CustomPack : NonCategoryPacks) {
 						CustomPack.click();
 
@@ -665,7 +665,7 @@ public class InitialOrderPage extends SuperTestNG {
 						childtest.log(LogStatus.INFO, "", "Currency Symbol");
 
 						if (!(userdata.get("testcase") == "hcp")) {
-							if (!(Market == "Colombia" || Market == "Mexico" || Market == "Puerto Rico")) {
+							if (!(Market == "Colombia" || Market == "Mexico" || Market == "Puerto Rico" || Market == "Ukraine")) {
 								Boolean Suggested = SuggestedProducts.isDisplayed();
 								Assert.assertTrue(Suggested, "Major Suggested not dispalying");
 								SuggestedProducts.click();
@@ -682,10 +682,11 @@ public class InitialOrderPage extends SuperTestNG {
 								break;
 							}
 						}
-						if (Market == "Ukraine") {
+						
+						/*if (Market == "Ukraine") {
 							NonCategoryPacks.get(new Random().nextInt(NonCategoryPacks.size())).click();
 							Thread.sleep(200);
-						}
+						}*/
 
 						/*
 						 * Checking the Added Products is displaying in Order
