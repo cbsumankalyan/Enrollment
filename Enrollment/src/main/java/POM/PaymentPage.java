@@ -18,7 +18,9 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import com.relevantcodes.extentreports.LogStatus;
+
+import com.aventstack.extentreports.Status;
+
 import Pages.SuperTestNG;
 import io.restassured.path.json.JsonPath;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -217,7 +219,7 @@ public class PaymentPage extends SuperTestNG {
 					try {
 						Boolean NoPack = SEPA.isDisplayed();
 						Assert.assertTrue(NoPack, "Major SEPA is Displaying");
-						childtest.log(LogStatus.INFO, "Payment", "SEPA");
+						childtest.log(Status.INFO, "Payment ->"+ "SEPA");
 
 						int value = new Random().nextInt(PaymentOptions.size());
 						PaymentOptions.get(value).click();
@@ -250,12 +252,12 @@ public class PaymentPage extends SuperTestNG {
 					if (Market == "Austria") {
 						IBAN.sendKeys(ATIBAN);
 						userdata.put("sepaiban", ATIBAN);
-						childtest.log(LogStatus.INFO, "", ATIBAN);
+						childtest.log(Status.INFO, ATIBAN);
 					}
 					if (Market == "Germany") {
 						IBAN.sendKeys(DEIBAN);
 						userdata.put("sepaiban", DEIBAN);
-						childtest.log(LogStatus.INFO, "", DEIBAN);
+						childtest.log(Status.INFO, DEIBAN);
 					}
 					BankName.sendKeys(bankname);
 					AccHolder.sendKeys(holder);
@@ -272,11 +274,11 @@ public class PaymentPage extends SuperTestNG {
 					new Select(ExpiryMonth).selectByVisibleText(mon);
 					new Select(ExpiryYear).selectByVisibleText(year);
 					CVV.sendKeys(cvv);
-					childtest.log(LogStatus.INFO, "Payment", ccname);
-					childtest.log(LogStatus.INFO, "", cc);
-					childtest.log(LogStatus.INFO, "", mon);
-					childtest.log(LogStatus.INFO, "", year);
-					childtest.log(LogStatus.INFO, "", cvv);
+					childtest.log(Status.INFO, "Payment ->"+ ccname);
+					childtest.log(Status.INFO, cc);
+					childtest.log(Status.INFO, mon);
+					childtest.log(Status.INFO, year);
+					childtest.log(Status.INFO, cvv);
 				}
 			}
 
@@ -285,7 +287,7 @@ public class PaymentPage extends SuperTestNG {
 					try {
 						Boolean NoPack = CashPayment.isDisplayed();
 						Assert.assertTrue(NoPack, "Major CashPayment is Displaying");
-						childtest.log(LogStatus.INFO, "Payment", "Cash");
+						childtest.log(Status.INFO, "Payment ->"+ "Cash");
 
 					} catch (Exception e) {
 						Assert.fail("Major CashPayment is not Displaying");
@@ -312,18 +314,18 @@ public class PaymentPage extends SuperTestNG {
 						userdata.put("paymenttype", "bank");
 						userdata.put("mxbank", b);
 						Thread.sleep(5000);
-						childtest.log(LogStatus.INFO, "Bank", b);
+						childtest.log(Status.INFO, "Bank ->"+ b);
 					} else {
 						CCName.sendKeys(ccname);
 						CCNumber.sendKeys(cc);
 						new Select(ExpiryMonth).selectByVisibleText(mon);
 						new Select(ExpiryYear).selectByVisibleText(year);
 						CVV.sendKeys(cvv);
-						childtest.log(LogStatus.INFO, "Payment", ccname);
-						childtest.log(LogStatus.INFO, "", cc);
-						childtest.log(LogStatus.INFO, "", mon);
-						childtest.log(LogStatus.INFO, "", year);
-						childtest.log(LogStatus.INFO, "", cvv);
+						childtest.log(Status.INFO, "Payment ->"+ ccname);
+						childtest.log(Status.INFO, cc);
+						childtest.log(Status.INFO, mon);
+						childtest.log(Status.INFO, year);
+						childtest.log(Status.INFO, cvv);
 						userdata.put("paymenttype", "creditcard");
 					}
 				} else {
@@ -332,11 +334,11 @@ public class PaymentPage extends SuperTestNG {
 					new Select(ExpiryMonth).selectByVisibleText(mon);
 					new Select(ExpiryYear).selectByVisibleText(year);
 					CVV.sendKeys(cvv);
-					childtest.log(LogStatus.INFO, "Payment", ccname);
-					childtest.log(LogStatus.INFO, "", cc);
-					childtest.log(LogStatus.INFO, "", mon);
-					childtest.log(LogStatus.INFO, "", year);
-					childtest.log(LogStatus.INFO, "", cvv);
+					childtest.log(Status.INFO, "Payment ->"+ ccname);
+					childtest.log(Status.INFO, cc);
+					childtest.log(Status.INFO, mon);
+					childtest.log(Status.INFO, year);
+					childtest.log(Status.INFO, cvv);
 					userdata.put("paymenttype", "creditcard");
 				}
 			}
@@ -347,11 +349,11 @@ public class PaymentPage extends SuperTestNG {
 				new Select(ExpiryMonth).selectByVisibleText(mon);
 				new Select(ExpiryYear).selectByVisibleText(year);
 				CVV.sendKeys(cvv);
-				childtest.log(LogStatus.INFO, "Payment", ccname);
-				childtest.log(LogStatus.INFO, "", cc);
-				childtest.log(LogStatus.INFO, "", mon);
-				childtest.log(LogStatus.INFO, "", year);
-				childtest.log(LogStatus.INFO, "", cvv);
+				childtest.log(Status.INFO, "Payment ->"+ ccname);
+				childtest.log(Status.INFO, cc);
+				childtest.log(Status.INFO, mon);
+				childtest.log(Status.INFO, year);
+				childtest.log(Status.INFO, cvv);
 			}
 
 			userdata.put("ccname", ccname);
@@ -421,7 +423,7 @@ public class PaymentPage extends SuperTestNG {
 										new JsonPath(shipmethods.toString()).get("data.items.type"),
 										"Major Ship Method Type");
 							}
-							childtest.log(LogStatus.INFO, "Ship",
+							childtest.log(Status.INFO, "Ship ->"+
 									"<a href=" + entry.getRequest().getUrl() + ">Shippingmethods.js</a>");
 						}
 					}
@@ -473,8 +475,8 @@ public class PaymentPage extends SuperTestNG {
 			if (!(Market == "United States")) {
 				Address1.sendKeys(address1);
 				Address2.sendKeys(address2);
-				childtest.log(LogStatus.INFO, "", address1);
-				childtest.log(LogStatus.INFO, "", address2);
+				childtest.log(Status.INFO, address1);
+				childtest.log(Status.INFO, address2);
 				userdata.put("address1", address1);
 				userdata.put("address2", address2);
 			}
@@ -482,18 +484,18 @@ public class PaymentPage extends SuperTestNG {
 				if (language == "English") {
 					Address1.sendKeys(usotheraddress);
 					userdata.put("address1", usotheraddress);
-					childtest.log(LogStatus.INFO, "", usotheraddress);
+					childtest.log(Status.INFO, usotheraddress);
 				} else {
 					Address1.sendKeys(usaddress);
 					userdata.put("address1", usaddress);
-					childtest.log(LogStatus.INFO, "", usaddress);
+					childtest.log(Status.INFO, usaddress);
 				}
 			}
 
 			if (Market == "France" || Market == "Germany" || Market == "Sweden" || Market == "Spain"
 					|| Market == "Ukraine" || Market == "Italy" || Market == "Mexico") {
 				PostalCode.sendKeys(uspostal);
-				childtest.log(LogStatus.INFO, "", uspostal);
+				childtest.log(Status.INFO, uspostal);
 				userdata.put("zip", uspostal);
 			}
 
@@ -501,24 +503,24 @@ public class PaymentPage extends SuperTestNG {
 					|| Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg" || Market == "Netherlands"
 					|| Market == "New Zealand" || Market == "Norway" || Market == "Switzerland") {
 				PostalCode.sendKeys(postal);
-				childtest.log(LogStatus.INFO, "", postal);
+				childtest.log(Status.INFO, postal);
 				userdata.put("zip", postal);
 			}
 
 			if (Market == "Poland") {
 				PostalCode.sendKeys("09-876");
-				childtest.log(LogStatus.INFO, "", "09-876");
+				childtest.log(Status.INFO, "09-876");
 				userdata.put("zip", "09-876");
 			}
 			if (Market == "United Kingdom") {
 				PostalCode.sendKeys("ASCN 1ZZ");
-				childtest.log(LogStatus.INFO, "", "ASCN 1ZZ");
+				childtest.log(Status.INFO, "ASCN 1ZZ");
 				userdata.put("zip", "ASCN 1ZZ");
 			}
 			if (Market == "Canada") {
 				PostalCode.sendKeys(capostal);
 				Thread.sleep(5000);
-				childtest.log(LogStatus.INFO, "", capostal);
+				childtest.log(Status.INFO, capostal);
 				userdata.put("zip", capostal);
 			}
 			if (Market == "United States") {
@@ -531,12 +533,12 @@ public class PaymentPage extends SuperTestNG {
 					SelectOtherCity.sendKeys("HOLLYWOOD");
 					Thread.sleep(5000);
 
-					childtest.log(LogStatus.INFO, "", usotherzip);
+					childtest.log(Status.INFO, usotherzip);
 					userdata.put("zip", usotherzip);
 				} else {
 					PostalCode.sendKeys(uspostal);
 					Thread.sleep(5000);
-					childtest.log(LogStatus.INFO, "", uspostal);
+					childtest.log(Status.INFO, uspostal);
 					userdata.put("zip", uspostal);
 				}
 			}
@@ -544,13 +546,13 @@ public class PaymentPage extends SuperTestNG {
 				PostalCode.sendKeys(prpostal);
 				PostalCode.sendKeys(Keys.TAB);
 				Thread.sleep(10000);
-				childtest.log(LogStatus.INFO, "", prpostal);
+				childtest.log(Status.INFO, prpostal);
 				userdata.put("zip", prpostal);
 				Thread.sleep(10000);
 			}
 			if (!(Market == "Canada" || Market == "Puerto Rico" || Market == "United States")) {
 				City.sendKeys(city);
-				childtest.log(LogStatus.INFO, "", city);
+				childtest.log(Status.INFO, city);
 				userdata.put("city", city);
 			}
 			if (Market == "Australia") {
@@ -675,8 +677,8 @@ public class PaymentPage extends SuperTestNG {
 				ShipAddress1.sendKeys(usaddress);
 				ShipPostalCode.sendKeys(uspostal);
 				Thread.sleep(2000);
-				childtest.log(LogStatus.INFO, "Shipping", usaddress);
-				childtest.log(LogStatus.INFO, "", uspostal);
+				childtest.log(Status.INFO, "Shipping ->"+ usaddress);
+				childtest.log(Status.INFO, uspostal);
 				userdata.put("address1", usaddress);
 				userdata.put("zip", uspostal);
 				Thread.sleep(10000);
@@ -688,7 +690,7 @@ public class PaymentPage extends SuperTestNG {
 			ShipMethod.get(value).click();
 			Thread.sleep(5000);
 			userdata.put("shippingmethod", ShipMethod.get(value).getAttribute("value"));
-			childtest.log(LogStatus.INFO, "Ship method", userdata.get("shippingmethod").split("=")[1]);
+			childtest.log(Status.INFO, "Ship method ->"+ userdata.get("shippingmethod").split("=")[1]);
 			Thread.sleep(10000);
 			List<HarEntry> entries = server.getHar().getLog().getEntries();
 			for (HarEntry entry : entries) {
@@ -923,7 +925,7 @@ public class PaymentPage extends SuperTestNG {
 								userdata.put("state", new JsonPath(addresses.toString()).get("items.state").toString());
 							}
 
-							childtest.log(LogStatus.INFO, "Addressses",
+							childtest.log(Status.INFO, "Addressses ->"+
 									"<a href=" + entry.getRequest().getUrl() + ">Addresses.js</a>");
 							break;
 						}

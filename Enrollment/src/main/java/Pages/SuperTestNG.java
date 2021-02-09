@@ -28,13 +28,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-//import com.relevantcodes.extentreports.ExtentReports;
-//import com.relevantcodes.extentreports.ExtentTest;
-//import com.relevantcodes.extentreports.LogStatus;
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
@@ -98,6 +97,7 @@ public class SuperTestNG {
 	
 	public static SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
 	public static Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+	
 
 	protected String getTranslation(String key, String language) throws IOException {
 		Properties prop = new Properties();
@@ -108,6 +108,7 @@ public class SuperTestNG {
 		return prop.getProperty(key);
 	}
 
+	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest fp;
 	public static ExtentTest pc;
@@ -117,6 +118,7 @@ public class SuperTestNG {
 	public static ExtentTest pp;
 	public static ExtentTest hcp;
 	public static ExtentTest childtest;
+	public static ExtentTest parenttest;
 
 	@BeforeTest
 	public void StartReport() {
@@ -124,14 +126,25 @@ public class SuperTestNG {
 		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
 		
-		extent = new ExtentReports("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
+		/*extent = new ExtentReports("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
 		fp = extent.startTest("Franchise Partner");
 		pc = extent.startTest("Prefered Customer");
 		referral = extent.startTest("PassingReferralID");
 		indreferral = extent.startTest("INDPassingReferralID");
 		fit = extent.startTest("GetFit");
 		pp = extent.startTest("PatientPortal");
-		hcp = extent.startTest("HealthCareProduct");
+		hcp = extent.startTest("HealthCareProduct");*/
+		
+		htmlReporter = new ExtentHtmlReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		fp = extent.createTest("Franchise Partner");
+		pc = extent.createTest("Prefered Customer");
+		referral = extent.createTest("PassingReferralID");
+		indreferral = extent.createTest("INDPassingReferralID");
+		fit = extent.createTest("GetFit");
+		pp = extent.createTest("PatientPortal");
+		hcp = extent.createTest("HealthCareProduct");
 	}
 
 	@SuppressWarnings("deprecation")
@@ -259,17 +272,23 @@ public class SuperTestNG {
 	}
 
 	@AfterMethod
-	public void PostCondition(ITestResult testResult) {
-
+	public void PostCondition(ITestResult testResult) throws IOException {
+		
 		if (testResult.isSuccess()) {
-			childtest.log(LogStatus.PASS, "", "Test Passed");
+			childtest.log(Status.PASS, "Test Passed");
 
 		} else if (testResult.getStatus() == ITestResult.FAILURE) {
+			
 			String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
-			String Suman = "data:image/png;base64," + screenshotBase64;
-			childtest.log(LogStatus.INFO, "Snapshot :", fp.addBase64ScreenShot(Suman));
-			childtest.log(LogStatus.FAIL, "", "Test Failed");
-			childtest.log(LogStatus.INFO, "", testResult.getThrowable().getMessage());
+			String exceptionMessage = testResult.getThrowable().getMessage();
+			
+			
+			childtest.fail("<details><summary><b><font color=red>Exception Occured click to see details:"
+					+ "</font></b></summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details> \n");
+			childtest.fail(
+					"<b><font color=red>"+"Screenshot of failure" + "</font></b>",
+					MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotBase64).build());
+			childtest.log(Status.FAIL, "Test Failed");
 
 			String[] xyz = testResult.getThrowable().getMessage().split(" ");
 			if (xyz[0].equals("Critical")) {
@@ -293,7 +312,7 @@ public class SuperTestNG {
 			driver.quit();
 
 		} else if (testResult.getStatus() == ITestResult.SKIP) {
-			childtest.log(LogStatus.SKIP, "", "Test Skipped");
+			childtest.log(Status.SKIP, "Test Skipped");
 		}
 
 		driver.quit();
@@ -310,14 +329,7 @@ public class SuperTestNG {
 
 	@AfterSuite
 	public void afterSuite() throws Exception {
-		extent.endTest(fp);
-		extent.endTest(pc);
-		extent.endTest(referral);
-		extent.endTest(indreferral);
-		extent.endTest(childtest);
-		extent.endTest(fit);
-		extent.endTest(pp);
-		extent.endTest(hcp);
+		
 		extent.flush();
 		NoAttach.Sendmail();
 	}

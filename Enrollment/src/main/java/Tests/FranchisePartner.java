@@ -6,9 +6,7 @@ import java.text.ParseException;
 import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.LogStatus;
-
+import com.aventstack.extentreports.Status;
 import Pages.Account;
 import Pages.AutoRefill;
 import Pages.InitialOrder;
@@ -228,9 +226,13 @@ public class FranchisePartner extends SuperTestNG {
         data[50][1] = "English";
 		data[50][2] = "Pack";
        
-		/*data[0][0] = "Turkey";
-		data[0][1] = "Türkçe";
-		data[0][2] = "NoPack";*/
+		/*data[0][0] = "Austria";
+		data[0][1] = "English";
+		data[0][2] = "Pack";
+
+		data[1][0] = "Austria";
+		data[1][1] = "Deutsch";
+		data[1][2] = "Pack";*/
 		
 		
 
@@ -249,9 +251,8 @@ public class FranchisePartner extends SuperTestNG {
 	@Test(dataProvider="MarketConfig")
 	public void Enroll(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = extent.startTest(Market + "  |  " + language);
-		fp.appendChild(childtest);
-		childtest.log(LogStatus.INFO, "FP Enrollment", "Platform   "+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
+		childtest = fp.createNode(Market + "  |  " + language);
+		childtest.log(Status.INFO, "FP Enrollment Platform  ->"+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
 		
 		start.SelectMarket(Market, language);
 		packs.PacksChecking(Market, language, pack);

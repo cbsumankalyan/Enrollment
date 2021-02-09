@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +13,7 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 
 import Pages.SuperTestNG;
 
@@ -88,7 +87,7 @@ public class AutoRefillPage extends SuperTestNG {
 		if (pack == "Pack") {
 			if (!(Market == "Colombia" || Market == "India" || Market == "Mexico" || Market == "Ukraine")) {
 
-				childtest.log(LogStatus.INFO, "Auto Refill", "");
+				childtest.log(Status.INFO, "Auto Refill");
 
 				/*
 				 * Set UP AR Sign UP Free Ship AR Terms Skip AR AR Addition
@@ -154,7 +153,7 @@ public class AutoRefillPage extends SuperTestNG {
 					Collections.sort(al);
 					List<Object> deduped = al.stream().distinct().collect(Collectors.toList());
 					Assert.assertEquals(newList, deduped, "Major Quotes Call Packs is not Displaying");
-					childtest.log(LogStatus.INFO, "", "All Quotes Call Packs Displaying");
+					childtest.log(Status.INFO, "All Quotes Call Packs Displaying");
 
 					WebElement Element = PopularProducts.get(new Random().nextInt(PopularProducts.size()));
 					jse.executeScript("arguments[0].scrollIntoView();", Element);
@@ -190,8 +189,8 @@ public class AutoRefillPage extends SuperTestNG {
 
 				userdata.put("arpack", ARProduct.getText());
 				userdata.put("aritemcode", ARPackItemCode.getText().replace("#", ""));
-				childtest.log(LogStatus.INFO, "AR Pack", ARProduct.getText());
-				childtest.log(LogStatus.INFO, "", ARPackItemCode.getText());
+				childtest.log(Status.INFO, "AR Pack ->"+ARProduct.getText());
+				childtest.log(Status.INFO, ARPackItemCode.getText());
 
 				if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
 						|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
@@ -202,7 +201,7 @@ public class AutoRefillPage extends SuperTestNG {
 						Assert.assertTrue(WhichDateToShip.isDisplayed());
 						Assert.assertTrue(WhichDateToShipMessage.isDisplayed());
 						Assert.assertTrue(WhichDateToShipDates.isDisplayed());
-						childtest.log(LogStatus.INFO, "", "AR Pack Ship Date");
+						childtest.log(Status.INFO, "AR Pack Ship Date");
 					} catch (Exception e) {
 						Assert.fail("Major Which Day TO Ship is Not Displaying");
 					}
@@ -216,7 +215,7 @@ public class AutoRefillPage extends SuperTestNG {
 							Assert.assertTrue(USWhichDateToShip.isDisplayed());
 							Assert.assertTrue(USWhichDateToShipMessage.isDisplayed());
 							Assert.assertTrue(USWhichDateToShipDates.isDisplayed());
-							childtest.log(LogStatus.INFO, "", "AR Pack Ship Date");
+							childtest.log(Status.INFO, "AR Pack Ship Date");
 						} catch (Exception e) {
 							Assert.fail("Minor Which Day TO Ship is Not Displaying");
 						}

@@ -18,7 +18,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import com.relevantcodes.extentreports.LogStatus;
+
+import com.aventstack.extentreports.Status;
+
 import Pages.SuperTestNG;
 import io.restassured.path.json.JsonPath;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -253,7 +255,7 @@ public class InitialOrderPage extends SuperTestNG {
 
 	public void Packs(String Market, String language, String pack)
 			throws InterruptedException, JSONException, IOException {
-		WebDriverWait wait = new WebDriverWait(driver, 200);
+		WebDriverWait wait = new WebDriverWait(driver, 400);
 		wait.until(ExpectedConditions
 				.invisibilityOfElementLocated(By.xpath("(//img[@src='assets/img/ajax-loader.gif'])[1]")));
 
@@ -262,7 +264,7 @@ public class InitialOrderPage extends SuperTestNG {
 					"Low Referral ID is not displaying");
 			Assert.assertEquals(SponsorProvider.getText(), getTranslation("yoursponsor", language),
 					"Low Referral ID is not displaying");
-			childtest.log(LogStatus.INFO, "", "Referral ID");
+			childtest.log(Status.INFO, "Referral ID");
 		}
 
 		if (pack == "Pack") {
@@ -273,9 +275,9 @@ public class InitialOrderPage extends SuperTestNG {
 					if (entry.getRequest().getMethod().equals("POST")) {
 						if (entry.getRequest().getUrl().contains("quotes?")) {
 
-							System.out.println("Request URL: " + entry.getRequest().getUrl());
+							/*System.out.println("Request URL: " + entry.getRequest().getUrl());
 							System.out.println("Entry Quotes response : " + entry.getResponse().getContent().getText());
-							System.out.println("Entry request : " + entry.getRequest().getPostData().getText());
+							System.out.println("Entry request : " + entry.getRequest().getPostData().getText());*/
 
 							/*
 							 * Checking Quotes Call and Pushing the Items codes
@@ -301,8 +303,8 @@ public class InitialOrderPage extends SuperTestNG {
 							Assert.assertEquals(entry.getRequest().getUrl(),
 									userdata.get("proto") + userdata.get("version") + "quotes?&expand=item",
 									"Critical Quotes url");
-							childtest.log(LogStatus.INFO, "Initial Order", "");
-							childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Quotes</a>");
+							childtest.log(Status.INFO, "Initial Order");
+							childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Quotes</a>");
 						}
 					}
 				}
@@ -477,7 +479,7 @@ public class InitialOrderPage extends SuperTestNG {
 								String d : dfd) {
 
 									Assert.assertEquals(dfd[0], PVOnPack.getText().replaceAll(": ", ""),
-											"Major pv on pack");
+											"Major pv in pop over");
 									Assert.assertEquals(dfd[0], PVInOrderSummary.getText(),
 											"Major pv in order summary");
 
@@ -562,7 +564,7 @@ public class InitialOrderPage extends SuperTestNG {
 					}
 				}
 
-				childtest.log(LogStatus.INFO, "", "Checked Packs Price & PV");
+				childtest.log(Status.INFO, "Checked Packs Price & PV");
 
 				/*
 				 * if (Market == "Germany") {
@@ -572,7 +574,7 @@ public class InitialOrderPage extends SuperTestNG {
 				 * 
 				 * 
 				 * 
-				 * childtest.log(LogStatus.INFO, "", "Checked PV Offer");
+				 * childtest.log(Status.INFO, "", "Checked PV Offer");
 				 * 
 				 * }
 				 */
@@ -604,7 +606,7 @@ public class InitialOrderPage extends SuperTestNG {
 						Assert.fail("Major Search is not working");
 					}
 
-					childtest.log(LogStatus.INFO, "Additonal Products", "Search product");
+					childtest.log(Status.INFO, "Additonal Products ->"+"Search product");
 
 					try {
 						if (!(userdata.get("testcase") == "hcp")) {
@@ -625,7 +627,7 @@ public class InitialOrderPage extends SuperTestNG {
 
 						Boolean AtoZDisplay = AtoZProductsDisplay.isDisplayed();
 						Assert.assertTrue(AtoZDisplay, "Major A-Z is not displaying");
-						childtest.log(LogStatus.INFO, "", "A-Z");
+						childtest.log(Status.INFO, "A-Z");
 
 						jse.executeScript("window.scrollBy(0,200)", "");
 						AddAdditionalPack.click();
@@ -634,7 +636,7 @@ public class InitialOrderPage extends SuperTestNG {
 						Boolean AddtionaltoCart = AdditionalPacktoCart.isDisplayed();
 						Assert.assertTrue(AdditionalProducts, "Major Additional Products not displaying");
 						Assert.assertTrue(AddtionaltoCart, "Major Additional Products in cart not displaying");
-						childtest.log(LogStatus.INFO, "", "Added A-Z");
+						childtest.log(Status.INFO, "Added A-Z");
 
 						for (WebElement Symbol : CurrencySymbol) {
 							String currencysymbol = Symbol.getText().replaceAll("[0-9.,]", "").trim();
@@ -662,7 +664,7 @@ public class InitialOrderPage extends SuperTestNG {
 								userdata.put("Currency", "EUR");
 							}
 						}
-						childtest.log(LogStatus.INFO, "", "Currency Symbol");
+						childtest.log(Status.INFO,"Currency Symbol");
 
 						if (!(userdata.get("testcase") == "hcp")) {
 							if (!(Market == "Colombia" || Market == "Mexico" || Market == "Puerto Rico" || Market == "Ukraine")) {
@@ -704,8 +706,8 @@ public class InitialOrderPage extends SuperTestNG {
 						}
 						Collections.sort(packs);
 						Collections.sort(Itemcode);
-						childtest.log(LogStatus.INFO, "Pack selected", SelectedPack.getText());
-						childtest.log(LogStatus.INFO, "Item Codes", Itemcode.toString());
+						childtest.log(Status.INFO, "Pack selected ->"+SelectedPack.getText());
+						childtest.log(Status.INFO, "Item Codes ->"+Itemcode.toString());
 
 					} catch (Exception e) {
 						Assert.fail("Critical A-Z section not displaying");
@@ -713,7 +715,7 @@ public class InitialOrderPage extends SuperTestNG {
 				} catch (Exception e) {
 					Assert.fail("Critical A-Z section not displaying");
 				}
-				childtest.log(LogStatus.INFO, "", "Added Suggested");
+				childtest.log(Status.INFO, "Added Suggested");
 
 				/*
 				 * Checking the Total Price & PV in Cart
@@ -768,7 +770,7 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 				userdata.put("cartprice", String.valueOf(totalprice));
 				Assert.assertEquals(pvs, totalpv, "Critical total PV mismatch");
-				childtest.log(LogStatus.INFO, "", "Calculated Total Price, PV");
+				childtest.log(Status.INFO, "Calculated Total Price, PV");
 
 			}
 		}
@@ -778,7 +780,7 @@ public class InitialOrderPage extends SuperTestNG {
 					Boolean NoPack = NOPack.isDisplayed();
 					Assert.assertTrue(NoPack, "Major NOPack Click Here");
 					NOPackClick.click();
-					childtest.log(LogStatus.INFO, "NOPack", "Calculated Total Price, PV");
+					childtest.log(Status.INFO, "NOPack ->"+"Calculated Total Price, PV");
 				} catch (Exception e) {
 					Assert.fail("Major NOPack Click Here");
 				}
@@ -823,8 +825,8 @@ public class InitialOrderPage extends SuperTestNG {
 					Assert.assertEquals(entry.getRequest().getUrl(),
 							userdata.get("proto") + userdata.get("version") + "quotes?&expand=item",
 							"Critical Quotes url");
-					childtest.log(LogStatus.INFO, "Initial Order", "");
-					childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Quotes</a>");
+					childtest.log(Status.INFO, "Initial Order");
+					childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Quotes</a>");
 
 					/*
 					 * checking the No Pack error if Customization pack is not
@@ -887,7 +889,7 @@ public class InitialOrderPage extends SuperTestNG {
 				Assert.fail("Major Search is not working");
 			}
 
-			childtest.log(LogStatus.INFO, "Additonal Products", "Search product");
+			childtest.log(Status.INFO, "Additonal Products ->"+"Search product");
 
 			try {
 				Boolean AtoZ = AtoZProducts.isDisplayed();
@@ -899,7 +901,7 @@ public class InitialOrderPage extends SuperTestNG {
 
 				Boolean AtoZDisplay = AtoZProductsDisplay.isDisplayed();
 				Assert.assertTrue(AtoZDisplay, "Major A-Z is not displaying");
-				childtest.log(LogStatus.INFO, "", "A-Z");
+				childtest.log(Status.INFO, "A-Z");
 
 				jse.executeScript("window.scrollBy(0,200)", "");
 				AddAdditionalPack.click();
@@ -908,7 +910,7 @@ public class InitialOrderPage extends SuperTestNG {
 				Boolean AddtionaltoCart = AdditionalPacktoCart.isDisplayed();
 				Assert.assertTrue(AdditionalProducts, "Major Additional Products not displaying");
 				Assert.assertTrue(AddtionaltoCart, "Major Additional Products in cart not displaying");
-				childtest.log(LogStatus.INFO, "", "Added A-Z");
+				childtest.log(Status.INFO, "Added A-Z");
 
 				for (WebElement Symbol : CurrencySymbol) {
 					String currencysymbol = Symbol.getText().replaceAll("[0-9.,]", "").trim();
@@ -916,7 +918,7 @@ public class InitialOrderPage extends SuperTestNG {
 					Assert.assertEquals(currencysymbol, "$", "Critical currency symbol");
 					userdata.put("Currency", "USD");
 				}
-				childtest.log(LogStatus.INFO, "", "Currency Symbol");
+				childtest.log(Status.INFO, "Currency Symbol");
 
 				if (!((userdata.get("testcase")) == "PatientPortal")) {
 
@@ -955,8 +957,8 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 				Collections.sort(packs);
 				Collections.sort(Itemcode);
-				childtest.log(LogStatus.INFO, "Pack selected", SelectedPack.getText());
-				childtest.log(LogStatus.INFO, "Item Codes", Itemcode.toString());
+				childtest.log(Status.INFO, "Pack selected ->"+SelectedPack.getText());
+				childtest.log(Status.INFO, "Item Codes ->"+Itemcode.toString());
 
 			} catch (Exception e) {
 				Assert.fail("Critical A-Z section not displaying");
@@ -964,7 +966,7 @@ public class InitialOrderPage extends SuperTestNG {
 		} catch (Exception e) {
 			Assert.fail("Critical A-Z section not displaying");
 		}
-		childtest.log(LogStatus.INFO, "", "Added Suggested");
+		childtest.log(Status.INFO, "Added Suggested");
 
 		/*
 		 * Checking the Total Price in Cart
@@ -980,14 +982,14 @@ public class InitialOrderPage extends SuperTestNG {
 		DecimalFormat df2 = new DecimalFormat("#.##");
 		Float result1 = Float.valueOf(df2.format(sum));
 		Assert.assertEquals(result1, totalprice, "Critical total price Mismatch");
-		childtest.log(LogStatus.INFO, "", "Calculated Total Price");
+		childtest.log(Status.INFO, "Calculated Total Price");
 		userdata.put("cartprice", String.valueOf(totalprice));
 		Continue.click();
 	}
 
 	public void GetFitPacks(String Market, String language, String pack) throws IOException {
 
-		childtest.log(LogStatus.INFO, "Intial Order", "");
+		childtest.log(Status.INFO, "Intial Order");
 
 		try {
 			Boolean promo = CoachPromoDialog.isDisplayed();
@@ -1004,7 +1006,7 @@ public class InitialOrderPage extends SuperTestNG {
 			Assert.fail("Major CoachPromo Dialog Not Displaying");
 		}
 
-		childtest.log(LogStatus.INFO, "", "Coach Promo Offer");
+		childtest.log(Status.INFO, "Coach Promo Offer");
 
 		for (WebElement Symbol : CurrencySymbol) {
 			String currencysymbol = Symbol.getText().replaceAll("[0-9.,]", "").trim();
@@ -1017,7 +1019,7 @@ public class InitialOrderPage extends SuperTestNG {
 				userdata.put("Currency", "EUR");
 			}
 		}
-		childtest.log(LogStatus.INFO, "", "Currency Symbol");
+		childtest.log(Status.INFO, "Currency Symbol");
 
 		Assert.assertEquals(GetFitCoach21.getText(), getTranslation("getfit_coach_21", language), "Low Order Summary");
 
@@ -1028,7 +1030,7 @@ public class InitialOrderPage extends SuperTestNG {
 			Assert.fail("Major Coach Promo fee is Displaying");
 		}
 
-		childtest.log(LogStatus.INFO, "", "Coach Certification fee");
+		childtest.log(Status.INFO, "Coach Certification fee");
 
 		AddGetFitPack.click();
 
@@ -1039,7 +1041,7 @@ public class InitialOrderPage extends SuperTestNG {
 			Assert.fail("Major initialOrder is Displaying");
 		}
 
-		childtest.log(LogStatus.INFO, "", "Checked Added Pack");
+		childtest.log(Status.INFO,"Checked Added Pack");
 
 		for (int i = 0; i < ItemCode.size(); i++) {
 
@@ -1063,8 +1065,8 @@ public class InitialOrderPage extends SuperTestNG {
 
 		Collections.sort(packs);
 		Collections.sort(Itemcode);
-		childtest.log(LogStatus.INFO, "Pack selected", SelectedPack.getText());
-		childtest.log(LogStatus.INFO, "Item Codes", Itemcode.toString());
+		childtest.log(Status.INFO, "Pack selected  ->"+SelectedPack.getText());
+		childtest.log(Status.INFO, "Item Code  ->"+Itemcode.toString());
 
 		Continue.click();
 
@@ -1085,7 +1087,7 @@ public class InitialOrderPage extends SuperTestNG {
 				Assert.fail("Major terms not Displaying");
 			}
 		}
-		childtest.log(LogStatus.INFO, "", "Monthly Subscription YES");
+		childtest.log(Status.INFO, "Monthly Subscription YES");
 
 		SubscriptionYES.click();
 
@@ -1110,10 +1112,10 @@ public class InitialOrderPage extends SuperTestNG {
 		Assert.assertEquals(WhichDaySubscriptionYES.getText(),
 				getTranslation("getfit_WhichDaySubscriptionYES", language), "Low WhichDaySubscriptionYES");
 
-		childtest.log(LogStatus.INFO, "", "Checked Translations");
+		childtest.log(Status.INFO, "Checked Translations");
 
 		AddGetFitPack.click();
-		childtest.log(LogStatus.INFO, "", "Added Pack");
+		childtest.log(Status.INFO, "Added Pack");
 
 		try {
 			Assert.assertTrue(ARSummarySection.isDisplayed());
@@ -1121,9 +1123,9 @@ public class InitialOrderPage extends SuperTestNG {
 			Assert.fail("Major AR Pack is not Displaying");
 		}
 
-		childtest.log(LogStatus.INFO, "", "AR is Displaying");
+		childtest.log(Status.INFO, "AR is Displaying");
 		userdata.put("aritemcode", ARPackItemCode.getText().replace("#", ""));
-		childtest.log(LogStatus.INFO, "", ARPackItemCode.getText());
+		childtest.log(Status.INFO, ARPackItemCode.getText());
 
 		Continue.click();
 	}

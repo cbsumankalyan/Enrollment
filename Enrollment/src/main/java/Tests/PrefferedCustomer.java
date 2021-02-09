@@ -6,7 +6,9 @@ import java.text.ParseException;
 import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.relevantcodes.extentreports.LogStatus;
+
+import com.aventstack.extentreports.Status;
+
 import Pages.Account;
 import Pages.AutoRefill;
 import Pages.InitialOrder;
@@ -92,9 +94,8 @@ public class PrefferedCustomer extends SuperTestNG {
 	@Test(dataProvider="MarketConfig")
 	public void Enroll(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = extent.startTest(Market + "  |  " + language);
-		pc.appendChild(childtest);
-		childtest.log(LogStatus.INFO, "PC Enrollment", "Platform   "+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
+		childtest = pc.createNode(Market + "  |  " + language);
+		childtest.log(Status.INFO, "PC Enrollment Platform   "+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
 		
 		start.PCFlow(Market, language);
 		packs.PCPacksChecking(Market, language, pack);

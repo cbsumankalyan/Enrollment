@@ -19,7 +19,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import com.relevantcodes.extentreports.LogStatus;
+
+import com.aventstack.extentreports.Status;
+
 import Pages.SuperTestNG;
 import io.restassured.path.json.JsonPath;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -403,7 +405,7 @@ public class SummaryPage extends SuperTestNG {
 
 		Thread.sleep(10000);
 
-		childtest.log(LogStatus.INFO, "Summary", "");
+		childtest.log(Status.INFO, "Summary");
 
 		ArrayList<String> Labels = new ArrayList<String>();
 
@@ -558,7 +560,7 @@ public class SummaryPage extends SuperTestNG {
 		}
 		if (Market == "United States" || Market == "Canada") {
 			Assert.assertEquals(TermsandConditonsPDF.size(), 4, "Major Terms & Condition PDF's");
-			childtest.log(LogStatus.INFO, "Terms and Condtions PDF", Integer.toString(TermsandConditonsPDF.size()));
+			childtest.log(Status.INFO, "Terms and Condtions PDF ->"+ Integer.toString(TermsandConditonsPDF.size()));
 		}
 
 		if (!(Market == "Norway" || Market == "Italy")) {
@@ -829,7 +831,7 @@ public class SummaryPage extends SuperTestNG {
 						JSONObject Orders = new JSONObject(entry.getRequest().getPostData().getText().toString()
 								.substring(entry.getRequest().getPostData().getText().toString().indexOf("{")).trim());
 
-						childtest.log(LogStatus.INFO, "Request Parameter", "");
+						childtest.log(Status.INFO, "Request Parameter");
 
 						if (!(Market == "Australia" || Market == "New Zealand" || Market == "Colombia"
 								|| Market == "Dominican Republic" || Market == "India" || Market == "Jamaica"
@@ -1096,7 +1098,7 @@ public class SummaryPage extends SuperTestNG {
 								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 										+ userdata.get("shippingmethod"),
 								"Major Ship Method href");
-						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
+						childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
 						if (userdata.get("version").equals("v5a-test/")) {
 							JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText()
@@ -1104,7 +1106,7 @@ public class SummaryPage extends SuperTestNG {
 									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
 									.trim());
 
-							childtest.log(LogStatus.INFO, "Response", "");
+							childtest.log(Status.INFO, "Response");
 
 							if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
 									|| Market == "Puerto Rico") {
@@ -1382,7 +1384,7 @@ public class SummaryPage extends SuperTestNG {
 									Assert.assertTrue(new JsonPath(OrdersResponse.toString())
 											.get("data.customer.id.unicity").toString().length() != 0,
 											"Major Customer Account Number");
-									childtest.log(LogStatus.INFO, "Account Number", ITAccountNumber.getText());
+									childtest.log(Status.INFO, "Account Number ->"+ ITAccountNumber.getText());
 								} else {
 									Assert.assertEquals(
 											new JsonPath(OrdersResponse.toString()).get("data.customer.id.unicity"),
@@ -1390,7 +1392,7 @@ public class SummaryPage extends SuperTestNG {
 									Assert.assertTrue(new JsonPath(OrdersResponse.toString())
 											.get("data.customer.id.unicity").toString().length() != 0,
 											"Major Customer Account Number");
-									childtest.log(LogStatus.INFO, "Account Number", AccountNumber.getText());
+									childtest.log(Status.INFO, "Account Number ->"+ AccountNumber.getText());
 								}
 							} else {
 								Assert.assertEquals(
@@ -1399,7 +1401,7 @@ public class SummaryPage extends SuperTestNG {
 								Assert.assertTrue(new JsonPath(OrdersResponse.toString())
 										.get("data.customer.id.unicity").toString().length() != 0,
 										"Major Customer Account Number");
-								childtest.log(LogStatus.INFO, "Account Number", AccountNumber.getText());
+								childtest.log(Status.INFO, "Account Number ->"+ AccountNumber.getText());
 							}
 
 							if (Market == "Mexico") {
@@ -1407,7 +1409,7 @@ public class SummaryPage extends SuperTestNG {
 										MXOrderNumber.getText(), "Major Customer Order Number");
 								Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity")
 										.toString().length() != 0, "Major Customer Order Number");
-								childtest.log(LogStatus.INFO, "Account Number", MXOrderNumber.getText());
+								childtest.log(Status.INFO, "Account Number ->"+ MXOrderNumber.getText());
 
 								if (userdata.get("paymenttype") == "bank") {
 									try {
@@ -1424,13 +1426,13 @@ public class SummaryPage extends SuperTestNG {
 											ITOrderNumber.getText(), "Major Customer Account Number");
 									Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity")
 											.toString().length() != 0, "Major Customer Order Number");
-									childtest.log(LogStatus.INFO, "Order Number", ITOrderNumber.getText());
+									childtest.log(Status.INFO, "Order Number ->"+ ITOrderNumber.getText());
 								} else {
 									Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.id.unicity"),
 											OrderNumber.getText(), "Major Customer Account Number");
 									Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity")
 											.toString().length() != 0, "Major Customer Order Number");
-									childtest.log(LogStatus.INFO, "Order Number", OrderNumber.getText());
+									childtest.log(Status.INFO, "Order Number ->"+ OrderNumber.getText());
 								}
 							}
 
@@ -1439,7 +1441,7 @@ public class SummaryPage extends SuperTestNG {
 										OrderNumber.getText(), "Major Customer Account Number");
 								Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity")
 										.toString().length() != 0, "Major Customer Order Number");
-								childtest.log(LogStatus.INFO, "Order Number", OrderNumber.getText());
+								childtest.log(Status.INFO, "Order Number ->"+ OrderNumber.getText());
 							}
 
 							if (!(Market == "Australia" || Market == "New Zealand" || Market == "Colombia"
@@ -1457,7 +1459,7 @@ public class SummaryPage extends SuperTestNG {
 												.replace("[", "").replace("]", "").length() != 0,
 										"Major AR Number");
 
-								childtest.log(LogStatus.INFO, "AR Number", ARNumber.getText());
+								childtest.log(Status.INFO, "AR Number ->"+ ARNumber.getText());
 							}
 						}
 
@@ -1480,7 +1482,7 @@ public class SummaryPage extends SuperTestNG {
 						System.out.println("Entry request : " + entry.getRequest().getPostData().getText());
 						System.out.println("Entry response : " + entry.getResponse().getContent().getText());
 
-						childtest.log(LogStatus.INFO, "Request Parameter", "");
+						childtest.log(Status.INFO, "Request Parameter");
 
 						JSONObject Orders = new JSONObject(entry.getRequest().getPostData().getText().toString()
 								.substring(entry.getRequest().getPostData().getText().toString().indexOf("{")).trim());
@@ -1571,7 +1573,7 @@ public class SummaryPage extends SuperTestNG {
 						JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText().toString()
 								.substring(entry.getResponse().getContent().getText().toString().indexOf("{")).trim());
 
-						childtest.log(LogStatus.INFO, "Response", "");
+						childtest.log(Status.INFO, "Response");
 
 						Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.birthDate"),
 								userdata.get("responsedob"), "Major Response DOB");
@@ -1653,7 +1655,7 @@ public class SummaryPage extends SuperTestNG {
 						if (Market == "Norwary" || Market == "Turkey") {
 							Assert.assertEquals(NONopackAccountNumber.getText(),
 									new JsonPath(OrdersResponse.toString()).get("data.id.unicity"));
-							childtest.log(LogStatus.INFO, "Order ID", NONopackAccountNumber.getText());
+							childtest.log(Status.INFO, "Order ID ->"+ NONopackAccountNumber.getText());
 						}
 					}
 				}
@@ -1685,7 +1687,7 @@ public class SummaryPage extends SuperTestNG {
 				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
 			}
 		}
-
+		
 	}
 
 	public void PCOrderSubmit(String Market, String language, String pack)
@@ -1693,7 +1695,7 @@ public class SummaryPage extends SuperTestNG {
 
 		Thread.sleep(10000);
 
-		childtest.log(LogStatus.INFO, "Summary", "");
+		childtest.log(Status.INFO, "Summary");
 
 		ArrayList<String> Labels = new ArrayList<String>();
 
@@ -1885,7 +1887,7 @@ public class SummaryPage extends SuperTestNG {
 						JSONObject Orders = new JSONObject(entry.getRequest().getPostData().getText().toString()
 								.substring(entry.getRequest().getPostData().getText().toString().indexOf("{")).trim());
 
-						childtest.log(LogStatus.INFO, "Request Parameter", "");
+						childtest.log(Status.INFO, "Request Parameter");
 
 						if (!(Market == "Colombia" || Market == "Dominican Republic" || Market == "Mexico")) {
 
@@ -2031,7 +2033,7 @@ public class SummaryPage extends SuperTestNG {
 								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 										+ userdata.get("shippingmethod"),
 								"Major Ship Method href");
-						childtest.log(LogStatus.INFO, "Orders",
+						childtest.log(Status.INFO, "Orders ->"+
 								"<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
 						if (userdata.get("version").equals("v5a-test/")) {
@@ -2040,7 +2042,7 @@ public class SummaryPage extends SuperTestNG {
 									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
 									.trim());
 
-							childtest.log(LogStatus.INFO, "Response", "");
+							childtest.log(Status.INFO, "Response");
 
 							if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
 									|| Market == "Puerto Rico") {
@@ -2258,14 +2260,14 @@ public class SummaryPage extends SuperTestNG {
 								Assert.assertTrue(new JsonPath(OrdersResponse.toString())
 										.get("data.customer.id.unicity").toString().length() != 0,
 										"Major Customer Account Number");
-								childtest.log(LogStatus.INFO, "Account Number", AccountNumber.getText());
+								childtest.log(Status.INFO, "Account Number ->"+ AccountNumber.getText());
 
 								if (Market == "Mexico") {
 									Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.id.unicity"),
 											MXOrderNumber.getText(), "Major Customer Order Number");
 									Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity")
 											.toString().length() != 0, "Major Customer Order Number");
-									childtest.log(LogStatus.INFO, "Account Number", MXOrderNumber.getText());
+									childtest.log(Status.INFO, "Account Number ->"+ MXOrderNumber.getText());
 
 									if (userdata.get("paymenttype") == "bank") {
 										try {
@@ -2282,7 +2284,7 @@ public class SummaryPage extends SuperTestNG {
 											OrderNumber.getText(), "Major Customer Account Number");
 									Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity")
 											.toString().length() != 0, "Major Customer Order Number");
-									childtest.log(LogStatus.INFO, "Order Number", OrderNumber.getText());
+									childtest.log(Status.INFO, "Order Number ->"+ OrderNumber.getText());
 								}
 
 								if (!(Market == "Colombia" || Market == "Dominican Republic" || Market == "Mexico")) {
@@ -2298,7 +2300,7 @@ public class SummaryPage extends SuperTestNG {
 													.replace("[", "").replace("]", "").length() != 0,
 											"Major AR Number");
 
-									childtest.log(LogStatus.INFO, "AR Number", ARNumber.getText());
+									childtest.log(Status.INFO, "AR Number ->"+ ARNumber.getText());
 								}
 							}
 
@@ -2343,6 +2345,7 @@ public class SummaryPage extends SuperTestNG {
 				}
 			}
 		}
+		
 	}
 
 	public void GetFitOrderSubmit(String Market, String language, String pack)
@@ -2352,7 +2355,7 @@ public class SummaryPage extends SuperTestNG {
 
 		Thread.sleep(10000);
 
-		childtest.log(LogStatus.INFO, "Summary", "");
+		childtest.log(Status.INFO, "Summary");
 
 		ArrayList<String> Labels = new ArrayList<String>();
 
@@ -2386,7 +2389,7 @@ public class SummaryPage extends SuperTestNG {
 
 		if (Market == "United States" || Market == "Canada") {
 			Assert.assertEquals(TermsandConditonsPDF.size(), 3, "Major Terms & Condition PDF's");
-			childtest.log(LogStatus.INFO, "Terms and Condtions PDF", Integer.toString(TermsandConditonsPDF.size()));
+			childtest.log(Status.INFO, "Terms and Condtions PDF ->"+ Integer.toString(TermsandConditonsPDF.size()));
 		}
 
 		if (!(Market == "United States" || Market == "Canada")) {
@@ -2468,7 +2471,7 @@ public class SummaryPage extends SuperTestNG {
 						JSONObject Orders = new JSONObject(entry.getRequest().getPostData().getText().toString()
 								.substring(entry.getRequest().getPostData().getText().toString().indexOf("{")).trim());
 
-						childtest.log(LogStatus.INFO, "Request Parameter", "");
+						childtest.log(Status.INFO, "Request Parameter");
 
 						Assert.assertEquals(
 								new JsonPath(Orders.toString()).get("customer.autoorders.items.lines.items.item.href")
@@ -2631,7 +2634,7 @@ public class SummaryPage extends SuperTestNG {
 								"https://hydraqa.unicity.net/" + userdata.get("version") + "shippingmethods?"
 										+ userdata.get("shippingmethod"),
 								"Major Ship Method href");
-						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
+						childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Orders.js</a>");
 
 						if (userdata.get("version").equals("v5a-test/")) {
 							JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText()
@@ -2639,7 +2642,7 @@ public class SummaryPage extends SuperTestNG {
 									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
 									.trim());
 
-							childtest.log(LogStatus.INFO, "Response", "");
+							childtest.log(Status.INFO, "Response");
 
 							Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.market"),
 									userdata.get("marketcode"), "Major Market");
@@ -2856,7 +2859,7 @@ public class SummaryPage extends SuperTestNG {
 
 							Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.customer.id.unicity")
 									.toString().length() != 0, "Major Customer Account Number");
-							childtest.log(LogStatus.INFO, "Account Number",
+							childtest.log(Status.INFO, "Account Number ->"+
 									new JsonPath(OrdersResponse.toString()).get("data.customer.id.unicity").toString());
 
 							Assert.assertTrue(
@@ -2865,13 +2868,13 @@ public class SummaryPage extends SuperTestNG {
 											.replace("[", "").replace("]", "").length() != 0,
 									"Major AR Number");
 
-							childtest.log(LogStatus.INFO, "AR Number", new JsonPath(OrdersResponse.toString())
+							childtest.log(Status.INFO, "AR Number ->"+ new JsonPath(OrdersResponse.toString())
 									.get("data.customer.autoorders.items.id.unicity").toString());
 
 							Assert.assertTrue(new JsonPath(OrdersResponse.toString()).get("data.id.unicity").toString()
 									.replace("[", "").replace("]", "").length() != 0, "Major AR Number");
 
-							childtest.log(LogStatus.INFO, "Order ID",
+							childtest.log(Status.INFO, "Order ID ->"+
 									new JsonPath(OrdersResponse.toString()).get("data.id.unicity").toString());
 						}
 
@@ -2894,7 +2897,7 @@ public class SummaryPage extends SuperTestNG {
 						System.out.println("Entry request : " + entry.getRequest().getPostData().getText());
 						System.out.println("Entry response : " + entry.getResponse().getContent().getText());
 
-						childtest.log(LogStatus.INFO, "Request Parameter", "");
+						childtest.log(Status.INFO, "Request Parameter");
 
 						JSONObject Orders = new JSONObject(entry.getRequest().getPostData().getText().toString()
 								.substring(entry.getRequest().getPostData().getText().toString().indexOf("{")).trim());
@@ -2987,7 +2990,7 @@ public class SummaryPage extends SuperTestNG {
 						JSONObject OrdersResponse = new JSONObject(entry.getResponse().getContent().getText().toString()
 								.substring(entry.getResponse().getContent().getText().toString().indexOf("{")).trim());
 
-						childtest.log(LogStatus.INFO, "Response", "");
+						childtest.log(Status.INFO, "Response");
 
 						Assert.assertEquals(new JsonPath(OrdersResponse.toString()).get("data.birthDate"),
 								userdata.get("responsedob"), "Major Response DOB");
@@ -3100,7 +3103,7 @@ public class SummaryPage extends SuperTestNG {
 		} catch (Exception e) {
 			Assert.fail("Major signin is not displaying");
 		}
-
+		
 	}
-
+	
 }

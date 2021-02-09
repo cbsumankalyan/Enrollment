@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 
 import Pages.Account;
 import Pages.AutoRefill;
@@ -59,9 +59,8 @@ public class Fit extends SuperTestNG {
 	@Test(dataProvider="MarketConfig")
 	public void GetFit(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 	
-		childtest = extent.startTest(Market + "  |  " + language);
-		fit.appendChild(childtest);
-		childtest.log(LogStatus.INFO, "GetFit", "Platform   "+"<a href=" + getfit + ">" + userdata.get("platform") + "</a>");
+		childtest = fit.createNode(Market + "  |  " + language);
+		childtest.log(Status.INFO, "GetFit Platform   "+"<a href=" + getfit + ">" + userdata.get("platform") + "</a>");
 		
 		start.GetFitFlow(Market, language);
 		account.GetFitPersonalDetails(Market, language, pack);

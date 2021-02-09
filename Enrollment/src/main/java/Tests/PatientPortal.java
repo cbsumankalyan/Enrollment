@@ -6,7 +6,9 @@ import java.text.ParseException;
 import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.relevantcodes.extentreports.LogStatus;
+
+import com.aventstack.extentreports.Status;
+
 import Pages.Account;
 import Pages.AutoRefill;
 import Pages.InitialOrder;
@@ -54,9 +56,8 @@ public class PatientPortal extends SuperTestNG {
 	@Test(dataProvider="MarketConfig")
 	public void Patient(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = extent.startTest(Market + "  |  " + language);
-		pp.appendChild(childtest);
-		childtest.log(LogStatus.INFO, "Patient Portal", "Platform   "+"<a href=" + patientportal + ">" + userdata.get("platform") + "</a>");
+		childtest = pp.createNode(Market + "  |  " + language);
+		childtest.log(Status.INFO, "Patient Portal Platform   "+"<a href=" + patientportal + ">" + userdata.get("platform") + "</a>");
 		
 		start.PPFlow(Market, language);
 		packs.PCPacksChecking(Market, language, pack);

@@ -3,9 +3,7 @@ package POM;
 import java.io.IOException;
 
 import java.text.ParseException;
-
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,8 +11,7 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 import Pages.SuperTestNG;
 
 public class StartPage extends SuperTestNG {
@@ -154,7 +151,7 @@ public class StartPage extends SuperTestNG {
 			}
 		}
 
-		childtest.log(LogStatus.INFO, "Start", "Checked Start Page Translations");
+		childtest.log(Status.INFO, "Start ->"+"Checked Start Page Translations");
 
 		if (Market == "Australia" || Market == "Austria" || Market == "Bahamas" || Market == "Canada"
 				|| Market == "Denmark" || Market == "Hungary" || Market == "India" || Market == "Ireland"
@@ -194,8 +191,8 @@ public class StartPage extends SuperTestNG {
 			}
 		}
 
-		childtest.log(LogStatus.INFO, "", Market);
-		childtest.log(LogStatus.INFO, "", language);
+		childtest.log(Status.INFO, Market);
+		childtest.log(Status.INFO, language);
 
 		if (Market == "Australia" || Market == "New Zealand") {
 			Thread.sleep(1000);
@@ -452,7 +449,7 @@ public class StartPage extends SuperTestNG {
 			Assert.assertEquals(Copyright.getText(), getTranslation("footer_branding_tr", language), "Low footer");
 		}
 
-		childtest.log(LogStatus.INFO, "", "Checked Footer");
+		childtest.log(Status.INFO, "Checked Footer");
 
 		Continue.click();
 
@@ -471,7 +468,7 @@ public class StartPage extends SuperTestNG {
 		selectlanguage.selectByVisibleText(language);
 
 		PC.click();
-		childtest.log(LogStatus.INFO, "Type", "PC Flow");
+		childtest.log(Status.INFO, "Type ->"+"PC Flow");
 
 		Thread.sleep(5000);
 
@@ -479,8 +476,8 @@ public class StartPage extends SuperTestNG {
 		userdata.put("marketcode", countrycode.get(Market));
 		userdata.put("locale", locale.get(language));
 
-		childtest.log(LogStatus.INFO, "Start", Market);
-		childtest.log(LogStatus.INFO, "", language);
+		childtest.log(Status.INFO, "Start ->"+ Market);
+		childtest.log(Status.INFO, language);
 
 		Assert.assertEquals(PrefferedCustomer.getText(), getTranslation("preferred_customer", language),
 				"Low Prefferd Customer");
@@ -516,8 +513,8 @@ public class StartPage extends SuperTestNG {
 		userdata.put("marketcode", countrycode.get(Market));
 		userdata.put("locale", locale.get(language));
 
-		childtest.log(LogStatus.INFO, "Start", Market);
-		childtest.log(LogStatus.INFO, "", language);
+		childtest.log(Status.INFO, "Start ->"+Market);
+		childtest.log(Status.INFO, language);
 
 		Continue.click();
 
@@ -552,7 +549,7 @@ public class StartPage extends SuperTestNG {
 		Assert.assertEquals(SelectYourLanguage.getText(), getTranslation("select_your_language", language),
 				"Low footer");
 
-		childtest.log(LogStatus.INFO, "Start", "Checked Start Page Translations");
+		childtest.log(Status.INFO, "Start  ->"+"Checked Start Page Translations");
 
 		Assert.assertEquals(SelectedLanguage.getText(), "English", "Minor Selected Language");
 
@@ -564,8 +561,8 @@ public class StartPage extends SuperTestNG {
 		userdata.put("marketcode", countrycode.get(Market));
 		userdata.put("locale", locale.get(language));
 
-		childtest.log(LogStatus.INFO, "", Market);
-		childtest.log(LogStatus.INFO, "", language);
+		childtest.log(Status.INFO, Market);
+		childtest.log(Status.INFO, language);
 
 		Continue.click();
 

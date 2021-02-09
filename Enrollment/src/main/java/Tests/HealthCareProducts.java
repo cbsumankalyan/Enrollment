@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 
 import Pages.Account;
 import Pages.AutoRefill;
@@ -56,9 +56,8 @@ public class HealthCareProducts extends SuperTestNG {
 	@Test(dataProvider="MarketConfig")
 	public void PassReferralID(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = extent.startTest(Market + "  |  " + language);
-		hcp.appendChild(childtest);
-		childtest.log(LogStatus.INFO, "HCP url", "Platform   "+"<a href=" + hcpflow + ">" + userdata.get("platform") + "</a>");
+		childtest = hcp.createNode(Market + "  |  " + language);		
+		childtest.log(Status.INFO, "HCP url Platform   "+"<a href=" + hcpflow + ">" + userdata.get("platform") + "</a>");
 		
 		start.SelectMarket(Market, language);
 		packs.PacksChecking(Market, language, pack);

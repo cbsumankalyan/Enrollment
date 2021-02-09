@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 
 import Pages.Account;
 import Pages.AutoRefill;
@@ -40,9 +40,8 @@ public class INDReferralIDPassing extends SuperTestNG {
 	@Test(dataProvider="MarketConfig")
 	public void INDPassReferralID(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = extent.startTest(Market + "  |  " + language);
-		indreferral.appendChild(childtest);
-		childtest.log(LogStatus.INFO, "IND Passing Referall", "Platform   "+"<a href=" + indreferralurl + ">" + userdata.get("platform") + "</a>");
+		childtest = indreferral.createNode(Market + "  |  " + language);
+		childtest.log(Status.INFO, "IND Passing Referall Platform   "+"<a href=" + indreferralurl + ">" + userdata.get("platform") + "</a>");
 		
 		start.SelectMarket(Market, language);
 		packs.PacksChecking(Market, language, pack);

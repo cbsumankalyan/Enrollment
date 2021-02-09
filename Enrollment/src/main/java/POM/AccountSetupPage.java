@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,7 +21,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 
 import Pages.SuperTestNG;
 import io.restassured.path.json.JsonPath;
@@ -275,10 +274,10 @@ public class AccountSetupPage extends SuperTestNG {
 		String bic = "DEUTDEFF";
 		String password = "Unicity";
 
-		childtest.log(LogStatus.INFO, "Account Set-UP", "");
+		childtest.log(Status.INFO, "Account Set-UP");
 
 		Assert.assertEquals(SelectedLanguage.getText(), language, "Minor Selected Langauge");
-		childtest.log(LogStatus.INFO, "", SelectedLanguage.getText());
+		childtest.log(Status.INFO, SelectedLanguage.getText());
 
 		if (Market == "Australia" || Market == "Bahamas" || Market == "India" || Market == "Ireland"
 				|| Market == "Jamaica" || Market == "New Zealand" || Market == "United Kingdom") {
@@ -610,7 +609,7 @@ public class AccountSetupPage extends SuperTestNG {
 
 					NoID.click();
 
-					childtest.log(LogStatus.INFO, "", "No Enroller & Sponsor");
+					childtest.log(Status.INFO, "No Enroller & Sponsor");
 
 					Boolean Enroller = EnrollerName.isDisplayed();
 					Assert.assertTrue(Enroller, "Major Enroller In Summay");
@@ -618,7 +617,7 @@ public class AccountSetupPage extends SuperTestNG {
 					Boolean Sponsor = SponsorName.isDisplayed();
 					Assert.assertTrue(Sponsor, "Major Sponsor In Summay");
 
-					childtest.log(LogStatus.INFO, "", "No Enroller & Sponsor text box is displaying");
+					childtest.log(Status.INFO, "No Enroller & Sponsor text box is displaying");
 
 					NoID.click();
 				} catch (Exception e) {
@@ -648,8 +647,8 @@ public class AccountSetupPage extends SuperTestNG {
 					EnrollerID.sendKeys(referral + Keys.TAB);
 					SponsorID.sendKeys(referral + Keys.TAB);
 					Thread.sleep(5000);
-					childtest.log(LogStatus.INFO, "Enroller", referral);
-					childtest.log(LogStatus.INFO, "Sponsor", referral);
+					childtest.log(Status.INFO, "Enroller ->"+ referral);
+					childtest.log(Status.INFO, "Sponsor ->"+ referral);
 					userdata.put("enroller", referral);
 					userdata.put("sponsor", referral);
 					userdata.put("api", "7");
@@ -663,8 +662,8 @@ public class AccountSetupPage extends SuperTestNG {
 				EnrollerID.sendKeys(referral + Keys.TAB);
 				SponsorID.sendKeys(referral + Keys.TAB);
 				Thread.sleep(5000);
-				childtest.log(LogStatus.INFO, "", referral);
-				childtest.log(LogStatus.INFO, "", referral);
+				childtest.log(Status.INFO, referral);
+				childtest.log(Status.INFO, referral);
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "7");
@@ -673,8 +672,8 @@ public class AccountSetupPage extends SuperTestNG {
 			}
 		} else {
 			Thread.sleep(5000);
-			childtest.log(LogStatus.INFO, "Enroller", referral);
-			childtest.log(LogStatus.INFO, "Sponsor", referral);
+			childtest.log(Status.INFO, "Enroller ->"+ referral);
+			childtest.log(Status.INFO, "Sponsor ->"+ referral);
 			userdata.put("enroller", referral);
 			userdata.put("sponsor", referral);
 			userdata.put("api", "3");
@@ -688,8 +687,8 @@ public class AccountSetupPage extends SuperTestNG {
 				EnrollerID.sendKeys(referral + Keys.TAB);
 				SponsorID.sendKeys(referral + Keys.TAB);
 				Thread.sleep(5000);
-				childtest.log(LogStatus.INFO, "", referral);
-				childtest.log(LogStatus.INFO, "", referral);
+				childtest.log(Status.INFO, referral);
+				childtest.log(Status.INFO, referral);
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "8");
@@ -723,7 +722,7 @@ public class AccountSetupPage extends SuperTestNG {
 							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
 					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
 							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
-					childtest.log(LogStatus.INFO, "Enroller",
+					childtest.log(Status.INFO, "Enroller ->"+
 							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
 				}
 			}
@@ -732,15 +731,15 @@ public class AccountSetupPage extends SuperTestNG {
 		if (!(Market == "India")) {
 			FirstName.sendKeys(fname);
 			LastName.sendKeys(lname);
-			childtest.log(LogStatus.INFO, "", fname);
-			childtest.log(LogStatus.INFO, "", lname);
+			childtest.log(Status.INFO, fname);
+			childtest.log(Status.INFO, lname);
 			userdata.put("fname", fname);
 			userdata.put("lname", lname);
 		} else {
 			FirstName.sendKeys(ifname);
 			LastName.sendKeys(ilname);
-			childtest.log(LogStatus.INFO, "", ifname);
-			childtest.log(LogStatus.INFO, "", ilname);
+			childtest.log(Status.INFO, ifname);
+			childtest.log(Status.INFO, ilname);
 			userdata.put("fname", ifname);
 			userdata.put("lname", ilname);
 		}
@@ -752,13 +751,13 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Poland" || Market == "Sweden" || Market == "Switzerland" || Market == "Spain"
 				|| Market == "Ukraine" || Market == "United Kingdom" || Market == "Turkey") {
 			DOB.sendKeys(ddmmyyyy);
-			childtest.log(LogStatus.INFO, "", ddmmyyyy);
+			childtest.log(Status.INFO, ddmmyyyy);
 			userdata.put("dob", ddmmyyyy);
 		}
 		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
 				|| Market == "Puerto Rico" || Market == "United States") {
 			DOB.sendKeys(mmddyyyy);
-			childtest.log(LogStatus.INFO, "", mmddyyyy);
+			childtest.log(Status.INFO, mmddyyyy);
 			userdata.put("dob", mmddyyyy);
 		}
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -766,19 +765,19 @@ public class AccountSetupPage extends SuperTestNG {
 
 		if (!(Market == "India" || Market == "Switzerland")) {
 			Phone.sendKeys(phone);
-			childtest.log(LogStatus.INFO, "", phone);
+			childtest.log(Status.INFO, phone);
 			userdata.put("phone", phone);
 		}
 
 		if (Market == "Switzerland") {
 			Mobile.sendKeys(phone);
-			childtest.log(LogStatus.INFO, "", phone);
+			childtest.log(Status.INFO, phone);
 			userdata.put("phone", phone);
 		}
 
 		if (Market == "India") {
 			INPhone.sendKeys(indphone);
-			childtest.log(LogStatus.INFO, "", indphone);
+			childtest.log(Status.INFO, indphone);
 			userdata.put("phone", indphone);
 		}
 
@@ -788,12 +787,12 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
 				|| Market == "United Kingdom" || Market == "Turkey") {
 			Fax.sendKeys(fax);
-			childtest.log(LogStatus.INFO, "", fax);
+			childtest.log(Status.INFO, fax);
 			userdata.put("fax", fax);
 		}
 
 		Email.sendKeys(email + Keys.TAB);
-		childtest.log(LogStatus.INFO, "", email);
+		childtest.log(Status.INFO, email);
 		userdata.put("email", email);
 		Thread.sleep(5000);
 
@@ -804,21 +803,21 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Spain" || Market == "Turkey" || Market == "Ukraine" || Market == "United Kingdom"
 				|| Market == "Italy")) {
 			GovernmentID.sendKeys(govid);
-			childtest.log(LogStatus.INFO, "", govid);
+			childtest.log(Status.INFO, govid);
 			userdata.put("govid", govid);
 		}
 
 		if (Market == "Turkey") {
 			GovernmentID.sendKeys("11437927778");
-			childtest.log(LogStatus.INFO, "", "11437927778");
+			childtest.log(Status.INFO, "11437927778");
 			userdata.put("govid", "11437927778");
 		}
 
 		if (Market == "Italy") {
 			BirthPlace.sendKeys(birthplace);
 			GovernmentID.sendKeys(itgovid);
-			childtest.log(LogStatus.INFO, "", birthplace);
-			childtest.log(LogStatus.INFO, "", itgovid);
+			childtest.log(Status.INFO, birthplace);
+			childtest.log(Status.INFO, itgovid);
 			userdata.put("birthplace", birthplace);
 			userdata.put("documentid", itgovid);
 		}
@@ -826,14 +825,14 @@ public class AccountSetupPage extends SuperTestNG {
 		if (Market == "Mexico") {
 			GovernmentID.sendKeys(curp);
 			Rfc.sendKeys(rfc);
-			childtest.log(LogStatus.INFO, "", curp);
-			childtest.log(LogStatus.INFO, "", rfc);
+			childtest.log(Status.INFO, curp);
+			childtest.log(Status.INFO, rfc);
 			userdata.put("documentid", curp);
 			userdata.put("govid", rfc);
 		}
 		if (Market == "India") {
 			GovernmentID.sendKeys(pan);
-			childtest.log(LogStatus.INFO, "", pan);
+			childtest.log(Status.INFO, pan);
 			userdata.put("govid", pan);
 		}
 		if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
@@ -877,14 +876,14 @@ public class AccountSetupPage extends SuperTestNG {
 
 			if (Spouse.isSelected()) {
 				SpouseName.sendKeys(spouse);
-				childtest.log(LogStatus.INFO, "", spouse);
+				childtest.log(Status.INFO, spouse);
 				userdata.put("coapplicanttype", "Spouse");
 				userdata.put("coapplicant", spouse);
 			}
 
 			if (Company.isSelected()) {
 				CompanyName.sendKeys(company);
-				childtest.log(LogStatus.INFO, "", company);
+				childtest.log(Status.INFO, company);
 				userdata.put("coapplicanttype", "company");
 				userdata.put("coapplicant", company);
 				if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
@@ -908,26 +907,26 @@ public class AccountSetupPage extends SuperTestNG {
 				|| Market == "Colombia" || Market == "Dominican Republic" || Market == "Jamaica" || Market == "Mexico"
 				|| Market == "Puerto Rico" || Market == "United States") {
 			SpouseName.sendKeys(spouse);
-			childtest.log(LogStatus.INFO, "", spouse);
+			childtest.log(Status.INFO, spouse);
 			userdata.put("coapplicant", spouse);
 			userdata.put("coapplicanttype", "Spouse");
 		}
 
 		if (Market == "Norway") {
 			Tax.sendKeys(tax);
-			childtest.log(LogStatus.INFO, "", tax);
+			childtest.log(Status.INFO, tax);
 			userdata.put("govid", tax);
 		}
 
 		if (Market == "Turkey") {
 			Tax.sendKeys("6111306880");
-			childtest.log(LogStatus.INFO, "", "6111306880");
+			childtest.log(Status.INFO, "6111306880");
 			userdata.put("Tax", "6111306880");
 		}
 
 		if (Market == "Italy") {
 			ITTax.sendKeys("IT" + tax);
-			childtest.log(LogStatus.INFO, "", tax);
+			childtest.log(Status.INFO, tax);
 			userdata.put("govid", "IT" + tax);
 		}
 
@@ -946,112 +945,112 @@ public class AccountSetupPage extends SuperTestNG {
 			if (DirectDeposit.isSelected()) {
 				if (Market == "Austria") {
 					IBAN.sendKeys(ATIBAN);
-					childtest.log(LogStatus.INFO, "", ATIBAN);
+					childtest.log(Status.INFO, ATIBAN);
 					userdata.put("iban", ATIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Belgium") {
 					IBAN.sendKeys(BEIBAN);
-					childtest.log(LogStatus.INFO, "", BEIBAN);
+					childtest.log(Status.INFO, BEIBAN);
 					userdata.put("iban", BEIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Denmark") {
 					IBAN.sendKeys(DNIBAN);
-					childtest.log(LogStatus.INFO, "", DNIBAN);
+					childtest.log(Status.INFO, DNIBAN);
 					userdata.put("iban", DNIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "France") {
 					IBAN.sendKeys(FRIBAN);
-					childtest.log(LogStatus.INFO, "", FRIBAN);
+					childtest.log(Status.INFO, FRIBAN);
 					userdata.put("iban", FRIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Germany") {
 					IBAN.sendKeys(DEIBAN);
-					childtest.log(LogStatus.INFO, "", DEIBAN);
+					childtest.log(Status.INFO, DEIBAN);
 					userdata.put("iban", DEIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Hungary") {
 					IBAN.sendKeys(HUIBAN);
-					childtest.log(LogStatus.INFO, "", HUIBAN);
+					childtest.log(Status.INFO, HUIBAN);
 					userdata.put("iban", HUIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Italy") {
 					IBAN.sendKeys(ITIBAN);
-					childtest.log(LogStatus.INFO, "", ITIBAN);
+					childtest.log(Status.INFO, ITIBAN);
 					userdata.put("iban", ITIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Ireland") {
 					IBAN.sendKeys(IRIBAN);
-					childtest.log(LogStatus.INFO, "", IRIBAN);
+					childtest.log(Status.INFO, IRIBAN);
 					userdata.put("iban", IRIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Luxembourg") {
 					IBAN.sendKeys(LXIBAN);
-					childtest.log(LogStatus.INFO, "", LXIBAN);
+					childtest.log(Status.INFO, LXIBAN);
 					userdata.put("iban", LXIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Netherlands") {
 					IBAN.sendKeys(NLIBAN);
-					childtest.log(LogStatus.INFO, "", NLIBAN);
+					childtest.log(Status.INFO, NLIBAN);
 					userdata.put("iban", NLIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Norway") {
 					IBAN.sendKeys(NOIBAN);
-					childtest.log(LogStatus.INFO, "", NOIBAN);
+					childtest.log(Status.INFO, NOIBAN);
 					userdata.put("iban", NOIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Poland") {
 					IBAN.sendKeys(PLIBAN);
-					childtest.log(LogStatus.INFO, "", PLIBAN);
+					childtest.log(Status.INFO, PLIBAN);
 					userdata.put("iban", PLIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Sweden") {
 					IBAN.sendKeys(SEIBAN);
-					childtest.log(LogStatus.INFO, "", SEIBAN);
+					childtest.log(Status.INFO, SEIBAN);
 					userdata.put("iban", SEIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Switzerland") {
 					IBAN.sendKeys(CHIBAN);
-					childtest.log(LogStatus.INFO, "", CHIBAN);
+					childtest.log(Status.INFO, CHIBAN);
 					userdata.put("iban", CHIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Spain") {
 					IBAN.sendKeys(SPIBAN);
-					childtest.log(LogStatus.INFO, "", SPIBAN);
+					childtest.log(Status.INFO, SPIBAN);
 					userdata.put("iban", SPIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "Ukraine") {
 					IBAN.sendKeys(UAIBAN);
-					childtest.log(LogStatus.INFO, "", UAIBAN);
+					childtest.log(Status.INFO, UAIBAN);
 					userdata.put("iban", UAIBAN);
 					userdata.put("commission", "DD");
 				}
 				if (Market == "United Kingdom") {
 					IBAN.sendKeys(GBIBAN);
-					childtest.log(LogStatus.INFO, "", GBIBAN);
+					childtest.log(Status.INFO, GBIBAN);
 					userdata.put("iban", GBIBAN);
 					userdata.put("commission", "DD");
 				}
 				BankName.sendKeys(bankname);
 				AccHolder.sendKeys(holder);
 				BIC.sendKeys(bic);
-				childtest.log(LogStatus.INFO, "", bankname);
-				childtest.log(LogStatus.INFO, "", holder);
-				childtest.log(LogStatus.INFO, "", bic);
+				childtest.log(Status.INFO, bankname);
+				childtest.log(Status.INFO, holder);
+				childtest.log(Status.INFO, bic);
 				userdata.put("bankname", bankname);
 				userdata.put("holder", holder);
 				userdata.put("bic", bic);
@@ -1061,7 +1060,7 @@ public class AccountSetupPage extends SuperTestNG {
 		for (int i = 0; i < Password.size(); i++) {
 			Password.get(i).sendKeys(password);
 		}
-		childtest.log(LogStatus.INFO, "", password);
+		childtest.log(Status.INFO, password);
 		userdata.put("password", password);
 
 		if (Market == "India") {
@@ -1130,7 +1129,7 @@ public class AccountSetupPage extends SuperTestNG {
 											+ userdata.get("api") + "&email=" + userdata.get("email"),
 									entry.getRequest().getUrl(), "Major Email.js URL");
 						}
-						childtest.log(LogStatus.INFO, "", "<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
+						childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
 					}
 				}
 			}
@@ -1168,10 +1167,10 @@ public class AccountSetupPage extends SuperTestNG {
 		String email = RandomStringUtils.randomAlphabetic(6).toUpperCase() + "@gmail.com";
 		String password = "Unicity";
 
-		childtest.log(LogStatus.INFO, "Account Set-UP", "");
+		childtest.log(Status.INFO, "Account Set-UP");
 
 		Assert.assertEquals(SelectedLanguage.getText(), language, "Minor Selected Langauge");
-		childtest.log(LogStatus.INFO, "", SelectedLanguage.getText());
+		childtest.log(Status.INFO, SelectedLanguage.getText());
 
 		if (Market == "Bahamas") {
 			String[] expected = { "English" };
@@ -1224,12 +1223,12 @@ public class AccountSetupPage extends SuperTestNG {
 
 				NoID.click();
 
-				childtest.log(LogStatus.INFO, "", "No Enroller & Sponsor");
+				childtest.log(Status.INFO, "No Enroller & Sponsor");
 
 				Boolean Enroller = EnrollerName.isDisplayed();
 				Assert.assertTrue(Enroller, "Major Enroller In Summay");
 
-				childtest.log(LogStatus.INFO, "", "No Enroller & Sponsor text box is displaying");
+				childtest.log(Status.INFO, "No Enroller & Sponsor text box is displaying");
 
 				NoID.click();
 			} catch (Exception e) {
@@ -1255,8 +1254,8 @@ public class AccountSetupPage extends SuperTestNG {
 			} else {
 				EnrollerID.sendKeys(referral + Keys.TAB);
 				Thread.sleep(5000);
-				childtest.log(LogStatus.INFO, "Enroller", referral);
-				childtest.log(LogStatus.INFO, "Sponsor", referral);
+				childtest.log(Status.INFO, "Enroller ->"+ referral);
+				childtest.log(Status.INFO, "Sponsor ->"+ referral);
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "4");
@@ -1298,7 +1297,7 @@ public class AccountSetupPage extends SuperTestNG {
 							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
 					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
 							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
-					childtest.log(LogStatus.INFO, "Enroller",
+					childtest.log(Status.INFO, "Enroller ->"+
 							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
 				}
 			}
@@ -1306,8 +1305,8 @@ public class AccountSetupPage extends SuperTestNG {
 
 		FirstName.sendKeys(fname);
 		LastName.sendKeys(lname);
-		childtest.log(LogStatus.INFO, "", fname);
-		childtest.log(LogStatus.INFO, "", lname);
+		childtest.log(Status.INFO, fname);
+		childtest.log(Status.INFO, lname);
 		userdata.put("fname", fname);
 		userdata.put("lname", lname);
 
@@ -1315,11 +1314,11 @@ public class AccountSetupPage extends SuperTestNG {
 		jse.executeScript("window.scrollBy(0,250)", "");
 
 		Phone.sendKeys(phone);
-		childtest.log(LogStatus.INFO, "", phone);
+		childtest.log(Status.INFO, phone);
 		userdata.put("phone", phone);
 
 		Email.sendKeys(email + Keys.TAB);
-		childtest.log(LogStatus.INFO, "", email);
+		childtest.log(Status.INFO, email);
 		userdata.put("email", email);
 		Thread.sleep(5000);
 
@@ -1336,7 +1335,7 @@ public class AccountSetupPage extends SuperTestNG {
 		for (int i = 0; i < Password.size(); i++) {
 			Password.get(i).sendKeys(password);
 		}
-		childtest.log(LogStatus.INFO, "", password);
+		childtest.log(Status.INFO, password);
 		userdata.put("password", password);
 
 		for (HarEntry entry : entries) {
@@ -1351,7 +1350,7 @@ public class AccountSetupPage extends SuperTestNG {
 										+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
 										+ userdata.get("api") + "&email=" + userdata.get("email"),
 								entry.getRequest().getUrl(), "Major Email.js URL");
-						childtest.log(LogStatus.INFO, "Customer",
+						childtest.log(Status.INFO, "Customer ->"+
 								"<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
 					}
 				}
@@ -1398,7 +1397,7 @@ public class AccountSetupPage extends SuperTestNG {
 		String mmddyyyy = us;
 		String ddmmyyyy = eu;
 
-		childtest.log(LogStatus.INFO, "Account Set-UP", "");
+		childtest.log(Status.INFO, "Account Set-UP");
 
 		ArrayList<String> Labels = new ArrayList<String>();
 
@@ -1409,7 +1408,7 @@ public class AccountSetupPage extends SuperTestNG {
 		if (Market == "United Kingdom") {
 			Assert.assertEquals(Labels.toString(), getTranslation("en_getfit_uk", language), "Minor Lables");
 			Fax.sendKeys(fax);
-			childtest.log(LogStatus.INFO, "", fax);
+			childtest.log(Status.INFO, fax);
 			userdata.put("fax", fax);
 
 		} else {
@@ -1445,7 +1444,7 @@ public class AccountSetupPage extends SuperTestNG {
 							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
 					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
 							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
-					childtest.log(LogStatus.INFO, "Enroller",
+					childtest.log(Status.INFO, "Enroller ->"+
 							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
 				}
 			}
@@ -1453,8 +1452,8 @@ public class AccountSetupPage extends SuperTestNG {
 
 		FirstName.sendKeys(fname);
 		LastName.sendKeys(lname);
-		childtest.log(LogStatus.INFO, "", fname);
-		childtest.log(LogStatus.INFO, "", lname);
+		childtest.log(Status.INFO, fname);
+		childtest.log(Status.INFO,  lname);
 		userdata.put("fname", fname);
 		userdata.put("lname", lname);
 
@@ -1463,26 +1462,26 @@ public class AccountSetupPage extends SuperTestNG {
 
 		if (Market == "Canada" || Market == "United States") {
 			DOB.sendKeys(mmddyyyy);
-			childtest.log(LogStatus.INFO, "", mmddyyyy);
+			childtest.log(Status.INFO, mmddyyyy);
 			userdata.put("dob", mmddyyyy);
 		} else {
 			DOB.sendKeys(ddmmyyyy);
-			childtest.log(LogStatus.INFO, "", ddmmyyyy);
+			childtest.log(Status.INFO, ddmmyyyy);
 			userdata.put("dob", ddmmyyyy);
 		}
 
 		Phone.sendKeys(phone);
-		childtest.log(LogStatus.INFO, "", phone);
+		childtest.log(Status.INFO,  phone);
 		userdata.put("phone", phone);
 
 		Email.sendKeys(email + Keys.TAB);
-		childtest.log(LogStatus.INFO, "", email);
+		childtest.log(Status.INFO, email);
 		userdata.put("email", email);
 		Thread.sleep(5000);
 
 		if (Market == "United States") {
 			GovernmentID.sendKeys(govid);
-			childtest.log(LogStatus.INFO, "", govid);
+			childtest.log(Status.INFO, govid);
 			userdata.put("govid", govid);
 		}
 
@@ -1502,14 +1501,14 @@ public class AccountSetupPage extends SuperTestNG {
 
 			if (Spouse.isSelected()) {
 				SpouseName.sendKeys(spouse);
-				childtest.log(LogStatus.INFO, "", spouse);
+				childtest.log(Status.INFO, spouse);
 				userdata.put("coapplicanttype", "Spouse");
 				userdata.put("coapplicant", spouse);
 			}
 
 			if (Company.isSelected()) {
 				CompanyName.sendKeys(company);
-				childtest.log(LogStatus.INFO, "", company);
+				childtest.log(Status.INFO, company);
 				userdata.put("coapplicanttype", "company");
 				userdata.put("coapplicant", company);
 
@@ -1535,16 +1534,16 @@ public class AccountSetupPage extends SuperTestNG {
 			if (DirectDeposit.isSelected()) {
 
 				IBAN.sendKeys(GBIBAN);
-				childtest.log(LogStatus.INFO, "", GBIBAN);
+				childtest.log(Status.INFO, GBIBAN);
 				userdata.put("iban", GBIBAN);
 				userdata.put("commission", "DD");
 
 				BankName.sendKeys(bankname);
 				AccHolder.sendKeys(holder);
 				BIC.sendKeys(bic);
-				childtest.log(LogStatus.INFO, "", bankname);
-				childtest.log(LogStatus.INFO, "", holder);
-				childtest.log(LogStatus.INFO, "", bic);
+				childtest.log(Status.INFO, bankname);
+				childtest.log(Status.INFO, holder);
+				childtest.log(Status.INFO, bic);
 				userdata.put("bankname", bankname);
 				userdata.put("holder", holder);
 				userdata.put("bic", bic);
@@ -1554,7 +1553,7 @@ public class AccountSetupPage extends SuperTestNG {
 		for (int i = 0; i < Password.size(); i++) {
 			Password.get(i).sendKeys(password);
 		}
-		childtest.log(LogStatus.INFO, "", password);
+		childtest.log(Status.INFO, password);
 		userdata.put("password", password);
 
 		for (HarEntry entry : entries) {
@@ -1569,7 +1568,7 @@ public class AccountSetupPage extends SuperTestNG {
 										+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
 										+ userdata.get("api") + "&email=" + userdata.get("email"),
 								entry.getRequest().getUrl(), "Major Email.js URL");
-						childtest.log(LogStatus.INFO, "Customer",
+						childtest.log(Status.INFO, "Customer ->"+
 								"<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
 					}
 				}
