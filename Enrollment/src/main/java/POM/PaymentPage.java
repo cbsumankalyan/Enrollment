@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -18,12 +14,8 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
-
 import Pages.SuperTestNG;
-import io.restassured.path.json.JsonPath;
-import net.lightbody.bmp.core.har.HarEntry;
 
 public class PaymentPage extends SuperTestNG {
 
@@ -145,10 +137,9 @@ public class PaymentPage extends SuperTestNG {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void PaymentDetails(String Market, String language, String pack)
-			throws JSONException, IOException, InterruptedException {
+	public void PaymentDetails(String Market, String language, String pack) throws IOException, InterruptedException {
 
-		if (!(Market == "India" || pack == "NoPack" || Market == "Turkey" )) {
+		if (!(Market == "India" || pack == "NoPack" || Market == "Turkey")) {
 			Thread.sleep(10000);
 			ArrayList<String> Labels = new ArrayList<String>();
 
@@ -219,7 +210,7 @@ public class PaymentPage extends SuperTestNG {
 					try {
 						Boolean NoPack = SEPA.isDisplayed();
 						Assert.assertTrue(NoPack, "Major SEPA is Displaying");
-						childtest.log(Status.INFO, "Payment ->"+ "SEPA");
+						childtest.log(Status.INFO, "Payment ->" + "SEPA");
 
 						int value = new Random().nextInt(PaymentOptions.size());
 						PaymentOptions.get(value).click();
@@ -274,7 +265,7 @@ public class PaymentPage extends SuperTestNG {
 					new Select(ExpiryMonth).selectByVisibleText(mon);
 					new Select(ExpiryYear).selectByVisibleText(year);
 					CVV.sendKeys(cvv);
-					childtest.log(Status.INFO, "Payment ->"+ ccname);
+					childtest.log(Status.INFO, "Payment ->" + ccname);
 					childtest.log(Status.INFO, cc);
 					childtest.log(Status.INFO, mon);
 					childtest.log(Status.INFO, year);
@@ -287,7 +278,7 @@ public class PaymentPage extends SuperTestNG {
 					try {
 						Boolean NoPack = CashPayment.isDisplayed();
 						Assert.assertTrue(NoPack, "Major CashPayment is Displaying");
-						childtest.log(Status.INFO, "Payment ->"+ "Cash");
+						childtest.log(Status.INFO, "Payment ->" + "Cash");
 
 					} catch (Exception e) {
 						Assert.fail("Major CashPayment is not Displaying");
@@ -298,15 +289,14 @@ public class PaymentPage extends SuperTestNG {
 
 					Thread.sleep(5000);
 					if (value == 1) {
-						String[] Bank = { "Seleccione Banco", "SCOTIABANK", "SANTANDER", "BANCOMER", "OXXO",  
+						String[] Bank = { "Seleccione Banco", "SCOTIABANK", "SANTANDER", "BANCOMER", "OXXO",
 								"7-ELEVEN" };
 
 						for (int i = 0; i < Bank.length; i++) {
 							Assert.assertEquals(CashBanks.get(i).getText(), Bank[i]);
 						}
 
-						String[] bank = { "SCOTIABANK", "SANTANDER", "BANCOMER", "OXXO",  
-								"7-ELEVEN" };
+						String[] bank = { "SCOTIABANK", "SANTANDER", "BANCOMER", "OXXO", "7-ELEVEN" };
 
 						Select selectbank = new Select(SelectBank);
 						String b = bank[new Random().nextInt(bank.length)];
@@ -314,14 +304,14 @@ public class PaymentPage extends SuperTestNG {
 						userdata.put("paymenttype", "bank");
 						userdata.put("mxbank", b);
 						Thread.sleep(5000);
-						childtest.log(Status.INFO, "Bank ->"+ b);
+						childtest.log(Status.INFO, "Bank ->" + b);
 					} else {
 						CCName.sendKeys(ccname);
 						CCNumber.sendKeys(cc);
 						new Select(ExpiryMonth).selectByVisibleText(mon);
 						new Select(ExpiryYear).selectByVisibleText(year);
 						CVV.sendKeys(cvv);
-						childtest.log(Status.INFO, "Payment ->"+ ccname);
+						childtest.log(Status.INFO, "Payment ->" + ccname);
 						childtest.log(Status.INFO, cc);
 						childtest.log(Status.INFO, mon);
 						childtest.log(Status.INFO, year);
@@ -334,7 +324,7 @@ public class PaymentPage extends SuperTestNG {
 					new Select(ExpiryMonth).selectByVisibleText(mon);
 					new Select(ExpiryYear).selectByVisibleText(year);
 					CVV.sendKeys(cvv);
-					childtest.log(Status.INFO, "Payment ->"+ ccname);
+					childtest.log(Status.INFO, "Payment ->" + ccname);
 					childtest.log(Status.INFO, cc);
 					childtest.log(Status.INFO, mon);
 					childtest.log(Status.INFO, year);
@@ -349,7 +339,7 @@ public class PaymentPage extends SuperTestNG {
 				new Select(ExpiryMonth).selectByVisibleText(mon);
 				new Select(ExpiryYear).selectByVisibleText(year);
 				CVV.sendKeys(cvv);
-				childtest.log(Status.INFO, "Payment ->"+ ccname);
+				childtest.log(Status.INFO, "Payment ->" + ccname);
 				childtest.log(Status.INFO, cc);
 				childtest.log(Status.INFO, mon);
 				childtest.log(Status.INFO, year);
@@ -357,83 +347,10 @@ public class PaymentPage extends SuperTestNG {
 			}
 
 			userdata.put("ccname", ccname);
-
-			List<HarEntry> entries = server.getHar().getLog().getEntries();
-			for (HarEntry entry : entries) {
-				if (entry.getRequest().getMethod().equals("GET")) {
-					if (entry.getRequest().getUrl().contains("https://")) {
-						if (entry.getRequest().getUrl().contains("shippingmethods.js?callback=angular.callbacks._a")) {
-
-							System.out.println("Request URL: " + entry.getRequest().getUrl());
-							// System.out.println("Entry response : " +
-							// entry.getResponse().getContent().getText());
-							JSONObject shipmethods = new JSONObject(entry.getResponse().getContent().getText()
-									.toString()
-									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
-									.trim());
-							if (!(Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
-									|| Market == "Puerto Rico")) {
-								Assert.assertEquals(
-										userdata.get("proto") + userdata.get("version")
-												+ "shippingmethods.js?callback=angular.callbacks._a&destination="
-												+ userdata.get("marketcode") + "&market=" + userdata.get("marketcode"),
-										entry.getRequest().getUrl(), "Major Ship.js URL");
-							}
-
-							if (Market == "Puerto Rico") {
-								Assert.assertEquals(
-										userdata.get("proto") + userdata.get("version")
-												+ "shippingmethods.js?callback=angular.callbacks._a&destination=" + "US"
-												+ "&market=" + "US" + "&state=PR",
-										entry.getRequest().getUrl(), "Major Ship.js URL");
-							}
-
-							if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica") {
-								Assert.assertEquals(userdata.get("proto") + userdata.get("version")
-										+ "shippingmethods.js?callback=angular.callbacks._a&destination=" + "US"
-										+ "&market=" + "US", entry.getRequest().getUrl(), "Major Ship.js URL");
-							}
-
-							// System.out.println(new
-							// JsonPath(shipmethods.toString()).get("data.items.type"));
-							// ArrayList<String> methods = new ArrayList<>();
-							List<String> methods = new ArrayList<String>();
-
-							if (Market == "Puerto Rico") {
-								for (int i = 0; i < ShipMethod.size(); i++) {
-									methods.add(ShipMethod.get(i).getAttribute("value").replace("type=", "")
-											.replace("&location=Oficina de Puerto Rico", ""));
-								}
-							} else {
-								for (int i = 0; i < ShipMethod.size(); i++) {
-									methods.add(ShipMethod.get(i).getAttribute("value").replace("type=", ""));
-								}
-							}
-
-							if (Market == "Switzerland" || Market == "") {
-								methods.add("WillCall");
-							}
-
-							if (Market == "Puerto Rico") {
-								Assert.assertEquals(methods,
-										new JsonPath(shipmethods.toString()).get("data.items.type"),
-										"Major Ship Method Type");
-							} else {
-								Assert.assertEquals(methods,
-										new JsonPath(shipmethods.toString()).get("data.items.type"),
-										"Major Ship Method Type");
-							}
-							childtest.log(Status.INFO, "Ship ->"+
-									"<a href=" + entry.getRequest().getUrl() + ">Shippingmethods.js</a>");
-						}
-					}
-				}
-			}
 		}
 	}
 
-	public void ShippingDetails(String Market, String language, String pack)
-			throws InterruptedException, JsonGenerationException, JsonMappingException, IOException, JSONException {
+	public void ShippingDetails(String Market, String language, String pack) throws InterruptedException, IOException {
 		if (!(Market == "India" || pack == "NoPack" || Market == "Turkey")) {
 			String address1 = "Address 1";
 			String address2 = "Address 2";
@@ -522,6 +439,7 @@ public class PaymentPage extends SuperTestNG {
 				Thread.sleep(5000);
 				childtest.log(Status.INFO, capostal);
 				userdata.put("zip", capostal);
+				userdata.put("city", "BRIDGEWATER");
 			}
 			if (Market == "United States") {
 				if (language == "English") {
@@ -548,6 +466,7 @@ public class PaymentPage extends SuperTestNG {
 				Thread.sleep(10000);
 				childtest.log(Status.INFO, prpostal);
 				userdata.put("zip", prpostal);
+				userdata.put("city", "SAN JUAN");
 				Thread.sleep(10000);
 			}
 			if (!(Market == "Canada" || Market == "Puerto Rico" || Market == "United States")) {
@@ -677,10 +596,11 @@ public class PaymentPage extends SuperTestNG {
 				ShipAddress1.sendKeys(usaddress);
 				ShipPostalCode.sendKeys(uspostal);
 				Thread.sleep(2000);
-				childtest.log(Status.INFO, "Shipping ->"+ usaddress);
+				childtest.log(Status.INFO, "Shipping ->" + usaddress);
 				childtest.log(Status.INFO, uspostal);
 				userdata.put("address1", usaddress);
 				userdata.put("zip", uspostal);
+				userdata.put("city", "OREM");
 				Thread.sleep(10000);
 
 			}
@@ -690,246 +610,26 @@ public class PaymentPage extends SuperTestNG {
 			ShipMethod.get(value).click();
 			Thread.sleep(5000);
 			userdata.put("shippingmethod", ShipMethod.get(value).getAttribute("value"));
-			childtest.log(Status.INFO, "Ship method ->"+ userdata.get("shippingmethod").split("=")[1]);
+			childtest.log(Status.INFO, "Ship method ->" + userdata.get("shippingmethod").split("=")[1]);
 			Thread.sleep(10000);
-			List<HarEntry> entries = server.getHar().getLog().getEntries();
-			for (HarEntry entry : entries) {
-				if (entry.getRequest().getMethod().equals("POST")) {
-					if (entry.getRequest().getUrl().contains("orderterms.js")) {
-						if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
-								|| Market == "Jamaica" || Market == "United States") {
 
-							if (entry.getRequest().getPostData().getText().contains(userdata.get("zip"))) {
-								if (entry.getRequest().getPostData().getText()
-										.contains(userdata.get("shippingmethod"))) {
-									System.out.println("Unicity " + entry.getResponse().getHeaders().toString());
-									if (entry.getResponse().getHeaders().toString().contains("x-status-code=200")) {
-
-										JSONObject OrderTerms = new JSONObject(entry
-												.getRequest().getPostData().getText().toString().substring(entry
-														.getRequest().getPostData().getText().toString().indexOf("{"))
-												.trim());
-
-										Assert.assertEquals(entry.getRequest().getUrl(),
-												userdata.get("proto") + userdata.get("version") + "orderterms.js",
-												"Major OrderTerms.js URL");
-										if (userdata.get("testcase") == "getfit") {
-											Assert.assertEquals(
-													"https://hydraqa.unicity.net/" + userdata.get("version")
-															+ "customers?type=" + "Associate",
-													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-													"Major Customer Typeqqq");
-										} else {
-											Assert.assertEquals(
-													"https://hydraqa.unicity.net/" + userdata.get("version")
-															+ "customers?type=" + userdata.get("type"),
-													new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-													"Major Customer Typewww");
-										}
-
-										/*Assert.assertEquals(packs,
-												new JsonPath(OrderTerms.toString()).get("order.lines.items.item.href"),
-												"Major Packs");*/
-										if (Market == "Colombia") {
-
-										} else {
-											System.out.println("suman" + userdata.get("zip"));
-											System.out.println(new JsonPath(OrderTerms.toString()).get("order"));
-											System.out.println("kalyan" + new JsonPath(OrderTerms.toString())
-													.get("order.shipToAddress.zip"));
-
-											Assert.assertEquals(userdata.get("zip"),
-													new JsonPath(OrderTerms.toString()).get("order.shipToAddress.zip"),
-													"Major Ship Zip2");
-										}
-										/*Assert.assertEquals(Quantity.toString(), new JsonPath(OrderTerms.toString())
-												.get("order.lines.items.quantity").toString(), "Quantiy");*/
-
-										if (Market == "Bahamas" || Market == "Dominican Republic"
-												|| Market == "Jamaica") {
-											Assert.assertEquals("US", new JsonPath(OrderTerms.toString())
-													.get("order.shipToAddress.country"), "Major Ship Country");
-										} else {
-											Assert.assertEquals(userdata.get("marketcode"),
-													new JsonPath(OrderTerms.toString())
-															.get("order.shipToAddress.country"),
-													"Major Ship Country");
-										}
-
-										Assert.assertEquals(
-												"https://hydraqa.unicity.net/" + userdata.get("version")
-														+ "shippingmethods?" + userdata.get("shippingmethod"),
-												new JsonPath(OrderTerms.toString()).get("order.shippingMethod.href"),
-												"Major ShipMethod URL");
-									}
-								}
-							}
-						} else {
-							if (!(Market == "Colombia")) {
-								if (entry.getRequest().getPostData().getText().contains(userdata.get("zip"))) {
-
-									if (Market == "Puerto Rico") {
-										if (entry.getRequest().getPostData().getText()
-												.contains(userdata.get("shippingmethod"))) {
-											if (entry.getResponse().getHeaders().toString()
-													.contains("x-status-code=200")) {
-
-												JSONObject OrderTerms = new JSONObject(entry.getRequest()
-														.getPostData().getText().toString().substring(entry.getRequest()
-																.getPostData().getText().toString().indexOf("{"))
-														.trim());
-
-												Assert.assertEquals(
-														entry.getRequest().getUrl(), userdata.get("proto")
-																+ userdata.get("version") + "orderterms.js",
-														"Major OrderTerms.js URL");
-												if (userdata.get("testcase") == "getfit") {
-													Assert.assertEquals(
-															"https://hydraqa.unicity.net/" + userdata.get("version")
-																	+ "customers?type=" + "GetFit",
-															new JsonPath(OrderTerms.toString())
-																	.get("order.customer.href"),
-															"Major Customer Type");
-												} else {
-													Assert.assertEquals(
-															"https://hydraqa.unicity.net/" + userdata.get("version")
-																	+ "customers?type=" + userdata.get("type"),
-															new JsonPath(OrderTerms.toString())
-																	.get("order.customer.href"),
-															"Major Customer Type");
-												}
-
-												/*Assert.assertEquals(packs, new JsonPath(OrderTerms.toString())
-														.get("order.lines.items.item.href"), "Major Packs");*/
-												Assert.assertEquals(userdata.get("zip"),
-														new JsonPath(OrderTerms.toString())
-																.get("order.shipToAddress.zip"),
-														"Major Ship Zip3");
-												/*Assert.assertEquals(Quantity.toString(),
-														new JsonPath(OrderTerms.toString())
-																.get("order.lines.items.quantity").toString(),
-														"Major Quantiy");*/
-												Assert.assertEquals("US", new JsonPath(OrderTerms.toString())
-														.get("order.shipToAddress.country"), "Major Ship Country");
-
-												Assert.assertEquals(
-														"https://hydraqa.unicity.net/" + userdata.get("version")
-																+ "shippingmethods?" + userdata.get("shippingmethod"),
-														new JsonPath(OrderTerms.toString()).get(
-																"order.shippingMethod.href"),
-														"Major ShipMethod URL");
-											}
-										}
-									}
-									if (!(Market == "Puerto Rico")) {
-
-										if (entry.getResponse().getHeaders().toString().contains("x-status-code=200")) {
-
-											JSONObject OrderTerms = new JSONObject(
-													entry.getRequest().getPostData()
-															.getText().toString().substring(entry.getRequest()
-																	.getPostData().getText().toString().indexOf("{"))
-															.trim());
-
-											Assert.assertEquals(entry.getRequest().getUrl(),
-													userdata.get("proto") + userdata.get("version") + "orderterms.js",
-													"Major OrderTerms.js URL");
-											if (userdata.get("testcase") == "getfit") {
-												Assert.assertEquals(
-														"https://hydraqa.unicity.net/" + userdata.get("version")
-																+ "customers?type=" + "Associate",
-														new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-														"Major Customer Typeeeee");
-											} else {
-												Assert.assertEquals(
-														"https://hydraqa.unicity.net/" + userdata.get("version")
-																+ "customers?type=" + userdata.get("type"),
-														new JsonPath(OrderTerms.toString()).get("order.customer.href"),
-														"Major Customer Typerrrr");
-											}
-
-											/*Assert.assertEquals(packs, new JsonPath(OrderTerms.toString())
-													.get("order.lines.items.item.href"), "Major Packs");*/
-											if (Market == "Colombia") {
-
-											} else {
-												Assert.assertEquals(userdata.get("zip"),
-														new JsonPath(OrderTerms.toString()).get(
-																"order.shipToAddress.zip"),
-														"Major Ship Zip Bahamas1");
-											}
-											/*Assert.assertEquals(Quantity.toString(),
-													new JsonPath(OrderTerms.toString())
-															.get("order.lines.items.quantity").toString(),
-													"Major Quantiy");*/
-											Assert.assertEquals(userdata.get("marketcode"),
-													new JsonPath(OrderTerms.toString())
-															.get("order.shipToAddress.country"),
-													"Major Ship Country");
-
-											if (Market == "Mexico") {
-
-											} else {
-												Assert.assertEquals(
-														"https://hydraqa.unicity.net/" + userdata.get("version")
-																+ "shippingmethods?" + userdata.get("shippingmethod"),
-														new JsonPath(OrderTerms.toString()).get(
-																"order.shippingMethod.href"),
-														"Major ShipMethod URL");
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 			if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
 					|| Market == "United States" || Market == "Canada" || Market == "Puerto Rico") {
-				for (HarEntry entry : entries) {
-					if (entry.getRequest().getMethod().equals("GET")) {
-						if (entry.getRequest().getUrl().contains("addresses?country=")) {
-							System.out.println("Request URL: " + entry.getRequest().getUrl());
-							System.out.println("Entry response : " + entry.getResponse().getContent().getText());
 
-							JSONObject addresses = new JSONObject(entry.getResponse().getContent().getText().toString()
-									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
-									.trim());
-							if (Market == "Bahamas" || Market == "Dominican Republic" || Market == "Jamaica"
-									|| Market == "United States") {
-								Assert.assertEquals(
-										entry.getRequest().getUrl(), userdata.get("proto") + userdata.get("version")
-												+ "addresses?country=" + "US" + "&zip=" + userdata.get("zip"),
-										"Major Address Zip");
-							} else {
-								Assert.assertEquals(entry.getRequest().getUrl(),
-										userdata.get("proto") + userdata.get("version") + "addresses?country="
-												+ userdata.get("marketcode") + "&zip=" + userdata.get("zip"),
-										"Major Address Zip");
-							}
-							if (Market == "United States") {
-								if (language == "English") {
-									userdata.put("city", "HOLLYWOOD");
-									userdata.put("state",
-											new JsonPath(addresses.toString()).get("items.state").toString());
-								} else {
-									userdata.put("city", new JsonPath(addresses.toString()).get("items.city").toString()
-											.replace("[", "").replace("]", "").toUpperCase());
-									userdata.put("state",
-											new JsonPath(addresses.toString()).get("items.state").toString());
-								}
-							} else {
-								userdata.put("city", new JsonPath(addresses.toString()).get("items.city").toString()
-										.replace("[", "").replace("]", "").toUpperCase());
-								userdata.put("state", new JsonPath(addresses.toString()).get("items.state").toString());
-							}
+				if (Market == "Bahamas" || Market == "Jamaica" || Market == "United States") {
+					userdata.put("city", "OREM");
+				} else {
 
-							childtest.log(Status.INFO, "Addressses ->"+
-									"<a href=" + entry.getRequest().getUrl() + ">Addresses.js</a>");
-							break;
-						}
+				}
+				if (Market == "United States") {
+					if (language == "English") {
+						userdata.put("city", "HOLLYWOOD");
+
+					} else {
+
 					}
+				} else {
+
 				}
 			}
 
@@ -957,7 +657,7 @@ public class PaymentPage extends SuperTestNG {
 						Assert.fail("Critical Back end error");
 					}
 				} catch (Exception e) {
-					System.out.println("No Pop UP");
+					/* System.out.println("No Pop UP"); */
 				}
 			}
 		}

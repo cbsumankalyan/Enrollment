@@ -226,16 +226,10 @@ public class FranchisePartner extends SuperTestNG {
         data[50][1] = "English";
 		data[50][2] = "Pack";
        
-		/*data[0][0] = "Austria";
+		/*data[0][0] = "Turkey";
 		data[0][1] = "English";
-		data[0][2] = "Pack";
-
-		data[1][0] = "Austria";
-		data[1][1] = "Deutsch";
-		data[1][2] = "Pack";*/
-		
-		
-
+		data[0][2] = "NoPack";*/
+	
 		return data;
 
 	}
@@ -252,8 +246,8 @@ public class FranchisePartner extends SuperTestNG {
 	public void Enroll(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
 		
 		childtest = fp.createNode(Market + "  |  " + language);
-		childtest.log(Status.INFO, "FP Enrollment Platform  ->"+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
-		
+		childtest.log(Status.INFO, "Platfome   ->   "+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
+		System.out.println(Market + "  |  " + language);
 		start.SelectMarket(Market, language);
 		packs.PacksChecking(Market, language, pack);
 		arpack.ARPacks(Market, pack);

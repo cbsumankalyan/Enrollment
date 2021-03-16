@@ -63,21 +63,7 @@ public class PrefferedCustomer extends SuperTestNG {
         data[9][0] = "United States";
         data[9][1] = "Español";
         data[9][2] = "Pack";
-
 		
-        
-        
-        
-		
-		
-		/*data[0][0] = "Mexico";
-		data[0][1] = "Español";
-		data[0][2] = "Pack";
-		
-		data[1][0] = "United States";
-		data[1][1] = "Español";
-		data[1][2] = "Pack";*/
-
 		return data;
 
 	}
@@ -96,7 +82,7 @@ public class PrefferedCustomer extends SuperTestNG {
 		
 		childtest = pc.createNode(Market + "  |  " + language);
 		childtest.log(Status.INFO, "PC Enrollment Platform   "+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
-		
+		System.out.println(Market + "  |  " + language);
 		start.PCFlow(Market, language);
 		packs.PCPacksChecking(Market, language, pack);
 		arpack.ARPacks(Market, pack);

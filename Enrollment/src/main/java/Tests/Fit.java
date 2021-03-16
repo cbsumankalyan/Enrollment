@@ -61,7 +61,7 @@ public class Fit extends SuperTestNG {
 	
 		childtest = fit.createNode(Market + "  |  " + language);
 		childtest.log(Status.INFO, "GetFit Platform   "+"<a href=" + getfit + ">" + userdata.get("platform") + "</a>");
-		
+		System.out.println(Market + "  |  " + language);
 		start.GetFitFlow(Market, language);
 		account.GetFitPersonalDetails(Market, language, pack);
 		packs.GetFitPacks(Market, language, pack);

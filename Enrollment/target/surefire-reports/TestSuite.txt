@@ -1,4 +1,402 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 680.571 s - in TestSuite
+Tests run: 77, Failures: 77, Errors: 0, Skipped: 0, Time elapsed: 3,726.407 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.311 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.222 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.213 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.211 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.209 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.192 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.312 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.237 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.238 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.453 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.285 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.296 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.293 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.193 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.211 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.209 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.327 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.232 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.324 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.228 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.266 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.193 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.232 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.219 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.211 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.225 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.192 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.235 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.266 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.196 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.247 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.22 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.209 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.209 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.19 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.225 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.211 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.184 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.216 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.215 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.215 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.226 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.207 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.18 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.185 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.241 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.207 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.202 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.178 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.219 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 10.194 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 10.194 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:54)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 10.212 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:54)
+
+INDPassReferralID(Tests.INDReferralIDPassing)  Time elapsed: 10.211 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Cambodia ] but found [Cambodia]
+	at Tests.INDReferralIDPassing.INDPassReferralID(INDReferralIDPassing.java:46)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 127.697 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afeb7cdf93c5b516721b7e35d5947ca6
+*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 198.513 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 665ec8140d26384fa158135680fb4840
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.525 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62247}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d72c8140734e7f288a30152fe073031
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 60.962 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:87)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 113.564 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c844b197d2e74eab2f4b7e0c8717eb53
+*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 184.995 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a26a4afe5e0bcf14f2494b30d0ebd68e
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 112.591 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8005a7b3f6fa4f693bababde9f4f936
+*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 109.428 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 68131427d31c47d124ab978327b7d253
+*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 112.173 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62688}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f1a350a632b6323156aa420fddd1d23
+*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 114.253 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62759}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ae7f3426d221549b0292aa730b82b20
+*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+
+GetFit(Tests.Fit)  Time elapsed: 10.1 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.Fit.GetFit(Fit.java:65)
+
+GetFit(Tests.Fit)  Time elapsed: 10.092 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.Fit.GetFit(Fit.java:65)
+
+GetFit(Tests.Fit)  Time elapsed: 10.093 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.Fit.GetFit(Fit.java:65)
+
+GetFit(Tests.Fit)  Time elapsed: 10.086 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.Fit.GetFit(Fit.java:65)
+
+GetFit(Tests.Fit)  Time elapsed: 10.08 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.Fit.GetFit(Fit.java:65)
+
+Patient(Tests.PatientPortal)  Time elapsed: 250.251 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
+
+Patient(Tests.PatientPortal)  Time elapsed: 243.151 s  <<< FAILURE!
+java.lang.AssertionError: Major market is missing expected [Canada ] but found [Canada]
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
+
+Patient(Tests.PatientPortal)  Time elapsed: 187.718 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d33e6efc3db3144fc06c377f73fc1f67
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
+
+Patient(Tests.PatientPortal)  Time elapsed: 143.996 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé d'inscription, Paramètres d'inscription, À Propos de Vous, Votre Adresse de livraison/Adresse principale, Votre Adresse de Facturation, Votre conditions de vente, Résumé]] but found [[des informations de carte de crédit, Votre Adresse de Facturation, Adresse de livraison/Adresse principale, méthode d'expédition, Résumé]]
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.239 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.342 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.291 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.35 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+

@@ -58,7 +58,7 @@ public class PatientPortal extends SuperTestNG {
 		
 		childtest = pp.createNode(Market + "  |  " + language);
 		childtest.log(Status.INFO, "Patient Portal Platform   "+"<a href=" + patientportal + ">" + userdata.get("platform") + "</a>");
-		
+		System.out.println(Market + "  |  " + language);
 		start.PPFlow(Market, language);
 		packs.PCPacksChecking(Market, language, pack);
 		arpack.ARPacks(Market, pack);

@@ -86,10 +86,10 @@ public class StartPage extends SuperTestNG {
 		akhil = (countrycode.get(userdata.get("market"))) + "-" + locale.get(language);
 
 		Thread.sleep(10000);
-		String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ", "Colombia",
-				"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
+		String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia", "Canada", "Colombia",
+				"Denmark", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 				"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
-				"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore", "Sweden",
+				"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico", "Singapore", "Sweden",
 				"Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine", "United Kingdom" };
 
 		if (!(userdata.get("testcase") == "hcp")) {
@@ -151,7 +151,7 @@ public class StartPage extends SuperTestNG {
 			}
 		}
 
-		childtest.log(Status.INFO, "Start ->"+"Checked Start Page Translations");
+		childtest.log(Status.INFO, "Start ->"+"Start Page Translations");
 
 		if (Market == "Australia" || Market == "Austria" || Market == "Bahamas" || Market == "Canada"
 				|| Market == "Denmark" || Market == "Hungary" || Market == "India" || Market == "Ireland"
@@ -527,10 +527,10 @@ public class StartPage extends SuperTestNG {
 		userdata.put("market", Market);
 		akhil = (countrycode.get(userdata.get("market"))) + "-" + locale.get(language);
 
-		System.out.println("Start----" + (countrycode.get(userdata.get("market"))) + "-" + locale.get(language));
+		/*System.out.println("Start----" + (countrycode.get(userdata.get("market"))) + "-" + locale.get(language));*/
 
 		Thread.sleep(10000);
-		String[] expected = { "United States", "Canada ", "United Kingdom", };
+		String[] expected = { "United States", "Canada", "United Kingdom", };
 
 		for (int i = 0; i < expected.length; i++) {
 			Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");

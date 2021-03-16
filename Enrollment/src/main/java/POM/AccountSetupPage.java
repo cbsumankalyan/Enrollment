@@ -9,8 +9,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,12 +18,9 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
-
 import Pages.SuperTestNG;
-import io.restassured.path.json.JsonPath;
-import net.lightbody.bmp.core.har.HarEntry;
+import Pages.TurkeyGovID;
 
 public class AccountSetupPage extends SuperTestNG {
 
@@ -210,8 +205,9 @@ public class AccountSetupPage extends SuperTestNG {
 		PageFactory.initElements(driver, this);
 	}
 
+	@SuppressWarnings("static-access")
 	public void AccountDetails(String Market, String language, String pack)
-			throws InterruptedException, JSONException, UnknownHostException, IOException {
+			throws InterruptedException, UnknownHostException, IOException {
 
 		LocalDate startDate = LocalDate.of(1990, 1, 1); // start date
 		long start = startDate.toEpochDay();
@@ -647,8 +643,8 @@ public class AccountSetupPage extends SuperTestNG {
 					EnrollerID.sendKeys(referral + Keys.TAB);
 					SponsorID.sendKeys(referral + Keys.TAB);
 					Thread.sleep(5000);
-					childtest.log(Status.INFO, "Enroller ->"+ referral);
-					childtest.log(Status.INFO, "Sponsor ->"+ referral);
+					childtest.log(Status.INFO, "Enroller ->" + referral);
+					childtest.log(Status.INFO, "Sponsor ->" + referral);
 					userdata.put("enroller", referral);
 					userdata.put("sponsor", referral);
 					userdata.put("api", "7");
@@ -672,8 +668,8 @@ public class AccountSetupPage extends SuperTestNG {
 			}
 		} else {
 			Thread.sleep(5000);
-			childtest.log(Status.INFO, "Enroller ->"+ referral);
-			childtest.log(Status.INFO, "Sponsor ->"+ referral);
+			childtest.log(Status.INFO, "Enroller ->" + referral);
+			childtest.log(Status.INFO, "Sponsor ->" + referral);
 			userdata.put("enroller", referral);
 			userdata.put("sponsor", referral);
 			userdata.put("api", "3");
@@ -696,37 +692,15 @@ public class AccountSetupPage extends SuperTestNG {
 				Assert.assertEquals(Referral.getText(), referral);
 			}
 		}
-		
+
 		if (Market == "Turkey") {
-		userdata.put("api", "6");
+			userdata.put("api", "6");
 		}
 
 		userdata.put("language", language);
 		userdata.put("type", "Associate");
 
 		Thread.sleep(10000);
-
-		List<HarEntry> entries = server.getHar().getLog().getEntries();
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("GET")) {
-				if (entry.getRequest().getUrl().contains("customers.js?callback=angular.callbacks._1")) {
-
-					System.out.println("Request URL: " + entry.getRequest().getUrl());
-					// System.out.println("Entry response : " +
-					// entry.getResponse().getContent().getText());
-
-					JSONObject referraldata = new JSONObject(entry.getResponse().getContent().getText().toString()
-							.substring(entry.getResponse().getContent().getText().toString().indexOf("{")).trim());
-					Assert.assertEquals(userdata.get("proto") + userdata.get("version")
-							+ "customers.js?callback=angular.callbacks._1&expand=customer,profilePicture&id.unicity="
-							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
-					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
-							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
-					childtest.log(Status.INFO, "Enroller ->"+
-							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
-				}
-			}
-		}
 
 		if (!(Market == "India")) {
 			FirstName.sendKeys(fname);
@@ -808,9 +782,18 @@ public class AccountSetupPage extends SuperTestNG {
 		}
 
 		if (Market == "Turkey") {
-			GovernmentID.sendKeys("11437927778");
-			childtest.log(Status.INFO, "11437927778");
-			userdata.put("govid", "11437927778");
+			TurkeyGovID test = new TurkeyGovID();
+			Boolean status = false;
+			while (!status) {
+				String no = TurkeyGovID.getSaltString();
+				status = test.checkNumber(no);
+				if (status == true) {
+					GovernmentID.sendKeys(no);
+					childtest.log(Status.INFO,no);
+					userdata.put("govid", no);
+					System.out.println(status + " : " + no);
+				}
+			}
 		}
 
 		if (Market == "Italy") {
@@ -1106,33 +1089,7 @@ public class AccountSetupPage extends SuperTestNG {
 			userdata.put("bankname", "HDFC");
 			userdata.put("branch", "Hennur");
 			userdata.put("ifsc", "HDFC0002815");
-		}
-
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("GET")) {
-				if (entry.getRequest().getUrl().contains("https://")) {
-					if (entry.getRequest().getUrl().contains("&email")) {
-						System.out.println("Request URL: " + entry.getRequest().getUrl());
-						// System.out.println("Entry response : " +
-						// entry.getResponse().getContent().getText());
-						if (userdata.get("testcase") == "indreferalid") {
-							Assert.assertEquals(
-									userdata.get("proto") + userdata.get("version")
-											+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._" + "6"
-											+ "&email=" + userdata.get("email"),
-									entry.getRequest().getUrl(), "Major Email.js URL");
-
-						} else {
-							Assert.assertEquals(
-									userdata.get("proto") + userdata.get("version")
-											+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
-											+ userdata.get("api") + "&email=" + userdata.get("email"),
-									entry.getRequest().getUrl(), "Major Email.js URL");
-						}
-						childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
-					}
-				}
-			}
+			Thread.sleep(5000);
 		}
 
 		if (pack == "NoPack") {
@@ -1143,7 +1100,7 @@ public class AccountSetupPage extends SuperTestNG {
 				if (Market == "Turkey") {
 					PostalCode.sendKeys("12345");
 					userdata.put("zip", "12345");
-				} else { 
+				} else {
 					PostalCode.sendKeys("1234");
 					userdata.put("zip", "1234");
 				}
@@ -1156,7 +1113,7 @@ public class AccountSetupPage extends SuperTestNG {
 	}
 
 	public void PCAccountDetails(String Market, String language, String pack)
-			throws InterruptedException, JSONException, UnknownHostException, IOException {
+			throws InterruptedException, UnknownHostException, IOException {
 
 		String referral = "2";
 		String fname = "TestFirstName";
@@ -1254,8 +1211,8 @@ public class AccountSetupPage extends SuperTestNG {
 			} else {
 				EnrollerID.sendKeys(referral + Keys.TAB);
 				Thread.sleep(5000);
-				childtest.log(Status.INFO, "Enroller ->"+ referral);
-				childtest.log(Status.INFO, "Sponsor ->"+ referral);
+				childtest.log(Status.INFO, "Enroller ->" + referral);
+				childtest.log(Status.INFO, "Sponsor ->" + referral);
 				userdata.put("enroller", referral);
 				userdata.put("sponsor", referral);
 				userdata.put("api", "4");
@@ -1280,28 +1237,6 @@ public class AccountSetupPage extends SuperTestNG {
 		userdata.put("type", "PreferredCustomer");
 
 		Thread.sleep(10000);
-
-		List<HarEntry> entries = server.getHar().getLog().getEntries();
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("GET")) {
-				if (entry.getRequest().getUrl().contains("customers.js?callback=angular.callbacks._1")) {
-
-					System.out.println("Request URL: " + entry.getRequest().getUrl());
-					// System.out.println("Entry response : " +
-					// entry.getResponse().getContent().getText());
-
-					JSONObject referraldata = new JSONObject(entry.getResponse().getContent().getText().toString()
-							.substring(entry.getResponse().getContent().getText().toString().indexOf("{")).trim());
-					Assert.assertEquals(userdata.get("proto") + userdata.get("version")
-							+ "customers.js?callback=angular.callbacks._1&expand=customer,profilePicture&id.unicity="
-							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
-					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
-							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
-					childtest.log(Status.INFO, "Enroller ->"+
-							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
-				}
-			}
-		}
 
 		FirstName.sendKeys(fname);
 		LastName.sendKeys(lname);
@@ -1338,30 +1273,11 @@ public class AccountSetupPage extends SuperTestNG {
 		childtest.log(Status.INFO, password);
 		userdata.put("password", password);
 
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("GET")) {
-				if (entry.getRequest().getUrl().contains("https://")) {
-					if (entry.getRequest().getUrl().contains("&email")) {
-						System.out.println("Request URL: " + entry.getRequest().getUrl());
-						// System.out.println("Entry response : " +
-						// entry.getResponse().getContent().getText());
-						Assert.assertEquals(
-								userdata.get("proto") + userdata.get("version")
-										+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
-										+ userdata.get("api") + "&email=" + userdata.get("email"),
-								entry.getRequest().getUrl(), "Major Email.js URL");
-						childtest.log(Status.INFO, "Customer ->"+
-								"<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
-					}
-				}
-			}
-		}
-
 		Continue.click();
 	}
 
 	public void GetFitAccountDetails(String Market, String language, String pack)
-			throws InterruptedException, JSONException, UnknownHostException, IOException {
+			throws InterruptedException, UnknownHostException, IOException {
 
 		String referral = "2";
 		String fname = "TestFirstName";
@@ -1428,32 +1344,10 @@ public class AccountSetupPage extends SuperTestNG {
 
 		Thread.sleep(10000);
 
-		List<HarEntry> entries = server.getHar().getLog().getEntries();
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("GET")) {
-				if (entry.getRequest().getUrl().contains("customers.js?callback=angular.callbacks._1")) {
-
-					System.out.println("Request URL: " + entry.getRequest().getUrl());
-					// System.out.println("Entry response : " +
-					// entry.getResponse().getContent().getText());
-
-					JSONObject referraldata = new JSONObject(entry.getResponse().getContent().getText().toString()
-							.substring(entry.getResponse().getContent().getText().toString().indexOf("{")).trim());
-					Assert.assertEquals(userdata.get("proto") + userdata.get("version")
-							+ "customers.js?callback=angular.callbacks._1&expand=customer,profilePicture&id.unicity="
-							+ userdata.get("enroller"), entry.getRequest().getUrl(), "Major Customer.js URL");
-					Assert.assertTrue(new JsonPath(referraldata.toString()).get("data.items.href").toString()
-							.contains("hydraqa.unicity.net"), "Major Customer Hydra");
-					childtest.log(Status.INFO, "Enroller ->"+
-							"<a href=" + entry.getRequest().getUrl() + ">Customer.js</a>");
-				}
-			}
-		}
-
 		FirstName.sendKeys(fname);
 		LastName.sendKeys(lname);
 		childtest.log(Status.INFO, fname);
-		childtest.log(Status.INFO,  lname);
+		childtest.log(Status.INFO, lname);
 		userdata.put("fname", fname);
 		userdata.put("lname", lname);
 
@@ -1471,7 +1365,7 @@ public class AccountSetupPage extends SuperTestNG {
 		}
 
 		Phone.sendKeys(phone);
-		childtest.log(Status.INFO,  phone);
+		childtest.log(Status.INFO, phone);
 		userdata.put("phone", phone);
 
 		Email.sendKeys(email + Keys.TAB);
@@ -1555,25 +1449,6 @@ public class AccountSetupPage extends SuperTestNG {
 		}
 		childtest.log(Status.INFO, password);
 		userdata.put("password", password);
-
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("GET")) {
-				if (entry.getRequest().getUrl().contains("https://")) {
-					if (entry.getRequest().getUrl().contains("&email")) {
-						System.out.println("Request URL: " + entry.getRequest().getUrl());
-						// System.out.println("Entry response : " +
-						// entry.getResponse().getContent().getText());
-						Assert.assertEquals(
-								userdata.get("proto") + userdata.get("version")
-										+ "customers.js?_httpMethod=HEAD&callback=angular.callbacks._"
-										+ userdata.get("api") + "&email=" + userdata.get("email"),
-								entry.getRequest().getUrl(), "Major Email.js URL");
-						childtest.log(Status.INFO, "Customer ->"+
-								"<a href=" + entry.getRequest().getUrl() + ">Email.js</a>");
-					}
-				}
-			}
-		}
 
 		Continue.click();
 	}

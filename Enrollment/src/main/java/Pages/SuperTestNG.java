@@ -16,12 +16,9 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Proxy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -32,12 +29,14 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.lightbody.bmp.BrowserMobProxy;
-import net.lightbody.bmp.BrowserMobProxyServer;
-import net.lightbody.bmp.client.ClientUtil;
-import net.lightbody.bmp.proxy.CaptureType;
+
 
 public class SuperTestNG {
 
@@ -126,15 +125,6 @@ public class SuperTestNG {
 		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
 		
-		/*extent = new ExtentReports("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
-		fp = extent.startTest("Franchise Partner");
-		pc = extent.startTest("Prefered Customer");
-		referral = extent.startTest("PassingReferralID");
-		indreferral = extent.startTest("INDPassingReferralID");
-		fit = extent.startTest("GetFit");
-		pp = extent.startTest("PatientPortal");
-		hcp = extent.startTest("HealthCareProduct");*/
-		
 		htmlReporter = new ExtentHtmlReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
@@ -147,7 +137,6 @@ public class SuperTestNG {
 		hcp = extent.createTest("HealthCareProduct");
 	}
 
-	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void PreConditon() throws ParseException, URISyntaxException, MalformedURLException {
 
@@ -195,48 +184,18 @@ public class SuperTestNG {
 		locale.put("Svenska", "sv");
 		locale.put("Türkçe", "tr");
 
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "driver/chromedriver_win32_2.36/chromedriver.exe");
-		 * DesiredCapabilities cap = DesiredCapabilities.chrome();
-		 * LoggingPreferences logPrefs = new LoggingPreferences();
-		 * logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
-		 * cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs); driver =
-		 * new ChromeDriver(cap); driver.manage().window().maximize();
-		 * driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		 * driver.get(url);
-		 */
-
-		server = new BrowserMobProxyServer();
-		server.start();
-		Proxy seleniumProxy = ClientUtil.createSeleniumProxy(server);
-		// seleniumProxy.setHttpProxy("http://sumancb@hostname:Aug@2019" + ":" +
-		// server.getPort());
-		// seleniumProxy.setSslProxy("http://sumancb@hostname:Aug@2019" + ":" +
-		// server.getPort());
-
-		server.setHarCaptureTypes(CaptureType.getAllContentCaptureTypes());
-		server.enableHarCaptureTypes(CaptureType.REQUEST_CONTENT, CaptureType.RESPONSE_CONTENT);
-		server.enableHarCaptureTypes(CaptureType.REQUEST_HEADERS, CaptureType.RESPONSE_HEADERS);
-		server.newHar("Enroll");
-
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
-
-		System.setProperty("webdriver.chrome.driver", "driver/chromedriver_win32_2.36/chromedriver.exe");
-		driver = new ChromeDriver(capabilities);
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		if (this.getClass().getSimpleName().toString().equals("INDReferralIDPassing")) {
 			driver.get(indreferralurl);
 			userdata.put("testcase", "indreferalid");
-			System.out.println("************************ ddd"+ userdata.get("testcase"));
 		} 
 		if (this.getClass().getSimpleName().toString().equals("ReferralIDPassing")) {
 			driver.get(referralurl);
 			userdata.put("testcase", "referalid");
-			System.out.println("************************ sss"+ userdata.get("testcase"));
 		} 
 		if (this.getClass().getSimpleName().toString().equals("FranchisePartner")) {
 			driver.get(url);
@@ -275,7 +234,9 @@ public class SuperTestNG {
 	public void PostCondition(ITestResult testResult) throws IOException {
 		
 		if (testResult.isSuccess()) {
-			childtest.log(Status.PASS, "Test Passed");
+			String logText = "<b>Test Method Successfull</b>";
+			Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
+			childtest.log(Status.PASS, m);
 
 		} else if (testResult.getStatus() == ITestResult.FAILURE) {
 			
@@ -288,7 +249,9 @@ public class SuperTestNG {
 			childtest.fail(
 					"<b><font color=red>"+"Screenshot of failure" + "</font></b>",
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotBase64).build());
-			childtest.log(Status.FAIL, "Test Failed");
+			String logText = "<b>Test Method Failed</b>";
+			Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
+			childtest.log(Status.FAIL, m);
 
 			String[] xyz = testResult.getThrowable().getMessage().split(" ");
 			if (xyz[0].equals("Critical")) {
@@ -323,8 +286,7 @@ public class SuperTestNG {
 		userdata.clear();
 		vvv.clear();
 		rrr.clear();
-		
-		
+
 	}
 
 	@AfterSuite

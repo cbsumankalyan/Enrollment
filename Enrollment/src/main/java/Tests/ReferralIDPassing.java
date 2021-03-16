@@ -50,7 +50,7 @@ public class ReferralIDPassing extends SuperTestNG {
 		
 		childtest = referral.createNode(Market + "  |  " + language);
 		childtest.log(Status.INFO, "Passing Referall Platform   "+"<a href=" + referralurl + ">" + userdata.get("platform") + "</a>");
-		
+		System.out.println(Market + "  |  " + language);
 		start.SelectMarket(Market, language);
 		packs.PacksChecking(Market, language, pack);
 		arpack.ARPacks(Market, pack);

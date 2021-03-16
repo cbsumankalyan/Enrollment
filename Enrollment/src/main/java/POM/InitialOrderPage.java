@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Random;
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONException;
-import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -18,12 +17,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
-
 import Pages.SuperTestNG;
-import io.restassured.path.json.JsonPath;
-import net.lightbody.bmp.core.har.HarEntry;
 
 public class InitialOrderPage extends SuperTestNG {
 
@@ -270,45 +265,6 @@ public class InitialOrderPage extends SuperTestNG {
 		if (pack == "Pack") {
 			if (!(Market == "India")) {
 
-				List<HarEntry> entries = server.getHar().getLog().getEntries();
-				for (HarEntry entry : entries) {
-					if (entry.getRequest().getMethod().equals("POST")) {
-						if (entry.getRequest().getUrl().contains("quotes?")) {
-
-							/*System.out.println("Request URL: " + entry.getRequest().getUrl());
-							System.out.println("Entry Quotes response : " + entry.getResponse().getContent().getText());
-							System.out.println("Entry request : " + entry.getRequest().getPostData().getText());*/
-
-							/*
-							 * Checking Quotes Call and Pushing the Items codes
-							 * in to the array and sorting
-							 */
-
-							JSONObject QuotesResponse = new JSONObject(entry.getResponse().getContent().getText()
-									.toString()
-									.substring(entry.getResponse().getContent().getText().toString().indexOf("{"))
-									.trim());
-							rrr.add(new JsonPath(QuotesResponse.toString()).get("items.lines.items.item.id.unicity")
-									.toString().replace("],", ",").replace(" [", " ").replace("[[", "")
-									.replace("]]", ""));
-							Collections.sort(rrr);
-							num = new JsonPath(QuotesResponse.toString()).get("items.lines.items.item.id.unicity")
-									.toString().replace("],", ",").replace(" [", " ").replace("[[", "")
-									.replace("]]", "").replace(" ", "");
-
-							if (num.equals("[]")) {
-								Assert.fail("Critical Packs not returning from Quotes Call");
-							}
-
-							Assert.assertEquals(entry.getRequest().getUrl(),
-									userdata.get("proto") + userdata.get("version") + "quotes?&expand=item",
-									"Critical Quotes url");
-							childtest.log(Status.INFO, "Initial Order");
-							childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Quotes</a>");
-						}
-					}
-				}
-
 				JavascriptExecutor jse = (JavascriptExecutor) driver;
 				jse.executeScript("window.scrollBy(0,250)", "");
 
@@ -327,7 +283,9 @@ public class InitialOrderPage extends SuperTestNG {
 								"Major PV on Pack");
 
 						Thread.sleep(50);
-						jse.executeScript("window.scrollBy(0,50)", "");
+//						jse.executeScript("window.scrollBy(0,50)", "");
+						jse.executeScript("arguments[0].scrollIntoView();", MouseOverButton);
+						Thread.sleep(50);
 						MouseOverButton.click();
 						Thread.sleep(50);
 						vvv.add(Suman.getText().replace("#", "").replace(", ", ","));
@@ -365,7 +323,7 @@ public class InitialOrderPage extends SuperTestNG {
 						if (language == "Polish") {
 							String input = StringUtils.stripAccents(PopOverInfo.getText());
 							String[] dfd = input.replaceAll("[A-Za-z : _]", "").trim().replace("®", "").split("\n");
-							System.out.println(dfd[1]);
+							/* System.out.println(dfd[1]); */
 							for (@SuppressWarnings("unused")
 							String d : dfd) {
 
@@ -438,6 +396,7 @@ public class InitialOrderPage extends SuperTestNG {
 					 */
 
 					for (WebElement CustomPack : CustomPacks) {
+						jse.executeScript("arguments[0].scrollIntoView();", CustomPack);
 						CustomPack.click();
 						if (!(Market == "Canada" || Market == "Colombia" || Market == "Bahamas"
 								|| Market == "Dominican Republic" || Market == "Jamaica" || Market == "Mexico"
@@ -465,7 +424,9 @@ public class InitialOrderPage extends SuperTestNG {
 									"Major pv on pack");
 						}
 						Thread.sleep(50);
-						jse.executeScript("window.scrollBy(0,50)", "");
+//						jse.executeScript("window.scrollBy(0,100)", "");
+						jse.executeScript("arguments[0].scrollIntoView();", MouseOverButton);
+						Thread.sleep(50);
 						MouseOverButton.click();
 						Thread.sleep(50);
 						vvv.add(Suman.getText().replace("#", "").replace(", ", ","));
@@ -606,7 +567,7 @@ public class InitialOrderPage extends SuperTestNG {
 						Assert.fail("Major Search is not working");
 					}
 
-					childtest.log(Status.INFO, "Additonal Products ->"+"Search product");
+					childtest.log(Status.INFO, "Search product is working");
 
 					try {
 						if (!(userdata.get("testcase") == "hcp")) {
@@ -658,16 +619,17 @@ public class InitialOrderPage extends SuperTestNG {
 							if (Market == "Switzerland") {
 								Assert.assertEquals(currencysymbol, "chf", "Critical currency symbol");
 								userdata.put("Currency", "CHF");
+								childtest.log(Status.INFO, "Currency is "+currencysymbol);
 							}
 							if (Market == "United Kingdom") {
 								Assert.assertEquals(currencysymbol, "£", "Critical currency symbol");
 								userdata.put("Currency", "EUR");
 							}
 						}
-						childtest.log(Status.INFO,"Currency Symbol");
 
 						if (!(userdata.get("testcase") == "hcp")) {
-							if (!(Market == "Colombia" || Market == "Mexico" || Market == "Puerto Rico" || Market == "Ukraine")) {
+							if (!(Market == "Colombia" || Market == "Mexico" || Market == "Puerto Rico"
+									|| Market == "Ukraine")) {
 								Boolean Suggested = SuggestedProducts.isDisplayed();
 								Assert.assertTrue(Suggested, "Major Suggested not dispalying");
 								SuggestedProducts.click();
@@ -684,11 +646,12 @@ public class InitialOrderPage extends SuperTestNG {
 								break;
 							}
 						}
-						
-						/*if (Market == "Ukraine") {
-							NonCategoryPacks.get(new Random().nextInt(NonCategoryPacks.size())).click();
-							Thread.sleep(200);
-						}*/
+
+						/*
+						 * if (Market == "Ukraine") { NonCategoryPacks.get(new
+						 * Random().nextInt(NonCategoryPacks.size())).click();
+						 * Thread.sleep(200); }
+						 */
 
 						/*
 						 * Checking the Added Products is displaying in Order
@@ -706,8 +669,8 @@ public class InitialOrderPage extends SuperTestNG {
 						}
 						Collections.sort(packs);
 						Collections.sort(Itemcode);
-						childtest.log(Status.INFO, "Pack selected ->"+SelectedPack.getText());
-						childtest.log(Status.INFO, "Item Codes ->"+Itemcode.toString());
+						childtest.log(Status.INFO, "Pack selected    ->" + SelectedPack.getText());
+						childtest.log(Status.INFO, "Item Codes       ->" + Itemcode.toString());
 
 					} catch (Exception e) {
 						Assert.fail("Critical A-Z section not displaying");
@@ -749,8 +712,10 @@ public class InitialOrderPage extends SuperTestNG {
 						packs.remove("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32942");
 						Quantity.remove("1");
 						Quantity.remove("1");
-						System.out.println("Total Pv Greater then 500 - " + pvs);
-						System.out.println(packs.toString());
+						/*
+						 * System.out.println("Total Pv Greater then 500 - " +
+						 * pvs); System.out.println(packs.toString());
+						 */
 					}
 
 					if (pvs >= 1000) {
@@ -758,19 +723,23 @@ public class InitialOrderPage extends SuperTestNG {
 						packs.remove("https://hydraqa.unicity.net/v5a-test/items?id.unicity=32942");
 						Quantity.remove("1");
 						Quantity.remove("1");
-						System.out.println("Total Pv Greater then 1000 - " + pvs);
-						System.out.println(packs.toString());
+						/*
+						 * System.out.println("Total Pv Greater then 1000 - " +
+						 * pvs); System.out.println(packs.toString());
+						 */
 					}
 				}
 
 				if (Market == "Colombia") {
 					Assert.assertEquals(sum, totalprice, "Critical total price Mismatch");
+					childtest.log(Status.INFO, "Total Price     ->"+totalprice);
 				} else {
 					Assert.assertEquals(result1, totalprice, "Critical total price Mismatch");
+					childtest.log(Status.INFO, "Total Price     ->"+totalprice);
 				}
 				userdata.put("cartprice", String.valueOf(totalprice));
 				Assert.assertEquals(pvs, totalpv, "Critical total PV mismatch");
-				childtest.log(Status.INFO, "Calculated Total Price, PV");
+				childtest.log(Status.INFO, "Total PV    ->"+totalpv);
 
 			}
 		}
@@ -780,7 +749,7 @@ public class InitialOrderPage extends SuperTestNG {
 					Boolean NoPack = NOPack.isDisplayed();
 					Assert.assertTrue(NoPack, "Major NOPack Click Here");
 					NOPackClick.click();
-					childtest.log(Status.INFO, "NOPack ->"+"Calculated Total Price, PV");
+					childtest.log(Status.INFO, "NOPack ->" + "Calculated Total Price, PV");
 				} catch (Exception e) {
 					Assert.fail("Major NOPack Click Here");
 				}
@@ -796,69 +765,31 @@ public class InitialOrderPage extends SuperTestNG {
 		wait.until(ExpectedConditions
 				.invisibilityOfElementLocated(By.xpath("(//img[@src='assets/img/ajax-loader.gif'])[1]")));
 
-		List<HarEntry> entries = server.getHar().getLog().getEntries();
-		for (HarEntry entry : entries) {
-			if (entry.getRequest().getMethod().equals("POST")) {
-				if (entry.getRequest().getUrl().contains("quotes?")) {
+		/*
+		 * checking the No Pack error if Customization pack is not there
+		 */
+		for (int i = 0; i < Packs.size(); i++) {
+			Packs.get(i).click();
 
-					System.out.println("Request URL: " + entry.getRequest().getUrl());
-					System.out.println("Entry Quotes response : " + entry.getResponse().getContent().getText());
-					System.out.println("Entry request : " + entry.getRequest().getPostData().getText());
+			for (WebElement CustomPack : CustomPacks) {
+				CustomPack.click();
 
-					/*
-					 * Checking Quotes Call and Pushing the Items codes in to
-					 * the array and sorting
-					 */
+				Assert.assertEquals(PriceOnPack.getText(), PCPriceInOrderSummary.getText(), "Major price on pack");
+				Thread.sleep(50);
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+				jse.executeScript("window.scrollBy(0,50)", "");
+				MouseOverButton.click();
+				Thread.sleep(50);
+				vvv.add(Suman.getText().replace("#", "").replace(", ", ","));
+				Assert.assertTrue(MouseOverPoPup.isDisplayed(), "Major mouse over popup");
 
-					JSONObject QuotesResponse = new JSONObject(entry.getResponse().getContent().getText().toString()
-							.substring(entry.getResponse().getContent().getText().toString().indexOf("{")).trim());
-					rrr.add(new JsonPath(QuotesResponse.toString()).get("items.lines.items.item.id.unicity").toString()
-							.replace("],", ",").replace(" [", " ").replace("[[", "").replace("]]", ""));
-					Collections.sort(rrr);
-					num = new JsonPath(QuotesResponse.toString()).get("items.lines.items.item.id.unicity").toString()
-							.replace("],", ",").replace(" [", " ").replace("[[", "").replace("]]", "").replace(" ", "");
+				String km = PopOverInfo.getText().replaceAll("\\G(.*\r?\n).*(?:\r?\n|$)", "$1");
+				String[] dfd = km.replaceAll("[A-Za-z : _]", "").trim().split("-");
+				for (@SuppressWarnings("unused")
+				String d : dfd) {
 
-					if (num.equals("[]")) {
-						Assert.fail("Critical Packs not returning from Quotes Call");
-					}
-
-					Assert.assertEquals(entry.getRequest().getUrl(),
-							userdata.get("proto") + userdata.get("version") + "quotes?&expand=item",
-							"Critical Quotes url");
-					childtest.log(Status.INFO, "Initial Order");
-					childtest.log(Status.INFO, "<a href=" + entry.getRequest().getUrl() + ">Quotes</a>");
-
-					/*
-					 * checking the No Pack error if Customization pack is not
-					 * there
-					 */
-					for (int i = 0; i < Packs.size(); i++) {
-						Packs.get(i).click();
-
-						for (WebElement CustomPack : CustomPacks) {
-							CustomPack.click();
-
-							Assert.assertEquals(PriceOnPack.getText(), PCPriceInOrderSummary.getText(),
-									"Major price on pack");
-							Thread.sleep(50);
-							JavascriptExecutor jse = (JavascriptExecutor) driver;
-							jse.executeScript("window.scrollBy(0,50)", "");
-							MouseOverButton.click();
-							Thread.sleep(50);
-							vvv.add(Suman.getText().replace("#", "").replace(", ", ","));
-							Assert.assertTrue(MouseOverPoPup.isDisplayed(), "Major mouse over popup");
-
-							String km = PopOverInfo.getText().replaceAll("\\G(.*\r?\n).*(?:\r?\n|$)", "$1");
-							String[] dfd = km.replaceAll("[A-Za-z : _]", "").trim().split("-");
-							for (@SuppressWarnings("unused")
-							String d : dfd) {
-
-								Assert.assertEquals(dfd[0], PriceOnPack.getText(), "Major price on pack");
-								Assert.assertEquals(dfd[0], PCPriceInOrderSummary.getText(),
-										"Major price in order summary");
-							}
-						}
-					}
+					Assert.assertEquals(dfd[0], PriceOnPack.getText(), "Major price on pack");
+					Assert.assertEquals(dfd[0], PCPriceInOrderSummary.getText(), "Major price in order summary");
 				}
 			}
 		}
@@ -889,7 +820,7 @@ public class InitialOrderPage extends SuperTestNG {
 				Assert.fail("Major Search is not working");
 			}
 
-			childtest.log(Status.INFO, "Additonal Products ->"+"Search product");
+			childtest.log(Status.INFO, "Additonal Products ->" + "Search product");
 
 			try {
 				Boolean AtoZ = AtoZProducts.isDisplayed();
@@ -957,8 +888,8 @@ public class InitialOrderPage extends SuperTestNG {
 				}
 				Collections.sort(packs);
 				Collections.sort(Itemcode);
-				childtest.log(Status.INFO, "Pack selected ->"+SelectedPack.getText());
-				childtest.log(Status.INFO, "Item Codes ->"+Itemcode.toString());
+				childtest.log(Status.INFO, "Pack selected ->" + SelectedPack.getText());
+				childtest.log(Status.INFO, "Item Codes ->" + Itemcode.toString());
 
 			} catch (Exception e) {
 				Assert.fail("Critical A-Z section not displaying");
@@ -1041,7 +972,7 @@ public class InitialOrderPage extends SuperTestNG {
 			Assert.fail("Major initialOrder is Displaying");
 		}
 
-		childtest.log(Status.INFO,"Checked Added Pack");
+		childtest.log(Status.INFO, "Checked Added Pack");
 
 		for (int i = 0; i < ItemCode.size(); i++) {
 
@@ -1065,8 +996,8 @@ public class InitialOrderPage extends SuperTestNG {
 
 		Collections.sort(packs);
 		Collections.sort(Itemcode);
-		childtest.log(Status.INFO, "Pack selected  ->"+SelectedPack.getText());
-		childtest.log(Status.INFO, "Item Code  ->"+Itemcode.toString());
+		childtest.log(Status.INFO, "Pack selected  ->" + SelectedPack.getText());
+		childtest.log(Status.INFO, "Item Code  ->" + Itemcode.toString());
 
 		Continue.click();
 

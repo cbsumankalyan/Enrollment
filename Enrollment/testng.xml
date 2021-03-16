@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<classes>
-		
+
 			<class name="Tests.FranchisePartner" />
 			<class name="Tests.ReferralIDPassing" />
 			<class name="Tests.INDReferralIDPassing" />
@@ -11,7 +11,8 @@
 			<class name="Tests.Fit" />
 			<class name="Tests.PatientPortal" />
 			<class name="Tests.HealthCareProducts" />
-			
+
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

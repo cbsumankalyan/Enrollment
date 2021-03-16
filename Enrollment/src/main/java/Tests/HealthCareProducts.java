@@ -58,7 +58,7 @@ public class HealthCareProducts extends SuperTestNG {
 		
 		childtest = hcp.createNode(Market + "  |  " + language);		
 		childtest.log(Status.INFO, "HCP url Platform   "+"<a href=" + hcpflow + ">" + userdata.get("platform") + "</a>");
-		
+		System.out.println(Market + "  |  " + language);
 		start.SelectMarket(Market, language);
 		packs.PacksChecking(Market, language, pack);
 		arpack.ARPacks(Market, pack);

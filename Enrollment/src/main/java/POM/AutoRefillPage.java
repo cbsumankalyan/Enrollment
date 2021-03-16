@@ -1,10 +1,7 @@
 package POM;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -143,17 +140,6 @@ public class AutoRefillPage extends SuperTestNG {
 					for (int i = 0; i < Suman.size(); i++) {
 						vvv.add(Suman.get(i).getText().replace("#", "").replace(", ", ","));
 					}
-
-					Collections.sort(vvv);
-					List<Object> newList = vvv.stream().distinct().collect(Collectors.toList());
-
-					String str[] = num.split(",");
-
-					al = Arrays.asList(str);
-					Collections.sort(al);
-					List<Object> deduped = al.stream().distinct().collect(Collectors.toList());
-					Assert.assertEquals(newList, deduped, "Major Quotes Call Packs is not Displaying");
-					childtest.log(Status.INFO, "All Quotes Call Packs Displaying");
 
 					WebElement Element = PopularProducts.get(new Random().nextInt(PopularProducts.size()));
 					jse.executeScript("arguments[0].scrollIntoView();", Element);
