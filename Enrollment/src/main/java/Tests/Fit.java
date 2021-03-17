@@ -6,9 +6,7 @@ import java.text.ParseException;
 import org.json.JSONException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
-
 import Pages.Account;
 import Pages.AutoRefill;
 import Pages.InitialOrder;

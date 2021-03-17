@@ -848,10 +848,10 @@ public class SummaryPage extends SuperTestNG {
 		if (userdata.get("testcase") == "normal") {
 			Thread.sleep(5000);
 			Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
-			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ", "Colombia",
+			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia", "Canada", "Colombia",
 					"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 					"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
-					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore",
+					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico", "Singapore",
 					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine",
 					"United Kingdom" };
 
@@ -863,7 +863,7 @@ public class SummaryPage extends SuperTestNG {
 		if (userdata.get("testcase") == "hcp") {
 			Thread.sleep(5000);
 			Assert.assertEquals(driver.getCurrentUrl(), hcpflow, "Low return url");
-			String[] expected = { "United States", "Canada ", };
+			String[] expected = { "United States", "Canada", };
 
 			for (int i = 0; i < expected.length; i++) {
 				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
@@ -1052,10 +1052,10 @@ public class SummaryPage extends SuperTestNG {
 		Thread.sleep(5000);
 		if (userdata.get("testcase") == "normal") {
 			Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
-			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia ", "Canada ", "Colombia",
+			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia", "Canada", "Colombia",
 					"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 					"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
-					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico ", "Singapore",
+					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico", "Singapore",
 					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine",
 					"United Kingdom", };
 
@@ -1066,7 +1066,7 @@ public class SummaryPage extends SuperTestNG {
 
 		if (userdata.get("testcase") == "PatientPortal") {
 			Assert.assertEquals(driver.getCurrentUrl(), patientportal, "Low return url");
-			String[] expected = { "United States", "Canada " };
+			String[] expected = { "United States", "Canada" };
 
 			for (int i = 0; i < expected.length; i++) {
 				Assert.assertEquals(Country.get(i).getText(), expected[i], "Major market is missing");
