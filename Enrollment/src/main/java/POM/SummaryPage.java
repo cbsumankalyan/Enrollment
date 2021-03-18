@@ -849,7 +849,7 @@ public class SummaryPage extends SuperTestNG {
 			Thread.sleep(5000);
 			Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
 			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia", "Canada", "Colombia",
-					"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
+					"Denmark", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 					"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
 					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico", "Singapore",
 					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine",
@@ -1053,7 +1053,7 @@ public class SummaryPage extends SuperTestNG {
 		if (userdata.get("testcase") == "normal") {
 			Assert.assertEquals(driver.getCurrentUrl(), url, "Low return url");
 			String[] expected = { "Australia", "Austria", "Bahamas", "Belgium", "Cambodia", "Canada", "Colombia",
-					"Denmark ", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
+					"Denmark", "Dominican Republic", "France", "Germany", "Hong Kong", "Hungary", "India", "Indonesia",
 					"Italy", "Ireland", "Jamaica", "Japan", "Korea", "Laos", "Luxembourg", "Malaysia", "Mexico",
 					"Netherlands", "New Zealand", "Norway", "Philippines", "Poland", "Puerto Rico", "Singapore",
 					"Sweden", "Switzerland", "Spain", "Taiwan", "Thailand", "United States", "Turkey", "Ukraine",
