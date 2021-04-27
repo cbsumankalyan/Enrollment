@@ -316,7 +316,7 @@ public class SummaryPage extends SuperTestNG {
 
 	@FindBy(xpath = "(//p[@ng-if='bean.order_number']//strong)[2]")
 	private WebElement OrderNumber;
-	
+
 	@FindBy(xpath = "(//p[@ng-if='bean.order_number']//strong)[1]")
 	private WebElement COOrderNumber;
 
@@ -401,74 +401,80 @@ public class SummaryPage extends SuperTestNG {
 
 		childtest.log(Status.INFO, "Summary");
 
-		ArrayList<String> Labels = new ArrayList<String>();
+		if (branch == "master") {
 
-		for (int i = 0; i < Headings.size(); i++) {
-			Labels.add(Headings.get(i).getText());
-		}
+			ArrayList<String> Labels = new ArrayList<String>();
 
-		if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
-				|| Market == "United States" || Market == "Mexico") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_us", language),
-					"Minor Summary Labels is Displaying");
-		}
+			for (int i = 0; i < Headings.size(); i++) {
+				Labels.add(Headings.get(i).getText());
+			}
 
-		if (Market == "Colombia") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_co", language),
-					"Minor Summary Labels is Displaying");
-		}
-
-		if (Market == "Puerto Rico") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_pr", language),
-					"Minor Summary Labels is Displaying");
-		}
-
-		if (Market == "Australia" || Market == "Austria" || Market == "France" || Market == "Hungary"
-				|| Market == "Netherlands" || Market == "New Zealand" || Market == "Ukraine" || Market == "Poland") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_eu", language),
-					"Minor Summary Labels is Displaying");
-		}
-
-		if (Market == "Norway") {
-			if (pack == "NoPack") {
-				Assert.assertEquals(Labels.toString(), getTranslation("summary_no_nopack", language),
-						"Minor Summary Labels is Displaying");
-			} else {
-				Assert.assertEquals(Labels.toString(), getTranslation("summary_no", language),
+			if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "Jamaica"
+					|| Market == "United States" || Market == "Mexico") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_us", language),
 						"Minor Summary Labels is Displaying");
 			}
+
+			if (Market == "Colombia") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_co", language),
+						"Minor Summary Labels is Displaying");
+			}
+
+			if (Market == "Puerto Rico") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_pr", language),
+						"Minor Summary Labels is Displaying");
+			}
+
+			if (Market == "Australia" || Market == "Austria" || Market == "France" || Market == "Hungary"
+					|| Market == "Netherlands" || Market == "New Zealand" || Market == "Ukraine"
+					|| Market == "Poland") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_eu", language),
+						"Minor Summary Labels is Displaying");
+			}
+
+			if (Market == "Norway") {
+				if (pack == "NoPack") {
+					Assert.assertEquals(Labels.toString(), getTranslation("summary_no_nopack", language),
+							"Minor Summary Labels is Displaying");
+				} else {
+					Assert.assertEquals(Labels.toString(), getTranslation("summary_no", language),
+							"Minor Summary Labels is Displaying");
+				}
+			}
+
+			if (Market == "Belgium") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_eu_a", language),
+						"Minor Summary Labels is Displaying");
+			}
+
+			if (Market == "Denmark" || Market == "Ireland" || Market == "Luxembourg" || Market == "Sweden"
+					|| Market == "Spain") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_dn", language),
+						"Minor Summary Labels is Displaying");
+			}
+			if (Market == "Switzerland") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_ch", language),
+						"Minor Summary Labels is Displaying");
+			}
+			if (Market == "Germany") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_de", language),
+						"Minor Summary Labels is Displaying");
+			}
+			if (Market == "India") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_in", language),
+						"Minor Summary Labels is Displaying");
+			}
+			if (Market == "Italy") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_it", language),
+						"Minor Summary Labels is Displaying");
+			}
+			if (Market == "Turkey") {
+				Assert.assertEquals(Labels.toString(), getTranslation("summary_tr", language),
+						"Minor Summary Labels is Displaying");
+			}
+
 		}
 
-		if (Market == "Belgium") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_eu_a", language),
-					"Minor Summary Labels is Displaying");
-		}
-
-		if (Market == "Denmark" || Market == "Ireland" || Market == "Luxembourg" || Market == "Sweden"
-				|| Market == "Spain") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_dn", language),
-					"Minor Summary Labels is Displaying");
-		}
-		if (Market == "Switzerland") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_ch", language),
-					"Minor Summary Labels is Displaying");
-		}
-		if (Market == "Germany") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_de", language),
-					"Minor Summary Labels is Displaying");
-		}
-		if (Market == "India") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_in", language),
-					"Minor Summary Labels is Displaying");
-		}
-		if (Market == "Italy") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_it", language),
-					"Minor Summary Labels is Displaying");
-		}
-		if (Market == "Turkey") {
-			Assert.assertEquals(Labels.toString(), getTranslation("summary_tr", language),
-					"Minor Summary Labels is Displaying");
-		}
 		Assert.assertEquals(market.getText(), getTranslation(userdata.get("marketcode"), language),
 				"Major Market is Displaying");
 		Assert.assertEquals(Lan.getText(), language, "Langauge is Displaying");
@@ -804,7 +810,7 @@ public class SummaryPage extends SuperTestNG {
 
 		if (!(Market == "India")) {
 			if (Market == "Italy") {
-				if (language == "Italiano"){
+				if (language == "Italiano") {
 					childtest.log(Status.INFO, "Account Number ->" + ITAccountNumber.getText());
 					childtest.log(Status.INFO, "Order Number ->" + ITOrderNumber.getText());
 					childtest.log(Status.INFO, "AR Number ->" + ARNumber.getText());
@@ -814,21 +820,21 @@ public class SummaryPage extends SuperTestNG {
 					childtest.log(Status.INFO, "AR Number ->" + ARNumber.getText());
 				}
 
-			} else if (!(Market == "Mexico" || Market == "Turkey" || Market == "Colombia" )){
+			} else if (!(Market == "Mexico" || Market == "Turkey" || Market == "Colombia")) {
 				childtest.log(Status.INFO, "Order Number ->" + OrderNumber.getText());
 				childtest.log(Status.INFO, "Account Number ->" + AccountNumber.getText());
 				childtest.log(Status.INFO, "AR Number ->" + ARNumber.getText());
 			}
 		}
-		
+
 		if (Market == "Colombia") {
-			childtest.log(Status.INFO, "Account Number ->"+ AccountNumber.getText());
-			childtest.log(Status.INFO, "Order Number ->"+ COOrderNumber.getText());
+			childtest.log(Status.INFO, "Account Number ->" + AccountNumber.getText());
+			childtest.log(Status.INFO, "Order Number ->" + COOrderNumber.getText());
 		}
-		
+
 		if (Market == "Mexico") {
-			childtest.log(Status.INFO, "Account Number ->"+ AccountNumber.getText());
-			childtest.log(Status.INFO, "Order Number ->"+ MXOrderNumber.getText());
+			childtest.log(Status.INFO, "Account Number ->" + AccountNumber.getText());
+			childtest.log(Status.INFO, "Order Number ->" + MXOrderNumber.getText());
 
 			if (userdata.get("paymenttype") == "bank") {
 				try {
@@ -839,9 +845,9 @@ public class SummaryPage extends SuperTestNG {
 				}
 			}
 		}
-		
+
 		if (Market == "Turkey") {
-			childtest.log(Status.INFO, "Order ID ->"+ NONopackAccountNumber.getText());
+			childtest.log(Status.INFO, "Order ID ->" + NONopackAccountNumber.getText());
 		}
 
 		driver.findElement(By.cssSelector(".btn.btn-danger.uppercase")).click();
@@ -1042,7 +1048,7 @@ public class SummaryPage extends SuperTestNG {
 		Continue.click();
 		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//img[@src='assets/img/spinner.gif']")));
-		
+
 		childtest.log(Status.INFO, "Order Number ->" + OrderNumber.getText());
 		childtest.log(Status.INFO, "Account Number ->" + AccountNumber.getText());
 		childtest.log(Status.INFO, "AR Number ->" + ARNumber.getText());

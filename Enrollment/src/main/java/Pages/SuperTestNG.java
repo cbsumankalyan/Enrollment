@@ -47,7 +47,7 @@ public class SuperTestNG {
 	// public static HashMap<String, String> userdata = new HashMap<>();
 	public static Map<String, String> userdata = new HashMap<String, String>();
 	
-	public static String branch = "master";
+	public static String branch = "vjk_eubankwire";
 
 	public static String hydra = "https://hydra.unicity.net/v5/";
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";

@@ -133,6 +133,9 @@ public class PaymentPage extends SuperTestNG {
 	@FindBy(xpath = "//div[contains(@class,'modal-header')]")
 	private WebElement Error;
 
+	@FindBy(xpath = "//input[@value = 'bankWire']")
+	private WebElement BankWire;
+
 	public PaymentPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -140,60 +143,66 @@ public class PaymentPage extends SuperTestNG {
 	public void PaymentDetails(String Market, String language, String pack) throws IOException, InterruptedException {
 
 		if (!(Market == "India" || pack == "NoPack" || Market == "Turkey")) {
-			Thread.sleep(10000);
-			ArrayList<String> Labels = new ArrayList<String>();
 
-			for (int i = 0; i < Headings.size() - 1; i++) {
-				Labels.add(Headings.get(i).getText());
-			}
+			if (branch == "master") {
 
-			if (Market == "Australia" || Market == "Belgium" || Market == "Denmark" || Market == "France"
-					|| Market == "Hungary" || Market == "Italy" || Market == "Ireland" || Market == "Luxembourg"
-					|| Market == "New Zealand" || Market == "Sweden" || Market == "Spain" || Market == "Ukraine") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_eu", language), "Minor Labels");
-			}
+				Thread.sleep(10000);
+				ArrayList<String> Labels = new ArrayList<String>();
 
-			if (Market == "Switzerland") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_ch", language), "Minor Labels");
-			}
-
-			if (Market == "Mexico") {
-				Assert.assertEquals(Labels.toString(), getTranslation("mx", language), "Minor Labels");
-			}
-
-			if (Market == "Netherlands") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_nl", language), "Minor Labels");
-			}
-
-			if (Market == "Norway" || Market == "Poland") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_no", language), "Minor Labels");
-			}
-
-			if (Market == "Austria") {
-
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_eu_sepa", language), "Minor Labels");
-			}
-
-			if (Market == "Germany") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_eu_sepa_de", language), "Minor Labels");
-			}
-
-			if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic" || Market == "United States"
-					|| Market == "Jamaica") {
-				if (userdata.get("testcase") == "getfit") {
-					Assert.assertEquals(Labels.toString(), getTranslation("getfit_payment_us", language),
-							"Minor Labels");
-				} else {
-					Assert.assertEquals(Labels.toString(), getTranslation("payment_us", language), "Minor Labels");
+				for (int i = 0; i < Headings.size() - 1; i++) {
+					Labels.add(Headings.get(i).getText());
 				}
-			}
 
-			if (Market == "Colombia") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_co", language), "Minor Labels");
-			}
+				if (Market == "Australia" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+						|| Market == "Hungary" || Market == "Italy" || Market == "Ireland" || Market == "Luxembourg"
+						|| Market == "New Zealand" || Market == "Sweden" || Market == "Spain" || Market == "Ukraine") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_eu", language), "Minor Labels");
+				}
 
-			if (Market == "Puerto Rico") {
-				Assert.assertEquals(Labels.toString(), getTranslation("payment_pr", language), "Minor Labels");
+				if (Market == "Switzerland") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_ch", language), "Minor Labels");
+				}
+
+				if (Market == "Mexico") {
+					Assert.assertEquals(Labels.toString(), getTranslation("mx", language), "Minor Labels");
+				}
+
+				if (Market == "Netherlands") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_nl", language), "Minor Labels");
+				}
+
+				if (Market == "Norway" || Market == "Poland") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_no", language), "Minor Labels");
+				}
+
+				if (Market == "Austria") {
+
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_eu_sepa", language), "Minor Labels");
+				}
+
+				if (Market == "Germany") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_eu_sepa_de", language),
+							"Minor Labels");
+				}
+
+				if (Market == "Bahamas" || Market == "Canada" || Market == "Dominican Republic"
+						|| Market == "United States" || Market == "Jamaica") {
+					if (userdata.get("testcase") == "getfit") {
+						Assert.assertEquals(Labels.toString(), getTranslation("getfit_payment_us", language),
+								"Minor Labels");
+					} else {
+						Assert.assertEquals(Labels.toString(), getTranslation("payment_us", language), "Minor Labels");
+					}
+				}
+
+				if (Market == "Colombia") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_co", language), "Minor Labels");
+				}
+
+				if (Market == "Puerto Rico") {
+					Assert.assertEquals(Labels.toString(), getTranslation("payment_pr", language), "Minor Labels");
+				}
+
 			}
 
 			String ccname = "CCNameTest";
@@ -221,16 +230,24 @@ public class PaymentPage extends SuperTestNG {
 						}
 
 					} catch (Exception e) {
-						Assert.fail("Major SEPA is not Disfasadfplaying");
+						Assert.fail("Major SEPA is not Displaying");
 					}
 				} else {
 					try {
 						Boolean NoPack = SEPA.isDisplayed();
 						Assert.assertFalse(NoPack, "Major SEPA is Displaying");
 					} catch (Exception e) {
-						Assert.fail("Major SEPA is Displaying");
+						Assert.fail("Major SEPA is not Displaying");
 					}
 				}
+			}
+
+			if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+					|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
+					|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
+					|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
+					|| Market == "United Kingdom") {
+				BankWire.click();
 			}
 			if (Market == "Austria" || Market == "Germany") {
 				if (SEPA.isSelected()) {
