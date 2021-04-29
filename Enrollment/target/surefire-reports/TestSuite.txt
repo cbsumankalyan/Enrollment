@@ -1,274 +1,609 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 51, Failures: 51, Errors: 0, Skipped: 0, Time elapsed: 9,359.801 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 197.342 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 199.409 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Zahlungsmöglichkeiten, Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]] but found [[Zahlungsmöglichkeiten, Bankkonto Daten, Rechnungsadresse, Lieferadresse, Versandart]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 147.166 s  <<< FAILURE!
+Tests run: 77, Failures: 58, Errors: 0, Skipped: 0, Time elapsed: 16,322.595 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 254.257 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab1266fc5af5ad1d14c153bb8441b3a5
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e348a4273848203aab4f60da47c31f86
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 186.707 s  <<< FAILURE!
+java.lang.AssertionError: 
+Bank Wire Details expected [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]] but found [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 220.86 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informations carte de crédit, Adresse de facturation, Adresse de livraison, Méthode de livraison]] but found [[Payment Options, Détails de compte en banque, Adresse de facturation, Adresse de livraison, Méthode de livraison]]
+Enroll(Tests.FranchisePartner)  Time elapsed: 181.763 s  <<< FAILURE!
+java.lang.AssertionError: Critical Back end error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 218.279 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Creditkaart informatie, Factuuradres, Bezorg/Primair adres, Verzendmethode]] but found [[Payment Options, Bankgegevens, Factuuradres, Bezorg/Primair adres, Verzendmethode]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 223.317 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 160.332 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 246.132 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 281f28907cb8bd79868ea50d9275b68c
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 762dfb83d8d1706165cd06ba7173cf0e
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 149.047 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 252.417 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 305eebb15839bdc74418c507f29ffb6e
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b46eb7a1c4aec6f2c6dc10aa16357f4
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 260.672 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 250.819 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64828}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e6763a19f35c8f3106f5f7ce4523359
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa4bfccf552a91d6fdab5ab3e8f9f33d
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 197.086 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 190.782 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Kortoplysninger, Faktureringsadresse, Leveringsadresse adresse, Leveringsmetode]] but found [[Payment Options, Bankkontooplysninger, Faktureringsadresse, Leveringsadresse adresse, Leveringsmetode]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 164.084 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 162.166 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a113fd699a16973c8ee5bef4b537f84
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 385694f42d37215ccab73293ea487555
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 208.871 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informations carte de crédit, Adresse de facturation, Adresse de livraison, Méthode de livraison]] but found [[Payment Options, Détails de compte en banque, Adresse de facturation, Adresse de livraison, Méthode de livraison]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 232.371 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 199.547 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Zahlungsart, Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]] but found [[Zahlungsart, Bankkonto Daten, Rechnungsadresse, Lieferadresse, Versandart]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 220.983 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 195.414 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 225.275 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Hitelkártya adatok, Számlázási Cím, Kiszállítás/Els?dleges Cím, Kiszállítási Mód]] but found [[Fizetési Opciók, Bankszámla adatai, Számlázási Cím, Kiszállítás/Els?dleges Cím, Kiszállítási Mód]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 89.971 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 162.817 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f392023f695ba98738139c1c7ee34d8d
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b04f41648171c3701b05fe7723cdb032
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 186.601 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informazioni Della Carta di Credito, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione]] but found [[Payment Options, Dettagli del conto bancario, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 187.353 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 190.312 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 151.125 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 217.536 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41c50088ca61e4bc86814e8436b28b18
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 633208fe4a5cb6a6886549423ed053de
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 195.019 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informations carte de crédit, Adresse de facturation, Adresse de livraison, Méthode de livraison]] but found [[Payment Options, Détails de compte en banque, Adresse de facturation, Adresse de livraison, Méthode de livraison]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 226.432 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 225.626 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]] but found [[Zahlungsart, Bankkonto Daten, Rechnungsadresse, Lieferadresse, Versandart]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 223.82 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 219.942 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4781468f5192698bce9e7552b7ea428e
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ba7a8e46a0d9c07125f2588d30a5624
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 173.243 s  <<< FAILURE!
+java.lang.AssertionError: Critical Back end error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 204.224 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing /Primary Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing /Primary Address, Shipping Address, Shipping Method]]
+Enroll(Tests.FranchisePartner)  Time elapsed: 246.204 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59745}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 24fefe2d15331310acb98f37922620ed
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 298.799 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3db351e5d7449c60ca208a57900a5d33
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 174.86 s  <<< FAILURE!
+java.lang.AssertionError: 
+Bank Wire Details expected [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]] but found [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 230.484 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Creditkaart informatie, Factuuradres /Primair adres, Bezorg adres, Verzendmethode]] but found [[Betalingsopties, Bankkonto Daten, Factuuradres /Primair adres, Bezorg adres, Verzendmethode]]
+Enroll(Tests.FranchisePartner)  Time elapsed: 249.658 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a693c91f86aedb8c0b7914db75572a3
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 231.583 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63fe4f5f0b6389a6c97d11031da162da
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 257.503 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 123c0e3b219f8917838c58ad9aa0f957
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 245.108 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[3]//strong"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60278}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc9b94071ecc204801f8644048892fb6
+*** Element info: {Using=xpath, value=//p[3]//strong}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 215.065 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5487768f88a68bf1429d11904e2a062
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 217.853 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 516e3f09984b1d9cc1ac93f4572b7e61
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.096 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7601aacc2546e2a6a9530d0f8c1dc1
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.714 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6a2385977e21b433f83d128208d0965
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.976 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60619}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c5ad501d7f8ec7f5dd35595b5c70865
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 234.239 s  <<< FAILURE!
+java.lang.AssertionError: 
+Bank Wire Details expected [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]] but found [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 212.898 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing/Primary Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing/Primary Address, Shipping Address, Shipping Method]]
+Enroll(Tests.FranchisePartner)  Time elapsed: 278.955 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[3]//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60746}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0664bbdbdfa0f99d37409dc3acbb438f
+*** Element info: {Using=xpath, value=(//p[3]//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 253.748 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2a1d7c42c4a2fe2fa6c96b4ed833885
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 228.248 s  <<< FAILURE!
+java.lang.AssertionError: 
+Bank Wire Details expected [Thank you for your payment by bank transfer! Please note the following points so that your order can be processed quickly:
+Please transfer the full amount to:
+Account Name: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Please enter your ID or order number in the reason for payment field.
+We will ship your order as soon as we have received the amount due.
+The PV of the order will also be credited upon receipt of payment.
+Late payment may affect your qualification for the compensation plan – so better transfer the money quickly.
+Thank you very much! We hope you enjoy the Unicity products.] but found [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
+Zahlungsempfänger: Unicity Europe B.V.
+IBAN: GB67CHAS60924241312796
+BIC: CHASGB2L
+Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
+Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
+Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
+Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
+Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 60.489 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 243.918 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4cee47de9cceea72cc086adbed08b3a
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 60.958 s  <<< FAILURE!
 java.lang.AssertionError: Major NOPack Click Here
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 107.079 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 107.588 s  <<< FAILURE!
 java.lang.AssertionError: Major pv on pack expected [86] but found [86å]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 145.678 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing/Primary Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing/Primary Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 145.129 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informacje o karcie kredytowej, Adres do rachunku/g?ówny, Adres korespondencyjny, Metoda wysy?ki]] but found [[Metody p?atno?ci, Szczegó?y konta bankowego, Adres do rachunku/g?ówny, Adres korespondencyjny, Metoda wysy?ki]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 119.425 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 173.069 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 788a94498712b6fe46714205fe86744c
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97ab8a7a3055a6bc634cd5fb96425bf1
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 134.362 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 172.251 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fc25ecd79aece6750d4b2c5c0107d0ce
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ca7b4a877abdafd90b00a6fcfe45be7c
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 204.783 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Kreditkortsinformation, Faktureringsadress, Leveransadress, Fraktmetod]] but found [[Payment Options, Bankkonto detaljer, Faktureringsadress, Leveransadress, Fraktmetod]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 226.623 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a0174296a9e41b33b9840d45d6839a0
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 195.591 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 226.216 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e1399c585ff3a22080ebd97cf17e9bd2
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 200.403 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]] but found [[Payment Options, Bankkonto Daten, Rechnungsadresse, Lieferadresse, Versandart]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 226.673 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae6340931945cbbd7b844edc5a18fc96
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 197.696 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 246.847 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61900}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b983d359c55915cbab8b59f7a0d8f2e
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 197.241 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informations carte de crédit, Adresse de facturation, Adresse de livraison, Méthode de livraison]] but found [[Payment Options, Détails de compte en banque, Adresse de facturation, Adresse de livraison, Méthode de livraison]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 216.127 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba203490ecf88d2dbf2ccfdc92e1ef8f
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 200.725 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Informazioni Della Carta di Credito, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione]] but found [[Payment Options, Dettagli del conto bancario, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 115.608 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[2]//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 21c35fe1e9757bd0bbf40f9c44e68a9a
+*** Element info: {Using=xpath, value=(//p[2]//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 193.829 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 115.769 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[2]//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a3d263d926916e66a0ab6162181799e
+*** Element info: {Using=xpath, value=(//p[2]//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 193.297 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[información de la tarjeta de crédito, dirección de facturación/correo, Tu dirección de envío, método de envío]] but found [[opciones de pago, Detalles de cuenta bancaria, dirección de facturación/correo, Tu dirección de envío, método de envío]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Enroll(Tests.FranchisePartner)  Time elapsed: 166.267 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 785a70c969bd795f81879bd6c0460bbc
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 153.316 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 167.009 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62334}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 52d9ea5296c87672867b5b87c0d7924f
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 250.063 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec399e661333b5fe8c347f90b9dc1d67
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 220.123 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62630}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6631c6913c799156aed345d20cf1a6bb
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 187.027 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 476a95ebe21a20cb1e1f950f55966643
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 183.874 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62762}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bfc54c92a72bd67307e4f6d908369c8f
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 61.71 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:87)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 106.726 s  <<< FAILURE!
+java.lang.AssertionError: expected [SCOTIABANK] but found [BANCOMER]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:90)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 197.672 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f97cdaa8c5fb20da55440e62f3f4d4e
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+
+GetFit(Tests.Fit)  Time elapsed: 72.444 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
   (Session info: chrome=90.0.4430.85)
@@ -276,68 +611,80 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7019b6182eb5d51507bff800fabda210
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63223}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8dbf7a7a77cbd1a2ac1be8dab17f4e59
 *** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+	at Tests.Fit.GetFit(Fit.java:66)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 133.966 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 132.402 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='ng-scope']"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51011}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 89cab0cb44f6f6ddf23e74ef0b92b1a1
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6dccacbf59b6c65ddcd4a1eae923599b
+*** Element info: {Using=xpath, value=//h4[@class='ng-scope']}
+	at Tests.Fit.GetFit(Fit.java:67)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 88.82 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 131.872 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='ng-scope']"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 371210ba5de424579cf255449da1524a
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6452682cec54538bf7f68b7ef8d51f83
+*** Element info: {Using=xpath, value=//h4[@class='ng-scope']}
+	at Tests.Fit.GetFit(Fit.java:67)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 88.792 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 218.906 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'bankWire']"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6558eb47fed149b52d2b67e7b5188f88
-*** Element info: {Using=xpath, value=//input[@value = 'bankWire']}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bc05df5f624c67486cdf774f19c9a943
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 117.713 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Patient(Tests.PatientPortal)  Time elapsed: 138.114 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 118.003 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[?????????? ?? ????????? ?????, ????? ?????, ??? ???????????? ??????, ????? ????????/?????????????? ?????, ?????? ????????]] but found [[????? ??????, ????????? ???????????? ???????, ????? ?????, ??? ???????????? ??????, ????? ????????/?????????????? ?????, ?????? ????????]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 216.59 s  <<< FAILURE!
+Patient(Tests.PatientPortal)  Time elapsed: 185.304 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#cc_name"}
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e8323592ab614cf150ba05b8063f97b
-*** Element info: {Using=id, value=cc_name}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6293c98cdf11c37f0e507a6338124e5f
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PatientPortal.Patient(PatientPortal.java:67)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.519 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.569 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.372 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+
+PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.507 s  <<< FAILURE!
+java.lang.AssertionError: Critical A-Z section not displaying
+	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
 

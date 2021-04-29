@@ -134,6 +134,9 @@ public class PaymentPage extends SuperTestNG {
 	private WebElement Error;
 
 	@FindBy(xpath = "//input[@value = 'bankWire']")
+	private WebElement BankWireOption;
+	
+	@FindBy(xpath = "//span[contains(@ng-if, 'bankWire')]/div")
 	private WebElement BankWire;
 
 	public PaymentPage(WebDriver driver) {
@@ -247,7 +250,29 @@ public class PaymentPage extends SuperTestNG {
 					|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
 					|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
 					|| Market == "United Kingdom") {
-				BankWire.click();
+				BankWireOption.click();
+				
+				if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+						|| Market == "Germany" || Market == "Hungary" || Market == "Ireland"
+						|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
+						|| Market == "Sweden" ||  Market == "Spain" || Market == "Ukraine"
+						|| Market == "United Kingdom"){
+
+					Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_at", language), "Bank Wire Details");
+		
+				}
+				
+				if (Market == "Italy" ) {
+					
+					Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_it", language), "Bank Wire Details");
+				}
+				
+				if (Market == "Switzerland") {
+					
+					Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_ch", language), "Bank Wire Details");
+					
+				}
+				
 			}
 			if (Market == "Austria" || Market == "Germany") {
 				if (SEPA.isSelected()) {
@@ -350,7 +375,11 @@ public class PaymentPage extends SuperTestNG {
 				}
 			}
 
-			if (!(Market == "Austria" || Market == "Germany" || Market == "Mexico")) {
+			if (!(Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+					|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
+					|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
+					|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
+					|| Market == "United Kingdom" || Market == "Mexico")) {
 				CCName.sendKeys(ccname);
 				CCNumber.sendKeys(cc);
 				new Select(ExpiryMonth).selectByVisibleText(mon);

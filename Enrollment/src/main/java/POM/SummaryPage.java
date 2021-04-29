@@ -382,6 +382,9 @@ public class SummaryPage extends SuperTestNG {
 
 	@FindBy(xpath = "//button[contains(@ng-click,'goredirect()')]")
 	private WebElement SignInToCourseNow;
+	
+	@FindBy(xpath = "(//div[contains(@class, 'clearfix')]/div)[1]")
+	private WebElement BankWire;
 
 	public SummaryPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -474,6 +477,27 @@ public class SummaryPage extends SuperTestNG {
 			}
 
 		}
+		
+		if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+				|| Market == "Germany" || Market == "Hungary" || Market == "Ireland"
+				|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
+				|| Market == "Sweden" ||  Market == "Spain" || Market == "Ukraine"
+				|| Market == "United Kingdom"){
+
+			Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_at", language), "Bank Wire Details");
+
+		}
+		
+		if (Market == "Italy" ) {
+			
+			Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_it", language), "Bank Wire Details");
+		}
+		
+		if (Market == "Switzerland") {
+			
+			Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_ch", language), "Bank Wire Details");
+			
+		}
 
 		Assert.assertEquals(market.getText(), getTranslation(userdata.get("marketcode"), language),
 				"Major Market is Displaying");
@@ -538,23 +562,26 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(Mobile.getText(), userdata.get("phone"), "Major Summary Phone");
 		}
 		Assert.assertEquals(Email.getText(), userdata.get("email"), "Major Summary Email");
-		if (!(Market == "India" || Market == "Turkey" || pack == "NoPack")) {
-			if (Market == "Austria" || Market == "Germany") {
-				if (userdata.get("payment") == "sepa") {
-					Assert.assertEquals(SEPAIBAN.getText(), userdata.get("sepaiban"), "Major Summary sepa iban");
-					Assert.assertEquals(SEPABANKNAME.getText(), userdata.get("sepabankname"),
-							"Major Summary sepa bankname");
-					Assert.assertEquals(SEPAACCOUNT.getText(), userdata.get("sepaholder"),
-							"Major Summary sepa account holder");
-					Assert.assertEquals(SEPABIC.getText(), userdata.get("sepabic"), "Major Summary sepa bic");
+
+		if (branch == "master") {
+			if (!(Market == "India" || Market == "Turkey" || pack == "NoPack")) {
+				if (Market == "Austria" || Market == "Germany") {
+					if (userdata.get("payment") == "sepa") {
+						Assert.assertEquals(SEPAIBAN.getText(), userdata.get("sepaiban"), "Major Summary sepa iban");
+						Assert.assertEquals(SEPABANKNAME.getText(), userdata.get("sepabankname"),
+								"Major Summary sepa bankname");
+						Assert.assertEquals(SEPAACCOUNT.getText(), userdata.get("sepaholder"),
+								"Major Summary sepa account holder");
+						Assert.assertEquals(SEPABIC.getText(), userdata.get("sepabic"), "Major Summary sepa bic");
+					} else {
+						Assert.assertEquals(CCName.getText(), userdata.get("ccname"), "Major Summary CCName");
+					}
 				} else {
-					Assert.assertEquals(CCName.getText(), userdata.get("ccname"), "Major Summary CCName");
-				}
-			} else {
-				if (userdata.get("paymenttype") == "bank") {
-					Assert.assertEquals(MXBank.getText(), userdata.get("mxbank"), "Major MXBank");
-				} else {
-					Assert.assertEquals(CCName.getText(), userdata.get("ccname"), "Major Summary CCName");
+					if (userdata.get("paymenttype") == "bank") {
+						Assert.assertEquals(MXBank.getText(), userdata.get("mxbank"), "Major MXBank");
+					} else {
+						Assert.assertEquals(CCName.getText(), userdata.get("ccname"), "Major Summary CCName");
+					}
 				}
 			}
 		}
