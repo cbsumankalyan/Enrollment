@@ -17,9 +17,6 @@ public class NoAttach extends SuperTestNG {
 
 	public static void Sendmail() throws Exception {
 		
-		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
-		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
-
 		Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
 		prop.put("mail.smtp.socketFactory.port", "465");
@@ -38,35 +35,9 @@ public class NoAttach extends SuperTestNG {
 
 		Message message = new MimeMessage(session);
 		message.setFrom(new InternetAddress("unicitytechindia@gmail.com"));
-//		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Manjunath.Shekhar@unicity.com"));
-		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Suman.CB@unicity.com"));
-		message.addRecipients(Message.RecipientType.CC, InternetAddress.parse("in-web-bangalore@unicity.com"));
-//		message.addRecipients(Message.RecipientType.BCC,InternetAddress.parse("Manjunath.Shekhar@unicity.com"));
+		message.addRecipients(Message.RecipientType.TO, InternetAddress.parse("in-web-bangalore@unicity.com"));
 
 		message.setSubject("Enroll.ng Automation report");
-		/*
-		 * String msg =
-		 * "<p>Hello Team,<br><br>please click on the below link to check the <strong>Enroll.ng</strong> Automation Suite <strong>Report.</strong></p>"
-		 * + "<br>Failed TestCases : " + "<strong>" + failed.size() +
-		 * "</strong>" + "<br><br>" + "Critical : " + "<strong>" +
-		 * Critical.size() + "</strong>" + "<br>" + "<br>" + Critical +
-		 * "<br><br>" + "<br><br>" + "Major : " + "<strong>" + Major.size() +
-		 * "</strong>" + "<br>" + "<br>" + Major + "<br><br>" + "<br><br>" +
-		 * "Minor : " + "<strong>" + Minor.size() + "</strong>" + "<br>" +
-		 * "<br>" + Minor + "<br><br>" + "<br><br>" + "Low : " + "<strong>" +
-		 * Low.size() + "</strong>" + "<br>" + "<br>" + Low +
-		 * "<br><br>Thanks and Regards<br>QA Team";
-		 * 
-		 * String msg1 =
-		 * "<p>Hello Team,<br><br>please click on the below link to check the <strong>Enroll.ng</strong> Automation Suite <strong>Report.</strong></p>"
-		 * + "<br>Failed TestCases : " + "<strong>" + failed.size() +
-		 * "<br><br>Thanks and Regards<br>QA Team";
-		 * 
-		 * String msg4 = "<table width='600' border='1' align='center'>" +
-		 * "<tr align='center'>" + "<td><b>Critical<b></td>" +
-		 * "<td><b>Major<b></td>" + "<td><b>Minor<b></td>" +
-		 * "<td><b>Low<b></td>" + "</tr>" + "</table>";
-		 */
 
 		String msg3 = "<p>Hello Team,<br> <br>please click on the below link to check the <strong>Enroll.ng</strong> Automation Suite <strong>Report.</strong></p>http://10.2.0.23/EnrollReport/EnrollQA-"+date.format(timestamp)+".html"
 				+ "<br /><br />" + "<table width='600'border='1' cellpadding='5px'>" + "<tr><td><b>Critical:</b> </td>"
