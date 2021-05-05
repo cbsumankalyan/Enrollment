@@ -133,8 +133,8 @@ public class SuperTestNG {
 		referral = extent.createTest("PassingReferralID");
 		indreferral = extent.createTest("INDPassingReferralID");
 		fit = extent.createTest("GetFit");
-		pp = extent.createTest("PatientPortal");
-		hcp = extent.createTest("HealthCareProduct");
+		/*pp = extent.createTest("PatientPortal");
+		hcp = extent.createTest("HealthCareProduct");*/
 	}
 
 	@BeforeMethod
