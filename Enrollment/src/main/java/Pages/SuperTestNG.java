@@ -32,7 +32,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.lightbody.bmp.BrowserMobProxy;
@@ -107,7 +107,7 @@ public class SuperTestNG {
 		return prop.getProperty(key);
 	}
 
-	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentSparkReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest fp;
 	public static ExtentTest pc;
@@ -125,7 +125,7 @@ public class SuperTestNG {
 		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
 		
-		htmlReporter = new ExtentHtmlReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
+		htmlReporter = new ExtentSparkReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		fp = extent.createTest("Franchise Partner");

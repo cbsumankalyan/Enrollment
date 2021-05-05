@@ -199,7 +199,7 @@ public class InitialOrderPage extends SuperTestNG {
 	@FindBy(xpath = "//li[@ng-show='issearchSuggested(order.searchProducts)']")
 	private WebElement SuggestedProductsProductsDisplay;
 
-	@FindBy(xpath = "(//li[@class='ng-scope']//i[contains(@class, 'ico ico-add')])[2]")
+	@FindBy(xpath = "(//li[@class='ng-scope']//i[contains(@class, 'ico ico-add')])[1]")
 	private WebElement AddAdditionalPack;
 
 	@FindBy(xpath = "//h4[contains(@ng-if, 'additional_items')]")

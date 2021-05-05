@@ -13,6 +13,7 @@
 			<class name="Tests.HealthCareProducts" />
 
 
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
