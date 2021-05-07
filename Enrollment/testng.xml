@@ -3,15 +3,12 @@
 <suite name="Suite">
 	<test name="Test">
 		<classes>
-
 			<class name="Tests.FranchisePartner" />
+			<class name="Tests.EUBankWire" />
 			<class name="Tests.ReferralIDPassing" />
 			<class name="Tests.INDReferralIDPassing" />
 			<class name="Tests.PrefferedCustomer" />
 			<class name="Tests.Fit" />
-
-
-
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

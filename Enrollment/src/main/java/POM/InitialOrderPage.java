@@ -248,7 +248,7 @@ public class InitialOrderPage extends SuperTestNG {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void Packs(String Market, String language, String pack)
+	public void Packs(String Market, String language, String pack, String Payment)
 			throws InterruptedException, JSONException, IOException {
 		WebDriverWait wait = new WebDriverWait(driver, 400);
 		wait.until(ExpectedConditions
@@ -260,6 +260,12 @@ public class InitialOrderPage extends SuperTestNG {
 			Assert.assertEquals(SponsorProvider.getText(), getTranslation("yoursponsor", language),
 					"Low Referral ID is not displaying");
 			childtest.log(Status.INFO, "Referral ID");
+		}
+
+		if (Payment == "BankWire") {
+			if (!(Market == "Poland")) {
+				Packs.get(new Random().nextInt(Packs.size())).click();
+			}
 		}
 
 		if (pack == "Pack") {
@@ -283,7 +289,7 @@ public class InitialOrderPage extends SuperTestNG {
 								"Major PV on Pack");
 
 						Thread.sleep(50);
-//						jse.executeScript("window.scrollBy(0,50)", "");
+						// jse.executeScript("window.scrollBy(0,50)", "");
 						jse.executeScript("arguments[0].scrollIntoView();", MouseOverButton);
 						Thread.sleep(50);
 						MouseOverButton.click();
@@ -424,7 +430,7 @@ public class InitialOrderPage extends SuperTestNG {
 									"Major pv on pack");
 						}
 						Thread.sleep(50);
-//						jse.executeScript("window.scrollBy(0,100)", "");
+						// jse.executeScript("window.scrollBy(0,100)", "");
 						jse.executeScript("arguments[0].scrollIntoView();", MouseOverButton);
 						Thread.sleep(50);
 						MouseOverButton.click();
@@ -545,7 +551,7 @@ public class InitialOrderPage extends SuperTestNG {
 
 	}
 
-	public void AdditionalProducts(String Market, String pack) {
+	public void AdditionalProducts(String Market, String pack, String Payment) {
 		if (!(pack == "NoPack")) {
 			if (!(Market == "India")) {
 				/*
@@ -619,7 +625,7 @@ public class InitialOrderPage extends SuperTestNG {
 							if (Market == "Switzerland") {
 								Assert.assertEquals(currencysymbol, "chf", "Critical currency symbol");
 								userdata.put("Currency", "CHF");
-								childtest.log(Status.INFO, "Currency is "+currencysymbol);
+								childtest.log(Status.INFO, "Currency is " + currencysymbol);
 							}
 							if (Market == "United Kingdom") {
 								Assert.assertEquals(currencysymbol, "£", "Critical currency symbol");
@@ -732,26 +738,32 @@ public class InitialOrderPage extends SuperTestNG {
 
 				if (Market == "Colombia") {
 					Assert.assertEquals(sum, totalprice, "Critical total price Mismatch");
-					childtest.log(Status.INFO, "Total Price     ->"+totalprice);
+					childtest.log(Status.INFO, "Total Price     ->" + totalprice);
 				} else {
 					Assert.assertEquals(result1, totalprice, "Critical total price Mismatch");
-					childtest.log(Status.INFO, "Total Price     ->"+totalprice);
+					childtest.log(Status.INFO, "Total Price     ->" + totalprice);
 				}
 				userdata.put("cartprice", String.valueOf(totalprice));
 				Assert.assertEquals(pvs, totalpv, "Critical total PV mismatch");
-				childtest.log(Status.INFO, "Total PV    ->"+totalpv);
+				childtest.log(Status.INFO, "Total PV    ->" + totalpv);
 
 			}
 		}
 		if (!(Market == "India" || Market == "Turkey")) {
 			if (pack == "NoPack") {
 				try {
-					Boolean NoPack = NOPack.isDisplayed();
-					Assert.assertTrue(NoPack, "Major NOPack Click Here");
-					NOPackClick.click();
-					childtest.log(Status.INFO, "NOPack ->" + "Calculated Total Price, PV");
+					if (Payment == "BankWire") {
+						Continue.click();
+					} else {
+						Boolean NoPack = NOPack.isDisplayed();
+						Assert.assertTrue(NoPack, "Major NOPack Click Here");
+						NOPackClick.click();
+						childtest.log(Status.INFO, "NOPack ->" + "Calculated Total Price, PV");
+					}
 				} catch (Exception e) {
+
 					Assert.fail("Major NOPack Click Here");
+
 				}
 			} else {
 				Continue.click();

@@ -47,7 +47,7 @@ public class SuperTestNG {
 	// public static HashMap<String, String> userdata = new HashMap<>();
 	public static Map<String, String> userdata = new HashMap<String, String>();
 	
-	public static String branch = "vjk_eubankwire";
+	public static String branch = "master";
 
 	public static String hydra = "https://hydra.unicity.net/v5/";
 	// public static String hydra = "https://hydraqa.unicity.net/v5-test/";
@@ -116,6 +116,7 @@ public class SuperTestNG {
 	public static ExtentTest fit;
 	public static ExtentTest pp;
 	public static ExtentTest hcp;
+	public static ExtentTest BankWire;
 	public static ExtentTest childtest;
 	public static ExtentTest parenttest;
 
@@ -128,11 +129,12 @@ public class SuperTestNG {
 		htmlReporter = new ExtentSparkReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		fp = extent.createTest("Franchise Partner");
-		pc = extent.createTest("Prefered Customer");
-		referral = extent.createTest("PassingReferralID");
-		indreferral = extent.createTest("INDPassingReferralID");
-		fit = extent.createTest("GetFit");
+		fp = extent.createTest("<b><font color=407899>" + "Franchise Partner" + "</font></b>");
+		pc = extent.createTest("<b><font color=407899>" + "Prefered Customer" + "</font></b>");
+		referral = extent.createTest("<b><font color=407899>" + "PassingReferralID" + "</font></b>");
+		indreferral = extent.createTest("<b><font color=407899>" + "INDPassingReferralID" + "</font></b>");
+		fit = extent.createTest("<b><font color=407899>" + "GetFit" + "</font></b>");
+		BankWire = extent.createTest("<b><font color=407899>" + "Bank Wire" + "</font></b>");
 		/*pp = extent.createTest("PatientPortal");
 		hcp = extent.createTest("HealthCareProduct");*/
 	}
@@ -198,6 +200,10 @@ public class SuperTestNG {
 			userdata.put("testcase", "referalid");
 		} 
 		if (this.getClass().getSimpleName().toString().equals("FranchisePartner")) {
+			driver.get(url);
+			userdata.put("testcase", "normal");
+		}
+		if (this.getClass().getSimpleName().toString().equals("EUBankWire")) {
 			driver.get(url);
 			userdata.put("testcase", "normal");
 		}

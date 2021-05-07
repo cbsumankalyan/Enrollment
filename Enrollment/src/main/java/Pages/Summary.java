@@ -9,9 +9,9 @@ import org.json.JSONException;
 import POM.SummaryPage;
 
 public class Summary extends SuperTestNG {
-	public void SummaryDetails(String Market, String language, String pack) throws InterruptedException, JsonGenerationException, JsonMappingException, IOException, JSONException{
+	public void SummaryDetails(String Market, String language, String pack, String Payment) throws InterruptedException, JsonGenerationException, JsonMappingException, IOException, JSONException{
 		SummaryPage Details = new SummaryPage(driver);
-		Details.OrderSubmit(Market, language, pack);
+		Details.OrderSubmit(Market, language, pack, Payment);
 	}
 	
 	public void PCSummaryDetails(String Market, String language, String pack) throws InterruptedException, JsonGenerationException, JsonMappingException, IOException, JSONException{

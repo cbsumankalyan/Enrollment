@@ -8,9 +8,9 @@ import org.json.JSONException;
 import POM.AccountSetupPage;
 
 public class Account extends SuperTestNG{
-	public void PersonalDetails(String Market, String language, String pack) throws InterruptedException, JSONException, UnknownHostException, IOException{
+	public void PersonalDetails(String Market, String language, String pack, String Payment) throws InterruptedException, JSONException, UnknownHostException, IOException{
 		AccountSetupPage Details = new AccountSetupPage(driver);
-		Details.AccountDetails(Market, language, pack);
+		Details.AccountDetails(Market, language, pack, Payment);
 	}
 	
 	public void PCPersonalDetails(String Market, String language, String pack) throws InterruptedException, JSONException, UnknownHostException, IOException{

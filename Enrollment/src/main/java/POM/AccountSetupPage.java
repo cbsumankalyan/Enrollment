@@ -206,9 +206,9 @@ public class AccountSetupPage extends SuperTestNG {
 	}
 
 	@SuppressWarnings("static-access")
-	public void AccountDetails(String Market, String language, String pack)
+	public void AccountDetails(String Market, String language, String pack, String Payment)
 			throws InterruptedException, UnknownHostException, IOException {
-
+		
 		LocalDate startDate = LocalDate.of(1990, 1, 1); // start date
 		long start = startDate.toEpochDay();
 
@@ -269,8 +269,8 @@ public class AccountSetupPage extends SuperTestNG {
 		String holder = "TestName";
 		String bic = "DEUTDEFF";
 		String password = "Unicity";
-
-		childtest.log(Status.INFO, "Account Set-UP");
+		
+		childtest.log(Status.INFO, "<b><font color=407899>" + "Account Set-UP Page" + "</font></b>");
 
 		Assert.assertEquals(SelectedLanguage.getText(), language, "Minor Selected Langauge");
 		childtest.log(Status.INFO, SelectedLanguage.getText());

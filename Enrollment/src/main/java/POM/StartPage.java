@@ -150,8 +150,8 @@ public class StartPage extends SuperTestNG {
 						"Low Description");
 			}
 		}
-
-		childtest.log(Status.INFO, "Start ->"+"Start Page Translations");
+		
+		childtest.log(Status.INFO, "<b><font color=407899>" + "Start ->"+"Start Page Translations" + "</font></b>");
 
 		if (Market == "Australia" || Market == "Austria" || Market == "Bahamas" || Market == "Canada"
 				|| Market == "Denmark" || Market == "Hungary" || Market == "India" || Market == "Ireland"
