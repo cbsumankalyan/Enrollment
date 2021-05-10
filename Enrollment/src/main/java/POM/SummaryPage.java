@@ -492,18 +492,24 @@ public class SummaryPage extends SuperTestNG {
 		if (Payment == "BankWire") {
 
 			if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
-					|| Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg"
-					|| Market == "Netherlands" || Market == "Norway" || Market == "Poland" || Market == "Sweden"
-					|| Market == "Spain" || Market == "Ukraine" || Market == "United Kingdom") {
+					|| Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg" || Market == "Norway"
+					|| Market == "Poland" || Market == "Sweden" || Market == "Spain" || Market == "Ukraine"
+					|| Market == "United Kingdom") {
 
 				Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_at", language),
 						"Bank Wire Details");
 				childtest.log(Status.INFO, BankWire.getText().toString());
 
 			}
-			
+
 			if (Market == "Germany") {
 				Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_de", language),
+						"Bank Wire Details");
+				childtest.log(Status.INFO, BankWire.getText().toString());
+			}
+
+			if (Market == "Netherlands") {
+				Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_nl", language),
 						"Bank Wire Details");
 				childtest.log(Status.INFO, BankWire.getText().toString());
 			}
@@ -527,10 +533,9 @@ public class SummaryPage extends SuperTestNG {
 		Assert.assertEquals(market.getText(), getTranslation(userdata.get("marketcode"), language),
 				"Major Market is Displaying");
 		childtest.log(Status.INFO, market.getText());
-		
+
 		Assert.assertEquals(Lan.getText(), language, "Langauge is Displaying");
 		childtest.log(Status.INFO, Lan.getText());
-		
 
 		if (EnrollerSponsor.size() == 2) {
 			Assert.assertEquals(Enroller.getText(), userdata.get("enroller"), "Major Enroller is Displaying");
@@ -548,7 +553,7 @@ public class SummaryPage extends SuperTestNG {
 		Assert.assertEquals(Lname.getText(), userdata.get("lname"), "Major Summary LName");
 		Assert.assertEquals(DOB.getText(), userdata.get("dob"), "Major Summary DOB");
 		childtest.log(Status.INFO, "FirstName,LastName, DOB");
-		
+
 		if (!(Market == "Turkey")) {
 			Assert.assertEquals(Gender.getText(), userdata.get("genderoption"), "Major Summary Gender");
 			childtest.log(Status.INFO, "Gender");
@@ -747,7 +752,7 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(USShippingCity.getText(), userdata.get("city"), "Major Shipping City");
 			Assert.assertEquals(USShippingCountry.getText(), getTranslation("US", language), "Major Shipping Country");
 			childtest.log(Status.INFO, "Shipping Address ");
-			
+
 			Assert.assertEquals(USBillingAddress1.getText(), "Address 1", "Major Billing Address1");
 			Assert.assertEquals(USBillingCity.getText(), "TestCity", "Major Billing City");
 			if (Market == "Bahamas") {
@@ -765,7 +770,7 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(USShippingCity.getText(), "OREM", "Major Shipping City");
 			Assert.assertEquals(USShippingCountry.getText(), "United States", "Major Shipping Country");
 			childtest.log(Status.INFO, "Shipping Address ");
-			
+
 			Assert.assertEquals(USBillingAddress1.getText(), "Address 1", "Major Billing Address1");
 			Assert.assertEquals(USBillingCity.getText(), "TestCity", "Major Billing City");
 			Assert.assertEquals(USBillingCountry.getText(), "Dominican Republic", "Major Billing Country");
@@ -779,7 +784,7 @@ public class SummaryPage extends SuperTestNG {
 			Assert.assertEquals(USShippingCountry.getText(), getTranslation(userdata.get("marketcode"), language),
 					"Major Shipping Country");
 			childtest.log(Status.INFO, "Shipping Address ");
-			
+
 			Assert.assertEquals(USBillingAddress1.getText(), userdata.get("address1"), "Major Billing Address1");
 			Assert.assertEquals(USBillingZip.getText(), userdata.get("zip"), "Major Billing Postal");
 			Assert.assertEquals(USBillingCity.getText(), userdata.get("city"), "Major Billing City");

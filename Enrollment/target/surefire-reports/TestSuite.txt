@@ -1,143 +1,431 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 102, Failures: 54, Errors: 0, Skipped: 0, Time elapsed: 19,035.682 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 204.789 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 219.398 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Tests run: 102, Failures: 69, Errors: 0, Skipped: 0, Time elapsed: 26,606.297 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.123 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 86752c6d6a31254f5cd76560fac81d8a
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 228.424 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c3e4a385016fc1ca1eda5e0c5115f1de
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 250.76 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-Aplicante, Su Información, Tu dirección de facturación, STu información del pago, Términos y Condiciones, Resumen]] but found [[Opciones de pago, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío, Resumen]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 199.629 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 238.07 s  <<< FAILURE!
-java.lang.AssertionError: Major Total Price is Wrong expected [1639.93] but found [1535.6]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 234.314 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 543787ba8c872e4befed0cbc07750fb8
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 231.093 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Hitelkártya adatok, Számlázási Cím, Kiszállítás/Els?dleges Cím, Kiszállítási Mód]] but found [[Fizetési Opciók, Hitelkártya adatok, Számlázási Cím, Kiszállítás/Els?dleges Cím, Kiszállítási Mód]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 221.853 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f41142d75c2050ae4045d7007bc08ac5
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 238.594 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 555e57233fb147268f6b1697b27ca88a
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 237.397 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f1e13e20751a0391df977e6201113c75
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 196.011 s  <<< FAILURE!
-java.lang.AssertionError: Critical Back end error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 203.98 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Informations carte de crédit, Adresse de facturation, Adresse de livraison, Méthode de livraison]] but found [[Paramètres d'inscription, A propos de vous, Co-demandeur conjoint / Société (Facultatif), Mode de paiement des commissions, Votre Bureau Unicity, ]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 234.785 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]] but found [[Zahlungsart, Kreditkarteninformationen, Rechnungsadresse, Lieferadresse, Versandart]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 257.003 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 12aaf46ada39ec579f9cf019ae7628dc
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 242.416 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Payment Options, Creditkaart informatie, Factuuradres /Primair adres, Bezorg adres, Verzendmethode]] but found [[Betalingsopties, Creditkaart informatie, Factuuradres /Primair adres, Bezorg adres, Verzendmethode]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 62.756 s  <<< FAILURE!
-java.lang.AssertionError: Major NOPack Click Here
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afecfcfd848a022ce58d857bcc944a14
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 108.038 s  <<< FAILURE!
-java.lang.AssertionError: Major pv on pack expected [86] but found [86å]
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.196 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c81d125d63af9d6c8068e1fa8ada0eb1
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 181.558 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.178 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d12bd0d6a4171ba83cbecaa5ee1b8725
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.848 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 69f4aba9d2648f864d4edb1dfe302aa6
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.757 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51053}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bda6a4109cf1a76ec16e4f1cf1a71a5
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.78 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f0e15b30b8aa1d2104548ed6505d7c0
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.379 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c9b7a5916095f6c2c2026e1e12e2395c
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.772 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f512ea76fcaa49e02d191b8fc7636fa
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.915 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 014af4b70a0ad098deb2504052390734
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.015 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0488b9f0f8bf298665d197823b59ddb6
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.864 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 090cfd1e25e92f3975c28e04ea468a26
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.766 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a921a8a6b4d3574eab47f300fa27794e
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.732 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51539}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f5555727356bc0aea145884baa726ee
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.144 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe6b7244479c8e050b7db86033ea4159
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.278 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70106e113ad23f6f953d0d61cb6c14d8
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.013 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f01542ef83e2b13c334d23e3aab9af76
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.734 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51766}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9ae14b77a866b74cb4927b996e994b8
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.138 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51836}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b3b65eda46b771ced7aece99ae358a70
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 66.162 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51888}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 098eead65c8711c6e26a01a0cfd6fc38
+*** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:305)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.585 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e9f9f29a33053ab0daf9105c897224b
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.484 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36ce90d9137ee2b0e652faf65636718c
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.541 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52042}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db6c0fbf7c0cf1fe314df6db41d0f72e
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.827 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0fca354a1ae1f343d85ed30bec97b7fa
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.783 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e886e83a0072adf92c5fb648925be405
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.008 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: df539c5e3cbfebdd9ee813c2d8e39f40
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.351 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c87671cbc79f0e748d6ce5cf0032396
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.738 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f99726dc1c80edfa0c04e3b90a40443
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.036 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b4de6bef1dc0ff927181c09a1280444
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.306 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a64c26284c69ad4d482e822d2e005bd9
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.346 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52532}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d1e3c5f8616498ac3636411920c5333d
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.844 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59f370a1513cdd4ddc4ae6e26c086074
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.015 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 950e9d63aa06f9f001148fde823e2a4b
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.116 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a1cd70b9784b853842b65b9d66d09b0
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 431.241 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e83f61fdb7557a6c4d62150999e3fb71
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.969 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2eaf9eab2868b6b887d582fdcc197a7
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.946 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 050a60a2cf200fe3d99366fb7a5343f7
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.59 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f97ce44d8a70c400ce01266a9f46b064
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.682 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53177}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d40eaedcbab8966b44a92a5ce04d68a
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.327 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5cc35990d56a7b9309a5a9255dafdb56
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.757 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54a0c97441231636e5827785a0e287c8
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.622 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bc3eec035253016b1ccf5932c1bd180
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 430.567 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eea250adb3bfd95f692860bdb6c0d33b
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 224.137 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
@@ -145,101 +433,28 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a3dfa6afb67adcc0313d0357d256d435
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 051c3274089f427809ddcc2f27861171
 *** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 213.262 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a84f1cf3390c8ebec1b8d1c688707f1d
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 216.35 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: de18f1271c882da9a25157d7847d5ea6
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 243.567 s  <<< FAILURE!
-java.lang.AssertionError: Major AR Total Price is Wrong expected [811.59] but found [803.57]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 244.806 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6c29a2ab687f28953712d68ce4f79d11
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 229.829 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c5ebaeb35bd72f45df5026ab9f53b64
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 232.473 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b8ccd325cc907bb589372d2c97540e54
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 188.448 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 186.486 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 186.38 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 174.837 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 91.142 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 90.475 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 90.766 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 90.764 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 131.642 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Co-Applicant/Spouse, Commission Payment Options, Your Shipping Address, Your Billing/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]
-	at Tests.EUBankWire.BankWire(EUBankWire.java:234)
-
-BankWire(Tests.EUBankWire)  Time elapsed: 66.466 s  <<< FAILURE!
+BankWire(Tests.EUBankWire)  Time elapsed: 62.047 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
   (Session info: chrome=90.0.4430.85)
@@ -247,23 +462,27 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ddf4aeeac943c1d22cded58fb8184ba6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55136}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c629488e742cff6ba7ed3e056809c53
 *** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
 	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 97.584 s  <<< FAILURE!
+BankWire(Tests.EUBankWire)  Time elapsed: 116.092 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]
+	at Tests.EUBankWire.BankWire(EUBankWire.java:234)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 92.312 s  <<< FAILURE!
 java.lang.AssertionError: 
-Bank Wire Details expected [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
-Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
-Zahlungsempfänger: Unicity Europe B.V.
+Bank Wire Details expected [Thank you for your payment by bank transfer! Please note the following points so that your order can be processed quickly:
+Please transfer the full amount to:
+Account Name: Unicity Europe B.V.
 IBAN: GB67CHAS60924241312796
 BIC: CHASGB2L
-Bitte tragen Sie bei Verwendungszweck Ihre ID oder Bestellnummer ein.
-Wir versenden Ihre Bestellung, sobald wir den fälligen Betrag erhalten haben.
-Das PV der Bestellung wird ebenfalls nach Zahlungserhalt gutgeschrieben.
-Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütungsplan haben – deswegen lieber schnell überweisen.
-Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.] but found [Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
+Please enter your ID or order number in the reason for payment field.
+We will ship your order as soon as we have received the amount due.
+The PV of the order will also be credited upon receipt of payment.
+Late payment may affect your qualification for the compensation plan – so better transfer the money quickly.
+Thank you very much! We hope you enjoy the Unicity products.] but found [Vielen Dank für Ihre Bezahlung per Banküberweisung! Damit Ihre Bestellung schnell bearbeitet werden kann, beachten Sie bitte folgende Punkte:
 Bitte überweisen Sie den fälligen Betrag auf folgendes Konto:
 Zahlungsempfänger: Unicity Europe B.V.
 IBAN: GB67CHAS60924241312796
@@ -275,136 +494,43 @@ Eine verspätete Zahlung kann Auswirkungen auf Ihre Qualifikation für den Vergütu
 Vielen Dank! Wir wünschen Ihnen viel Freude mit Ihrer Bestellung.]
 	at Tests.EUBankWire.BankWire(EUBankWire.java:233)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 62.261 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 30fd7afe4a521b93294722da62ac7174
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
+BankWire(Tests.EUBankWire)  Time elapsed: 48.548 s  <<< FAILURE!
+java.lang.AssertionError: Minor Lables expected [[Enrollment Settings, About You, Mailing Address, Personal Identification Number, Commission Payment Options, Your Unicity Office]] but found [[Enrollment Settings, About You, Personal Identification Number, Commission Payment Options, Your Unicity Office]]
 	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 62.624 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a08861ebf55b2db32636d0ffaf0fb7ca
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
+BankWire(Tests.EUBankWire)  Time elapsed: 48.484 s  <<< FAILURE!
+java.lang.AssertionError: Minor Lables expected [[Enrollment Settings, About You, Mailing Address, Personal Identification Number, Commission Payment Options, Your Unicity Office]] but found [[Enrollment Settings, About You, Personal Identification Number, Commission Payment Options, Your Unicity Office]]
 	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 62.259 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55136}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4bbc1d14f8162ab41e91c63f88a6b97b
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
+BankWire(Tests.EUBankWire)  Time elapsed: 48.691 s  <<< FAILURE!
+java.lang.AssertionError: Minor Lables expected [null] but found [[Registrerings oppsett, Om deg, Fødselsnummer, Provisjons- og betalingsmuligheter, Ditt Unicity kontor]]
 	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 61.954 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e2e1f83fc762a2fce21ee46e67e32b3
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
-	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
+BankWire(Tests.EUBankWire)  Time elapsed: 125.596 s  <<< FAILURE!
+java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Résumé de l'inscription, Enrollment Settings, A propos de vous, Co-demandeur conjoint / Société, Mode de paiement des commissions, Votre adresse de livraison, Votre adresse de facturation/Adresse principale, Vos informations de paiement, Conditions générales, Résumé]] but found [[Payment Options, Détails de compte en banque, Adresse de facturation, Adresse de livraison, Méthode de livraison, Résumé]]
+	at Tests.EUBankWire.BankWire(EUBankWire.java:234)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 62.493 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55294}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0db5fdfae3756c1af94b8527d723444d
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
-	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
+BankWire(Tests.EUBankWire)  Time elapsed: 60.569 s  <<< FAILURE!
+java.lang.IllegalArgumentException: bound must be positive
+	at Tests.EUBankWire.BankWire(EUBankWire.java:230)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 62.645 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 649e247c5e79c1f09b6c80c64cf5ae2a
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
-	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
+BankWire(Tests.EUBankWire)  Time elapsed: 60.519 s  <<< FAILURE!
+java.lang.IllegalArgumentException: bound must be positive
+	at Tests.EUBankWire.BankWire(EUBankWire.java:230)
 
-BankWire(Tests.EUBankWire)  Time elapsed: 62.941 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55377}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a3c742752a22cadcd2b3d3ebb675f88
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
-	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
-
-BankWire(Tests.EUBankWire)  Time elapsed: 62.06 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56338}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f5bba29ee80c952d825301759369dff
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
-	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
-
-BankWire(Tests.EUBankWire)  Time elapsed: 63.126 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b47cc8ecec62203f38f8da6341da91cf
-*** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
-	at Tests.EUBankWire.BankWire(EUBankWire.java:232)
-
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 183.166 s  <<< FAILURE!
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 186.78 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 
-PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 183.585 s  <<< FAILURE!
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 179.098 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:60)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 163.966 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 161.076 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 196.501 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.908 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
@@ -412,12 +538,12 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7a5a2119e86ff6a4c895c64ce03aa0a8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d1deb2ff1800af710d1851738db22d3
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 195.307 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.24 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
@@ -425,40 +551,49 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0cf8fdf4f027cfef69d73148ae1ef566
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56859}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e04613c7d6b073949a31b0a1c7d0de05
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 61.785 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 61.573 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:97)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 163.416 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 161.259 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 140.558 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Resumen]] but found [[Opción de pago, Información de la tarjeta de Crédito / Débito, Dirección de facturación/correo, Dirección de envío, Método de envío, Resumen]]
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 176.281 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 970331a9dd8ed37fed3cc60c19849940
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 166.414 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 163.235 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing/Mailing Address, Shipping Address, Shipping Method, Summary]]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 165.065 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 162.415 s  <<< FAILURE!
 java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Su Información, Tu dirección de envío/Dirección principal, Tu dirección de facturación, Tu información del pago, Resumen]] but found [[información de la tarjeta de crédito, dirección de facturación/correo, Tu dirección de envío/Dirección principal, método de envío, Resumen]]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 157.947 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 152.478 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 151.037 s  <<< FAILURE!
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 147.777 s  <<< FAILURE!
 java.lang.AssertionError: Critical Back end error
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 
-GetFit(Tests.Fit)  Time elapsed: 151.969 s  <<< FAILURE!
+GetFit(Tests.Fit)  Time elapsed: 148.589 s  <<< FAILURE!
 org.testng.internal.reflect.MethodMatcherException: 
 
 Data provider mismatch

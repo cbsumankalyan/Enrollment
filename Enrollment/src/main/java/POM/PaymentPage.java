@@ -253,19 +253,24 @@ public class PaymentPage extends SuperTestNG {
 					BankWireOption.click();
 
 					if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
-							|| Market == "Hungary" || Market == "Ireland"
-							|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway"
-							|| Market == "Poland" || Market == "Sweden" || Market == "Spain" || Market == "Ukraine"
-							|| Market == "United Kingdom") {
+							|| Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg"
+							|| Market == "Norway" || Market == "Poland" || Market == "Sweden" || Market == "Spain"
+							|| Market == "Ukraine" || Market == "United Kingdom") {
 
 						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_at", language),
 								"Bank Wire Details");
 						childtest.log(Status.INFO, BankWire.getText().toString());
 
 					}
-					
+
 					if (Market == "Germany") {
 						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_de", language),
+								"Bank Wire Details");
+						childtest.log(Status.INFO, BankWire.getText().toString());
+					}
+
+					if (Market == "Netherlands") {
+						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_nl", language),
 								"Bank Wire Details");
 						childtest.log(Status.INFO, BankWire.getText().toString());
 					}

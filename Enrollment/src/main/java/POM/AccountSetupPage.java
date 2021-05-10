@@ -582,7 +582,7 @@ public class AccountSetupPage extends SuperTestNG {
 			if (pack == "Pack") {
 				Assert.assertEquals(Labels.toString(), getTranslation("no", language), "Minor Lables");
 			} else {
-				Assert.assertEquals(Labels.toString(), getTranslation("no_nopack", language), "Minor Lables");
+				Assert.assertEquals(Labels.toString(), getTranslation("no", language), "Minor Lables");
 			}
 		}
 
