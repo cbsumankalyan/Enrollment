@@ -238,6 +238,9 @@ public class InitialOrderPage extends SuperTestNG {
 	@FindBy(xpath = "//a[contains(@ng-click, 'gotoAccountSetup()')]")
 	private WebElement NOPackClick;
 
+	@FindBy(xpath = "//div[contains(@class, 'alert-danger')]")
+	private WebElement NOPackAlert;
+
 	@FindBy(xpath = "//div[contains(@class,'summarysection')][4]/ul/li//ul/li[2]")
 	private WebElement ARPackItemCode;
 
@@ -265,6 +268,10 @@ public class InitialOrderPage extends SuperTestNG {
 		if (Payment == "BankWire") {
 			if (!(Market == "Poland")) {
 				Packs.get(new Random().nextInt(Packs.size())).click();
+
+				if (NOPackAlert.isDisplayed() == true) {
+					Packs.get(new Random().nextInt(Packs.size())).click();
+				}
 			}
 		}
 

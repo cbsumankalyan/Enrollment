@@ -1093,7 +1093,7 @@ public class AccountSetupPage extends SuperTestNG {
 		}
 
 		if (pack == "NoPack") {
-			if (Market == "Norway" || Market == "Turkey") {
+			if (Market == "Turkey") {
 				Address1.sendKeys("Address 1");
 				Address2.sendKeys("Address 2");
 				City.sendKeys("TestCity");
