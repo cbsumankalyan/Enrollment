@@ -268,10 +268,6 @@ public class InitialOrderPage extends SuperTestNG {
 		if (Payment == "BankWire") {
 			if (!(Market == "Poland")) {
 				Packs.get(new Random().nextInt(Packs.size())).click();
-
-				if (NOPackAlert.isDisplayed() == true) {
-					Packs.get(new Random().nextInt(Packs.size())).click();
-				}
 			}
 		}
 
