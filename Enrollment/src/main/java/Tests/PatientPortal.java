@@ -22,23 +22,27 @@ public class PatientPortal extends SuperTestNG {
 	@DataProvider
 	public Object[][] MarketConfig() {
 
-		Object[][] data = new Object[4][3];
+		Object[][] data = new Object[4][4];
 		
 		data[0][0] = "United States";
 		data[0][1] = "English";
 		data[0][2] = "Pack";
+		data[0][3] = "CreditCard";
 
 		data[1][0] = "United States";
 		data[1][1] = "Español";
 		data[1][2] = "Pack";
+		data[1][3] = "CreditCard";
 
 		data[2][0] = "Canada";
 		data[2][1] = "English";
 		data[2][2] = "Pack";
+		data[2][3] = "CreditCard";
 
 		data[3][0] = "Canada";
 		data[3][1] = "Français";
 		data[3][2] = "Pack";
+		data[3][3] = "CreditCard";
 
 		return data;
 
@@ -54,16 +58,16 @@ public class PatientPortal extends SuperTestNG {
 	
 	
 	@Test(dataProvider="MarketConfig")
-	public void Patient(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
+	public void Patient(String Market, String language, String pack, String Payment) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = pp.createNode(Market + "  |  " + language);
+		childtest = pp.createNode("<b><font color=407899>" + Market + "  |  " + language + "  |  " + Payment + "</font></b>");
 		childtest.log(Status.INFO, "Patient Portal Platform   "+"<a href=" + patientportal + ">" + userdata.get("platform") + "</a>");
 		System.out.println(Market + "  |  " + language);
 		start.PPFlow(Market, language);
 		packs.PCPacksChecking(Market, language, pack);
-		arpack.ARPacks(Market, pack);
+		arpack.ARPacks(Market, pack, Payment);
 		account.PCPersonalDetails(Market, language, pack);
-		payment.PaymentDetails(Market, language, pack);
+		payment.PaymentDetails(Market, language, pack, Payment);
 		summary.PCSummaryDetails(Market,language, pack);
 	}
 }

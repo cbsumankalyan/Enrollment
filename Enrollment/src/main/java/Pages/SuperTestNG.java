@@ -32,7 +32,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.lightbody.bmp.BrowserMobProxy;
@@ -107,7 +107,7 @@ public class SuperTestNG {
 		return prop.getProperty(key);
 	}
 
-	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentSparkReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest fp;
 	public static ExtentTest pc;
@@ -116,6 +116,7 @@ public class SuperTestNG {
 	public static ExtentTest fit;
 	public static ExtentTest pp;
 	public static ExtentTest hcp;
+	public static ExtentTest BankWire;
 	public static ExtentTest childtest;
 	public static ExtentTest parenttest;
 
@@ -125,16 +126,17 @@ public class SuperTestNG {
 		/*SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy-HH-mm");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());*/
 		
-		htmlReporter = new ExtentHtmlReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
+		htmlReporter = new ExtentSparkReporter("C://xampp//htdocs//EnrollReport//EnrollQA-"+date.format(timestamp)+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		fp = extent.createTest("Franchise Partner");
-		pc = extent.createTest("Prefered Customer");
-		referral = extent.createTest("PassingReferralID");
-		indreferral = extent.createTest("INDPassingReferralID");
-		fit = extent.createTest("GetFit");
-		pp = extent.createTest("PatientPortal");
-		hcp = extent.createTest("HealthCareProduct");
+		fp = extent.createTest("<b><font color=407899>" + "Franchise Partner" + "</font></b>");
+		pc = extent.createTest("<b><font color=407899>" + "Prefered Customer" + "</font></b>");
+		referral = extent.createTest("<b><font color=407899>" + "PassingReferralID" + "</font></b>");
+		indreferral = extent.createTest("<b><font color=407899>" + "INDPassingReferralID" + "</font></b>");
+		fit = extent.createTest("<b><font color=407899>" + "GetFit" + "</font></b>");
+		BankWire = extent.createTest("<b><font color=407899>" + "Bank Wire" + "</font></b>");
+		/*pp = extent.createTest("PatientPortal");
+		hcp = extent.createTest("HealthCareProduct");*/
 	}
 
 	@BeforeMethod
@@ -198,6 +200,10 @@ public class SuperTestNG {
 			userdata.put("testcase", "referalid");
 		} 
 		if (this.getClass().getSimpleName().toString().equals("FranchisePartner")) {
+			driver.get(url);
+			userdata.put("testcase", "normal");
+		}
+		if (this.getClass().getSimpleName().toString().equals("EUBankWire")) {
 			driver.get(url);
 			userdata.put("testcase", "normal");
 		}

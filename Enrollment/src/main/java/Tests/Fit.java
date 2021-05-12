@@ -55,15 +55,15 @@ public class Fit extends SuperTestNG {
 	
 	
 	@Test(dataProvider="MarketConfig")
-	public void GetFit(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
+	public void GetFit(String Market, String language, String pack, String Payment) throws InterruptedException, IOException, JSONException, ParseException {
 	
-		childtest = fit.createNode(Market + "  |  " + language);
+		childtest = fit.createNode("<b><font color=407899>" + Market + "  |  " + language + "  |  " + Payment + "</font></b>");
 		childtest.log(Status.INFO, "GetFit Platform   "+"<a href=" + getfit + ">" + userdata.get("platform") + "</a>");
 		System.out.println(Market + "  |  " + language);
 		start.GetFitFlow(Market, language);
 		account.GetFitPersonalDetails(Market, language, pack);
 		packs.GetFitPacks(Market, language, pack);
-		payment.PaymentDetails(Market, language, pack);
+		payment.PaymentDetails(Market, language, pack, Payment);
 		summary.GetFitSummaryDetails(Market,language, pack);
 	}
 }

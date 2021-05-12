@@ -80,7 +80,17 @@ public class AutoRefillPage extends SuperTestNG {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void AutoRefill(String Market, String pack) {
+	public void AutoRefill(String Market, String pack, String Payment) throws InterruptedException {
+		
+		if (Payment == "BankWire"){
+			
+			Continue.click();
+			
+			Thread.sleep(1000);
+			
+			Continue.click();
+			
+		}
 		if (pack == "Pack") {
 			if (!(Market == "Colombia" || Market == "India" || Market == "Mexico" || Market == "Ukraine")) {
 

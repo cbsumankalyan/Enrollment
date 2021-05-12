@@ -133,13 +133,23 @@ public class PaymentPage extends SuperTestNG {
 	@FindBy(xpath = "//div[contains(@class,'modal-header')]")
 	private WebElement Error;
 
+	@FindBy(xpath = "//input[@value = 'bankWire']")
+	private WebElement BankWireOption;
+
+	@FindBy(xpath = "//span[contains(@ng-if, 'bankWire')]/div")
+	private WebElement BankWire;
+
 	public PaymentPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void PaymentDetails(String Market, String language, String pack) throws IOException, InterruptedException {
+	public void PaymentDetails(String Market, String language, String pack, String Payment)
+			throws IOException, InterruptedException {
 
-		if (!(Market == "India" || pack == "NoPack" || Market == "Turkey")) {
+		childtest.log(Status.INFO, "<b><font color=407899>" + "Payment Page" + "</font></b>");
+
+		if (!(Market == "India" || Market == "Turkey")) {
+
 			Thread.sleep(10000);
 			ArrayList<String> Labels = new ArrayList<String>();
 
@@ -221,15 +231,65 @@ public class PaymentPage extends SuperTestNG {
 						}
 
 					} catch (Exception e) {
-						Assert.fail("Major SEPA is not Disfasadfplaying");
+						Assert.fail("Major SEPA is not Displaying");
 					}
 				} else {
 					try {
 						Boolean NoPack = SEPA.isDisplayed();
 						Assert.assertFalse(NoPack, "Major SEPA is Displaying");
 					} catch (Exception e) {
-						Assert.fail("Major SEPA is Displaying");
+						Assert.fail("Major SEPA is not Displaying");
 					}
+				}
+			}
+
+			if (Payment == "BankWire") {
+				if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+						|| Market == "Germany" || Market == "Hungary" || Market == "Italy" || Market == "Ireland"
+						|| Market == "Luxembourg" || Market == "Netherlands" || Market == "Norway" || Market == "Poland"
+						|| Market == "Sweden" || Market == "Switzerland" || Market == "Spain" || Market == "Ukraine"
+						|| Market == "United Kingdom") {
+
+					BankWireOption.click();
+
+					if (Market == "Austria" || Market == "Belgium" || Market == "Denmark" || Market == "France"
+							|| Market == "Hungary" || Market == "Ireland" || Market == "Luxembourg"
+							|| Market == "Norway" || Market == "Poland" || Market == "Sweden" || Market == "Spain"
+							|| Market == "Ukraine" || Market == "United Kingdom") {
+
+						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_at", language),
+								"Bank Wire Details");
+						childtest.log(Status.INFO, BankWire.getText().toString());
+
+					}
+
+					if (Market == "Germany") {
+						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_de", language),
+								"Bank Wire Details");
+						childtest.log(Status.INFO, BankWire.getText().toString());
+					}
+
+					if (Market == "Netherlands") {
+						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_nl", language),
+								"Bank Wire Details");
+						childtest.log(Status.INFO, BankWire.getText().toString());
+					}
+
+					if (Market == "Italy") {
+
+						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_it", language),
+								"Bank Wire Details");
+						childtest.log(Status.INFO, BankWire.getText().toString());
+					}
+
+					if (Market == "Switzerland") {
+
+						Assert.assertEquals(BankWire.getText().toString(), getTranslation("bankwire_ch", language),
+								"Bank Wire Details");
+						childtest.log(Status.INFO, BankWire.getText().toString());
+
+					}
+
 				}
 			}
 			if (Market == "Austria" || Market == "Germany") {
@@ -258,18 +318,6 @@ public class PaymentPage extends SuperTestNG {
 					userdata.put("sepabankname", bankname);
 					userdata.put("sepaholder", holder);
 					userdata.put("sepabic", bic);
-				}
-				if (CreditCard.isSelected()) {
-					CCName.sendKeys(ccname);
-					CCNumber.sendKeys(cc);
-					new Select(ExpiryMonth).selectByVisibleText(mon);
-					new Select(ExpiryYear).selectByVisibleText(year);
-					CVV.sendKeys(cvv);
-					childtest.log(Status.INFO, "Payment ->" + ccname);
-					childtest.log(Status.INFO, cc);
-					childtest.log(Status.INFO, mon);
-					childtest.log(Status.INFO, year);
-					childtest.log(Status.INFO, cvv);
 				}
 			}
 
@@ -333,17 +381,19 @@ public class PaymentPage extends SuperTestNG {
 				}
 			}
 
-			if (!(Market == "Austria" || Market == "Germany" || Market == "Mexico")) {
-				CCName.sendKeys(ccname);
-				CCNumber.sendKeys(cc);
-				new Select(ExpiryMonth).selectByVisibleText(mon);
-				new Select(ExpiryYear).selectByVisibleText(year);
-				CVV.sendKeys(cvv);
-				childtest.log(Status.INFO, "Payment ->" + ccname);
-				childtest.log(Status.INFO, cc);
-				childtest.log(Status.INFO, mon);
-				childtest.log(Status.INFO, year);
-				childtest.log(Status.INFO, cvv);
+			if (!(Market == "Mexico")) {
+				if (Payment == "CreditCard") {
+					CCName.sendKeys(ccname);
+					CCNumber.sendKeys(cc);
+					new Select(ExpiryMonth).selectByVisibleText(mon);
+					new Select(ExpiryYear).selectByVisibleText(year);
+					CVV.sendKeys(cvv);
+					childtest.log(Status.INFO, "Payment ->" + ccname);
+					childtest.log(Status.INFO, cc);
+					childtest.log(Status.INFO, mon);
+					childtest.log(Status.INFO, year);
+					childtest.log(Status.INFO, cvv);
+				}
 			}
 
 			userdata.put("ccname", ccname);
@@ -351,7 +401,7 @@ public class PaymentPage extends SuperTestNG {
 	}
 
 	public void ShippingDetails(String Market, String language, String pack) throws InterruptedException, IOException {
-		if (!(Market == "India" || pack == "NoPack" || Market == "Turkey")) {
+		if (!(Market == "India" || Market == "Turkey")) {
 			String address1 = "Address 1";
 			String address2 = "Address 2";
 			String postal = "1234";

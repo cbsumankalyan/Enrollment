@@ -5,10 +5,10 @@ import org.json.JSONException;
 import POM.InitialOrderPage;
 
 public class InitialOrder extends SuperTestNG{
-	public void PacksChecking(String Market, String language, String pack) throws InterruptedException, JSONException, IOException{
+	public void PacksChecking(String Market, String language, String pack, String Payment) throws InterruptedException, JSONException, IOException{
 		InitialOrderPage packs = new InitialOrderPage(driver);
-		packs.Packs(Market, language, pack);
-		packs.AdditionalProducts(Market, pack);
+		packs.Packs(Market, language, pack, Payment);
+		packs.AdditionalProducts(Market, pack, Payment);
 	}
 	
 	public void PCPacksChecking(String Market, String language, String pack) throws InterruptedException, JSONException{

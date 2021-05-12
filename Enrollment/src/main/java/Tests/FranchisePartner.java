@@ -20,211 +20,262 @@ public class FranchisePartner extends SuperTestNG {
 	@DataProvider
 	public Object[][] MarketConfig() {
 
-		Object[][] data = new Object[51][3];
+		Object[][] data = new Object[51][4];
 
 		data[0][0] = "Austria";
 		data[0][1] = "English";
 		data[0][2] = "Pack";
+		data[0][3] = "CreditCard";
 
 		data[1][0] = "Austria";
 		data[1][1] = "Deutsch";
 		data[1][2] = "Pack";
+		data[1][3] = "CreditCard";
 
 		data[2][0] = "Bahamas";
 		data[2][1] = "English";
 		data[2][2] = "Pack";
+		data[2][3] = "CreditCard";
 
 		data[3][0] = "Belgium";
 		data[3][1] = "Français";
 		data[3][2] = "Pack";
+		data[3][3] = "CreditCard";
 
 		data[4][0] = "Belgium";
 		data[4][1] = "Dutch";
 		data[4][2] = "Pack";
+		data[4][3] = "CreditCard";
 
 		data[5][0] = "Belgium";
 		data[5][1] = "English";
 		data[5][2] = "Pack";
+		data[5][3] = "CreditCard";
 
 		data[6][0] = "Canada";
 		data[6][1] = "English";
 		data[6][2] = "Pack";
+		data[6][3] = "CreditCard";
 
 		data[7][0] = "Canada";
 		data[7][1] = "Français";
 		data[7][2] = "Pack";
+		data[7][3] = "CreditCard";
 
 		data[8][0] = "Colombia";
 		data[8][1] = "Español";
 		data[8][2] = "Pack";
+		data[8][3] = "CreditCard";
 		
 		data[9][0] = "Denmark";
         data[9][1] = "English";
         data[9][2] = "Pack";
+        data[9][3] = "CreditCard";
         
         data[10][0] = "Denmark";
         data[10][1] = "Danish";
         data[10][2] = "Pack";
+        data[10][3] = "CreditCard";
         
         data[11][0] = "Dominican Republic";
         data[11][1] = "Español";
         data[11][2] = "Pack";
+        data[11][3] = "CreditCard";
 
         data[12][0] = "France";
         data[12][1] = "Français";
         data[12][2] = "Pack";
+        data[12][3] = "CreditCard";
        
         data[13][0] = "France";
         data[13][1] = "English";
         data[13][2] = "Pack";
+        data[13][3] = "CreditCard";
 
         data[14][0] = "Germany";
         data[14][1] = "Deutsch";
         data[14][2] = "Pack";
+        data[14][3] = "CreditCard";
         
         data[15][0] = "Germany";
         data[15][1] = "English";
         data[15][2] = "Pack";
+        data[15][3] = "CreditCard";
 
         data[16][0] = "Hungary";
         data[16][1] = "English";
         data[16][2] = "Pack";
+        data[16][3] = "CreditCard";
         
         data[17][0] = "Hungary";
         data[17][1] = "Hungarian";
         data[17][2] = "Pack";
+        data[17][3] = "CreditCard";
 
         data[18][0] = "India";
         data[18][1] = "English";
         data[18][2] = "NoPack";
+        data[18][3] = "CreditCard";
 
         data[19][0] = "Italy";
         data[19][1] = "Italiano";
         data[19][2] = "Pack";
+        data[19][3] = "CreditCard";
         
         data[20][0] = "Italy";
         data[20][1] = "English";
         data[20][2] = "Pack";
+        data[20][3] = "CreditCard";
         
         data[21][0] = "Ireland";
         data[21][1] = "English";
         data[21][2] = "Pack";
+        data[21][3] = "CreditCard";
 
         data[22][0] = "Jamaica";
         data[22][1] = "English";
         data[22][2] = "Pack";
+        data[22][3] = "CreditCard";
 
         data[23][0] = "Luxembourg";
         data[23][1] = "Français";
         data[23][2] = "Pack";
+        data[23][3] = "CreditCard";
         
         data[24][0] = "Luxembourg";
         data[24][1] = "English";
         data[24][2] = "Pack";
+        data[24][3] = "CreditCard";
         
         data[25][0] = "Luxembourg";
         data[25][1] = "Deutsch";
         data[25][2] = "Pack";
+        data[25][3] = "CreditCard";
 
         data[26][0] = "Mexico";
         data[26][1] = "Español";
         data[26][2] = "Pack";
+        data[26][3] = "CreditCard";
 
         data[27][0] = "Netherlands";
         data[27][1] = "English";
         data[27][2] = "Pack";
+        data[27][3] = "CreditCard";
         
         data[28][0] = "Netherlands";
         data[28][1] = "Dutch";
         data[28][2] = "Pack";
+        data[28][3] = "CreditCard";
 
         data[29][0] = "Norway";
         data[29][1] = "English";
         data[29][2] = "Pack";
+        data[29][3] = "CreditCard";
         
         data[30][0] = "Norway";
         data[30][1] = "English";
         data[30][2] = "NoPack";
+        data[30][3] = "CreditCard";
         
         data[31][0] = "Norway";
         data[31][1] = "Norwegian";
         data[31][2] = "Pack";
+        data[31][3] = "CreditCard";
 
         data[32][0] = "Poland";
         data[32][1] = "English";
         data[32][2] = "Pack";
+        data[32][3] = "CreditCard";
         
         data[33][0] = "Poland";
         data[33][1] = "Polish";
         data[33][2] = "Pack";
+        data[33][3] = "CreditCard";
 
         data[34][0] = "Puerto Rico";
         data[34][1] = "Español";
         data[34][2] = "Pack";
+        data[34][3] = "CreditCard";
         
         data[35][0] = "Puerto Rico";
         data[35][1] = "English";
         data[35][2] = "Pack";
+        data[35][3] = "CreditCard";
 
         data[36][0] = "Sweden";
         data[36][1] = "Svenska";
         data[36][2] = "Pack";
+        data[36][3] = "CreditCard";
         
         data[37][0] = "Sweden";
         data[37][1] = "English";
         data[37][2] = "Pack";
+        data[37][3] = "CreditCard";
         
         data[38][0] = "Switzerland";
         data[38][1] = "Deutsch";
         data[38][2] = "Pack";
+        data[38][3] = "CreditCard";
         
         data[39][0] = "Switzerland";
         data[39][1] = "English";
         data[39][2] = "Pack";
+        data[39][3] = "CreditCard";
         
         data[40][0] = "Switzerland";
         data[40][1] = "Français";
         data[40][2] = "Pack";
+        data[40][3] = "CreditCard";
         
         data[41][0] = "Switzerland";
         data[41][1] = "Italiano";
         data[41][2] = "Pack";
+        data[41][3] = "CreditCard";
 
         data[42][0] = "Spain";
         data[42][1] = "English";
         data[42][2] = "Pack";
+        data[42][3] = "CreditCard";
         
         data[43][0] = "Spain";
         data[43][1] = "Español";
         data[43][2] = "Pack";
+        data[43][3] = "CreditCard";
         
         data[44][0] = "United States";
         data[44][1] = "English";
         data[44][2] = "Pack";
+        data[44][3] = "CreditCard";
         
         data[45][0] = "United States";
         data[45][1] = "Español";
         data[45][2] = "Pack";
+        data[45][3] = "CreditCard";
         
         data[46][0] = "Turkey";
         data[46][1] = "English";
         data[46][2] = "NoPack";
+        data[46][3] = "CreditCard";
         
         data[47][0] = "Turkey";
         data[47][1] = "Türkçe";
         data[47][2] = "NoPack";
+        data[47][3] = "CreditCard";
 
         data[48][0] = "Ukraine";
         data[48][1] = "English";
         data[48][2] = "Pack";
+        data[48][3] = "CreditCard";
         
         data[49][0] = "Ukraine";
         data[49][1] = "русский";
         data[49][2] = "Pack";
+        data[49][3] = "CreditCard";
 
         data[50][0] = "United Kingdom";
         data[50][1] = "English";
 		data[50][2] = "Pack";
+		data[50][3] = "CreditCard";
        
 		/*data[0][0] = "Turkey";
 		data[0][1] = "English";
@@ -243,16 +294,16 @@ public class FranchisePartner extends SuperTestNG {
 	
 	
 	@Test(dataProvider="MarketConfig")
-	public void Enroll(String Market, String language, String pack) throws InterruptedException, IOException, JSONException, ParseException {
+	public void Enroll(String Market, String language, String pack, String Payment) throws InterruptedException, IOException, JSONException, ParseException {
 		
-		childtest = fp.createNode(Market + "  |  " + language);
+		childtest = fp.createNode("<b><font color=407899>" + Market + "  |  " + language + "  |  " + Payment + "</font></b>");
 		childtest.log(Status.INFO, "Platfome   ->   "+"<a href=" + url + ">" + userdata.get("platform") + "</a>");
 		System.out.println(Market + "  |  " + language);
 		start.SelectMarket(Market, language);
-		packs.PacksChecking(Market, language, pack);
-		arpack.ARPacks(Market, pack);
-		account.PersonalDetails(Market, language, pack);
-		payment.PaymentDetails(Market, language, pack);
-		summary.SummaryDetails(Market,language, pack);
+		packs.PacksChecking(Market, language, pack, Payment);
+		arpack.ARPacks(Market, pack, Payment);
+		account.PersonalDetails(Market, language, pack, Payment);
+		payment.PaymentDetails(Market, language, pack, Payment);
+		summary.SummaryDetails(Market,language, pack, Payment);
 	}
 }

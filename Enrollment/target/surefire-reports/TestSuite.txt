@@ -1,430 +1,694 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 77, Failures: 69, Errors: 0, Skipped: 0, Time elapsed: 17,612.159 s <<< FAILURE! - in TestSuite
-Enroll(Tests.FranchisePartner)  Time elapsed: 313.326 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 326.348 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 337.137 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 327.537 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 318.543 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 316.449 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 91.801 s  <<< FAILURE!
-java.lang.AssertionError: Major Customization error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 93.738 s  <<< FAILURE!
-java.lang.AssertionError: Major Customization error
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 245.958 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Resumen de Inscripción, Configuración de la inscripción, Co-Aplicante, Su Información, Tu dirección de facturación, STu información del pago, Términos y Condiciones, Resumen]] but found [[Opciones de pago, Información de la tarjeta de Crédito, Dirección de facturación/correo, Método de envío, Resumen]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 296.857 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 315.482 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 293.767 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 279.379 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 316.052 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 265.835 s  <<< FAILURE!
-java.lang.NumberFormatException: For input string: "€4.03"
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 18.998 s  <<< FAILURE!
-java.lang.AssertionError: Low footer expected [SELECT YOUR MARKET] but found [WÄHLEN SIE IHREN MARKT]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:251)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 310.264 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 336.293 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 113.194 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 294.851 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 231.859 s  <<< FAILURE!
-java.lang.AssertionError: Minor Labels expected [[Credit Card Information, Billing Address, Shipping Address, Shipping Method]] but found [[Enrollment Settings, About You, Commission Payment Options, Your Unicity Office, , ]]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:255)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 314.471 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 312.887 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 341.558 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 338.281 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 340.72 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 253.288 s  <<< FAILURE!
+Tests run: 101, Failures: 60, Errors: 0, Skipped: 0, Time elapsed: 17,784.671 s <<< FAILURE! - in TestSuite
+Enroll(Tests.FranchisePartner)  Time elapsed: 220.406 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=89.0.4389.82)
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51782}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fffd1c85d9955a1731cdd13f62e26701
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 87d0607861b5f01da5603fbf61dd5471
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 212.809 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eaf3b41cf846855755258f491104202
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 231.151 s  <<< FAILURE!
+java.lang.AssertionError: Major AR Total Price is Wrong expected [178.31] but found [177.67]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 229.039 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d37cc2add40409089d5b4f6dd24f150b
 *** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 304.573 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+Enroll(Tests.FranchisePartner)  Time elapsed: 223.293 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6186e1793013e99e3971a5a4fb9db67d
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 341.736 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+Enroll(Tests.FranchisePartner)  Time elapsed: 218.648 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb8ce0363ae141e2efa1979f81feace8
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 332.006 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+Enroll(Tests.FranchisePartner)  Time elapsed: 258.552 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb07ede053363089076ae16d513271e2
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 60.638 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 268.401 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9343cd28158ee200856e1d154e3b6aad
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 255.609 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61530}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c46f88faa830926cdbc9c395bca72480
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+
+Enroll(Tests.FranchisePartner)  Time elapsed: 60.944 s  <<< FAILURE!
 java.lang.AssertionError: Major NOPack Click Here
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 111.526 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 107.753 s  <<< FAILURE!
 java.lang.AssertionError: Major pv on pack expected [86] but found [86å]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:252)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 207.81 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 203.201 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 153.637 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 44eb3afb12b4ec60be854b51bd5fc858
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 153.134 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 62aba76adeb8778348978fde0ade6134
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:253)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 257.155 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 236.323 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 263.659 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 228.259 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 239.099 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=89.0.4389.82)
+  (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 032301be9e7552d4232813610752bc72
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62068}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f6913103c9c2f8b50fc878b2480406b
 *** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.FranchisePartner)  Time elapsed: 264.549 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 270.184 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 304.879 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 308.24 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 296.899 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 291.074 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 111.509 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 111.594 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 174.816 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 175.042 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.FranchisePartner)  Time elapsed: 292.456 s  <<< FAILURE!
-java.lang.AssertionError: Major market is missing expected [Denmark ] but found [Denmark]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:256)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 113.511 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 240.164 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 99f6f447f97989cadd677ba439c41e23
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b150d16abd88d235d45f5e6b15adf324
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 193.007 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 241.837 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
-  (Session info: chrome=89.0.4389.82)
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53768}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb058161d42eb118150276280288c26c
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ec29b9a9cc62e1476036b6d114a681e
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 189.954 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 227.405 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
-  (Session info: chrome=89.0.4389.82)
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 64798c1df48dd62a692037c6e052f29c
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11c93b910f5663c240fa00f2888eb349
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 61.627 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 90.899 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:87)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 99.954 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 07e2883311b387a7e1e8ce34f40d46b3
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 180.457 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53996}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0743eaa6a72306e382e5b84f0bf6a6eb
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:91)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 111.27 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54092}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 32c12b2a46c504a69dd9d8fe43e3f018
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 111.292 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb17dcc76395935c405a587d1583467f
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 122.571 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54193}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d436734600699a88fd1752a212c97c75
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
-
-Enroll(Tests.PrefferedCustomer)  Time elapsed: 98.977 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@ng-click, 'order.arInput.arPack')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54247}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae8cbb4ce422b04b328ec4e8813435c8
-*** Element info: {Using=xpath, value=//div[contains(@ng-click, 'order.arInput.arPack')]}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:88)
-
-GetFit(Tests.Fit)  Time elapsed: 142.028 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='ng-scope']"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54540}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b01a4005d6aff42212cf0ed47c386a50
-*** Element info: {Using=xpath, value=//h4[@class='ng-scope']}
-	at Tests.Fit.GetFit(Fit.java:67)
-
-GetFit(Tests.Fit)  Time elapsed: 142.06 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='ng-scope']"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54677}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0be481e18e18930e4199c77eabb8cf14
-*** Element info: {Using=xpath, value=//h4[@class='ng-scope']}
-	at Tests.Fit.GetFit(Fit.java:67)
-
-Patient(Tests.PatientPortal)  Time elapsed: 146.027 s  <<< FAILURE!
-java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Your Shipping/Primary Address, Your Billing Address, Your Payment Information, Summary]] but found [[Credit Card Information, Billing Address, Shipping/Primary Address, Shipping Method, Summary]]
-	at Tests.PatientPortal.Patient(PatientPortal.java:67)
-
-Patient(Tests.PatientPortal)  Time elapsed: 188.659 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93cfbe12fd0a0562e97abc75bebd5df0
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
-	at Tests.PatientPortal.Patient(PatientPortal.java:67)
-
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.393 s  <<< FAILURE!
+Enroll(Tests.FranchisePartner)  Time elapsed: 90.726 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 429.372 s  <<< FAILURE!
+BankWire(Tests.EUBankWire)  Time elapsed: 61.23 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a344c610e914b84292140f53b32bac
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.759 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a701e175008920cd157b7ca790a19905
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.209 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a1b08409dd1444d3528864451f89dd8
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.414 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ad6d01e1b2f1bd8f9610215730a2efc
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.96 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 889433540ba5829688962d554aa5707f
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.945 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b23cf828c08286bfe5629f3b514bee5
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.852 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c68d543e5e9b328804cd71df76ed56f
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.674 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a806eb39a37023eb1dc21fbb8e9d847
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.167 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2091a379b83ba5803d988a59bbb9354e
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.888 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fa425302d329065ceb7c23676d7f69f
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.312 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1928545d7fbc3f7b38d1e188eefff31a
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.575 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6bdc50b998a7fe4b6f7ca82c27df588
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.628 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8e37b3e9e94e0de133bf8933c170314
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.752 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a9c0d0faaacc401aae300015e9662d45
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.718 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f22a3f5e27cfddf8bf0efa71364e740
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.084 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e72da37d02ed86825614363281dac6a
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.561 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b19c3150883a557d603f22034594417
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 430.733 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to no longer be visible: By.xpath: (//img[@src='assets/img/ajax-loader.gif'])[1] (tried for 400 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fc31f5ddf8462e9ca8d6f9809df6f473
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f5943764f02a33f438f56252ed5c2e8
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 121.014 s  <<< FAILURE!
-java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+BankWire(Tests.EUBankWire)  Time elapsed: 74.271 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60fc30fb48d60665f60fd725e249a1cb
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
 
-PassReferralID(Tests.HealthCareProducts)  Time elapsed: 120.578 s  <<< FAILURE!
+BankWire(Tests.EUBankWire)  Time elapsed: 62.295 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6482bab48fb5fd1decb86df45c55c6d
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.151 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c1ca4a467dbbdd77784e74e922225552
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.023 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64034}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04472c51117072bbd959169c9f9535fc
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 65.325 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c35098f9f7bcf3b75a11a7a139a891ba
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.81 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b66f4b21ce0710c111ad4d9f6ed64fe0
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 63.794 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e14ffe42a677c94c1a906a70c21df408
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.197 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 616bdde7041a71c5625697e5488aae9d
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.896 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb113cf1021c6718c5dcae23327ee262
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.08 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a87186622f54ae0d894a628930058e2c
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.89 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba556125ce2eb0636d2a92ebdbfe0a76
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 61.913 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c42fe6e30879560431d8d7761a455fd
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.758 s  <<< FAILURE!
+java.lang.IllegalArgumentException: bound must be positive
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.788 s  <<< FAILURE!
+java.lang.IllegalArgumentException: bound must be positive
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+BankWire(Tests.EUBankWire)  Time elapsed: 60.916 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert-danger')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 279e4ecb7f8c1e1cbb0b66d9ff108a91
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert-danger')]}
+	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 286.329 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4b0415b12c16b44214f3534b2eba02e
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:61)
+
+PassReferralID(Tests.ReferralIDPassing)  Time elapsed: 75.618 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//h3[@class='summary-subhead head-summary ng-scope'])[1]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65064}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f3a0ce79ac3f1947b4a0e7b4d86d4ba1
+*** Element info: {Using=xpath, value=(//h3[@class='summary-subhead head-summary ng-scope'])[1]}
+	at Tests.ReferralIDPassing.PassReferralID(ReferralIDPassing.java:57)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 192.595 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41a8d44112eec32bbb5b5b4f02022324
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 192.642 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3c02bc67628e1d6ddfc9ce283cc7d1
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 61.612 s  <<< FAILURE!
 java.lang.AssertionError: Critical A-Z section not displaying
-	at Tests.HealthCareProducts.PassReferralID(HealthCareProducts.java:63)
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:97)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 124.053 s  <<< FAILURE!
+java.lang.AssertionError: expected [Dajabon] but found [Dajabón]
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 178.793 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7d245d0d2a6c4271afdd226b37aa5
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 224.696 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49288}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d860ebe202031d1445bf1f5ede43e3a6
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
+
+Enroll(Tests.PrefferedCustomer)  Time elapsed: 219.461 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c69607a3664d7a65347e3926f48d4a4f
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
+
+GetFit(Tests.Fit)  Time elapsed: 220.317 s  <<< FAILURE!
+org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: GetFit([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) United Kingdom,(java.lang.String) English,(java.lang.String) Pack]
 
