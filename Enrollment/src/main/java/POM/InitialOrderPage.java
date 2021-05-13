@@ -628,7 +628,6 @@ public class InitialOrderPage extends SuperTestNG {
 							if (Market == "Switzerland") {
 								Assert.assertEquals(currencysymbol, "chf", "Critical currency symbol");
 								userdata.put("Currency", "CHF");
-								childtest.log(Status.INFO, "Currency is " + currencysymbol);
 							}
 							if (Market == "United Kingdom") {
 								Assert.assertEquals(currencysymbol, "£", "Critical currency symbol");

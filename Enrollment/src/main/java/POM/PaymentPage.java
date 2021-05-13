@@ -561,12 +561,12 @@ public class PaymentPage extends SuperTestNG {
 			}
 
 			if (Market == "Dominican Republic") {
-				String[] state = { "seleccione un estado", "Azua", "Bahoruco", "Barahona", "Dajabon",
-						"Distrito Nacional", "Duarte", "El Seibo", "Elias Pina", "Espaillat", "Hato Mayor",
-						"Independencia", "La Altagracia", "La Romana", "La Vega", "Maria Trinidad Sanchez",
-						"Monsenor Nouel", "Monte Cristi", "Monte Plata", "Pedernales", "Peravia", "Puerto Plata",
-						"Salcedo", "Samana", "San Cristobal", "San Juan", "San Pedro de Macoris", "Sanchez Ramirez",
-						"Santiago", "Santiago Rodriguez", "Valverde", };
+				String[] state = { "seleccione un estado", "Azua", "Bahoruco", "Barahona", "Dajabón",
+						"Distrito Nacional", "Duarte", "El Seibo", "Espaillat", "Hato Mayor",
+						"Independencia", "La Altagracia", "La Estrelleta", "La Romana", "La Vega", "María Trinidad Sánchez",
+						"Monseñor Nouel", "Monte Cristi", "Monte Plata", "Pedernales", "Peravia", "Puerto Plata",
+						"Salcedo", "Samaná", "San Cristóbal", "San Juan", "San Pedro de Macorís", 
+						"Santiago", "Santiago Rodríguez", "Sánchez Ramírez", "Valverde", };
 
 				for (int i = 0; i < state.length; i++) {
 					Assert.assertEquals(State.get(i).getText(), state[i]);
@@ -579,11 +579,11 @@ public class PaymentPage extends SuperTestNG {
 			}
 
 			if (Market == "Colombia") {
-				String[] state = { "seleccione un estado", "Amazonas", "Antioquia", "Arauca", "Atlantico", "Bolivar",
-						"Boyaca", "Caldas", "Caqueta", "Casanare", "Cauca", "Cesar", "Choco", "Cordoba", "Cundinamarca",
-						"Distrito Capital de Bogota", "Guainia", "Guaviare", "Huila", "La Guajira", "Magdalena", "Meta",
-						"Narino", "Norte de Santander", "Putumayo", "Quindio", "Risaralda", "Santa Catalina",
-						"Santander", "Sucre", "Tolima", "Valle del Cauca", "Vaupes", "Vichada", };
+				String[] state = { "seleccione un estado", "Amazonas", "Antioquia", "Arauca", "Atlántico", "Bolívar",
+						"Boyacá", "Caldas", "Caquetá", "Casanare", "Cauca", "Cesar", "Chocó", "Cundinamarca", "Córdoba",
+						"Distrito Capital de Bogotá", "Guainía", "Guaviare", "Huila", "La Guajira", "Magdalena", "Meta",
+						"Nariño", "Norte de Santander", "Providencia", "Putumayo", "Quindío", "Risaralda", 
+						"Santander", "Sucre", "Tolima", "Valle del Cauca", "Vaupés", "Vichada", };
 
 				for (int i = 0; i < state.length; i++) {
 					Assert.assertEquals(State.get(i).getText(), state[i]);
