@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19,502.107" tests="101" errors="0" skipped="0" failures="33">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19,746.183" tests="101" errors="0" skipped="0" failures="35">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\sumancb\AppData\Local\Temp\2\surefire3602432431956710461\surefirebooter2208431007155759151.jar C:\Users\sumancb\AppData\Local\Temp\2\surefire3602432431956710461 2021-05-12T10-40-16_733-jvmRun1 surefire5902369748917575093tmp surefire_04668187771524471681tmp"/>
+    <property name="sun.java.command" value="C:\Users\sumancb\AppData\Local\Temp\2\surefire7741016754613683026\surefirebooter5269317361547271338.jar C:\Users\sumancb\AppData\Local\Temp\2\surefire7741016754613683026 2021-05-13T10-40-17_586-jvmRun1 surefire7931620835531909603tmp surefire_05438783371688363421tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\sumancb\git\Enrollment\Enrollment\target\test-classes;C:\Users\sumancb\git\Enrollment\Enrollment\target\classes;C:\Users\sumancb\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\sumancb\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\sumancb\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\sumancb\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\sumancb\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\sumancb\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\sumancb\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\sumancb\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\sumancb\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\sumancb\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\sumancb\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\sumancb\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\sumancb\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\sumancb\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\sumancb\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\sumancb\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\sumancb\.m2\repository\com\aventstack\extentreports\5.0.8\extentreports-5.0.8.jar;C:\Users\sumancb\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\sumancb\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sumancb\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\sumancb\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\sumancb\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\sumancb\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\sumancb\.m2\repository\io\rest-assured\rest-assured\3.1.0\rest-assured-3.1.0.jar;C:\Users\sumancb\.m2\repository\org\codehaus\groovy\groovy\2.4.12\groovy-2.4.12.jar;C:\Users\sumancb\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.12\groovy-xml-2.4.12.jar;C:\Users\sumancb\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\sumancb\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\sumancb\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sumancb\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\sumancb\.m2\repository\org\apache\httpcomponents\httpmime\4.5.1\httpmime-4.5.1.jar;C:\Users\sumancb\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\sumancb\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sumancb\.m2\repository\io\rest-assured\json-path\3.1.0\json-path-3.1.0.jar;C:\Users\sumancb\.m2\repository\org\codehaus\groovy\groovy-json\2.4.12\groovy-json-2.4.12.jar;C:\Users\sumancb\.m2\repository\io\rest-assured\rest-assured-common\3.1.0\rest-assured-common-3.1.0.jar;C:\Users\sumancb\.m2\repository\io\rest-assured\xml-path\3.1.0\xml-path-3.1.0.jar;C:\Users\sumancb\.m2\repository\javax\xml\bind\jaxb-api\2.2.12\jaxb-api-2.2.12.jar;C:\Users\sumancb\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\sumancb\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sumancb\.m2\repository\org\codehaus\groovy\groovy-all\2.3.5\groovy-all-2.3.5.jar;C:\Users\sumancb\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.5.0\jackson-mapper-asl-1.5.0.jar;C:\Users\sumancb\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.5.0\jackson-core-asl-1.5.0.jar;C:\Users\sumancb\.m2\repository\net\lightbody\bmp\browsermob-core\2.1.5\browsermob-core-2.1.5.jar;C:\Users\sumancb\.m2\repository\net\lightbody\bmp\littleproxy\1.1.0-beta-bmp-17\littleproxy-1.1.0-beta-bmp-17.jar;C:\Users\sumancb\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.9\jackson-core-2.8.9.jar;C:\Users\sumancb\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.9\jackson-databind-2.8.9.jar;C:\Users\sumancb\.m2\repository\dnsjava\dnsjava\2.1.8\dnsjava-2.1.8.jar;C:\Users\sumancb\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\sumancb\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\sumancb\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\sumancb\.m2\repository\io\netty\netty-all\4.0.51.Final\netty-all-4.0.51.Final.jar;C:\Users\sumancb\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.58\bcprov-jdk15on-1.58.jar;C:\Users\sumancb\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.58\bcpkix-jdk15on-1.58.jar;C:\Users\sumancb\.m2\repository\net\lightbody\bmp\mitm\2.1.5\mitm-2.1.5.jar;C:\Users\sumancb\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.8\jackson-annotations-2.9.8.jar;C:\Users\sumancb\.m2\repository\commons-lang\commons-lang\2.2\commons-lang-2.2.jar;C:\Users\sumancb\.m2\repository\javax\mail\javax.mail-api\1.5.5\javax.mail-api-1.5.5.jar;C:\Users\sumancb\.m2\repository\com\sun\mail\javax.mail\1.6.1\javax.mail-1.6.1.jar;C:\Users\sumancb\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\sumancb\.m2\repository\org\springframework\data\spring-data-jpa\1.11.23.RELEASE\spring-data-jpa-1.11.23.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\data\spring-data-commons\1.13.23.RELEASE\spring-data-commons-1.13.23.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-orm\4.3.25.RELEASE\spring-orm-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-jdbc\4.3.25.RELEASE\spring-jdbc-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-context\4.3.25.RELEASE\spring-context-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-expression\4.3.25.RELEASE\spring-expression-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-aop\4.3.25.RELEASE\spring-aop-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-tx\4.3.25.RELEASE\spring-tx-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-beans\4.3.25.RELEASE\spring-beans-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\springframework\spring-core\4.3.25.RELEASE\spring-core-4.3.25.RELEASE.jar;C:\Users\sumancb\.m2\repository\org\aspectj\aspectjrt\1.8.13\aspectjrt-1.8.13.jar;C:\Users\sumancb\.m2\repository\org\apache\derby\derbyclient\10.11.1.1\derbyclient-10.11.1.1.jar;C:\Users\sumancb\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.5.2\org.eclipse.persistence.jpa-2.5.2.jar;C:\Users\sumancb\.m2\repository\org\eclipse\persistence\javax.persistence\2.1.0\javax.persistence-2.1.0.jar;C:\Users\sumancb\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\2.5.2\org.eclipse.persistence.asm-2.5.2.jar;C:\Users\sumancb\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.5.2\org.eclipse.persistence.antlr-2.5.2.jar;C:\Users\sumancb\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.5.2\org.eclipse.persistence.jpa.jpql-2.5.2.jar;C:\Users\sumancb\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\2.5.2\org.eclipse.persistence.core-2.5.2.jar;C:\Users\sumancb\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.2\webdrivermanager-3.6.2.jar;C:\Users\sumancb\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\sumancb\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\sumancb\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\sumancb\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\sumancb"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\sumancb\AppData\Local\Temp\2\surefire3602432431956710461\surefirebooter2208431007155759151.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\sumancb\AppData\Local\Temp\2\surefire7741016754613683026\surefirebooter5269317361547271338.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,667 +60,738 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="258.443"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="261.231"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="266.835"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="293.431"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="300.414"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="192.394">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[contains(@ng-if, &apos;enrollerProfile&apos;)]//p[@class=&apos;ng-binding&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8bb2775bee5541542a98675f604851dc&#10;*** Element info: {Using=xpath, value=//li[contains(@ng-if, &apos;enrollerProfile&apos;)]//p[@class=&apos;ng-binding&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="263.192"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="171.517">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[contains(@ng-if, &apos;enrollerProfile&apos;)]//p[@class=&apos;ng-binding&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53848}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d97ad8b6ab8349886e3d2d12c7f02246&#10;*** Element info: {Using=xpath, value=//li[contains(@ng-if, &apos;enrollerProfile&apos;)]//p[@class=&apos;ng-binding&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8bb2775bee5541542a98675f604851dc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53848}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d97ad8b6ab8349886e3d2d12c7f02246
 *** Element info: {Using=xpath, value=//li[contains(@ng-if, 'enrollerProfile')]//p[@class='ng-binding']}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:305)
 </failure>
-    <system-out><![CDATA[Belgium  |  English
+    <system-out><![CDATA[Austria  |  Deutsch
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 21792
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 28402
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 11:03:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 10:44:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="264.89">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 50d4474194f69d245c910a8ab6deb1e4&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="291.244"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="310.212"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="293.599"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="291.434"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="214.921">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 714db0f4d6343aeef486eb799056ac3c&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 50d4474194f69d245c910a8ab6deb1e4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 714db0f4d6343aeef486eb799056ac3c
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Canada  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 39783
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 26530
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 11:06:58 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 11:07:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="212.85">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 85730d1f5466fae80eaae37ea93dce8f&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="213.904">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d657b7f6f65fd1270382177faf4914f&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 85730d1f5466fae80eaae37ea93dce8f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d657b7f6f65fd1270382177faf4914f
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Canada  |  Français
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 28190
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 7856
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 11:11:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 11:11:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="219.233">
-    <failure message="expected [Atlantico] but found [Atlántico]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Atlantico] but found [Atlántico]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-</failure>
-    <system-out><![CDATA[Colombia  |  Español
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 11875
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 11:15:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="260.171"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="258.624"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="148.748">
-    <failure message="expected [Dajabon] but found [Dajabón]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Dajabon] but found [Dajabón]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
-</failure>
-    <system-out><![CDATA[Dominican Republic  |  Español
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 7693
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 11:27:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="257.409"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="299.178"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="212.586">
-    <failure message="Major AR Total Price is Wrong expected [154.01] but found [153.37]" type="java.lang.AssertionError">java.lang.AssertionError: Major AR Total Price is Wrong expected [154.01] but found [153.37]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-</failure>
-    <system-out><![CDATA[Germany  |  Deutsch
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 46561
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 11:39:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="225.794">
-    <failure message="Major AR Total Price is Wrong expected [150.49] but found [149.85]" type="java.lang.AssertionError">java.lang.AssertionError: Major AR Total Price is Wrong expected [150.49] but found [149.85]
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-</failure>
-    <system-out><![CDATA[Germany  |  English
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 1855
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 11:43:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="267.336"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="289.778"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="113.921"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="223.609">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 89f0553311b102fc979e76c1b62110e2&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="274.682"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="225.706">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6b9302f7c72a4f3a8c3768823927ec68&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 89f0553311b102fc979e76c1b62110e2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b9302f7c72a4f3a8c3768823927ec68
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Denmark  |  English
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 18568
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 11:19:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="263.306"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="129.938">
+    <failure message="expected [El Seibo] but found [El Seybo]" type="java.lang.AssertionError">java.lang.AssertionError: expected [El Seibo] but found [El Seybo]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:306)
+</failure>
+    <system-out><![CDATA[Dominican Republic  |  Español
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 21976
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 11:28:03 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="269.884"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="295.234"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="229.857">
+    <failure message="Major Total Price is Wrong expected [143.13] but found [142.37]" type="java.lang.AssertionError">java.lang.AssertionError: Major Total Price is Wrong expected [143.13] but found [142.37]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Germany  |  Deutsch
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 33533
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 11:39:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="223.558">
+    <failure message="Major AR Total Price is Wrong expected [169.08] but found [168.44]" type="java.lang.AssertionError">java.lang.AssertionError: Major AR Total Price is Wrong expected [169.08] but found [168.44]
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Germany  |  English
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 22560
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 11:43:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="229.108">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bc000d7b44d2f2a1ef50ea76a019bb3a&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bc000d7b44d2f2a1ef50ea76a019bb3a
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Hungary  |  English
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6588
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 11:47:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="263.099">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f68b420f62f1d4ea602dfe78ecf2c668&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f68b420f62f1d4ea602dfe78ecf2c668
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Hungary  |  Hungarian
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 18880
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 11:51:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="113.935"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="219.969">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c160882718ed073b8ebae60d209fef6d&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c160882718ed073b8ebae60d209fef6d
 *** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Italy  |  Italiano
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14646
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15692
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 11:58:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 11:57:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="219.956">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 651101d503d8ef1de8bf45ec7a029867&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="225.381">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e9081ae238799426adc8cbf9c6f7c7dd&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 651101d503d8ef1de8bf45ec7a029867
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9081ae238799426adc8cbf9c6f7c7dd
 *** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Italy  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 46694
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 25171
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 12:02:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 12:01:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="253.331"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="245.864"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="258.576"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="284.442"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="288.192"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="278.878"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="269.546">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58719}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c8f89f26651d856623ee23d622a15ea2&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="220.789">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4607b2a6bd11f5716e8e464f7ca95eab&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58719}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c8f89f26651d856623ee23d622a15ea2
-*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607b2a6bd11f5716e8e464f7ca95eab
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
-    <system-out><![CDATA[Netherlands  |  English
+    <system-out><![CDATA[Ireland  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 43287
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 36070
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 12:33:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 12:05:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="296.868"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="280.348"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="60.454">
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="288.564"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="261.384"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="293.14"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="293.607"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="280.601"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="274.956"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="302.622"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="296.542"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="60.507">
     <failure message="Major NOPack Click Here" type="java.lang.AssertionError">java.lang.AssertionError: Major NOPack Click Here
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 </failure>
     <system-out><![CDATA[Norway  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 37131
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 43681
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 12:47:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 12:47:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="107.129">
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="107.179">
     <failure message="Major pv on pack expected [86] but found [86å]" type="java.lang.AssertionError">java.lang.AssertionError: Major pv on pack expected [86] but found [86å]
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 </failure>
     <system-out><![CDATA[Norway  |  Norwegian
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6152
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 19996
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 12:48:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 12:48:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="219.494"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="213.045"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="254.708">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 15c71d8002f4bb5221c588263d289a44&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="217.076"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="216.919"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="257.397">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e30f372f7af0c0202ac85537005f2b75&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 15c71d8002f4bb5221c588263d289a44
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e30f372f7af0c0202ac85537005f2b75
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Puerto Rico  |  Español
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 37391
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14229
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 12:57:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 12:58:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="256.294">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59258}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e2ae54fed3d15806f1287e023499c19b&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="255.871">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 140471511fd51236d9c186ff54eb122c&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59258}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e2ae54fed3d15806f1287e023499c19b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 140471511fd51236d9c186ff54eb122c
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Puerto Rico  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 7386
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 37296
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 1:02:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 1:02:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="251.561"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="266.003"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="263.885"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="264.667"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="235.969">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b4077dd55621653fa2bde77797a35626&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="267.444"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="262.762"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="236.043">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7d141854fb9f47c1c6a9fa4921d5f38f&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b4077dd55621653fa2bde77797a35626
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d141854fb9f47c1c6a9fa4921d5f38f
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Switzerland  |  Deutsch
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 42185
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 1:15:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="232.675">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7452dde0706610a9a20b137a9da74c95&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7452dde0706610a9a20b137a9da74c95
+*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
+	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
+</failure>
+    <system-out><![CDATA[Switzerland  |  English
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 17655
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 1:19:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="233.443">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 10dda2551227418121cee02380451bda&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10dda2551227418121cee02380451bda
 *** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
 </failure>
     <system-out><![CDATA[Switzerland  |  Français
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 47011
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 24640
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 1:24:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 1:23:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="230.998">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59746}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 63b2ef542ee2eb91bc9d5f8955badb36&#10;*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;col-xs-5 text-right&apos;)])[5]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'col-xs-5 text-right')])[5]"}
-  (Session info: chrome=90.0.4430.85)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59746}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 63b2ef542ee2eb91bc9d5f8955badb36
-*** Element info: {Using=xpath, value=(//div[contains(@class,'col-xs-5 text-right')])[5]}
-	at Tests.FranchisePartner.Enroll(FranchisePartner.java:307)
-</failure>
-    <system-out><![CDATA[Switzerland  |  Italiano
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 9849
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 1:28:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="257.262"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="257.552"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="284.022"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="254.953"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="112.735"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="112.349"/>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="90.572">
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="270.499"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="259.749"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="258.331"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="260.743"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="252.03"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="111.62"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="112.962"/>
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="90.46">
     <failure message="Critical A-Z section not displaying" type="java.lang.AssertionError">java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 </failure>
     <system-out><![CDATA[Ukraine  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14140
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 23312
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 1:53:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 1:53:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="90.53">
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="90.614">
     <failure message="Critical A-Z section not displaying" type="java.lang.AssertionError">java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.FranchisePartner.Enroll(FranchisePartner.java:303)
 </failure>
     <system-out><![CDATA[Ukraine  |  ???????
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 42946
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15898
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 1:55:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 1:55:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.FranchisePartner" time="260.996"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.282"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="18.924">
-    <failure message="Low footer expected [WÄHLEN SIE IHREN MARKT] but found [SELECT YOUR MARKET]" type="java.lang.AssertionError">java.lang.AssertionError: Low footer expected [WÄHLEN SIE IHREN MARKT] but found [SELECT YOUR MARKET]
-	at Tests.EUBankWire.BankWire(EUBankWire.java:226)
-</failure>
-    <system-out><![CDATA[Austria  |  Deutsch  |  BankWire
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 45576
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 2:03:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="148.424"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="170.258"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="161.342"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="154.409"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="153.149"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="154.808"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="62.021">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fa1c99e767e1ebde9d867d60253b6bd6&#10;*** Element info: {Using=xpath, value=//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.FranchisePartner" time="263.678"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="149.109"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.778"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="159.115"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="160.068"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="160.722"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="152.423"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="152.874"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="148.629"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="61.986">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6a185c4f0b89c03f3af7aee59cc0830f&#10;*** Element info: {Using=xpath, value=//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa1c99e767e1ebde9d867d60253b6bd6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a185c4f0b89c03f3af7aee59cc0830f
 *** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
 	at Tests.EUBankWire.BankWire(EUBankWire.java:229)
 </failure>
     <system-out><![CDATA[France  |  English  |  BankWire
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 3518
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 47601
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 2:20:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 2:22:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="148.222"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="124.726">
-    <failure message="Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Co-Applicant - Spouse/Company, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]" type="java.lang.AssertionError">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Co-Applicant - Spouse/Company, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]
-	at Tests.EUBankWire.BankWire(EUBankWire.java:231)
-</failure>
-    <system-out><![CDATA[Germany  |  English  |  BankWire
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 8528
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 2:23:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="159.346"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="155.082"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="146.787"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="114.063">
-    <failure message="Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]" type="java.lang.AssertionError">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]
-	at Tests.EUBankWire.BankWire(EUBankWire.java:231)
-</failure>
-    <system-out><![CDATA[Italy  |  English  |  BankWire
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14951
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 12, 2021 2:34:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="147.331"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.88"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="148.585"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.637"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="153.126"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="62.167">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ef3336e8913c817fef358c22243b6b83&#10;*** Element info: {Using=xpath, value=//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.905"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="149.936"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="153.939"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="144.206"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="146.58"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="142.703"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="147.175"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="152.867"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="61.91">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d102b1b34dd62c63d5f277214bab99f7&#10;*** Element info: {Using=xpath, value=//select[contains(@ng-options, &apos;language&apos;)]/option[@selected = &apos;selected&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//select[contains(@ng-options, 'language')]/option[@selected = 'selected']"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef3336e8913c817fef358c22243b6b83
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d102b1b34dd62c63d5f277214bab99f7
 *** Element info: {Using=xpath, value=//select[contains(@ng-options, 'language')]/option[@selected = 'selected']}
 	at Tests.EUBankWire.BankWire(EUBankWire.java:229)
 </failure>
-    <system-out><![CDATA[Netherlands  |  Dutch  |  BankWire
+    <system-out><![CDATA[Luxembourg  |  English  |  BankWire
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 26709
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 48324
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 2:48:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 2:43:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="147.537"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="144.033"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.447"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="149.37"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.718"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="153.114"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.184"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="155.312"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.001"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="123.49">
-    <failure message="Minor Summary Labels is Displaying expected [[Sommario Dell&apos;Iscrizione, Enrollment Settings, Informazioni su di te, Coniuge richiedente/Compagnia, Opzioni per il Pagamento della Commissione, Il tuo indirizzo di consegna, Il tuo indirizzo di fatturazione/indirizzo primario, Le tue informazioni di pagamento, Termini e Condizioni, Sommario]] but found [[Payment Options, Dettagli del conto bancario, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione, Sommario]]" type="java.lang.AssertionError">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Sommario Dell'Iscrizione, Enrollment Settings, Informazioni su di te, Coniuge richiedente/Compagnia, Opzioni per il Pagamento della Commissione, Il tuo indirizzo di consegna, Il tuo indirizzo di fatturazione/indirizzo primario, Le tue informazioni di pagamento, Termini e Condizioni, Sommario]] but found [[Payment Options, Dettagli del conto bancario, Indirizzo di Fatturazione, Indirizzo di spedizione, Metodo di spedizione, Sommario]]
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="138.651"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="157">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ed9d3d9c10548527ad724f02b0d1b67f&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ed9d3d9c10548527ad724f02b0d1b67f
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.EUBankWire.BankWire(EUBankWire.java:231)
 </failure>
-    <system-out><![CDATA[Switzerland  |  Italiano  |  BankWire
+    <system-out><![CDATA[Netherlands  |  English  |  BankWire
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 3129
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 34568
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:13:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 2:47:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="149.066"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="149.128"/>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="60.591">
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.415"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="144.069"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="144.386"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.573"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.861"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="149.341"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.134"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.528"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="123.572">
+    <failure message="Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Co-Applicant - Spouse/Company, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]" type="java.lang.AssertionError">java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, About You, Co-Applicant - Spouse/Company, Commission Payment Options, Your Shipping Address, Your Billing Address/Primary Address, Your Payment Information, Terms and Conditions, Summary]] but found [[Payment Options, Bank Account Details, Billing Address, Shipping Address, Shipping Method, Summary]]
+	at Tests.EUBankWire.BankWire(EUBankWire.java:231)
+</failure>
+    <system-out><![CDATA[Switzerland  |  English  |  BankWire
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 18746
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 3:10:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="152.724"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="155.56"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.157"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="150.892"/>
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="60.469">
     <failure message="bound must be positive" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: bound must be positive
 	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
 </failure>
     <system-out><![CDATA[Ukraine  |  English  |  BankWire
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 8834
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14729
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:20:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:22:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="60.516">
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="60.413">
     <failure message="bound must be positive" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: bound must be positive
 	at Tests.EUBankWire.BankWire(EUBankWire.java:227)
 </failure>
     <system-out><![CDATA[Ukraine  |  ???????  |  BankWire
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14555
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 22596
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:21:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:23:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="BankWire" classname="Tests.EUBankWire" time="148.732"/>
-  <testcase name="PassReferralID" classname="Tests.ReferralIDPassing" time="255.339"/>
-  <testcase name="PassReferralID" classname="Tests.ReferralIDPassing" time="244.383"/>
-  <testcase name="INDPassReferralID" classname="Tests.INDReferralIDPassing" time="107.968"/>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="231.707"/>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="204.909">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63168}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ca30de08bf30e56a13bb7f5112772960&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="BankWire" classname="Tests.EUBankWire" time="151.033"/>
+  <testcase name="PassReferralID" classname="Tests.ReferralIDPassing" time="252.746"/>
+  <testcase name="PassReferralID" classname="Tests.ReferralIDPassing" time="241.872"/>
+  <testcase name="INDPassReferralID" classname="Tests.INDReferralIDPassing" time="84.829">
+    <failure message="Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Nominee, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Mailing Address, Direct Deposit for Commissions, The Distributor Agreement - Terms &amp; Conditions, Summary]] but found [[Enrollment Settings, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Co-Applicant/Nominee, Mailing Address, Direct Deposit for Commissions, Password, Summary]]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Minor Summary Labels is Displaying expected [[Enrollment Summary, Enrollment Settings, Co-Applicant/Nominee, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Mailing Address, Direct Deposit for Commissions, The Distributor Agreement - Terms & Conditions, Summary]] but found [[Enrollment Settings, About You (For all future correspondence please make sure the Email ID and Contact number is valid. Your login credentials will be sent to the specified E-mail ID), Co-Applicant/Nominee, Mailing Address, Direct Deposit for Commissions, Password, Summary]]
+	at Tests.INDReferralIDPassing.INDPassReferralID(INDReferralIDPassing.java:52)
+]]></failure>
+    <system-out><![CDATA[India  |  English
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 5412
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 3:35:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="251.631"/>
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="189.158">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8a2d2ffb9d141de9e7df7e3ab9e51a21&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63168}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ca30de08bf30e56a13bb7f5112772960
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a2d2ffb9d141de9e7df7e3ab9e51a21
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 </failure>
     <system-out><![CDATA[Canada  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 23954
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 24743
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:39:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:41:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="187.879">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 05d01397ba4bcdfa9db8eb5c71255b06&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="200.029">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4f854757f42bc25e3e1cafbd8ec00d4f&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 05d01397ba4bcdfa9db8eb5c71255b06
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f854757f42bc25e3e1cafbd8ec00d4f
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 </failure>
     <system-out><![CDATA[Canada  |  Français
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 37628
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 5761
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:42:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:44:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="61.336">
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="61.369">
     <failure message="Critical A-Z section not displaying" type="java.lang.AssertionError">java.lang.AssertionError: Critical A-Z section not displaying
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:97)
 </failure>
     <system-out><![CDATA[Colombia  |  Español
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 20984
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 5171
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:46:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:48:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="116.327">
-    <failure message="expected [Dajabon] but found [Dajabón]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Dajabon] but found [Dajabón]
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="115.862">
+    <failure message="expected [El Seibo] but found [El Seybo]" type="java.lang.AssertionError">java.lang.AssertionError: expected [El Seibo] but found [El Seybo]
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
 </failure>
     <system-out><![CDATA[Dominican Republic  |  Español
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 46614
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 36280
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:47:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:49:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="174.683">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5348dff14e80c0c159b608fcfe1f9c29&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="176.086">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cc3e70fe541d7168575ab3f861677e4e&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5348dff14e80c0c159b608fcfe1f9c29
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc3e70fe541d7168575ab3f861677e4e
 *** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
 	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 </failure>
     <system-out><![CDATA[Mexico  |  Español
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 28421
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 23172
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:49:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 3:51:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="207.412"/>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="206.307"/>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="135.55">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;address_country&apos;]//option[@selected=&apos;selected&apos;]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f2569361c9a535938c3808282a1c7c5&#10;*** Element info: {Using=xpath, value=//select[@id=&apos;address_country&apos;]//option[@selected=&apos;selected&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='address_country']//option[@selected='selected']"}
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="205.485"/>
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="206.63"/>
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="249.539">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QASERVER01&apos;, ip: &apos;10.2.0.23&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60282}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d2957116a13a4e3eeb8b4030a779abd4&#10;*** Element info: {Using=xpath, value=(//p[@ng-if=&apos;bean.order_number&apos;]//strong)[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@ng-if='bean.order_number']//strong)[2]"}
   (Session info: chrome=90.0.4430.85)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'QASERVER01', ip: '10.2.0.23', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f2569361c9a535938c3808282a1c7c5
-*** Element info: {Using=xpath, value=//select[@id='address_country']//option[@selected='selected']}
-	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:100)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sumancb\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60282}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2957116a13a4e3eeb8b4030a779abd4
+*** Element info: {Using=xpath, value=(//p[@ng-if='bean.order_number']//strong)[2]}
+	at Tests.PrefferedCustomer.Enroll(PrefferedCustomer.java:101)
 </failure>
     <system-out><![CDATA[United States  |  English
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 29354
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 31039
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 12, 2021 3:59:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 13, 2021 4:01:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="224.971"/>
-  <testcase name="GetFit" classname="Tests.Fit" time="225.689">
+  <testcase name="Enroll" classname="Tests.PrefferedCustomer" time="221.737"/>
+  <testcase name="GetFit" classname="Tests.Fit" time="222.425">
     <failure message="&#10;Data provider mismatch&#10;Method: GetFit([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])&#10;Arguments: [(java.lang.String) United Kingdom,(java.lang.String) English,(java.lang.String) Pack]" type="org.testng.internal.reflect.MethodMatcherException">org.testng.internal.reflect.MethodMatcherException: 
 
 Data provider mismatch

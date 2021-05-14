@@ -562,7 +562,7 @@ public class PaymentPage extends SuperTestNG {
 
 			if (Market == "Dominican Republic") {
 				String[] state = { "seleccione un estado", "Azua", "Bahoruco", "Barahona", "Dajabón",
-						"Distrito Nacional", "Duarte", "El Seibo", "Espaillat", "Hato Mayor",
+						"Distrito Nacional", "Duarte", "El Seybo", "Espaillat", "Hato Mayor",
 						"Independencia", "La Altagracia", "La Estrelleta", "La Romana", "La Vega", "María Trinidad Sánchez",
 						"Monseñor Nouel", "Monte Cristi", "Monte Plata", "Pedernales", "Peravia", "Puerto Plata",
 						"Salcedo", "Samaná", "San Cristóbal", "San Juan", "San Pedro de Macorís", 
