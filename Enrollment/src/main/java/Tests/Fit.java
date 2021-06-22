@@ -20,27 +20,32 @@ public class Fit extends SuperTestNG {
 	@DataProvider
 	public Object[][] MarketConfig() {
 
-		Object[][] data = new Object[5][3];
+		Object[][] data = new Object[5][4];
 	
 		data[0][0] = "United Kingdom";
 		data[0][1] = "English";
 		data[0][2] = "Pack";
+		data[0][3] = "CreditCard";
 
 		data[1][0] = "United States";
 		data[1][1] = "Español";
 		data[1][2] = "Pack";
+		data[1][3] = "CreditCard";
 
 		data[2][0] = "Canada";
 		data[2][1] = "English";
 		data[2][2] = "Pack";
+		data[2][3] = "CreditCard";
 
 		data[3][0] = "Canada";
 		data[3][1] = "Français";
 		data[3][2] = "Pack";
+		data[3][3] = "CreditCard";
 		
 		data[4][0] = "United States";
 		data[4][1] = "English";
 		data[4][2] = "Pack";
+		data[4][3] = "CreditCard";
 
 		return data;
 

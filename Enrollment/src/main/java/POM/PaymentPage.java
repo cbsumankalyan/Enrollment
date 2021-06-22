@@ -565,8 +565,8 @@ public class PaymentPage extends SuperTestNG {
 						"Distrito Nacional", "Duarte", "El Seibo", "Elias Pina", "Espaillat", "Hato Mayor",
 						"Independencia", "La Altagracia", "La Romana", "La Vega", "Maria Trinidad Sanchez",
 						"Monsenor Nouel", "Monte Cristi", "Monte Plata", "Pedernales", "Peravia", "Puerto Plata",
-						"Salcedo", "Samana", "San Cristobal", "San Juan", "San Pedro de Macoris", "Sanchez Ramirez",
-						"Santiago", "Santiago Rodriguez", "Valverde", };
+						"Salcedo", "Samana", "San Cristobal", "San Juan", "San Pedro de Macoris", "Sanchez Ramirez", "Santiago", 
+						"Santiago Rodriguez", "Valverde", };
 
 				for (int i = 0; i < state.length; i++) {
 					Assert.assertEquals(State.get(i).getText(), state[i]);
@@ -582,8 +582,8 @@ public class PaymentPage extends SuperTestNG {
 				String[] state = { "seleccione un estado", "Amazonas", "Antioquia", "Arauca", "Atlantico", "Bolivar",
 						"Boyaca", "Caldas", "Caqueta", "Casanare", "Cauca", "Cesar", "Choco", "Cordoba", "Cundinamarca",
 						"Distrito Capital de Bogota", "Guainia", "Guaviare", "Huila", "La Guajira", "Magdalena", "Meta",
-						"Narino", "Norte de Santander", "Putumayo", "Quindio", "Risaralda", "Santa Catalina",
-						"Santander", "Sucre", "Tolima", "Valle del Cauca", "Vaupes", "Vichada", };
+						"Narino", "Norte de Santander", "Putumayo", "Quindio", "Risaralda", 
+						"Santa Catalina", "Santander", "Sucre", "Tolima", "Valle del Cauca", "Vaupes", "Vichada", };
 
 				for (int i = 0; i < state.length; i++) {
 					Assert.assertEquals(State.get(i).getText(), state[i]);
