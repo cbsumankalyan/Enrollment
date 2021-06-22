@@ -3,38 +3,11 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="Tests.PrefferedCustomer">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="Enroll" invocation-numbers="1 2 3 4 5 6 8"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- Tests.PrefferedCustomer -->
-      <class name="Tests.EUBankWire">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="BankWire" invocation-numbers="8 9 10 13 14 17 19 21 30 33 34"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- Tests.EUBankWire -->
-      <class name="Tests.FranchisePartner">
-        <methods>
-          <include name="PostCondition"/>
-          <include name="StartReport"/>
-          <include name="PreConditon"/>
-          <include name="afterSuite"/>
-          <include name="Enroll" invocation-numbers="6 7 8 11 14 15 19 20 26 30 31 38 41 48 49"/>
-        </methods>
-      </class> <!-- Tests.FranchisePartner -->
       <class name="Tests.Fit">
         <methods>
           <include name="PostCondition"/>
           <include name="StartReport"/>
-          <include name="GetFit"/>
+          <include name="GetFit" invocation-numbers="1 2 3 4"/>
           <include name="PreConditon"/>
           <include name="afterSuite"/>
         </methods>
